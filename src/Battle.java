@@ -71,7 +71,8 @@ public class Battle extends GameAction {
             }
         }
         if(verbose) {
-            System.out.println(String.format("LVL: %d EXP NEEDED: %d", p.getLevel(), p.expToNextLevel()));
+            System.out.println(String.format("LVL: %d EXP NEEDED: %d/%d", p.getLevel(),
+                    p.expToNextLevel(), p.expForLevel()));
         }
     }
     

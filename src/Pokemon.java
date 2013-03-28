@@ -158,7 +158,7 @@ public class Pokemon implements Battleable {
     
     public String toString() {
         String endl = Constants.endl;
-        return levelName() + "" + " EXP Needed: " + expToNextLevel() + endl +
+        return levelName() + "" + " EXP Needed: " + expToNextLevel() + "/" + expForLevel() + endl +
                String.format("\tHP\tATK%s\tDEF%s\tSPD%s\tSPC%s", atkBadge ? "*" : "",
                        defBadge ? "*" : "", spdBadge ? "*" : "", spcBadge ? "*" : "") + endl +
                String.format("\t%s\t%s\t%s\t%s\t%s",getHP(),getAtk(),getDef(),getSpd(),getSpc()) + endl +
@@ -180,10 +180,14 @@ public class Pokemon implements Battleable {
     }
     
     //experience methods
+    //exp needed to get to next level
     public int expToNextLevel() {
         return ExpCurve.expToNextLevel(species.getCurve(), level, totalExp);
     }
-    
+    //total exp needed to get from this level to next level (no partial exp)
+    public int expForLevel() {
+        return ExpCurve.expForLevel(species.getCurve(), level);
+    }
     //in game actions
     
     //gain num exp

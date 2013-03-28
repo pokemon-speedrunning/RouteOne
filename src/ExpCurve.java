@@ -33,4 +33,9 @@ public enum ExpCurve {
         }
         return exp;
     }
+    
+    //
+    public static int expForLevel(ExpCurve curve, int level) {
+        return lowestExpForLevel(curve, level + 1) - lowestExpForLevel(curve, level);
+    }
 }
