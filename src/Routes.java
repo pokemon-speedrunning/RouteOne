@@ -1,7 +1,9 @@
 
 public class Routes {
     public static final GameAction[] blueClefableRoute = {
+        //lvl9bug
         //Battle.makeBattle(0x3A3B5), //brock
+        //4 ppl at route 3
         GameAction.getBoulderBadge,
         new Evolve("Clefable"),
         GameAction.eatRareCandy,
@@ -122,33 +124,41 @@ public class Routes {
         Battle.makeBattle(0x3A49F, new StatModifier(2,0,1,2)), //GARY MOTHERFUCKIN OAK
     };
 
+    //the 2:02 WR from werster
     public static final GameAction[] yellowRoute = {
         //forest
-        GameAction.printstatRanges,
         Battle.makeBattle(0x39E67),
-        new LearnMove("HORN ATTACK"),
+        new LearnMove("HORN ATTACK"), //lvl 8
         Battle.makeBattle(0x39EA5),
+        //lvl 9
         Battle.makeBattle(0x39E70),
-
+        //lvl 10
+        
         //brock gym
         Battle.makeBattle(0x39F17),
-        new LearnMove("DOUBLE KICK"),
-        Battle.makeBattle(0x3A454),
+        new LearnMove("DOUBLE KICK"), //lvl 12
+        Battle.makeBattle(0x3A454), //BROCK
+        GameAction.getBoulderBadge,
+        //lvl 13
 
         //route 3
         Battle.makeBattle(0x39E73),
+        //lvl 14
         Battle.makeBattle(0x39E2F),
+        //lvl 15
         Battle.makeBattle(0x39EAD), //lass
         Battle.makeBattle(0x39E7E),
-
-        new Evolve("NIDORINO"),
+        
+        new Evolve("NIDORINO"), //lvl 16
         new Evolve("NIDOKING"),
         //mt moon
         Battle.makeBattle(0x39FCF),
         Battle.makeBattle(0x3A3D9),
-
+        
         //gary + nugget bridge
-        Battle.makeBattle(0x3A292),
+        //lvl 18
+        Battle.makeBattle(0x3A292), //rival fight
+        
         Battle.makeBattle(0x39E8B),
         Battle.makeBattle(0x39EC4),
         Battle.makeBattle(0x39E3B),
@@ -157,29 +167,34 @@ public class Routes {
         Battle.makeBattle(0x3A32F),
 
         //bill route
-        Battle.makeBattle(0x3A008),
-        // 0x3A012
-        Battle.makeBattle(0x39EC8),
-        Battle.makeBattle(0x3A00C),
-        // 0x39F1B
+        //Battle.makeBattle(0x3A008), //elixir hiker
+        Battle.makeBattle(0x3A012), // not elixir hiker
+        GameAction.eatRareCandy,
+        new UnlearnMove("TACKLE"),
+        new LearnMove("THRASH"),
+        GameAction.printStatRanges, //STAT CHECK
+        Battle.makeBattle(0x39EC8), //lass
+        Battle.makeBattle(0x39F1B),
+        // 0x3A00C guy with 4
         Battle.makeBattle(0x39ECC),
 
-        //misty
-        Battle.makeBattle(0x39F3F),
-        Battle.makeBattle(0x3A45A),
-
+        //vermillion before misty
         //rocket in cerulean
         Battle.makeBattle(0x3A32B),
-
         //route 6
         Battle.makeBattle(0x39F46),
         Battle.makeBattle(0x39F25),
-
         //anne gary
         Battle.makeBattle(0x3A499),
 
+        //misty
+        Battle.makeBattle(0x39F3F),
+        GameAction.printAllStats,
+        Battle.makeBattle(0x3A45A), //MISTY
+
+
         //surge
-        Battle.makeBattle(0x3A460),
+        Battle.makeBattle(0x3A460), //SURGE
 
         //route 9
         Battle.makeBattle(0x39F4E),

@@ -40,7 +40,7 @@ public abstract class GameAction {
     public static final GameAction printAllStats = new GameAction() {
         void performAction(Pokemon p) { System.out.println(p); }
     };
-    public static final GameAction printstatRanges = new GameAction() {
+    public static final GameAction printStatRanges = new GameAction() {
         void performAction(Pokemon p) { System.out.println(p.statRanges()); }
     };
     

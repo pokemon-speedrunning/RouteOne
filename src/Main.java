@@ -31,6 +31,7 @@ public class Main {
         IVs god = new IVs(15,15,15,15);
         IVs dog = new IVs(0,0,0,0);
         IVs mid = new IVs(9,8,8,8);
+        IVs test = new IVs(14,13,8,15);
         Pokemon p = null;
         GameAction[] actions = null;
         
@@ -38,7 +39,7 @@ public class Main {
             p = new Pokemon(PokemonNames.getSpeciesFromName("clefairy"),10,dog,false);
             actions = Routes.blueClefableRoute;
         } else {
-            p = new Pokemon(PokemonNames.getSpeciesFromName("NIDORANM"),6,dog,false);
+            p = new Pokemon(PokemonNames.getSpeciesFromName("NIDORANM"),6,test,false);
             actions = Routes.yellowRoute;
         }
         
@@ -64,7 +65,6 @@ public class Main {
             }
         }
         
-        GameAction.printAllStats.performAction(p);
         
         //System.out.println(p.levelName() + " " + p.statsStr());
         /*
@@ -75,10 +75,9 @@ public class Main {
         System.out.println("X ACCURACYS: " + XItems[4]);
         int cost = XItems[0] * 500 + XItems[1] * 550 + XItems[2] * 350 + XItems[3] * 350 + XItems[4] * 950;
         System.out.println("X item cost: " + cost);
-        System.out.println("Total Battles: " + numBattles);
         */
         
+        System.out.println("Total Battles: " + numBattles);
         System.out.println("Total Rare Candies: " + rareCandies);
-        
     }
 }
