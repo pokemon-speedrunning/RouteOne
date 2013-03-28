@@ -99,7 +99,6 @@ public class Pokemon implements Battleable {
         return (iv + species.getBaseSpc() + (int) Math.sqrt(ev_spc)/8)*level/50 + 5;
     }
 
-    
     private void setExpForLevel() {
         totalExp = ExpCurve.lowestExpForLevel(species.getCurve(), level);
     }
@@ -148,6 +147,9 @@ public class Pokemon implements Battleable {
     }
     public boolean isWild() {
         return wild;
+    }
+    public int getTotalExp() {
+        return totalExp;
     }
     public int expGiven() {
         return (int) ((isWild() ? 1 : 1.5) * species.getKillExp() * level / 7);
