@@ -127,7 +127,7 @@ public class Routes {
         Battle.makeBattle(0x3A49F, new StatModifier(2,0,1,2)), //GARY MOTHERFUCKIN OAK
     };
 
-    //the 2:02 WR from werster
+    //new strats
     public static final GameAction[] yellowRoute = {
         //forest
         Battle.makeBattle(0x39E67),
@@ -153,6 +153,9 @@ public class Routes {
         Battle.makeBattle(0x39E7E),
         
         new Evolve("NIDORINO"), //lvl 16
+        
+        //encounters in mt. moon
+        new Encounter("GEODUDE", 10),
         new Evolve("NIDOKING"),
         //mt moon
         Battle.makeBattle(0x39FCF),
@@ -165,6 +168,11 @@ public class Routes {
         Battle.makeBattle(0x39E8B),
         Battle.makeBattle(0x39EC4),
         Battle.makeBattle(0x39E3B),
+        GameAction.eatRareCandy,
+        GameAction.eatRareCandy,
+        new UnlearnMove("TACKLE"),
+        new LearnMove("THRASH"),
+        //GameAction.printStatRanges, //STAT CHECK
         Battle.makeBattle(0x39EC0),
         Battle.makeBattle(0x39F1F),
         Battle.makeBattle(0x3A32F),
@@ -172,15 +180,17 @@ public class Routes {
         //bill route
         //Battle.makeBattle(0x3A008), //elixir hiker
         Battle.makeBattle(0x3A012), // not elixir hiker
-        GameAction.eatRareCandy,
-        new UnlearnMove("TACKLE"),
-        new LearnMove("THRASH"),
-        //GameAction.printStatRanges, //STAT CHECK
         Battle.makeBattle(0x39EC8), //lass
         Battle.makeBattle(0x39F1B),
         // 0x3A00C guy with 4
         Battle.makeBattle(0x39ECC),
 
+        //misty
+        Battle.makeBattle(0x39F3F),
+        Battle.makeBattle(0x3A45A), //MISTY
+        new UnlearnMove("LEER"),
+        new LearnMove("BUBBLEBEAM"),
+        
         //vermillion before misty
         //rocket in cerulean
         Battle.makeBattle(0x3A32B),
@@ -188,13 +198,7 @@ public class Routes {
         Battle.makeBattle(0x39F46),
         Battle.makeBattle(0x39F25),
         //anne gary
-        Battle.makeBattle(0x3A499),
-
-        //misty
-        Battle.makeBattle(0x39F3F),
-        Battle.makeBattle(0x3A45A), //MISTY
-        new UnlearnMove("LEER"),
-        new LearnMove("BUBBLEBEAM"),
+        Battle.makeBattle(0x3A499),     
 
         //surge
         Battle.makeBattle(0x3A460), //SURGE
@@ -204,7 +208,7 @@ public class Routes {
         new LearnMove("THUNDERBOLT"),
         
         //route 9
-        Battle.makeBattle(0x39F4E),
+        Battle.makeBattle(0x39F4E),        
         Battle.makeBattle(0x39EA0),
 
         //rock tunnel
@@ -233,12 +237,12 @@ public class Routes {
         Battle.makeBattle(0x3A558),
         Battle.makeBattle(0x3A558),
         Battle.makeBattle(0x3A3E3, new StatModifier(0,0,0,0,true)), //jessiejames
-
+        
         //silph
         Battle.makeBattle(0x3A3CA), //earthquake
         new UnlearnMove("ROCK SLIDE"),
         new LearnMove("EARTHQUAKE"),
-        Battle.makeBattle(0x3A398),
+        Battle.makeBattle(0x3A398),    
         //gary
         //vaporeon
         //Battle.makeBattle(0x3A4DF, new StatModifier(0,0,1,0,true)),
@@ -248,27 +252,32 @@ public class Routes {
         Battle.makeBattle(0x3A3E8), //jessiejames
         Battle.makeBattle(0x3A305, new StatModifier(0,0,0,0,true)), //giovanni
 
-        //sabrina
+        //sabrina gym
         Battle.makeBattle(0x3A47E, new StatModifier(0,0,2,0,true)), //SABRINA
-
+        
         //koga gym
         Battle.makeBattle(0x3A1DF),
         Battle.makeBattle(0x3A1E5),
         Battle.makeBattle(0x3A46C, new StatModifier(0,0,1,0,true)), //KOGA
-
+        GameAction.getSoulBadge,
+        
+        new UnlearnMove("THRASH"),
+        new LearnMove("ICE BEAM"),
+        
         //erika gym
         Battle.makeBattle(0x3A180),
         Battle.makeBattle(0x3A464, new StatModifier(0,0,0,0,true)), //ERIKA
         
-        new UnlearnMove("THRASH"),
-        new LearnMove("SURF"),
         
         GameAction.eatRareCandy,
         GameAction.eatRareCandy,
-        
+        GameAction.eatCarbos,
+        GameAction.eatCarbos,
+        //GameAction.printAllStats, 
         //blaine
         Battle.makeBattle(0x3A476, new StatModifier(0,0,1,0,true)), //BLAINE
-
+        GameAction.getVolcanoBadge,
+        
         //giovanni gym
         Battle.makeBattle(0x3A421),
         Battle.makeBattle(0x3A27F),
@@ -290,7 +299,7 @@ public class Routes {
         //vaporeon (0)
         //Battle.makeBattle(0x3A531),
         //flareon (1)
-        Battle.makeBattle(0x3A523, new StatModifier(0,0,0,1,true), 2),
+        Battle.makeBattle(0x3A523, new StatModifier(0,0,0,1,true)),
 
     };
 }

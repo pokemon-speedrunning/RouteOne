@@ -31,7 +31,7 @@ public class Main {
         IVs god = new IVs(15,15,15,15);
         IVs dog = new IVs(0,0,10,0);
         IVs mid = new IVs(9,8,8,8);
-        IVs test = new IVs(14,13,8,15);
+        IVs test = new IVs(15,6,10,9);
         Pokemon p = null;
         GameAction[] actions = null;
         
@@ -79,5 +79,7 @@ public class Main {
         
         System.out.println("Total Battles: " + numBattles);
         System.out.println("Total Rare Candies: " + rareCandies);
+        
+        System.out.println(new Pokemon(PokemonNames.getSpeciesFromName("STARMIE"), 21, false).expGiven());
     }
 }
