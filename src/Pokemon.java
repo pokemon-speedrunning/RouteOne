@@ -250,9 +250,9 @@ public class Pokemon implements Battleable {
         calculateStats();
     }
     public void eatCarbos() {
-        if (ev_hp >= 25600)
+        if (ev_spd >= 25600)
             return;
-        ev_hp += 2560;
+        ev_spd += 2560;
         calculateStats();
     }
     
