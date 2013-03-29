@@ -2,15 +2,19 @@
 public class Battle extends GameAction {
     private Battleable opponent;
     private StatModifier mod;
-    private boolean verbose;
+    private int verbose;
+    //verbose options
+    public static final int NONE = 0;
+    public static final int SOME = 1;
+    public static final int ALL = 2;
     
     public Battle(Battleable b) {
         opponent = b;
         mod = new StatModifier();
-        verbose = false;
+        verbose = 0;
     }
     
-    public Battle(Battleable b, boolean verbose) {
+    public Battle(Battleable b, int verbose) {
         opponent = b;
         mod = new StatModifier();
         this.verbose = verbose;
@@ -19,10 +23,10 @@ public class Battle extends GameAction {
     public Battle(Battleable b, StatModifier new_mod) {
         opponent = b;
         mod = new_mod;
-        verbose = false;
+        verbose = 0;
     }
     
-    public Battle(Battleable b, StatModifier new_mod, boolean verbose) {
+    public Battle(Battleable b, StatModifier new_mod, int verbose) {
         opponent = b;
         mod = new_mod;
         this.verbose = verbose;
@@ -40,11 +44,11 @@ public class Battle extends GameAction {
         return new Battle(Trainer.getTrainer(offset), sm);
     }
     
-    public static Battle makeBattle(int offset, boolean verbose) {
+    public static Battle makeBattle(int offset, int verbose) {
         return new Battle(Trainer.getTrainer(offset), verbose);
     }
     
-    public static Battle makeBattle(int offset, StatModifier sm, boolean verbose) {
+    public static Battle makeBattle(int offset, StatModifier sm, int verbose) {
         return new Battle(Trainer.getTrainer(offset), sm, verbose);
     }
     
@@ -60,17 +64,20 @@ public class Battle extends GameAction {
     private void doBattle(Pokemon p) {
         //TODO: automatically determine whether or not to print
         if (opponent instanceof Pokemon) {
-            if(verbose) printBattle(p, (Pokemon) opponent);
+            if(verbose == ALL) printBattle(p, (Pokemon) opponent);
+            else if (verbose == SOME) printShortBattle(p, (Pokemon) opponent);
+            
             opponent.battle(p);
         } else { //is a Trainer
             Trainer t = (Trainer) opponent;
-            if(verbose) System.out.println(t);
+            if(verbose == ALL || verbose == SOME) System.out.println(t);
             for(Pokemon opps : t) {
-                if(verbose) printBattle(p, (Pokemon) opps);
+                if(verbose == ALL) printBattle(p, (Pokemon) opps);
+                else if (verbose == SOME) printShortBattle(p, (Pokemon) opps);
                 opps.battle(p);
             }
         }
-        if(verbose) {
+        if(verbose == ALL) {
             System.out.println(String.format("LVL: %d EXP NEEDED: %d/%d", p.getLevel(),
                     p.expToNextLevel(), p.expForLevel()));
         }
@@ -81,5 +88,9 @@ public class Battle extends GameAction {
         System.out.println(DamageCalculator.summary(us, them, mod, new StatModifier()));
     }
     
+    //does not actually do the battle, just prints short summary
+    public void printShortBattle(Pokemon us, Pokemon them) {
+        System.out.println(DamageCalculator.shortSummary(us, them, mod, new StatModifier()));
+    }
     //TODO: do battle with lots of possible opponent stat modifier
 }

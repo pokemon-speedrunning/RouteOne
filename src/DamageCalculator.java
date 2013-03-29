@@ -122,4 +122,31 @@ public class DamageCalculator {
         
         return sb.toString();
     }
+    
+    //used for the less verbose option
+    public static String shortSummary(Pokemon p1, Pokemon p2,
+            StatModifier mod1, StatModifier mod2) {
+        StringBuilder sb = new StringBuilder();
+        String endl = Constants.endl;
+        
+        sb.append(p1.levelName() + " vs " + p2.levelName() + endl);
+        //sb.append(String.format("EXP to next level: %d EXP gained: %d", p1.expToNextLevel(), p2.expGiven()) + endl);
+        if(mod1.hasMods()) {
+            sb.append(String.format("%s (%s) %s -> (%s): ", p1.pokeName(), p1.statsStr(),
+                    mod1.summary(), mod1.modSummary(p1)) + endl);
+        } else {
+            sb.append(String.format("%s (%s): ", p1.pokeName(), p1.statsStr()) + endl);
+        }
+        
+        sb.append(summary_help(p1,p2,mod1,mod2) + endl);
+        if(mod2.hasMods()) {
+            sb.append(String.format("%s (%s) %s -> (%s): ", p2.pokeName(), p2.statsStr(),
+                    mod2.summary(), mod2.modSummary(p2)));
+            } else {
+                sb.append(String.format("%s (%s): ", p2.pokeName(), p2.statsStr()));
+            }
+            
+        sb.append(" " + p2.getMoveset().toString() + endl);
+        return sb.toString();
+    }
 }

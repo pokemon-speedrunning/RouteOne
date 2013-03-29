@@ -104,7 +104,7 @@ public class Routes {
         
         //ERIKA
         Battle.makeBattle(0x3A0DB), //eggs
-        Battle.makeBattle(0x3A3C9, new StatModifier(0,0,0,0), true), //ERIKA
+        Battle.makeBattle(0x3A3C9, new StatModifier(0,0,0,0)), //ERIKA
         
         //GIOVANNI
         Battle.makeBattle(0x3A382), //
@@ -120,7 +120,10 @@ public class Routes {
         Battle.makeBattle(0x3A516, new StatModifier(0,0,1,3)), //TROLL
         new UnlearnMove("PSYCHIC"),
         new LearnMove("ICE BEAM"),
-        Battle.makeBattle(0x3A522, new StatModifier(0,0,2,1)), //LANCE
+        GameAction.eatCarbos,
+        GameAction.eatCarbos,
+        GameAction.eatCarbos,
+        Battle.makeBattle(0x3A522, new StatModifier(0,0,2,1), 1), //LANCE
         Battle.makeBattle(0x3A49F, new StatModifier(2,0,1,2)), //GARY MOTHERFUCKIN OAK
     };
 
@@ -172,7 +175,7 @@ public class Routes {
         GameAction.eatRareCandy,
         new UnlearnMove("TACKLE"),
         new LearnMove("THRASH"),
-        GameAction.printStatRanges, //STAT CHECK
+        //GameAction.printStatRanges, //STAT CHECK
         Battle.makeBattle(0x39EC8), //lass
         Battle.makeBattle(0x39F1B),
         // 0x3A00C guy with 4
@@ -189,13 +192,17 @@ public class Routes {
 
         //misty
         Battle.makeBattle(0x39F3F),
-        GameAction.printAllStats,
         Battle.makeBattle(0x3A45A), //MISTY
-
+        new UnlearnMove("LEER"),
+        new LearnMove("BUBBLEBEAM"),
 
         //surge
         Battle.makeBattle(0x3A460), //SURGE
-
+        GameAction.getThunderBadge,
+        //lvl 27
+        new UnlearnMove("DOUBLE KICK"),
+        new LearnMove("THUNDERBOLT"),
+        
         //route 9
         Battle.makeBattle(0x39F4E),
         Battle.makeBattle(0x39EA0),
@@ -210,69 +217,80 @@ public class Routes {
         //gambler
         Battle.makeBattle(0x3A172),
 
+        new UnlearnMove("HORN ATTACK"),
+        new LearnMove("HORN DRILL"),
+        new UnlearnMove("BUBBLEBEAM"),
+        new LearnMove("ROCK SLIDE"),
+        
         //tower gary
         //vaporeon (0)
-        Battle.makeBattle(0x3A4BB),
+        //Battle.makeBattle(0x3A4BB),
         //flareon (1)
-        //0x3A4AF
+        Battle.makeBattle(0x3A4AF, new StatModifier(0,0,0,0,true)),
 
         //tower
         Battle.makeBattle(0x3A551),
         Battle.makeBattle(0x3A558),
         Battle.makeBattle(0x3A558),
-        Battle.makeBattle(0x3A3E3),
+        Battle.makeBattle(0x3A3E3, new StatModifier(0,0,0,0,true)), //jessiejames
 
         //silph
-        //earthquake
-        //0x3A3CA
+        Battle.makeBattle(0x3A3CA), //earthquake
+        new UnlearnMove("ROCK SLIDE"),
+        new LearnMove("EARTHQUAKE"),
         Battle.makeBattle(0x3A398),
         //gary
         //vaporeon
-        Battle.makeBattle(0x3A4DF),
+        //Battle.makeBattle(0x3A4DF, new StatModifier(0,0,1,0,true)),
         //flareon (1)
-        //0x3A4D3
-        Battle.makeBattle(0x3A3E8),
-        //giovanni
-        Battle.makeBattle(0x3A305),
+        Battle.makeBattle(0x3A4D3, new StatModifier(0,0,0,0,true)),
+        
+        Battle.makeBattle(0x3A3E8), //jessiejames
+        Battle.makeBattle(0x3A305, new StatModifier(0,0,0,0,true)), //giovanni
 
-        //erika gym
-        Battle.makeBattle(0x3A180),
-        Battle.makeBattle(0x3A464),
+        //sabrina
+        Battle.makeBattle(0x3A47E, new StatModifier(0,0,2,0,true)), //SABRINA
 
         //koga gym
         Battle.makeBattle(0x3A1DF),
         Battle.makeBattle(0x3A1E5),
-        Battle.makeBattle(0x3A46C),
+        Battle.makeBattle(0x3A46C, new StatModifier(0,0,1,0,true)), //KOGA
 
-        //sabrina
-        Battle.makeBattle(0x3A47E),
-
+        //erika gym
+        Battle.makeBattle(0x3A180),
+        Battle.makeBattle(0x3A464, new StatModifier(0,0,0,0,true)), //ERIKA
+        
+        new UnlearnMove("THRASH"),
+        new LearnMove("SURF"),
+        
+        GameAction.eatRareCandy,
+        GameAction.eatRareCandy,
+        
         //blaine
-        Battle.makeBattle(0x3A476),
+        Battle.makeBattle(0x3A476, new StatModifier(0,0,1,0,true)), //BLAINE
 
         //giovanni gym
         Battle.makeBattle(0x3A421),
         Battle.makeBattle(0x3A27F),
-        Battle.makeBattle(0x3A30F),
+        Battle.makeBattle(0x3A30F, new StatModifier(0,0,1,0,true)), //GIOVANNI
 
         //viridian gary
         //vaporeon (0)
-        Battle.makeBattle(0x3A507),
+        //Battle.makeBattle(0x3A507),
         //flareon (1)
-        //0x3A4F9
+        Battle.makeBattle(0x3A4F9, new StatModifier(0,0,1,0,true)),
 
         //e4
-
-        Battle.makeBattle(0x3A53F),
-        Battle.makeBattle(0x3A448),
-        Battle.makeBattle(0x3A59A),
-        Battle.makeBattle(0x3A5A6),
+        Battle.makeBattle(0x3A53F, new StatModifier(0,0,1,0,true)),
+        Battle.makeBattle(0x3A448, new StatModifier(0,0,0,0,true)),
+        Battle.makeBattle(0x3A59A, new StatModifier(0,0,1,0)),
+        Battle.makeBattle(0x3A5A6, new StatModifier(0,0,1,1,true)),
 
         //e4 gary
         //vaporeon (0)
-        Battle.makeBattle(0x3A531),
+        //Battle.makeBattle(0x3A531),
         //flareon (1)
-        //0x3A523
+        Battle.makeBattle(0x3A523, new StatModifier(0,0,0,1,true), 2),
 
     };
 }
