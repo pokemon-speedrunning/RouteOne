@@ -77,7 +77,7 @@ public class Battle extends GameAction {
                 opps.battle(p);
             }
         }
-        if(verbose == ALL) {
+        if(verbose == ALL || verbose == SOME) {
             System.out.println(String.format("LVL: %d EXP NEEDED: %d/%d", p.getLevel(),
                     p.expToNextLevel(), p.expForLevel()));
         }
