@@ -341,7 +341,7 @@ public class Trainer implements Battleable, Iterable<Pokemon>{
         } else {
             Trainer giovanni2 = getTrainer(0x3A305); //silph co
             //TODO check this offset
-            p = giovanni2.pokes.get(2); //PERSIAN
+            p = giovanni2.pokes.get(1); //PERSIAN
             m = new Moveset();
             m.addMove("PAY DAY");
             m.addMove("SCRATCH");
