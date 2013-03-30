@@ -37,7 +37,7 @@ public class Main {
         
         if(Settings.isRB) {
             p = new Pokemon(PokemonNames.getSpeciesFromName("clefairy"),10,dog,false);
-            actions = Routes.blueClefableRoute;
+            actions = Routes.blueSquirtleRoute;
         } else {
             p = new Pokemon(PokemonNames.getSpeciesFromName("NIDORANM"),6,test,false);
             actions = Routes.yellowRoute;
@@ -79,7 +79,5 @@ public class Main {
         
         System.out.println("Total Battles: " + numBattles);
         System.out.println("Total Rare Candies: " + rareCandies);
-        
-        System.out.println(new Pokemon(PokemonNames.getSpeciesFromName("STARMIE"), 21, false).expGiven());
     }
 }
