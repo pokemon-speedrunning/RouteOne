@@ -430,4 +430,12 @@ public class Routes {
         Battle.makeBattle(0x3A523, new StatModifier(0,0,0,1,true)),
 
     };
+    
+    public static final GameAction[] randomRoute = {
+        new TrainerPoke("SQUIRTLE", 5, new StatModifier(1,0,0,0), new StatModifier(0,-1,0,0), 1),
+        new Encounter("WIGGLYTUFF", 2, new StatModifier(), new StatModifier(0,-1,0,0), 1),
+        
+        GameAction.printStatRanges,
+        GameAction.printAllStats,
+    };
 }

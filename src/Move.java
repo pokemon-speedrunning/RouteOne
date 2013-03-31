@@ -37,7 +37,7 @@ public class Move {
         
         allMovesHashMap = new HashMap<String,Move>();
         for (Move m1 : allMoves) {
-            allMovesHashMap.put(m1.getName().toUpperCase(), m1);
+            allMovesHashMap.put(Constants.hashName(m1.getName()), m1);
         }
         //TODO: put in special cases
     }
@@ -50,7 +50,7 @@ public class Move {
     }
     
     public static Move getMoveByName(String name) {
-        name = name.toUpperCase();
+        name = Constants.hashName(name);
         if(!allMovesHashMap.containsKey(name))
             return null;
         return allMovesHashMap.get(name);

@@ -1,16 +1,12 @@
 
 public class Constants {
+    static final String hashName(String s) {
+        return s.toUpperCase().replaceAll("\\W", "");
+    }
+    
     static final String endl = System.getProperty("line.separator");
     static final int numPokes = 151;
     
-    static final String[] stat_names = {
-        "HP", 
-        "Atk", 
-        "Def", 
-        "SpA", 
-        "SpD", 
-        "Spe",
-    };
     //used to initialize all species
     static final String[] poke_names = {
         "Select Pokemon",
