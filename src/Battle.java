@@ -1,8 +1,9 @@
 //represents a battle, with planned statmods
 public class Battle extends GameAction {
     private Battleable opponent;
-    private StatModifier mod;
-    private int verbose;
+    private StatModifier mod1 = new StatModifier(); //our mod
+    private StatModifier mod2 = new StatModifier(); //their mod
+    private int verbose = Battle.NONE;
     //verbose options
     public static final int NONE = 0;
     public static final int SOME = 1;
@@ -10,30 +11,37 @@ public class Battle extends GameAction {
     
     public Battle(Battleable b) {
         opponent = b;
-        mod = new StatModifier();
-        verbose = 0;
     }
     
     public Battle(Battleable b, int verbose) {
         opponent = b;
-        mod = new StatModifier();
         this.verbose = verbose;
     }
     
-    public Battle(Battleable b, StatModifier new_mod) {
+    public Battle(Battleable b, StatModifier mod1) {
         opponent = b;
-        mod = new_mod;
-        verbose = 0;
+        this.mod1 = mod1;
     }
     
-    public Battle(Battleable b, StatModifier new_mod, int verbose) {
+    public Battle(Battleable b, StatModifier mod1, int verbose) {
         opponent = b;
-        mod = new_mod;
+        this.mod1 = mod1;
         this.verbose = verbose;
     }
     
-    public StatModifier getMod() {
-        return mod;
+    public Battle(Battleable b, StatModifier mod1, StatModifier mod2, int verbose) {
+        opponent = b;
+        this.mod1 = mod1;
+        this.mod2 = mod2;
+        this.verbose = verbose;
+    }
+    
+    public StatModifier getMod1() {
+        return mod1;
+    }
+    
+    public StatModifier getMod2() {
+        return mod2;
     }
     
     public static Battle makeBattle(int offset) {
@@ -50,6 +58,10 @@ public class Battle extends GameAction {
     
     public static Battle makeBattle(int offset, StatModifier sm, int verbose) {
         return new Battle(Trainer.getTrainer(offset), sm, verbose);
+    }
+    
+    public static Battle makeBattle(int offset, StatModifier mod1, StatModifier mod2, int verbose) {
+        return new Battle(Trainer.getTrainer(offset), mod1, mod2, verbose);
     }
     
     public static Battle makeBattle(Pokemon p) {
@@ -85,12 +97,33 @@ public class Battle extends GameAction {
     
     //does not actually do the battle, just prints summary
     public void printBattle(Pokemon us, Pokemon them) {
-        System.out.println(DamageCalculator.summary(us, them, mod, new StatModifier()));
+        System.out.println(DamageCalculator.summary(us, them, mod1, mod2));
     }
     
     //does not actually do the battle, just prints short summary
     public void printShortBattle(Pokemon us, Pokemon them) {
-        System.out.println(DamageCalculator.shortSummary(us, them, mod, new StatModifier()));
+        System.out.println(DamageCalculator.shortSummary(us, them, mod1, mod2));
     }
-    //TODO: do battle with lots of possible opponent stat modifier
+}
+
+class Encounter extends Battle {
+    Encounter(Species s, int lvl, StatModifier mod1, StatModifier mod2, int verbose) {
+        super(new Pokemon(s, lvl), mod1, mod2, verbose);
+    }
+    Encounter(String s, int lvl) { this(PokemonNames.getSpeciesFromName(s),lvl,
+            new StatModifier(), new StatModifier(), Battle.NONE); }
+    Encounter(String s, int lvl, StatModifier mod1, StatModifier mod2, int verbose) {
+        this(PokemonNames.getSpeciesFromName(s), lvl, mod1, mod2, verbose);
+    }
+}
+
+class TrainerPoke extends Battle {
+    TrainerPoke(Species s, int lvl, StatModifier mod1, StatModifier mod2, int verbose) {
+        super(new Pokemon(s, lvl, false), mod1, mod2, verbose);
+        }
+    TrainerPoke(String s, int lvl) { this(PokemonNames.getSpeciesFromName(s),lvl,
+            new StatModifier(), new StatModifier(), Battle.NONE); }
+    TrainerPoke(String s, int lvl, StatModifier mod1, StatModifier mod2, int verbose) {
+        this(PokemonNames.getSpeciesFromName(s), lvl, mod1, mod2, verbose);
+    }
 }
