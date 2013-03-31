@@ -35,13 +35,16 @@ public class Main {
         Pokemon p = null;
         GameAction[] actions = null;
         
-        if(Settings.isRB) {
-            p = new Pokemon(PokemonNames.getSpeciesFromName("clefairy"),10,dog,false);
-            actions = Routes.blueSquirtleRoute;
-        } else {
-            p = new Pokemon(PokemonNames.getSpeciesFromName("NIDORANM"),6,test,false);
-            actions = Routes.yellowRoute;
-        }
+        p = new Pokemon(PokemonNames.getSpeciesFromName("dodrio"),5,god,false);
+        actions = Routes.randomRoute;
+        
+//        if(Settings.isRB) {
+//            p = new Pokemon(PokemonNames.getSpeciesFromName("clefairy"),10,dog,false);
+//            actions = Routes.blueSquirtleRoute;
+//        } else {
+//            p = new Pokemon(PokemonNames.getSpeciesFromName("NIDORANM"),6,test,false);
+//            actions = Routes.yellowRoute;
+//        }
         
         
         //Battle.makeBattle(0xZZZZZ, true), //
@@ -53,7 +56,7 @@ public class Main {
         for(GameAction a : actions) {        
             a.performAction(p);
             if (a instanceof Battle) {
-                StatModifier sm = ((Battle) a).getMod();
+                StatModifier sm = ((Battle) a).getMod1();
                 XItems[0] += Math.max(0, sm.getAtkStage());
                 XItems[1] += Math.max(0, sm.getDefStage());
                 XItems[2] += Math.max(0, sm.getSpdStage());
