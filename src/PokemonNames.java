@@ -13,7 +13,7 @@ public class PokemonNames {
     
     //returns the species with this name, or null if it does not exist
     public static Species getSpeciesFromName(String name) {
-        name = name.toUpperCase();
+        name = Constants.hashName(name);
         if(!nameMap.containsKey(name))
             return null;
         return nameMap.get(name);
