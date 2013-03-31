@@ -79,3 +79,11 @@ class Encounter extends GameAction {
     @Override
     void performAction(Pokemon p) {encounter.battle(p); }
 }
+
+class TrainerPoke extends GameAction {
+    private Pokemon poke;
+    TrainerPoke(Species s, int lvl) { poke = new Pokemon(s, lvl, false); }
+    TrainerPoke(String s, int lvl) { this(PokemonNames.getSpeciesFromName(s),lvl); }
+    @Override
+    void performAction(Pokemon p) {poke.battle(p); }
+}
