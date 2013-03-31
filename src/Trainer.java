@@ -14,6 +14,14 @@ public class Trainer implements Battleable, Iterable<Pokemon>{
     private int offset;
     
     @Override
+    public boolean equals(Object o) {
+        if(!(o instanceof Trainer)) {
+            return false;
+        } else {
+            return offset == ((Trainer) o).offset; //TODO check for more?
+        }
+    }
+    @Override
     public void battle(Pokemon p) {
         for(Pokemon tp : pokes) {
             tp.battle(p);

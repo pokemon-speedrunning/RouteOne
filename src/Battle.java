@@ -70,6 +70,14 @@ public class Battle extends GameAction {
     
     @Override
     public void performAction(Pokemon p) {
+        //check for special gym leader badges
+        if(Settings.isRB) {
+            if (Trainer.getTrainer(0x3A3B5).equals(opponent)) //brock boulder badge
+                p.setAtkBadge(true);
+            else if (Trainer.getTrainer(0x3A3B5).equals(opponent)) //surge thunder badge
+                p.setDefBadge(true);
+        }
+        
         doBattle(p);
     }
     
