@@ -1,4 +1,4 @@
-RouteOne, by HRoll
+RouteOne v1.0, by HRoll
 
 TABLE OF CONTENTS
 1. INTRODUCTION
@@ -41,11 +41,10 @@ Under [files], you'll want to enter the file names of your desired input file an
 The options under [util] should generally be set to true, unless you really don't want to know how many X items/rarecandies/stat boosting items you used.
 
 4. EXAMPLE ROUTE FILES
-
 First of all, two example route files are provided under yellow_example.txt, blue_example.txt. These include some reasonably standard variant of strategies for yellow (using nidoranM) and blue (using squirtle), respectively. Looking at them should give a vague idea of how the syntax works.
 
 5. MAKING A ROUTE FILE
-As a note before the actual syntax is given, everything should be case-insensitive.
+As a note before the actual syntax is given, everything should be case-insensitive. Also, when reading your output, be sure to check the top of the file. Any error messages will be displayed there (the lines with errors are simply ignored, and this may cause you to miss important lines).
 
 -5.1 Comments-
 First of all, you can add comments at the end of any line or in a line on its own by using "//". Anything after a "//" will be ignored.
@@ -153,4 +152,6 @@ Examples: `ranges //see my non-boosted stat ranges so i can check stats in-game 
 7. TODOS
 
 - Fix move damage displays for weird moves, like Dragon Rage.
-- Ability to indicate that a battle's EXP is split between some number of pokemon.
+- Add ability to indicate that a battle's EXP is split between some number of pokemon.
+- Add ability to Preserve move slot orders.
+- Add ability to print strings into output.

@@ -166,4 +166,4 @@ Carbos
 //vaporeon (0)
 //0x3A531 -xspc 1 -xacc 
 //flareon (1)
-0x3A523 -xspc 1 -xacc
+0x3A523 -xspc 1 -xacc -v ALL //holy shit this is hard

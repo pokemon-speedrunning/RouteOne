@@ -111,7 +111,7 @@ public class Battle extends GameAction {
             }
         }
         if(verbose == ALL || verbose == SOME) {
-            Main.append(String.format("LVL: %d EXP NEEDED: %d/%d", p.getLevel(),
+            Main.appendln(String.format("LVL: %d EXP NEEDED: %d/%d", p.getLevel(),
                     p.expToNextLevel(), p.expForLevel()));
         }
     }

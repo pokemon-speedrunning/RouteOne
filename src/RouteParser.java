@@ -70,7 +70,12 @@ public class RouteParser {
             }
             int lvl = Integer.parseInt(firstToken.substring(1));
             String species = tokens[1];
-            Battleable b = new Pokemon(PokemonNames.getSpeciesFromName(species),lvl); //default to wild pokemon
+            Pokemon b = new Pokemon(PokemonNames.getSpeciesFromName(species),lvl); //default to wild pokemon
+            if (b.getSpecies() == null) {
+                Main.appendln("ERROR ON LINE " + lineNum + ": bad pokemon name");
+                return null;
+            }
+            
             String[] flagTokens = (String[]) Arrays.copyOfRange(tokens, 2, n);
             return addFlagsToBattleable(b, flagTokens);
         }
@@ -90,7 +95,12 @@ public class RouteParser {
                 return null;
             }
             String move = tokens[1];
-            return new LearnMove(move);
+            LearnMove l = new LearnMove(move);
+            if (l.getMove() == null) {
+                Main.appendln("ERROR ON LINE " + lineNum + ": bad move name");
+                return null;
+            }
+            return l;
         }
         //unlearnmove
         else if(firstToken.equalsIgnoreCase("um") || firstToken.equalsIgnoreCase("unlearnmove")) {
@@ -99,7 +109,12 @@ public class RouteParser {
                 return null;
             }
             String move = tokens[1];
-            return new UnlearnMove(move);
+            UnlearnMove l = new UnlearnMove(move);
+            if (l.getMove() == null) {
+                Main.appendln("ERROR ON LINE " + lineNum + ": bad move name");
+                return null;
+            }
+            return l;
         }
         //candies, etc
         else if(firstToken.equalsIgnoreCase("rc") || firstToken.equalsIgnoreCase("rarecandy")) {

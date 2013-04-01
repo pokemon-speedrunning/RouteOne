@@ -1,3 +1,6 @@
 Changelog:
 
-(none yet)
+v 1.01:
+ - Bad pokemon names and move names should no longer silently fail.
+ - Fixed example routes.
+ - Fixed a minor bad spacing bug in printing.

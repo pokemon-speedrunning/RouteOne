@@ -56,6 +56,7 @@ class LearnMove extends GameAction {
     private Move move;
     LearnMove(Move m) { move = m; }
     LearnMove(String s) { move = Move.getMoveByName(s); }
+    public Move getMove() { return move; }
     @Override
     void performAction(Pokemon p) { p.getMoveset().addMove(move); }
 }
@@ -65,6 +66,7 @@ class UnlearnMove extends GameAction {
     private Move move;
     UnlearnMove(Move m) { move = m; }
     UnlearnMove(String s) { move = Move.getMoveByName(s); }
+    public Move getMove() { return move; }
     @Override
     void performAction(Pokemon p) { p.getMoveset().delMove(move); }
 }

@@ -3,19 +3,29 @@
 0x3A1E7 //first rival fight
 L3 RATTATA
 0x39DD7 //lvl9 bug
+learnmove BUBBLE
 0x3A3B5 //brock
 
 //4 ppl at route 3
 0x39DDA
 0x39D99
 0x39DDF
+learnmove WATERGUN
 0x39DE5
 
 
 //stats 
+lm MEGAPUNCH
+um TACKLE
 0x3A29C //mt moon rocket
 evolve WARTORTLE
 0x39F2A //mt moon nerd
+
+//MISTY
+0x39E9D //goldeen
+0x3A3BB //MISTY
+lm BUBBLEBEAM
+um TAILWHIP
 
 0x3A209 //cerulean rival fight (if you are squirtle)
 //NUGGET BRIDGE
@@ -31,14 +41,17 @@ evolve WARTORTLE
 0x39E7C //jrtrainerm
 0x39E2F //lass
 
-//MISTY
-0x39E9D //goldeen
-0x3A3BB //MISTY
-
 //BETWEEN CERULEAN AND VERMILLION
 0x3A2AC //rocket
+
+lm BITE
+um BUBBLE
+
 0x39EA4 //pidgey girl
 0x39E86 //jrtrainerm
+
+lm DIG
+um WATERGUN
 
 //SS ANNE
 0x3A40B //ss anne rival fight (for squirtle)
@@ -60,8 +73,14 @@ evolve WARTORTLE
 //WEST OF LAVENDER (ROUTE 8)
 0x3A0CD //gambler
 
+//shopping~
+lm MEGAKICK
+um BITE
+lm ICEBEAM
+um MEGAPUNCH
+
 //LAVENDER TOWER
-0x3A42B //rival fight (for squirtles)
+0x3A42B -xspc 1 -xacc //rival fight (for squirtles)
 0x3A4CD // (not sure about actual offset for these)
 
 0x3A4CA // gastlies
@@ -74,19 +93,21 @@ evolve WARTORTLE
 rarecandy
 rarecandy
 rarecandy
-//stats
-//ranges
+evolve BLASTOISE
+
+stats
+ranges
 
 //SILPH
-UnlearnMove BUBBLEBEAM
-LearnMove BLIZZARD
 0x3A319 //rocket
-0x3A44F -xspc 3 -xacc //rival silph co (for squirtle)
+lm SURF
+um BUBBLEBEAM
+0x3A44F -xspc 3 -xacc -v 2//rival silph co (for squirtle)
 0x3A355 //rocket
 0x3A286 -xspc 1 //giovanni
 
 //KOGA
-0x3A13A //juggler 
+0x3A13A -xacc //juggler 
 0x3A140 //juggler 
 0x3A3D1 //KOGA
 
@@ -100,6 +121,9 @@ LearnMove BLIZZARD
 0x3A0DB //eggs
 0x3A3C9 //ERIKA
 
+lm BLIZZARD
+um MEGA KICK
+
 //GIOVANNI
 0x3A382 //
 0x3A1DA //douche
@@ -108,9 +132,12 @@ LearnMove BLIZZARD
 //WEST OF VIRIDIAN
 0x3A475 -xitems 0/0/1/1/1 //rival fight (for squirtle)
     
+lm FISSURE
+um DIG
+
 //E4
 0x3A4BB -xspd 1 -xacc //LORELEI
 0x3A3A9 -xacc //BRUNO
 0x3A516 -xspc 1 -xspd 1 -xacc //TROLL (AGATHA)
-0x3A522 -xspc 1 -xspd 1//LANCE
+0x3A522 -xspc 1 -xspd 1 -v ALL//LANCE
 0x3A49F -xspc 1 -xspd 1 -xacc //GARY  OAK
