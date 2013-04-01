@@ -84,22 +84,25 @@ public class Pokemon implements Battleable {
         spc = calcSpcWithIV(ivs.getSpcIV());
     }
     private int calcHPWithIV(int iv) {
-        return (iv + species.getBaseHP() + evCalc(ev_hp) + 50)*level/50 + 10;
+        return calcStatNumerator(iv, species.getBaseHP(), ev_hp)*level/100 + level + 10;
     }
     private int calcAtkWithIV(int iv) {
-        return (iv + species.getBaseAtk() + evCalc(ev_atk))*level/50 + 5;
+        return calcStatNumerator(iv, species.getBaseAtk(), ev_atk)*level/100 + 5;
     }
     private int calcDefWithIV(int iv) {
-        return (iv + species.getBaseDef() + evCalc(ev_def))*level/50 + 5;
+        return calcStatNumerator(iv, species.getBaseDef(), ev_def)*level/100 + 5;
     }
     private int calcSpdWithIV(int iv) {
-        return (iv + species.getBaseSpd() + evCalc(ev_spd))*level/50 + 5;
+        return calcStatNumerator(iv, species.getBaseSpd(), ev_spd)*level/100 + 5;
     }
     private int calcSpcWithIV(int iv) {
-        return (iv + species.getBaseSpc() + evCalc(ev_spc))*level/50 + 5;
+        return calcStatNumerator(iv, species.getBaseSpc(), ev_spc)*level/100 + 5;
     }
     private int evCalc(int ev) {
-        return (Math.min((int) Math.ceil(Math.sqrt(ev)), 255))/8;
+        return (Math.min((int) Math.ceil(Math.sqrt(ev)), 255))/4;
+    }
+    private int calcStatNumerator(int iv, int base, int ev) {
+        return 2*(iv + base) + evCalc(ev);
     }
 
     private void setExpForLevel() {
