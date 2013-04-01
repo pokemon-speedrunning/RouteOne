@@ -84,19 +84,22 @@ public class Pokemon implements Battleable {
         spc = calcSpcWithIV(ivs.getSpcIV());
     }
     private int calcHPWithIV(int iv) {
-        return (iv + species.getBaseHP() + (int) Math.sqrt(ev_hp)/8 + 50)*level/50 + 10;
+        return (iv + species.getBaseHP() + evCalc(ev_hp) + 50)*level/50 + 10;
     }
     private int calcAtkWithIV(int iv) {
-        return (iv + species.getBaseAtk() + (int) Math.sqrt(ev_atk)/8)*level/50 + 5;
+        return (iv + species.getBaseAtk() + evCalc(ev_atk))*level/50 + 5;
     }
     private int calcDefWithIV(int iv) {
-        return (iv + species.getBaseDef() + (int) Math.sqrt(ev_def)/8)*level/50 + 5;
+        return (iv + species.getBaseDef() + evCalc(ev_def))*level/50 + 5;
     }
     private int calcSpdWithIV(int iv) {
-        return (iv + species.getBaseSpd() + (int) Math.sqrt(ev_spd)/8)*level/50 + 5;
+        return (iv + species.getBaseSpd() + evCalc(ev_spd))*level/50 + 5;
     }
     private int calcSpcWithIV(int iv) {
-        return (iv + species.getBaseSpc() + (int) Math.sqrt(ev_spc)/8)*level/50 + 5;
+        return (iv + species.getBaseSpc() + evCalc(ev_spc))*level/50 + 5;
+    }
+    private int evCalc(int ev) {
+        return (Math.min((int) Math.ceil(Math.sqrt(ev)), 255))/8;
     }
 
     private void setExpForLevel() {
@@ -233,10 +236,18 @@ public class Pokemon implements Battleable {
     //gain stat exp from a pokemon of species s
     private void gainStatExp(Species s){
         ev_hp += s.getBaseHP();
+        ev_hp = capEV(ev_hp);
         ev_atk += s.getBaseAtk();
+        ev_atk = capEV(ev_atk);
         ev_def += s.getBaseDef();
+        ev_def = capEV(ev_def);
         ev_spc += s.getBaseSpc();
+        ev_spc = capEV(ev_spc);
         ev_spd += s.getBaseSpd();
+        ev_spd = capEV(ev_spd);
+    }
+    private int capEV(int ev) {
+        return Math.min(ev, 65535);
     }
     
     @Override

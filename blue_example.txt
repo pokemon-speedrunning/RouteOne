@@ -93,10 +93,10 @@ um MEGAPUNCH
 rarecandy
 rarecandy
 rarecandy
-evolve BLASTOISE
-
 stats
 ranges
+evolve BLASTOISE
+
 
 //SILPH
 0x3A319 //rocket
