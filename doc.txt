@@ -1,0 +1,156 @@
+RouteOne, by HRoll
+
+TABLE OF CONTENTS
+1. INTRODUCTION
+2. CONTACT INFO AND ACKNOWLEDGEMENTS
+3. CONFIG FILE
+4. EXAMPLE ROUTE FILES
+5. MAKING A ROUTE FILE
+  5.1 Comments
+  5.2 Enemy Trainers/Pokemon
+    5.2.1 Flags
+  5.3 Your Pokemon
+  5.4 Eating Things
+  5.5 Printing
+6. KNOWN ISSUES
+7. TODOS
+  
+1. INTRODUCTION
+
+RouteOne is a tool used for routing speedrun/race routes for Pokemon games. (As of now, it is only for Generation 1 games, Red/Blue/Yellow.) To use RouteOne, you must enter a route text file, which primarily consists of trainer offsets. (This will be explained in more detail below.)
+
+Given the sequence of actions defined by this text file, which includes battling trainers, battling encounters, learning/unlearning moves, and eating stat-boosting items or rare candies, and your pokemon's IVs/DVs, RouteOne is perfectly able to compute the possible damage ranges of your pokemon's move on any trainer's pokemon. You can print out the specifics of any battle, and investigate the damage you do/take with different stats and stat-boosting effects (e.g. X items).
+
+As a disclaimer, this is meant to only be a *tool* for routing. RouteOne can't do everything. You'll have to play the game yourself at some point. :P (There are also some known issues, which are documented below.)
+
+This program and its code are licensed under the GPL License v 3.0. 
+
+2. CONTACT INFO AND ACKNOWLEDGEMENTS
+
+Feel free to give me questions, comments, suggestions, or bug reports on the SRL irc (irc.speedrunslive.com, my nick is HRoll) or by email at im.hroll@gmail.com.
+
+Many thanks to SpeedRunsLive (SRL) for being an awesome place, and to Mountebank for getting me interested in this game. He also helped me test out this program, and used it actively during its early stages, so you can blame him for any errors. :)
+Check out SRL at http://speedrunslive.com, and check out Mountebank at http://twitch.tv/mountebank !
+Also many thanks to dabomstew for his universal pokemon randomizer (http://pokehacks.dabomstew.com/randomizer/index.php), and for his general sage advice. He also streams at http://twitch.tv/dabomstew !
+
+3. CONFIG FILE
+
+First, you should set the options in config.ini. Make sure the game option is set to red, blue, or yellow, and that you have set the right game.
+Then, set your starting pokemon's species, level, and IVs under [poke].
+Under [files], you'll want to enter the file names of your desired input file and output file destination.
+The options under [util] should generally be set to true, unless you really don't want to know how many X items/rarecandies/stat boosting items you used.
+
+4. EXAMPLE ROUTE FILES
+
+First of all, two example route files are provided under yellow_example.txt, blue_example.txt. These include some reasonably standard variant of strategies for yellow (using nidoranM) and blue (using squirtle), respectively. Looking at them should give a vague idea of how the syntax works.
+
+5. MAKING A ROUTE FILE
+As a note before the actual syntax is given, everything should be case-insensitive.
+
+-5.1 Comments-
+First of all, you can add comments at the end of any line or in a line on its own by using "//". Anything after a "//" will be ignored.
+    Example: `0x3A1E7 //RouteOne will ignore this!`
+
+-5.2 Enemy Trainers/Pokemon-
+Most of your route file will probably consist of the data of trainers/encounters that you fight.
+Of these, most will probably be in the form of a trainer offset. A trainer offset is in the form of a hexadecimal number, e.g. 0x3A1E7. This offset corresponds to a number in the game's memory that stores the data, and provides a unique identifier for that trainer. To indicate that you are fighting a trainer at a certain offset, simply include a line with that offset.
+    Example: `0x3A1E7`
+    [IMPORTANT: Make sure to always have 0x at the front of offsets!]
+    
+You can find a guide to the most relevant offsets at https://docs.google.com/document/d/1Z0j359FmyXDhSDCVtmgCwljGJo009RJhF31sdDE4xAA/pub . However, all of the necessary trainers' offsets are already provided in the example files, and you can make your own route by copying these example routes and moving the trainers around as necessary, adding any extra trainers by following the guide.
+
+If you want to add that you are doing an encounter, you may add this by adding a command of the form `L<level#> <pokemon-name>`.
+    Example: `L3 RATTATA`
+If you want to indicate that this is a trainer's pokemon (which may let you avoid looking up offsets), add a -t or -trainer flag to this line.
+    Example: `L3 RATTATA -t`
+             `L3 RATTATA -trainer //-trainer is the same as -t`
+If you have a knack for symmetry, you can also explicitly identify a wild encounter with a -w or -wild flag.
+    Example: `L3 RATTATA -w //same as not having the -w flag`.
+
+WARNING: Do not put a space in between L and your level number, and do not put a space in a pokemon name. (I'm looking at you, Mr. Mime.)
+WARNING: be sure not to use the -t or -w flags on offsets. That would be bad.
+
+  -5.2.1 Flags-
+  
+You can also add flags to an offset or a wild/trainer pokemon. These flags let you customize your stats or your opponents' stats, and give you the option to print out a summary of the battle. Some flags also have additional arguments. You can use any combination of these flags on any single line.
+
+Listed below are these flags, and example use cases. Unless otherwise indicated, flags that are listed together are equivalent. 
+
+-x, -xitems:
+  -x a/b/c/d: Gives a,b,c,d stages to atk,def,spd,spc, repsectively. Negative values are accepted. Any positive stages will be added to the total xitem count.
+  -x a/b/c/d/e: Same as the above, with an x accuracy if e = 1
+  Examples: `0x3A475 -x 0/0/1/1/1 //give x spd, x spc, x acc`
+
+-y, -yitems:
+  -y a/b/c/d: Gives a,b,c,d stages to atk,def,spd,spc on the *enemy pokemon*, repsectively. Negative values are accepted. 
+  Example: `0x3A3BB -y 0/1/0/0 //MISTY STOP USING X DEFEND PLZ`
+
+-xatk, -xdef, -xspd, -xspc:
+  -xatk a: Gives a stages to atk. Negative values are accepted. A positive stage is added to the relevant xitem count. You should be able to use this with -x, and it should add linearly, but that seems kinda silly.
+  -xdef a, -xspd a, -xspc a: Same thing, but for def, spd, or spc, respectively.
+  NOTE: YOU MUST USE AN ARGUMENT EVEN IF YOU ONLY USE 1
+  Example: `0x3A3BB -xatk 6 -xdef 1 //i need x attacks.`
+  
+-yatk, -ydef, -yspd, -yspc:
+  -yatk a: Gives a stages to atk on the *enemy pokemon*. Negative values are accepted. You should be able to use this with -y, and it should add linearly, but that seems kinda silly.
+  -ydef a, -yspd a, -yspc a: Same thing, but for def, spd, or spc, respectively.
+  NOTE: YOU MUST USE AN ARGUMENT EVEN IF YOU ONLY USE 1
+  Example: `0x3A3BB -xspd 2 //wtf stop using agility`
+  
+-xacc:
+  -xacc: Gives you an x accuracy. NOTE: THIS DOES NOT TAKE AN ARGUMENT.
+  Example: `0x3A4BB -xspd 1 -xacc //the elite four sure is easy`
+
+-v, -verbose:
+  -v <option>: Gives a printout of this battle, whose level of detail depends on <option>. NONE gives no printout. SOME gives your stats/damage ranges (and the opponent's stats/movesets). ALL gives your stats/damage ranges as well as the opponent's.
+  [If you want to be quick about it, you can use 0, 1, 2, in place of NONE, SOME, and ALL, respectively. This is not guaranteed to be supported in later versions, however.]
+  Example: `0x3A4BB -xspd 1 -xacc -v ALL //tell me everything!`
+  
+-5.3 Your Pokemon-
+Unfortunately, you will have to keep bookkeeping on your pokemon, including when it evolves and learns/unlearn moves. RouteOne supports a moveset of more than 4 moves, if you want to test many moves at a time.
+
+e, evolve:
+  e <species>: Evolves your pokemon into the specified species.
+  Example: `evolve WARTORTLE`
+
+lm, learnmove:
+  lm <move>: Adds the specified move to your pokemon's moveset. Does nothing if the move is already in your moveset.
+  Example: `lm ICEPUNCH`
+  NOTE: DO NOT PUT ANY SPACES IN YOUR MOVE NAME
+  
+um, unlearnmove:
+  um <move>: Removes the specified move to your pokemon's moveset. Does nothing if the move isn't in your moveset.
+  Example: `unlearnmove TAILWHIP`
+  NOTE: DO NOT PUT ANY SPACES IN YOUR MOVE NAME
+
+-5.4 Eating Things-
+All of the commands below go into their own line. Unfortunately, you CANNOT specify a number after it to indicate you eat that many. They should be self-explanatory.
+rc, rarecandy:
+hpup:
+iron:
+protein:
+calcium:
+carbos:
+
+Example: `rc //eat a rare candy`
+
+-5.5 Printing-
+You can print out your stats between any battles, or a list of all possible stats you could have at that point, over the range of all IVs.
+stats: prints out all your stats
+ranges: prints out all your possible stats at this level (for different IVs)
+
+Additionally, you can have either of these print your stats AFTER badge boosts (which is more relevant for the single-player mode) by adding the -b flag.
+Examples: `ranges //see my non-boosted stat ranges so i can check stats in-game and compare`
+          `stats -b //i want to see in-battle stats`
+          
+
+6. KNOWN ISSUES
+
+- Some moves don't properly display damage. This includes 1hit moves/fixed damage moves.
+- Multi-hit moves only show the damage per 1 hit.
+- This documentation was written without spell check. Kappa
+
+7. TODOS
+
+- Fix move damage displays for weird moves, like Dragon Rage.
+- Ability to indicate that a battle's EXP is split between some number of pokemon.
