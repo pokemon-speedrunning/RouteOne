@@ -252,6 +252,8 @@ public class Routes {
         GameAction.eatCarbos,
         Battle.makeBattle(0x3A522, new StatModifier(0,0,2,1)), //LANCE
         Battle.makeBattle(0x3A49F, new StatModifier(2,0,1,2)), //GARY MOTHERFUCKIN OAK
+        
+        GameAction.printAllStats,
     };
     
     //new strats
@@ -427,14 +429,12 @@ public class Routes {
         //vaporeon (0)
         //Battle.makeBattle(0x3A531),
         //flareon (1)
-        Battle.makeBattle(0x3A523, new StatModifier(0,0,0,1,true)),
-
+        Battle.makeBattle(0x3A523, new StatModifier(0,0,0,1,true), 2),
     };
     
     public static final GameAction[] randomRoute = {
         new TrainerPoke("SQUIRTLE", 5, new StatModifier(1,0,0,0), new StatModifier(0,-1,0,0), 1),
         new Encounter("WIGGLYTUFF", 2, new StatModifier(), new StatModifier(0,-1,0,0), 1),
-        
         GameAction.printStatRanges,
         GameAction.printAllStats,
     };

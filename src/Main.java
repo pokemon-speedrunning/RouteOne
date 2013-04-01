@@ -1,58 +1,54 @@
+import java.util.List;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import org.ini4j.InvalidFileFormatException;
+import org.ini4j.Wini;
+
+//import org.ini4j.*;
+
 public class Main {
-    public static void main(String[] args) {
-//        for(int i = 0; i <= Constants.numMoves; i++) {
-//            System.out.println(Move.getMove(i));
-//        }
-//        for(int i = 0; i <= Constants.numPokes; i++) {
-//            System.out.println(Species.getSpecies(i).getName());
-//            System.out.println(Learnset.getLearnset(i,true));
-//        }
-//        for(int i = 0; i <= Constants.numPokes; i++) {
-//            Species s = Species.getSpecies(i);
-//            System.out.println(s.getName());
-//            System.out.println(Moveset.defaultMoveset(s, 29, true));
-//        }
-          
-//        Pokemon p1 = new Pokemon(Species.getSpecies(6),50);
-//        Pokemon p2 = new Pokemon(Species.getSpecies(46),100);
-//        StatModifier s1 = new StatModifier();
-//        s1.incrementSpcStage(7);
-//        s1.useXAcc();
-//        //s1.incrementDefStage(-2);
-//        StatModifier s2 = new StatModifier();
-//        System.out.println(DamageCalculator.summary(p1, p2, s1, s2));
-//        System.out.println(p1.getSpecies());
-//        System.out.println(p2.getSpecies());
-//        
-//        System.out.println(Trainer.getTrainer(0x3A1DA).allPokes());
-        //System.out.println(Integer.parseInt("1FF",16));
+    private static StringBuilder output = new StringBuilder();
+    
+    public static void append(String s) {
+        output.append(s);
+    }
+    public static void appendln(String s) {
+        output.append(s + Constants.endl);
+    }
+    
+    public static void main(String[] args) throws InvalidFileFormatException, IOException { 
+        Wini ini = new Wini(new File("config.ini"));
+        //set pokemon
+        String species = ini.get("poke", "species");
+        int level = ini.get("poke", "level", int.class);
+        int atkIV = ini.get("poke", "atkIV", int.class);
+        int defIV = ini.get("poke", "defIV", int.class);
+        int spdIV = ini.get("poke", "spdIV", int.class);
+        int spcIV = ini.get("poke", "spcIV", int.class);
+        //set game
+        String gameName = ini.get("game", "game");
+        if(gameName.equalsIgnoreCase("yellow"))
+            Settings.isRB = false;
+        else
+            Settings.isRB = true;
         
-        //be sure to print summary before displaying
-        IVs god = new IVs(15,15,15,15);
-        IVs dog = new IVs(0,0,10,0);
-        IVs mid = new IVs(9,8,8,8);
-        IVs test = new IVs(15,6,10,9);
-        Pokemon p = null;
-        GameAction[] actions = null;
+        Initialization.init();
         
-        p = new Pokemon(PokemonNames.getSpeciesFromName("dodrio"),5,god,false);
-        actions = Routes.randomRoute;
-        
-//        if(Settings.isRB) {
-//            p = new Pokemon(PokemonNames.getSpeciesFromName("clefairy"),10,dog,false);
-//            actions = Routes.blueSquirtleRoute;
-//        } else {
-//            p = new Pokemon(PokemonNames.getSpeciesFromName("NIDORANM"),6,test,false);
-//            actions = Routes.yellowRoute;
-//        }
-        
-        
-        //Battle.makeBattle(0xZZZZZ, true), //
-        //Battle.makeBattle(0xZZZZZ, new StatModifier(0,0,0,0), true), //
+        IVs ivs = new IVs(atkIV,defIV,spdIV,spcIV);
+        Pokemon p = new Pokemon(PokemonNames.getSpeciesFromName(species),level,ivs,false);
+        List<GameAction> actions = RouteParser.parseFile(ini.get("files","routeFile"));
         
         int[] XItems = {0,0,0,0,0}; //atk,def,spd,spc,acc
         int numBattles = 0;
         int rareCandies = 0;
+        int HPUp = 0;
+        int iron = 0;
+        int protein = 0;
+        int carbos = 0;
+        int calcium = 0;
         for(GameAction a : actions) {        
             a.performAction(p);
             if (a instanceof Battle) {
@@ -65,22 +61,65 @@ public class Main {
                 numBattles++;
             } else if (a == GameAction.eatRareCandy) {
                 rareCandies++;
+            } else if (a == GameAction.eatHPUp){
+                HPUp++;
+            } else if (a == GameAction.eatIron){
+                iron++;
+            } else if (a == GameAction.eatProtein){
+                protein++;
+            } else if (a == GameAction.eatCarbos){
+                carbos++;
+            } else if (a == GameAction.eatCalcium){
+                calcium++;
             }
+        }        
+        
+        if(ini.get("util", "printxitems", boolean.class)) {
+            if(XItems[0] != 0)
+                appendln("X ATTACKS: " + XItems[0]);
+            if(XItems[1] != 0)
+                appendln("X DEFENDS: " + XItems[1]);
+            if(XItems[2] != 0)
+                appendln("X SPEEDS: " + XItems[2]);
+            if(XItems[3] != 0)
+                appendln("X SPECIALS: " + XItems[3]);
+            if(XItems[4] != 0)
+                appendln("X ACCURACYS: " + XItems[4]);
+            int cost = XItems[0] * 500 + XItems[1] * 550 + XItems[2] * 350 + XItems[3] * 350 + XItems[4] * 950;
+            if(cost != 0)
+                appendln("X item cost: " + cost);
         }
         
+        if(ini.get("util", "printrarecandies", boolean.class)) {
+            if(rareCandies != 0)
+                appendln("Total Rare Candies: " + rareCandies);
+        }
+        if(ini.get("util", "printstatboosters", boolean.class)) {
+            if(HPUp != 0) {
+                appendln("HP UP: " + HPUp);
+            }
+            if(iron != 0) {
+                appendln("IRON: " + iron);
+            }
+            if(protein != 0) {
+                appendln("PROTEIN: " + protein);
+            }
+            if(carbos != 0) {
+                appendln("CARBOS: " + carbos);
+            }
+            if(calcium != 0) {
+                appendln("CALCIUM: " + calcium);
+            }
+        }
+        //System.out.println("Total Battles: " + numBattles);
         
-        //System.out.println(p.levelName() + " " + p.statsStr());
         
-        System.out.println("X ATTACKS: " + XItems[0]);
-        System.out.println("X DEFENDS: " + XItems[1]);
-        System.out.println("X SPEEDS: " + XItems[2]);
-        System.out.println("X SPECIALS: " + XItems[3]);
-        System.out.println("X ACCURACYS: " + XItems[4]);
-        int cost = XItems[0] * 500 + XItems[1] * 550 + XItems[2] * 350 + XItems[3] * 350 + XItems[4] * 950;
-        System.out.println("X item cost: " + cost);
+        FileWriter fw = new FileWriter(ini.get("files", "outputFile"));
+        BufferedWriter bw = new BufferedWriter(fw);
+        bw.write(output.toString());
+        bw.close();
         
         
-        System.out.println("Total Battles: " + numBattles);
-        System.out.println("Total Rare Candies: " + rareCandies);
+        
     }
 }

@@ -148,6 +148,9 @@ public class Pokemon implements Battleable {
     public boolean isWild() {
         return wild;
     }
+    public void setWild(boolean isWild) {
+        this.wild = isWild;
+    }
     public int getTotalExp() {
         return totalExp;
     }
@@ -157,16 +160,44 @@ public class Pokemon implements Battleable {
     
     
     public String toString() {
-        String endl = Constants.endl;
-        return levelName() + "" + " EXP Needed: " + expToNextLevel() + "/" + expForLevel() + endl +
-               String.format("\tHP\tATK%s\tDEF%s\tSPD%s\tSPC%s", atkBadge ? "*" : "",
-                       defBadge ? "*" : "", spdBadge ? "*" : "", spcBadge ? "*" : "") + endl +
-               String.format("\t%s\t%s\t%s\t%s\t%s",getHP(),getAtk(),getDef(),getSpd(),getSpc()) + endl +
-               String.format("IV\t%s\t%s\t%s\t%s\t%s", ivs.getHPIV(),ivs.getAtkIV(),
-                             ivs.getDefIV(),ivs.getSpdIV(),ivs.getSpcIV()) + endl +
-               String.format("EV\t%s\t%s\t%s\t%s\t%s", ev_hp,ev_atk,ev_def,ev_spd,ev_spc)
-               + endl + moves.toString();    
+        return statsWithBoost();
     }
+    
+    public String statsWithBoost() {
+        String endl = Constants.endl;
+        StringBuilder sb = new StringBuilder();
+        sb.append(levelName() + " ");
+        sb.append("EXP Needed: " + expToNextLevel() + "/" + expForLevel() + endl);
+        sb.append("Stats WITH badge boosts:" + endl);
+        sb.append(String.format("  %1$7s%2$7s%3$7s%4$7s%5$7s", "HP", atkBadge ? "*ATK" : "ATK",
+                defBadge ? "*DEF" : "DEF", spdBadge ? "*SPD" : "SPD", spcBadge ? "*SPC" : "SPC") + endl);
+        sb.append(String.format("  %1$7s%2$7s%3$7s%4$7s%5$7s",
+                getHP(),getAtk(),getDef(),getSpd(),getSpc()) + endl);
+        sb.append(String.format("IV%1$7s%2$7s%3$7s%4$7s%5$7s", ivs.getHPIV(),ivs.getAtkIV(),
+                ivs.getDefIV(),ivs.getSpdIV(),ivs.getSpcIV()) + endl);
+        sb.append(String.format("EV%1$7s%2$7s%3$7s%4$7s%5$7s",
+                ev_hp,ev_atk,ev_def,ev_spd,ev_spc) + endl);
+        sb.append(moves.toString() + endl);
+        return sb.toString();  
+    }
+    
+    public String statsWithoutBoost() {
+        String endl = Constants.endl;
+        StringBuilder sb = new StringBuilder();
+        sb.append(levelName() + " ");
+        sb.append("EXP Needed: " + expToNextLevel() + "/" + expForLevel() + endl);
+        sb.append("Stats WITHOUT badge boosts:" + endl);
+        sb.append(String.format("  %1$7s%2$7s%3$7s%4$7s%5$7s", "HP","ATK","DEF","SPD","SPC") + endl);
+        sb.append(String.format("  %1$7s%2$7s%3$7s%4$7s%5$7s",
+                getHP(),getTrueAtk(),getTrueDef(),getTrueSpd(),getTrueSpc()) + endl);
+        sb.append(String.format("IV%1$7s%2$7s%3$7s%4$7s%5$7s", ivs.getHPIV(),ivs.getAtkIV(),
+                ivs.getDefIV(),ivs.getSpdIV(),ivs.getSpcIV()) + endl);
+        sb.append(String.format("EV%1$7s%2$7s%3$7s%4$7s%5$7s",
+                ev_hp,ev_atk,ev_def,ev_spd,ev_spc) + endl);
+        sb.append(moves.toString() + endl);
+        return sb.toString();  
+    }
+    
     
     //utility getters
     public String levelName() {
@@ -300,20 +331,31 @@ public class Pokemon implements Battleable {
     }
     
     //a printout of stat ranges given this pokemon's EVs (not IVs)
-    public String statRanges() {
+    public String statRanges(boolean isBoosted) {
         int[] possibleHPs = new int[16];
         int[] possibleAtks = new int[16];
         int[] possibleDefs = new int[16];
         int[] possibleSpds = new int[16];
         int[] possibleSpcs = new int[16];
-        for(int i = 0; i < 16; i++) {
-            possibleHPs[i] = calcHPWithIV(i);
-            possibleAtks[i] = calcAtkWithIV(i);
-            possibleDefs[i] = calcDefWithIV(i);
-            possibleSpds[i] = calcSpdWithIV(i);
-            possibleSpcs[i] = calcSpcWithIV(i);
+        if(isBoosted) {
+            for(int i = 0; i < 16; i++) {
+                possibleHPs[i] = calcHPWithIV(i);
+                possibleAtks[i] = 9 * calcAtkWithIV(i) / 8;
+                possibleDefs[i] = 9 * calcDefWithIV(i) / 8;
+                possibleSpds[i] = 9 * calcSpdWithIV(i) / 8;
+                possibleSpcs[i] = 9 * calcSpcWithIV(i) / 8;
+            } 
+        } else {
+            for(int i = 0; i < 16; i++) {
+                possibleHPs[i] = calcHPWithIV(i);
+                possibleAtks[i] = calcAtkWithIV(i);
+                possibleDefs[i] = calcDefWithIV(i);
+                possibleSpds[i] = calcSpdWithIV(i);
+                possibleSpcs[i] = calcSpcWithIV(i);
+            }
         }
         StringBuilder sb = new StringBuilder(levelName() + Constants.endl);
+        sb.append("Stat ranges " + (isBoosted ? "WITH" : "WITHOUT") + " badge boosts:" + Constants.endl);
         sb.append("IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  " + Constants.endl + 
                   "------------------------------------------------------------------------------------" + Constants.endl);
         sb.append("HP  ");

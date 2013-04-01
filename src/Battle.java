@@ -74,8 +74,21 @@ public class Battle extends GameAction {
         if(Settings.isRB) {
             if (Trainer.getTrainer(0x3A3B5).equals(opponent)) //brock boulder badge
                 p.setAtkBadge(true);
-            else if (Trainer.getTrainer(0x3A3B5).equals(opponent)) //surge thunder badge
+            else if (Trainer.getTrainer(0x3A3C1).equals(opponent)) //surge thunder badge
                 p.setDefBadge(true);
+            else if (Trainer.getTrainer(0x3A3D1).equals(opponent)) //koga soul badge
+                p.setSpdBadge(true);
+            else if (Trainer.getTrainer(0x3A3DB).equals(opponent)) //blaine volcano badge
+                p.setSpcBadge(true);
+        } else {
+            if (Trainer.getTrainer(0x3A454).equals(opponent)) //brock boulder badge
+                p.setAtkBadge(true);
+            else if (Trainer.getTrainer(0x3A460).equals(opponent)) //surge thunder badge
+                p.setDefBadge(true);
+            else if (Trainer.getTrainer(0x3A46C).equals(opponent)) //koga soul badge
+                p.setSpdBadge(true);
+            else if (Trainer.getTrainer(0x3A476).equals(opponent)) //blaine volcano badge
+                p.setSpcBadge(true);
         }
         
         doBattle(p);
@@ -90,7 +103,7 @@ public class Battle extends GameAction {
             opponent.battle(p);
         } else { //is a Trainer
             Trainer t = (Trainer) opponent;
-            if(verbose == ALL || verbose == SOME) System.out.println(t);
+            if(verbose == ALL || verbose == SOME) Main.appendln(t.toString());
             for(Pokemon opps : t) {
                 if(verbose == ALL) printBattle(p, (Pokemon) opps);
                 else if (verbose == SOME) printShortBattle(p, (Pokemon) opps);
@@ -98,19 +111,19 @@ public class Battle extends GameAction {
             }
         }
         if(verbose == ALL || verbose == SOME) {
-            System.out.println(String.format("LVL: %d EXP NEEDED: %d/%d", p.getLevel(),
+            Main.append(String.format("LVL: %d EXP NEEDED: %d/%d", p.getLevel(),
                     p.expToNextLevel(), p.expForLevel()));
         }
     }
     
     //does not actually do the battle, just prints summary
     public void printBattle(Pokemon us, Pokemon them) {
-        System.out.println(DamageCalculator.summary(us, them, mod1, mod2));
+        Main.appendln(DamageCalculator.summary(us, them, mod1, mod2));
     }
     
     //does not actually do the battle, just prints short summary
     public void printShortBattle(Pokemon us, Pokemon them) {
-        System.out.println(DamageCalculator.shortSummary(us, them, mod1, mod2));
+        Main.appendln(DamageCalculator.shortSummary(us, them, mod1, mod2));
     }
 }
 

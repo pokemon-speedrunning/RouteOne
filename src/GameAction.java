@@ -38,12 +38,17 @@ public abstract class GameAction {
     
     //not really a game action, but it's a nice hack?
     public static final GameAction printAllStats = new GameAction() {
-        void performAction(Pokemon p) { System.out.println(p); }
+        void performAction(Pokemon p) { Main.appendln(p.statsWithBoost()); }
+    };
+    public static final GameAction printAllStatsNoBoost = new GameAction() {
+        void performAction(Pokemon p) { Main.appendln(p.statsWithoutBoost()); }
     };
     public static final GameAction printStatRanges = new GameAction() {
-        void performAction(Pokemon p) { System.out.println(p.statRanges()); }
+        void performAction(Pokemon p) { Main.appendln(p.statRanges(true)); }
     };
-    
+    public static final GameAction printStatRangesNoBoost = new GameAction() {
+        void performAction(Pokemon p) { Main.appendln(p.statRanges(false)); }
+    };
 
 }
 

@@ -1,0 +1,116 @@
+//to be used with L5 squirtle
+
+0x3A1E7 //first rival fight
+L3 RATTATA
+0x39DD7 //lvl9 bug
+0x3A3B5 //brock
+
+//4 ppl at route 3
+0x39DDA
+0x39D99
+0x39DDF
+0x39DE5
+
+
+//stats 
+0x3A29C //mt moon rocket
+evolve WARTORTLE
+0x39F2A //mt moon nerd
+
+0x3A209 //cerulean rival fight (if you are squirtle)
+//NUGGET BRIDGE
+0x39DF2 //1: bug catcher
+0x39E27 //2: lass
+0x39DA5 //3: youngster
+0x39E23 //4: lass
+0x39E80 //5: jrtrainerm
+0x3A2B0 //rocket
+
+0x39F63 //elixir hiker
+0x39E2B //lass
+0x39E7C //jrtrainerm
+0x39E2F //lass
+
+//MISTY
+0x39E9D //goldeen
+0x3A3BB //MISTY
+
+//BETWEEN CERULEAN AND VERMILLION
+0x3A2AC //rocket
+0x39EA4 //pidgey girl
+0x39E86 //jrtrainerm
+
+//SS ANNE
+0x3A40B //ss anne rival fight (for squirtle)
+
+//SURGE
+0x3A3C1 //SURGE fight
+
+//EAST OF CERULEAN (ROUTE 9)
+0x39EAC //jrtrainerf
+0x39E07 //bug catcher
+
+//ROCK TUNNEL
+0x39F22 //maniac
+0x39F1A //maniac
+0x39EC2 //jrtrainerf
+0x39F81 //hiker
+0x39EE8 //jrtrainerf
+
+//WEST OF LAVENDER (ROUTE 8)
+0x3A0CD //gambler
+
+//LAVENDER TOWER
+0x3A42B //rival fight (for squirtles)
+0x3A4CD // (not sure about actual offset for these)
+
+0x3A4CA // gastlies
+0x3A4CA //
+
+0x3A2ED //rockets
+0x3A2F2 //
+0x3A2F6 //
+
+rarecandy
+rarecandy
+rarecandy
+//stats
+//ranges
+
+//SILPH
+UnlearnMove BUBBLEBEAM
+LearnMove BLIZZARD
+0x3A319 //rocket
+0x3A44F -xspc 3 -xacc //rival silph co (for squirtle)
+0x3A355 //rocket
+0x3A286 -xspc 1 //giovanni
+
+//KOGA
+0x3A13A //juggler 
+0x3A140 //juggler 
+0x3A3D1 //KOGA
+
+//BLAINE
+0x3A3DB //BLAINE
+    
+//SABRINA
+0x3A3E5 -xacc -xatk 1 //SABRINA
+
+//ERIKA
+0x3A0DB //eggs
+0x3A3C9 //ERIKA
+
+//GIOVANNI
+0x3A382 //
+0x3A1DA //douche
+0x3A290 //GIOVANNI
+    
+//WEST OF VIRIDIAN
+0x3A475 -xitems 0/0/1/1/1 //rival fight (for squirtle)
+    
+//E4
+0x3A4BB -xspd 1 -xacc //LORELEI
+0x3A3A9 -xacc //BRUNO
+0x3A516 -xspc 1 -xspd 1 -xacc //TROLL (AGATHA)
+0x3A522 -xspc 1 -xspd 1//LANCE
+0x3A49F -xspc 1 -xspd 1 -xacc //GARY  OAK

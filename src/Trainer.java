@@ -45,7 +45,7 @@ public class Trainer implements Battleable, Iterable<Pokemon>{
         return sb.toString();
     } 
     
-    private static final HashMap<Integer,Trainer> allTrainers;
+    private static HashMap<Integer,Trainer> allTrainers;
     
     public static Trainer getTrainer(int offset) {
         if(!allTrainers.containsKey(offset))
@@ -54,7 +54,8 @@ public class Trainer implements Battleable, Iterable<Pokemon>{
             return allTrainers.get(offset);
     }
     
-    static {
+    //must be called before any other calls are made
+    public static void initTrainers() {
         allTrainers = new HashMap<Integer,Trainer>();
         
         List<Trainer> trainerList = null;
@@ -69,6 +70,7 @@ public class Trainer implements Battleable, Iterable<Pokemon>{
         
         fixSpecialTrainers();
     }
+    
     //reads trainer_data_(blue|yellow).txt to get trainer data
     private static List<Trainer> getData(String filename) {
         ArrayList<Trainer> trainers = new ArrayList<Trainer>();

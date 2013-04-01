@@ -1,0 +1,332 @@
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.ini4j.jdk14.edu.emory.mathcs.backport.java.util.Arrays;
+
+
+public class RouteParser {
+    public static int lineNum = 0;
+    
+    public static List<GameAction> parseFile(String fileName) {
+        lineNum = 0;
+        ArrayList<GameAction> actions = new ArrayList<GameAction>();
+        
+        BufferedReader in = null;
+        try {
+            in = new BufferedReader(new InputStreamReader(new FileInputStream(fileName)));
+            while(in.ready()) {
+                lineNum++;
+                String wholeLine = in.readLine();
+                String[] lines = wholeLine.split("//"); //remove comments
+                String line = lines[0];
+                GameAction a = null;
+                try {
+                    a = parseLine(line);
+                } catch(Exception e) {
+                    Main.appendln("Error in line " + lineNum);
+                }
+                if (a != null)
+                    actions.add(a);
+                
+            }
+            in.close();
+        } catch (FileNotFoundException e) {
+            Main.appendln("Could not find Route file: `" + fileName + "`");
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        
+        return actions;
+    }
+    
+    //assumes no comments
+    private static GameAction parseLine(String line) throws Exception {
+        String[] tokens = line.split(" ");
+        int n = tokens.length;
+        if (n == 0) return null;
+        
+        String firstToken = tokens[0];
+        //trainer offset
+        if(firstToken.startsWith("0x") || firstToken.startsWith("0X")) {
+            Battleable b = Trainer.getTrainer(Integer.parseInt(firstToken.substring(2),16));
+            if(b == null) {
+                Main.appendln("ERROR ON LINE " + lineNum + ": that offset doesn't exist. Are you sure you're setting the right game?");
+                return null;
+            }
+            String[] flagTokens = (String[]) Arrays.copyOfRange(tokens, 1, n);
+            return addFlagsToBattleable(b, flagTokens);
+        } 
+        //L(num), to indicate pokemon
+        else if(firstToken.matches("[Ll][0-9]+")) {
+            if(n < 2) {
+                Main.appendln("ERROR ON LINE " + lineNum);
+                return null;
+            }
+            int lvl = Integer.parseInt(firstToken.substring(1));
+            String species = tokens[1];
+            Battleable b = new Pokemon(PokemonNames.getSpeciesFromName(species),lvl); //default to wild pokemon
+            String[] flagTokens = (String[]) Arrays.copyOfRange(tokens, 2, n);
+            return addFlagsToBattleable(b, flagTokens);
+        }
+        //evolve
+        else if(firstToken.equalsIgnoreCase("e") || firstToken.equalsIgnoreCase("evolve")) {
+            if(n < 2) {
+                Main.appendln("ERROR ON LINE " + lineNum);
+                return null;
+            }
+            String species = tokens[1];
+            return new Evolve(species);
+        }
+        //learnmove
+        else if(firstToken.equalsIgnoreCase("lm") || firstToken.equalsIgnoreCase("learnmove")) {
+            if(n < 2) {
+                Main.appendln("ERROR ON LINE " + lineNum);
+                return null;
+            }
+            String move = tokens[1];
+            return new LearnMove(move);
+        }
+        //unlearnmove
+        else if(firstToken.equalsIgnoreCase("um") || firstToken.equalsIgnoreCase("unlearnmove")) {
+            if(n < 2) {
+                Main.appendln("ERROR ON LINE " + lineNum);
+                return null;
+            }
+            String move = tokens[1];
+            return new UnlearnMove(move);
+        }
+        //candies, etc
+        else if(firstToken.equalsIgnoreCase("rc") || firstToken.equalsIgnoreCase("rarecandy")) {
+            return GameAction.eatRareCandy;
+        }
+        else if(firstToken.equalsIgnoreCase("hpup")) {
+            return GameAction.eatHPUp;
+        }
+        else if(firstToken.equalsIgnoreCase("iron")) {
+            return GameAction.eatIron;
+        }
+        else if(firstToken.equalsIgnoreCase("protein")) {
+            return GameAction.eatProtein;
+        }
+        else if(firstToken.equalsIgnoreCase("calcium")) {
+            return GameAction.eatCalcium;
+        }
+        else if(firstToken.equalsIgnoreCase("carbos")) {
+            return GameAction.eatCarbos;
+        }
+        //printing commands
+        else if(firstToken.equalsIgnoreCase("stats")) {
+            if(n == 1) {
+                return GameAction.printAllStatsNoBoost;
+            } else if(tokens[1].equalsIgnoreCase("-b")) {
+                return GameAction.printAllStats;
+            } else {
+                return GameAction.printAllStatsNoBoost;
+            }
+        }
+        else if(firstToken.equalsIgnoreCase("ranges")) {
+            if(n == 1) {
+                return GameAction.printStatRangesNoBoost;
+            } else if(tokens[1].equalsIgnoreCase("-b")) {
+                return GameAction.printStatRanges;
+            } else {
+                return GameAction.printStatRangesNoBoost;
+            }
+        }
+        
+        return null;
+    }
+    
+    enum NextFlag {
+        ANY_FLAG, XITEMS, YITEMS, XATK, YATK,
+        XDEF, YDEF, XSPD, YSPD, XSPC, YSPC,
+        XACC, VERBOSE,
+    }
+    
+    private static GameAction addFlagsToBattleable(Battleable b, String[] flagTokens) throws Exception {
+        NextFlag nf = NextFlag.ANY_FLAG;
+        StatModifier sm1 = new StatModifier();
+        StatModifier sm2 = new StatModifier();
+        int verbose = 0;
+        
+        for(String s : flagTokens) {
+            //we're looking for a flag
+            if (nf == NextFlag.ANY_FLAG) {
+                //set this pokemon to wild
+                if(s.equalsIgnoreCase("-w") || s.equalsIgnoreCase("-wild")) {
+                    if(b instanceof Trainer) {
+                        Main.appendln("ERROR ON LINE " + lineNum);
+                        return null;
+                        //can't use -wild or -trainer flag on trainers
+                    }
+                    ((Pokemon) b).setWild(true);
+                    nf = NextFlag.ANY_FLAG;
+                    continue;
+                }
+                //set this pokemon to trainer
+                else if(s.equalsIgnoreCase("-t") || s.equalsIgnoreCase("-trainer")) {
+                    if(b instanceof Trainer) {
+                        Main.appendln("ERROR ON LINE " + lineNum);
+                        return null;
+                        //can't use -wild or -trainer flag on trainers
+                    }
+                    ((Pokemon) b).setWild(false);
+                    nf = NextFlag.ANY_FLAG;
+                    continue;
+                }
+                //xitems (sm1)
+                else if(s.equalsIgnoreCase("-x") || s.equalsIgnoreCase("-xitems")) {
+                    nf = NextFlag.XITEMS;
+                    continue;
+                }
+                //yitems (sm2)
+                else if(s.equalsIgnoreCase("-y") || s.equalsIgnoreCase("-yitems")) {
+                    nf = NextFlag.YITEMS;
+                    continue;
+                }
+                //all the x items (and y items)
+                else if(s.equalsIgnoreCase("-xatk")) {
+                    nf = NextFlag.XATK;
+                    continue;
+                }
+                else if(s.equalsIgnoreCase("-yatk")) {
+                    nf = NextFlag.YATK;
+                    continue;
+                }
+                else if(s.equalsIgnoreCase("-xdef")) {
+                    nf = NextFlag.XDEF;
+                    continue;
+                }
+                else if(s.equalsIgnoreCase("-ydef")) {
+                    nf = NextFlag.YDEF;
+                    continue;
+                }
+                else if(s.equalsIgnoreCase("-xspd")) {
+                    nf = NextFlag.XSPD;
+                    continue;
+                }
+                else if(s.equalsIgnoreCase("-yspd")) {
+                    nf = NextFlag.YSPD;
+                    continue;
+                }
+                else if(s.equalsIgnoreCase("-xspc")) {
+                    nf = NextFlag.XSPC;
+                    continue;
+                }
+                else if(s.equalsIgnoreCase("-yspc")) {
+                    nf = NextFlag.YSPC;
+                    continue;
+                }
+                //xacc
+                else if(s.equalsIgnoreCase("-xacc")) {
+                    sm1.useXAcc();
+                    nf = NextFlag.ANY_FLAG;
+                    continue;
+                }
+                //verbose
+                else if(s.equalsIgnoreCase("-v") || s.equalsIgnoreCase("-verbose")) {
+                    nf = NextFlag.VERBOSE;
+                    continue;
+                }
+            }
+            //-x flag
+            else if(nf == NextFlag.XITEMS) {
+                String[] nums = s.split("/");
+                if(nums.length != 4 && nums.length != 5) {
+                    Main.appendln("ERROR ON LINE " + lineNum);
+                    return null;
+                }
+                sm1.incrementAtkStage(Integer.parseInt(nums[0]));
+                sm1.incrementDefStage(Integer.parseInt(nums[1]));
+                sm1.incrementSpdStage(Integer.parseInt(nums[2]));
+                sm1.incrementSpcStage(Integer.parseInt(nums[3]));
+                if(nums.length == 5) {
+                    if(Integer.parseInt(nums[4]) != 0) {
+                        sm1.useXAcc();
+                    }
+                }
+                nf = NextFlag.ANY_FLAG;
+                continue;
+            }
+            //-y flag
+            else if(nf == NextFlag.YITEMS) {
+                String[] nums = s.split("/");
+                if(nums.length != 4 && nums.length != 5) {
+                    Main.appendln("ERROR ON LINE " + lineNum);
+                    return null;
+                }
+                sm2.incrementAtkStage(Integer.parseInt(nums[0]));
+                sm2.incrementDefStage(Integer.parseInt(nums[1]));
+                sm2.incrementSpdStage(Integer.parseInt(nums[2]));
+                sm2.incrementSpcStage(Integer.parseInt(nums[3]));
+                nf = NextFlag.ANY_FLAG;
+                continue;
+                //ignore y accuracy
+            }
+            //all xitem and yitem flags
+            else if(nf == NextFlag.XATK){
+                sm1.incrementAtkStage(Integer.parseInt(s));
+                nf = NextFlag.ANY_FLAG;
+                continue;
+            }
+            else if(nf == NextFlag.YATK){
+                sm2.incrementAtkStage(Integer.parseInt(s));
+                nf = NextFlag.ANY_FLAG;
+                continue;
+            }
+            else if(nf == NextFlag.XDEF){
+                sm1.incrementDefStage(Integer.parseInt(s));
+                nf = NextFlag.ANY_FLAG;
+                continue;
+            }
+            else if(nf == NextFlag.YDEF){
+                sm2.incrementDefStage(Integer.parseInt(s));
+                nf = NextFlag.ANY_FLAG;
+                continue;
+            }
+            else if(nf == NextFlag.XSPD){
+                sm1.incrementSpdStage(Integer.parseInt(s));
+                nf = NextFlag.ANY_FLAG;
+                continue;
+            }
+            else if(nf == NextFlag.YSPD){
+                sm2.incrementSpdStage(Integer.parseInt(s));
+                nf = NextFlag.ANY_FLAG;
+                continue;
+            }
+            else if(nf == NextFlag.XSPC){
+                sm1.incrementSpcStage(Integer.parseInt(s));
+                nf = NextFlag.ANY_FLAG;
+                continue;
+            }
+            else if(nf == NextFlag.YSPC){
+                sm2.incrementSpcStage(Integer.parseInt(s));
+                nf = NextFlag.ANY_FLAG;
+                continue;
+            }
+            //verbose
+            else if(nf == NextFlag.VERBOSE){
+                if(s.matches("[0-9]+")) {
+                    verbose = Integer.parseInt(s);
+                } else if(s.equalsIgnoreCase("NONE")) {
+                    verbose = Battle.NONE;
+                } else if(s.equalsIgnoreCase("SOME")) {
+                    verbose = Battle.SOME;
+                } else if(s.equalsIgnoreCase("ALL")) {
+                    verbose = Battle.ALL;
+                }
+                nf = NextFlag.ANY_FLAG;
+                continue;
+            }
+        }
+         return new Battle(b, sm1, sm2, verbose);
+    }
+}
+
+
