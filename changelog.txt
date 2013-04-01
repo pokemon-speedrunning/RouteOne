@@ -1,5 +1,9 @@
 Changelog:
 
+v 1.02:
+ - Fixed some minor stat calculation rounding inconsistencies.
+ - Slight correction to blue example route file.
+ 
 v 1.01:
  - Bad pokemon names and move names should no longer silently fail.
  - Fixed example routes.

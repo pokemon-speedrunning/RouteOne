@@ -1,4 +1,4 @@
-RouteOne v1.01, by HRoll
+RouteOne v1.02, by HRoll
 
 TABLE OF CONTENTS
 1. INTRODUCTION
@@ -153,5 +153,5 @@ Examples: `ranges //see my non-boosted stat ranges so i can check stats in-game 
 
 - Fix move damage displays for weird moves, like Dragon Rage.
 - Add ability to indicate that a battle's EXP is split between some number of pokemon.
-- Add ability to Preserve move slot orders.
+- Add ability to preserve move slot orders.
 - Add ability to print strings into output.
