@@ -1,8 +1,9 @@
 Changelog:
 
-v 1.03:
+v 1.03b:
  - Added command line option for specifying alternate config file, called by `java -jar <jar filename> <config filename>`.
  - Fixed bug where stats were not being recalculated immediately after an evolution.
+ - Quick hack to make explosion and selfdestruct approximately halve opponent defense.
 
 v 1.02:
  - Fixed some minor stat calculation rounding inconsistencies.
