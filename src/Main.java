@@ -20,7 +20,8 @@ public class Main {
     }
     
     public static void main(String[] args) throws InvalidFileFormatException, IOException { 
-        Wini ini = new Wini(new File("config.ini"));
+        String fileName = (args.length > 0) ? args[0] : "config.ini";
+        Wini ini = new Wini(new File(fileName));
         //set pokemon
         String species = ini.get("poke", "species");
         int level = ini.get("poke", "level", int.class);

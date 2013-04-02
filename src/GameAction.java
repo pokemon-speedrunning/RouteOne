@@ -76,5 +76,7 @@ class Evolve extends GameAction {
     Evolve(Species s) { target = s; }
     Evolve(String s) { target = PokemonNames.getSpeciesFromName(s); }
     @Override
-    void performAction(Pokemon p) { p.evolve(target); }
+    void performAction(Pokemon p) {
+        p.evolve(target);
+        p.calculateStats();}
 }

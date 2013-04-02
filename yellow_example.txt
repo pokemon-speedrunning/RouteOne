@@ -139,9 +139,9 @@ lm ICEBEAM
 
 rarecandy
 rarecandy
+rarecandy
 Carbos
 Carbos
-//stats
 //blaine
 0x3A476 -xspd 1 -xacc //BLAINE
 
@@ -156,11 +156,12 @@ Carbos
 //flareon (1)
 0x3A4F9 -xspd 1 -xacc 
 
+stats
 //e4
-0x3A53F -xspd 1 -xacc 
-0x3A448 -xacc 
-0x3A59A -xspd 1
-0x3A5A6 -xspd 1 -xspc 1 -xacc 
+0x3A53F -xspd 1 -xacc
+0x3A448 -xacc
+0x3A59A -xspd 1 -v 2
+0x3A5A6 -xspd 1 -xspc 1 -xacc -v 2
 
 //e4 gary
 //vaporeon (0)

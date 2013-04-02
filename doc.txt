@@ -1,4 +1,4 @@
-RouteOne v1.02, by HRoll
+RouteOne v1.03, by HRoll
 
 TABLE OF CONTENTS
 1. INTRODUCTION
@@ -39,6 +39,8 @@ First, you should set the options in config.ini. Make sure the game option is se
 Then, set your starting pokemon's species, level, and IVs under [poke].
 Under [files], you'll want to enter the file names of your desired input file and output file destination.
 The options under [util] should generally be set to true, unless you really don't want to know how many X items/rarecandies/stat boosting items you used.
+
+[More advanced: to use more than one config file, you can use the command line option `java -jar <routeone filename> <config filename>`.]
 
 4. EXAMPLE ROUTE FILES
 First of all, two example route files are provided under yellow_example.txt, blue_example.txt. These include some reasonably standard variant of strategies for yellow (using nidoranM) and blue (using squirtle), respectively. Looking at them should give a vague idea of how the syntax works.

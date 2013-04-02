@@ -76,7 +76,7 @@ public class Pokemon implements Battleable {
     
     //call this to update your stats
     //automatically called on level ups/rare candies, but not just from gaining stat EV
-    private void calculateStats() {
+    public void calculateStats() {
         hp = calcHPWithIV(ivs.getHPIV());
         atk = calcAtkWithIV(ivs.getAtkIV());
         def = calcDefWithIV(ivs.getDefIV());
