@@ -1,5 +1,8 @@
 Changelog:
 
+v 1.03c:
+ - Changed crit damage to be based off of stats WITHOUT badge boost.
+ 
 v 1.03b:
  - Added command line option for specifying alternate config file, called by `java -jar <jar filename> <config filename>`.
  - Fixed bug where stats were not being recalculated immediately after an evolution.

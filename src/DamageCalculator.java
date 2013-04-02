@@ -11,13 +11,13 @@ public class DamageCalculator {
             return 0;
         }
         //stat modifiers
-        int aa_orig = attacker.getAtk();
+        int aa_orig = attacker.getTrueAtk();
         int atk_atk = atkMod.modAtk(attacker);
-        int dd_orig = defender.getDef();
+        int dd_orig = defender.getTrueDef();
         int def_def = defMod.modDef(defender);
-        int as_orig = attacker.getSpc();
+        int as_orig = attacker.getTrueSpc();
         int atk_spc = atkMod.modSpc(attacker);
-        int ds_orig = defender.getSpc();
+        int ds_orig = defender.getTrueSpc();
         int def_spc = defMod.modSpc(defender);
         
         boolean STAB = attack.getType() == attacker.getSpecies().getType1() || 
