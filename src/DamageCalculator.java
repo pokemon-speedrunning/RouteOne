@@ -2,10 +2,17 @@
 public class DamageCalculator {
     private static int MIN_RANGE = 217;
     private static int MAX_RANGE = 255;
-    //min is true for calculating min damage, false for max
+    //rangeNum should range from 217 to 255 
     //crit indicates if there is a crit or not
     private static int damage(Move attack, Pokemon attacker, Pokemon defender,
-            StatModifier atkMod, StatModifier defMod, boolean min, boolean crit) {
+            StatModifier atkMod, StatModifier defMod, int rangeNum, boolean crit) {
+        if (rangeNum < MIN_RANGE) {
+            rangeNum = MIN_RANGE;
+        }
+        if (rangeNum > MAX_RANGE) {
+            rangeNum = MAX_RANGE;
+        }
+        
         if(attack.getPower() <= 0) {
             //TODO: special cases
             return 0;
@@ -28,29 +35,29 @@ public class DamageCalculator {
         if(Type.isPhysicalType(attack.getType())) {
             return (int) (((int)((attacker.getLevel() * 0.4 * (crit ? 2 : 1)) + 2) * (crit ? aa_orig : atk_atk) * 
                    attack.getPower() / 50 / (crit ? dd_orig : def_def) + 2) *
-                   (STAB ? 1.5 : 1) * effectiveMult) * (min ? MIN_RANGE : MAX_RANGE) / 255;                   
+                   (STAB ? 1.5 : 1) * effectiveMult) * rangeNum / 255;                   
         } else {
             return (int) (((int)((attacker.getLevel() * 0.4 * (crit ? 2 : 1)) + 2) * (crit ? as_orig : atk_spc) * 
                    attack.getPower() / 50 / (crit ? ds_orig : def_spc) + 2) *
-                   (STAB ? 1.5 : 1) * effectiveMult) * (min ? MIN_RANGE : MAX_RANGE) / 255;              
+                   (STAB ? 1.5 : 1) * effectiveMult) * rangeNum / 255;              
         }
             
     }
     public static int minDamage(Move attack, Pokemon attacker, Pokemon defender,
             StatModifier atkMod, StatModifier defMod) {
-        return damage(attack, attacker, defender, atkMod, defMod, true, false);
+        return damage(attack, attacker, defender, atkMod, defMod, MIN_RANGE, false);
     }
     public static int maxDamage(Move attack, Pokemon attacker, Pokemon defender,
             StatModifier atkMod, StatModifier defMod) {
-        return damage(attack, attacker, defender, atkMod, defMod, false, false);
+        return damage(attack, attacker, defender, atkMod, defMod, MAX_RANGE, false);
     }
     public static int minCritDamage(Move attack, Pokemon attacker, Pokemon defender,
             StatModifier atkMod, StatModifier defMod) {
-        return damage(attack, attacker, defender, atkMod, defMod, true, true);
+        return damage(attack, attacker, defender, atkMod, defMod, MIN_RANGE, true);
     }
     public static int maxCritDamage(Move attack, Pokemon attacker, Pokemon defender,
             StatModifier atkMod, StatModifier defMod) {
-        return damage(attack, attacker, defender, atkMod, defMod, false, true);
+        return damage(attack, attacker, defender, atkMod, defMod, MAX_RANGE, true);
     }
     
     //printout of move damages between the two pokemon
@@ -110,13 +117,25 @@ public class DamageCalculator {
             sb.append(String.format("%d-%d %.02f-%.02f",minDmg,maxDmg,minPct,maxPct));
             sb.append("%\t(crit: ");
             //do it again, for crits
-            minDmg = minCritDamage(m, p1, p2, mod1, mod2);
-            maxDmg = maxCritDamage(m, p1, p2, mod1, mod2);
+            int critMinDmg = minCritDamage(m, p1, p2, mod1, mod2);
+            int critMaxDmg = maxCritDamage(m, p1, p2, mod1, mod2);
             
-            minPct = 100.0 * minDmg / enemyHP;
-            maxPct = 100.0 * maxDmg / enemyHP;
-            sb.append(String.format("%d-%d %.02f-%.02f",minDmg,maxDmg,minPct,maxPct));
+            double critMinPct = 100.0 * critMinDmg / enemyHP;
+            double critMaxPct = 100.0 * critMaxDmg / enemyHP;
+            sb.append(String.format("%d-%d %.02f-%.02f",critMinDmg,critMaxDmg,critMinPct,critMaxPct));
             sb.append("%)" + endl);
+            
+            int oppHP = p2.getHP();
+            //test if noncrits can kill in 1shot
+            if(maxDmg >= oppHP && minDmg < oppHP) {
+                double oneShotPct = oneShotPercentage(m, p1, p2, mod1, mod2, false);
+                sb.append(String.format("\t(One shot prob.: %.02f%%)",oneShotPct) + endl);
+            }
+            //test if crits can kill in 1shot
+            if(critMaxDmg >= oppHP && critMinDmg < oppHP) {
+                double oneShotPct = oneShotPercentage(m, p1, p2, mod1, mod2, true);
+                sb.append(String.format("\t(Crit one shot prob.: %.02f%%)",oneShotPct) + endl);
+            }
             
         }
         
@@ -148,5 +167,15 @@ public class DamageCalculator {
             
         sb.append(" " + p2.getMoveset().toString() + endl);
         return sb.toString();
+    }
+    
+    private static double oneShotPercentage(Move attack, Pokemon attacker, Pokemon defender,
+            StatModifier atkMod, StatModifier defMod, boolean crit) {
+        //iterate until damage is big enough
+        int rangeNum = MIN_RANGE;
+        while(damage(attack, attacker, defender, atkMod, defMod, rangeNum, crit) < defender.getHP()) {
+            rangeNum++;
+        }
+        return 100.0 * (MAX_RANGE - rangeNum + 1) / (MAX_RANGE - MIN_RANGE + 1);
     }
 }
