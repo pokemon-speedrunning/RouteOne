@@ -161,14 +161,12 @@ public class RouteParser {
     enum NextFlag {
         ANY_FLAG, XITEMS, YITEMS, XATK, YATK,
         XDEF, YDEF, XSPD, YSPD, XSPC, YSPC,
-        XACC, VERBOSE,
+        XACC, VERBOSE, SXP, BBS,
     }
     
     private static GameAction addFlagsToBattleable(Battleable b, String[] flagTokens) throws Exception {
         NextFlag nf = NextFlag.ANY_FLAG;
-        StatModifier sm1 = new StatModifier();
-        StatModifier sm2 = new StatModifier();
-        int verbose = 0;
+        BattleOptions options = new BattleOptions();
         
         for(String s : flagTokens) {
             //we're looking for a flag
@@ -240,13 +238,34 @@ public class RouteParser {
                 }
                 //xacc
                 else if(s.equalsIgnoreCase("-xacc")) {
-                    sm1.useXAcc();
+                    options.getMod1().useXAcc();
                     nf = NextFlag.ANY_FLAG;
                     continue;
                 }
                 //verbose
                 else if(s.equalsIgnoreCase("-v") || s.equalsIgnoreCase("-verbose")) {
                     nf = NextFlag.VERBOSE;
+                    continue;
+                }
+                //split exp
+                else if(s.equalsIgnoreCase("-sxp")) {
+                    nf = NextFlag.SXP;
+                    continue;
+                }
+                //print stat ranges if level
+                else if(s.equalsIgnoreCase("-lvranges")) {
+                    options.setPrintSRsOnLvl(true);
+                    nf = NextFlag.ANY_FLAG;
+                    continue;
+                }
+                else if(s.equalsIgnoreCase("-lvrangesb")) {
+                    options.setPrintSRsBoostOnLvl(true);
+                    nf = NextFlag.ANY_FLAG;
+                    continue;
+                }
+                //badge boosts
+                else if(s.equalsIgnoreCase("-bbs")) {
+                    nf = NextFlag.BBS;
                     continue;
                 }
             }
@@ -257,13 +276,13 @@ public class RouteParser {
                     Main.appendln("ERROR ON LINE " + lineNum);
                     return null;
                 }
-                sm1.incrementAtkStage(Integer.parseInt(nums[0]));
-                sm1.incrementDefStage(Integer.parseInt(nums[1]));
-                sm1.incrementSpdStage(Integer.parseInt(nums[2]));
-                sm1.incrementSpcStage(Integer.parseInt(nums[3]));
+                options.getMod1().incrementAtkStage(Integer.parseInt(nums[0]));
+                options.getMod1().incrementDefStage(Integer.parseInt(nums[1]));
+                options.getMod1().incrementSpdStage(Integer.parseInt(nums[2]));
+                options.getMod1().incrementSpcStage(Integer.parseInt(nums[3]));
                 if(nums.length == 5) {
                     if(Integer.parseInt(nums[4]) != 0) {
-                        sm1.useXAcc();
+                        options.getMod1().useXAcc();
                     }
                 }
                 nf = NextFlag.ANY_FLAG;
@@ -276,71 +295,95 @@ public class RouteParser {
                     Main.appendln("ERROR ON LINE " + lineNum);
                     return null;
                 }
-                sm2.incrementAtkStage(Integer.parseInt(nums[0]));
-                sm2.incrementDefStage(Integer.parseInt(nums[1]));
-                sm2.incrementSpdStage(Integer.parseInt(nums[2]));
-                sm2.incrementSpcStage(Integer.parseInt(nums[3]));
+                options.getMod2().incrementAtkStage(Integer.parseInt(nums[0]));
+                options.getMod2().incrementDefStage(Integer.parseInt(nums[1]));
+                options.getMod2().incrementSpdStage(Integer.parseInt(nums[2]));
+                options.getMod2().incrementSpcStage(Integer.parseInt(nums[3]));
                 nf = NextFlag.ANY_FLAG;
                 continue;
                 //ignore y accuracy
             }
             //all xitem and yitem flags
             else if(nf == NextFlag.XATK){
-                sm1.incrementAtkStage(Integer.parseInt(s));
+                options.getMod1().incrementAtkStage(Integer.parseInt(s));
                 nf = NextFlag.ANY_FLAG;
                 continue;
             }
             else if(nf == NextFlag.YATK){
-                sm2.incrementAtkStage(Integer.parseInt(s));
+                options.getMod2().incrementAtkStage(Integer.parseInt(s));
                 nf = NextFlag.ANY_FLAG;
                 continue;
             }
             else if(nf == NextFlag.XDEF){
-                sm1.incrementDefStage(Integer.parseInt(s));
+                options.getMod1().incrementDefStage(Integer.parseInt(s));
                 nf = NextFlag.ANY_FLAG;
                 continue;
             }
             else if(nf == NextFlag.YDEF){
-                sm2.incrementDefStage(Integer.parseInt(s));
+                options.getMod2().incrementDefStage(Integer.parseInt(s));
                 nf = NextFlag.ANY_FLAG;
                 continue;
             }
             else if(nf == NextFlag.XSPD){
-                sm1.incrementSpdStage(Integer.parseInt(s));
+                options.getMod1().incrementSpdStage(Integer.parseInt(s));
                 nf = NextFlag.ANY_FLAG;
                 continue;
             }
             else if(nf == NextFlag.YSPD){
-                sm2.incrementSpdStage(Integer.parseInt(s));
+                options.getMod2().incrementSpdStage(Integer.parseInt(s));
                 nf = NextFlag.ANY_FLAG;
                 continue;
             }
             else if(nf == NextFlag.XSPC){
-                sm1.incrementSpcStage(Integer.parseInt(s));
+                options.getMod1().incrementSpcStage(Integer.parseInt(s));
                 nf = NextFlag.ANY_FLAG;
                 continue;
             }
             else if(nf == NextFlag.YSPC){
-                sm2.incrementSpcStage(Integer.parseInt(s));
+                options.getMod2().incrementSpcStage(Integer.parseInt(s));
                 nf = NextFlag.ANY_FLAG;
                 continue;
             }
             //verbose
             else if(nf == NextFlag.VERBOSE){
                 if(s.matches("[0-9]+")) {
-                    verbose = Integer.parseInt(s);
+                    options.setVerbose(Integer.parseInt(s));
                 } else if(s.equalsIgnoreCase("NONE")) {
-                    verbose = Battle.NONE;
+                    options.setVerbose(BattleOptions.NONE);
                 } else if(s.equalsIgnoreCase("SOME")) {
-                    verbose = Battle.SOME;
+                    options.setVerbose(BattleOptions.SOME);
                 } else if(s.equalsIgnoreCase("ALL")) {
-                    verbose = Battle.ALL;
+                    options.setVerbose(BattleOptions.ALL);
                 }
                 nf = NextFlag.ANY_FLAG;
                 continue;
             }
+            //sxp
+            else if(nf == NextFlag.SXP){
+                options.setParticipants(Integer.parseInt(s));
+                nf = NextFlag.ANY_FLAG;
+                continue;
+            }
+            //badge boosts
+            else if(nf == NextFlag.BBS){
+                String[] nums = s.split("/");
+                if(nums.length != 4) {
+                    Main.appendln("ERROR ON LINE " + lineNum);
+                    return null;
+                }
+                int atkBB = Integer.parseInt(nums[0]);
+                int defBB = Integer.parseInt(nums[1]);
+                int spdBB = Integer.parseInt(nums[2]);
+                int spcBB = Integer.parseInt(nums[3]);
+                options.getMod1().setBadgeBoosts(atkBB, defBB, spdBB, spcBB);
+                nf = NextFlag.ANY_FLAG;
+                continue;
+            }
         }
-         return new Battle(b, sm1, sm2, verbose);
+        if (nf != NextFlag.ANY_FLAG) {
+            //TODO: error check
+        }
+         return new Battle(b, options);
     }
 }
 

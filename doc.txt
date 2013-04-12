@@ -1,4 +1,4 @@
-RouteOne v1.03c, by HRoll
+RouteOne v1.04, by HRoll
 
 TABLE OF CONTENTS
 1. INTRODUCTION
@@ -106,6 +106,19 @@ Listed below are these flags, and example use cases. Unless otherwise indicated,
   -v <option>: Gives a printout of this battle, whose level of detail depends on <option>. NONE gives no printout. SOME gives your stats/damage ranges (and the opponent's stats/movesets). ALL gives your stats/damage ranges as well as the opponent's.
   [If you want to be quick about it, you can use 0, 1, 2, in place of NONE, SOME, and ALL, respectively. This is not guaranteed to be supported in later versions, however.]
   Example: `0x3A4BB -xspd 1 -xacc -v ALL //tell me everything!`
+  
+-sxp:
+  -sxp <num>: Gives your pokemon exp this battle as if you split the exp between <num> pokemon. (Short for "split xp")
+  Example: `0x3A4BB -sxp 2`
+  
+-lvranges:
+  -lvrages: Prints out your stat ranges whenever you level up during this battle. Applies on trainers only.
+
+-lvrangesb:
+  -lvragesb: Prints out your stat ranges, with badge boosts, whenever you level up during this battle. Applies on trainers only.
+  
+-bbs:
+  -bbs a/b/c/d: Applies additional badge boosts to atk, def, spd, spc, (at amounts a,b,c,d). Only use this if you know what it means.
   
 -5.3 Your Pokemon-
 Unfortunately, you will have to keep bookkeeping on your pokemon, including when it evolves and learns/unlearn moves. RouteOne supports a moveset of more than 4 moves, if you want to test many moves at a time.

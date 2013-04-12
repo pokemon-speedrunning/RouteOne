@@ -9,6 +9,10 @@ public class StatModifier {
     private int accuracy = 0;
     private int evasion = 0;
     private boolean usedxacc = false;
+    private int atkBB = 0;
+    private int defBB = 0;
+    private int spdBB = 0;
+    private int spcBB = 0;
     
     public StatModifier() {
     }
@@ -57,6 +61,24 @@ public class StatModifier {
             return (double) 2 / (2-stage);
     }
     
+    public void setBadgeBoosts(int atkBB, int defBB, int spdBB, int spcBB) {
+        this.atkBB = atkBB;
+        this.defBB = defBB;
+        this.spdBB = spdBB;
+        this.spcBB = spcBB;
+    }
+    public int getAtkBB() {
+        return atkBB;
+    }
+    public int getDefBB() {
+        return defBB;
+    }
+    public int getSpdBB() {
+        return spdBB;
+    }
+    public int getSpcBB() {
+        return spcBB;
+    }
     
     public int getAccuracyStage() {
         return accuracy;
@@ -163,26 +185,66 @@ public class StatModifier {
     }
     
     public String summary() {
-        return String.format("+[%s/%s/%s/%s]%s",atk,def,spd,spc,(usedxacc ? " +X ACC" : ""));
+        if(hasMods()) {
+            if(hasBBs()) {
+                return String.format("+[%s/%s/%s/%s]%s +<%s/%s/%s/%s>",atk,def,spd,spc,(usedxacc ? " +X ACC" : ""),atkBB,defBB,spdBB,spcBB);
+            } else {
+                return String.format("+[%s/%s/%s/%s]%s",atk,def,spd,spc,(usedxacc ? " +X ACC" : ""));
+            }
+        } else {
+            if(hasBBs()) {
+                return String.format("+<%s/%s/%s/%s>",atkBB,defBB,spdBB,spcBB);
+            } else {
+                return "";
+            }
+        }
+        
     }
     
     public int modAtk(Pokemon p) {
-        return Math.max((int) (p.getAtk() * getAtkMultiplier()),1);
+        int a = Math.max((int) (p.getTrueAtk() * getAtkMultiplier()),1);
+        if(p.isAtkBadge()) {
+            for(int i = 1; i <= atkBB+1; i++) {
+                a = 9 * a / 8;
+            }
+        }
+        return a;
     }
     public int modDef(Pokemon p) {
-        return Math.max((int) (p.getDef() * getDefMultiplier()),1);
+        int a = Math.max((int) (p.getTrueDef() * getDefMultiplier()),1);
+        if(p.isDefBadge()) {
+            for(int i = 1; i <= defBB+1; i++) {
+                a = 9 * a / 8;
+            }
+        }
+        return a;
     }
     public int modSpc(Pokemon p) {
-        return Math.max((int) (p.getSpc() * getSpcMultiplier()),1);
+        int a = Math.max((int) (p.getTrueSpc() * getSpcMultiplier()),1);
+        if(p.isSpcBadge()) {
+            for(int i = 1; i <= spcBB+1; i++) {
+                a = 9 * a / 8;
+            }
+        }
+        return a;
     }
     public int modSpd(Pokemon p) {
-        return Math.max((int) (p.getSpd() * getSpdMultiplier()),1);
+        int a = Math.max((int) (p.getTrueSpd() * getSpdMultiplier()),1);
+        if(p.isSpdBadge()) {
+            for(int i = 1; i <= spdBB+1; i++) {
+                a = 9 * a / 8;
+            }
+        }
+        return a;
     }
     public boolean hasMods() {
         return atk != 0 || def != 0 || spc != 0 || spd != 0 || accuracy != 0 || evasion != 0 || usedxacc;
     }
+    public boolean hasBBs() {
+        return atkBB != 0 || defBB != 0 || spcBB != 0 || spdBB != 0;
+    }
     
-    public String modSummary(Pokemon p) {
+    public String modStatsStr(Pokemon p) {
         return String.format("%s/%s/%s/%s/%s",p.getHP(),modAtk(p),modDef(p),modSpd(p),modSpc(p));
     }
     

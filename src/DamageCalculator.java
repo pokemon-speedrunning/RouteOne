@@ -33,13 +33,15 @@ public class DamageCalculator {
              defender.getSpecies().getType2());
      
         if(Type.isPhysicalType(attack.getType())) {
-            return (int) (((int)((attacker.getLevel() * 0.4 * (crit ? 2 : 1)) + 2) * (crit ? aa_orig : atk_atk) * 
+            int a =(int) (((int)((attacker.getLevel() * 0.4 * (crit ? 2 : 1)) + 2) * (crit ? aa_orig : atk_atk) * 
                    attack.getPower() / 50 / (crit ? dd_orig : def_def) + 2) *
-                   (STAB ? 1.5 : 1) * effectiveMult) * rangeNum / 255;                   
+                   (STAB ? 1.5 : 1) * effectiveMult) * rangeNum / 255;
+            return Math.max(a, 1);
         } else {
-            return (int) (((int)((attacker.getLevel() * 0.4 * (crit ? 2 : 1)) + 2) * (crit ? as_orig : atk_spc) * 
+            int a =(int) (((int)((attacker.getLevel() * 0.4 * (crit ? 2 : 1)) + 2) * (crit ? as_orig : atk_spc) * 
                    attack.getPower() / 50 / (crit ? ds_orig : def_spc) + 2) *
-                   (STAB ? 1.5 : 1) * effectiveMult) * rangeNum / 255;              
+                   (STAB ? 1.5 : 1) * effectiveMult) * rangeNum / 255; 
+            return Math.max(a, 1);
         }
             
     }
@@ -62,19 +64,18 @@ public class DamageCalculator {
     
     //printout of move damages between the two pokemon
     //assumes you are p1
-    public static String summary(Pokemon p1, Pokemon p2,
-            StatModifier mod1, StatModifier mod2) {
+    public static String summary(Pokemon p1, Pokemon p2, BattleOptions options) {
         StringBuilder sb = new StringBuilder();
         String endl = Constants.endl;
+        StatModifier mod1 = options.getMod1();
+        StatModifier mod2 = options.getMod2();
         
         sb.append(p1.levelName() + " vs " + p2.levelName() + endl);
         //sb.append(String.format("EXP to next level: %d EXP gained: %d", p1.expToNextLevel(), p2.expGiven()) + endl);
-        if(mod1.hasMods()) {
-            sb.append(String.format("%s (%s) %s -> (%s): ", p1.pokeName(), p1.statsStr(),
-                    mod1.summary(), mod1.modSummary(p1)) + endl);
-        } else {
-            sb.append(String.format("%s (%s): ", p1.pokeName(), p1.statsStr()) + endl);
-        }
+        sb.append(String.format("%s (%s) ", p1.pokeName(), p1.statsStr()));       
+        if(mod1.hasMods() || mod1.hasBBs()) {
+            sb.append(String.format("%s -> (%s) ", mod1.summary(), mod1.modStatsStr(p1)) + endl);    
+        }  
         
         sb.append(summary_help(p1,p2,mod1,mod2));
         
@@ -82,7 +83,7 @@ public class DamageCalculator {
         
         if(mod2.hasMods()) {
         sb.append(String.format("%s (%s) %s -> (%s): ", p2.pokeName(), p2.statsStr(),
-                mod2.summary(), mod2.modSummary(p2)) + endl);
+                mod2.summary(), mod2.modStatsStr(p2)) + endl);
         } else {
             sb.append(String.format("%s (%s): ", p2.pokeName(), p2.statsStr()) + endl);
         }
@@ -93,8 +94,7 @@ public class DamageCalculator {
     
     //String summary of all of p1's moves used on p2
     //(would be faster if i didn't return intermediate strings)
-    private static String summary_help(Pokemon p1, Pokemon p2,
-            StatModifier mod1, StatModifier mod2) {
+    private static String summary_help(Pokemon p1, Pokemon p2, StatModifier mod1, StatModifier mod2) {
         StringBuilder sb = new StringBuilder();
         String endl = Constants.endl;
         
@@ -143,24 +143,24 @@ public class DamageCalculator {
     }
     
     //used for the less verbose option
-    public static String shortSummary(Pokemon p1, Pokemon p2,
-            StatModifier mod1, StatModifier mod2) {
+    public static String shortSummary(Pokemon p1, Pokemon p2, BattleOptions options) {
         StringBuilder sb = new StringBuilder();
         String endl = Constants.endl;
         
+        StatModifier mod1 = options.getMod1();
+        StatModifier mod2 = options.getMod2();
+        
         sb.append(p1.levelName() + " vs " + p2.levelName() + endl);
         //sb.append(String.format("EXP to next level: %d EXP gained: %d", p1.expToNextLevel(), p2.expGiven()) + endl);
-        if(mod1.hasMods()) {
-            sb.append(String.format("%s (%s) %s -> (%s): ", p1.pokeName(), p1.statsStr(),
-                    mod1.summary(), mod1.modSummary(p1)) + endl);
-        } else {
-            sb.append(String.format("%s (%s): ", p1.pokeName(), p1.statsStr()) + endl);
-        }
+        sb.append(String.format("%s (%s) ", p1.pokeName(), p1.statsStr()));       
+        if(mod1.hasMods() || mod1.hasBBs()) {
+            sb.append(String.format("%s -> (%s) ", mod1.summary(), mod1.modStatsStr(p1)) + endl);    
+        }  
         
         sb.append(summary_help(p1,p2,mod1,mod2) + endl);
         if(mod2.hasMods()) {
             sb.append(String.format("%s (%s) %s -> (%s): ", p2.pokeName(), p2.statsStr(),
-                    mod2.summary(), mod2.modSummary(p2)));
+                    mod2.summary(), mod2.modStatsStr(p2)));
             } else {
                 sb.append(String.format("%s (%s): ", p2.pokeName(), p2.statsStr()));
             }

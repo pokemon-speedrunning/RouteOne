@@ -160,8 +160,8 @@ public class Pokemon implements Battleable {
     public int getTotalExp() {
         return totalExp;
     }
-    public int expGiven() {
-        return (int) ((isWild() ? 1 : 1.5) * species.getKillExp() * level / 7);
+    public int expGiven(int participants) {
+        return (int) ((isWild() ? 1 : 1.5) * (species.getKillExp() / participants) * level / 7);
     }
     
     
@@ -237,16 +237,16 @@ public class Pokemon implements Battleable {
         }
     }
     //gain stat exp from a pokemon of species s
-    private void gainStatExp(Species s){
-        ev_hp += s.getBaseHP();
+    private void gainStatExp(Species s, int participants){
+        ev_hp += s.getBaseHP() / participants;
         ev_hp = capEV(ev_hp);
-        ev_atk += s.getBaseAtk();
+        ev_atk += s.getBaseAtk() / participants;
         ev_atk = capEV(ev_atk);
-        ev_def += s.getBaseDef();
+        ev_def += s.getBaseDef() / participants;
         ev_def = capEV(ev_def);
-        ev_spc += s.getBaseSpc();
+        ev_spc += s.getBaseSpc() / participants;
         ev_spc = capEV(ev_spc);
-        ev_spd += s.getBaseSpd();
+        ev_spd += s.getBaseSpd() / participants;
         ev_spd = capEV(ev_spd);
     }
     private int capEV(int ev) {
@@ -254,12 +254,12 @@ public class Pokemon implements Battleable {
     }
     
     @Override
-    public void battle(Pokemon p) {
+    public void battle(Pokemon p, BattleOptions options) {
         //p is the one that gets leveled up
         //this is the one that dies like noob
         //be sure to gain EVs before the exp
-        p.gainStatExp(this.getSpecies());
-        p.gainExp(this.expGiven());
+        p.gainStatExp(this.getSpecies(), options.getParticipants());
+        p.gainExp(this.expGiven(options.getParticipants()));
     }
     
     //gains from eating stat/level boosters

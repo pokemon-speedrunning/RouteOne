@@ -22,9 +22,9 @@ public class Trainer implements Battleable, Iterable<Pokemon>{
         }
     }
     @Override
-    public void battle(Pokemon p) {
+    public void battle(Pokemon p, BattleOptions options) {
         for(Pokemon tp : pokes) {
-            tp.battle(p);
+            tp.battle(p, options);
         }
     }
 

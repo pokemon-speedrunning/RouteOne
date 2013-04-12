@@ -1,5 +1,11 @@
 Changelog:
 
+v 1.04:
+ - Added option for splitting exp in battle: `-sxp <num>`
+ - Added options for displaying stat ranges when you level up in battle: `-lvranges` or `-lvrangesb` for without and with badge boosts, respectively.
+ - Added option for badge boosts in battle: `-bbs a/b/c/d`.
+ - Fixed a bug where the badge boost gained from a leader was being applied for the calculation for that leader.
+
 v 1.03c:
  - Changed crit damage to be based off of stats WITHOUT badge boost.
  

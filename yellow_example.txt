@@ -4,7 +4,7 @@
 0x39E67
 ranges
 lm HORNATTACK //lvl 8
-0x39EA5
+0x39EA5 
 //lvl 9
 0x39E70
 //lvl 10
@@ -128,7 +128,7 @@ lm EARTHQUAKE
 //koga gym
 0x3A1DF
 0x3A1E5
-0x3A46C -xspd 1 -xacc //KOGA
+0x3A46C -xspd 1 -xacc -v 2 //KOGA
 
 um THRASH
 lm ICEBEAM
@@ -158,7 +158,7 @@ Carbos
 
 stats
 //e4
-0x3A53F -xspd 1 -xacc
+0x3A53F -xspd 1 -xacc 
 0x3A448 -xacc
 0x3A59A -xspd 1 -v 2
 0x3A5A6 -xspd 1 -xspc 1 -xacc -v 2
@@ -167,4 +167,4 @@ stats
 //vaporeon (0)
 //0x3A531 -xspc 1 -xacc 
 //flareon (1)
-0x3A523 -xspc 1 -xacc -v ALL //holy shit this is hard
+0x3A523 -xspc 1 -xacc -v ALL -bbs 1/4/3/2 //holy shit this is hard
