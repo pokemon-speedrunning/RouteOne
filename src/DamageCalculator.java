@@ -31,6 +31,9 @@ public class DamageCalculator {
                     attack.getType() == attacker.getSpecies().getType2();
         double effectiveMult = Type.effectiveness(attack.getType(), defender.getSpecies().getType1(),
              defender.getSpecies().getType2());
+        if(effectiveMult == 0) {
+            return 0;
+        }
      
         if(Type.isPhysicalType(attack.getType())) {
             int a =(int) (((int)((attacker.getLevel() * 0.4 * (crit ? 2 : 1)) + 2) * (crit ? aa_orig : atk_atk) * 
