@@ -39,7 +39,16 @@ public class Main {
         Initialization.init();
         
         IVs ivs = new IVs(atkIV,defIV,spdIV,spcIV);
-        Pokemon p = new Pokemon(PokemonNames.getSpeciesFromName(species),level,ivs,false);
+        Pokemon p = null;
+        try {
+            p = new Pokemon(PokemonNames.getSpeciesFromName(species),level,ivs,false);
+        } catch(NullPointerException e) {
+            appendln("Error in your config file. Perhaps you have an incorrect pokemon species name?");
+            FileWriter fw = new FileWriter(ini.get("files", "outputFile"));
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write(output.toString());
+            bw.close();
+        }
         List<GameAction> actions = RouteParser.parseFile(ini.get("files","routeFile"));
         
         int[] XItems = {0,0,0,0,0}; //atk,def,spd,spc,acc

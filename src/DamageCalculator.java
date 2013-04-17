@@ -75,7 +75,9 @@ public class DamageCalculator {
         sb.append(String.format("%s (%s) ", p1.pokeName(), p1.statsStr()));       
         if(mod1.hasMods() || mod1.hasBBs()) {
             sb.append(String.format("%s -> (%s) ", mod1.summary(), mod1.modStatsStr(p1)) + endl);    
-        }  
+        }  else {
+            sb.append(endl);
+        }
         
         sb.append(summary_help(p1,p2,mod1,mod2));
         
@@ -155,7 +157,9 @@ public class DamageCalculator {
         sb.append(String.format("%s (%s) ", p1.pokeName(), p1.statsStr()));       
         if(mod1.hasMods() || mod1.hasBBs()) {
             sb.append(String.format("%s -> (%s) ", mod1.summary(), mod1.modStatsStr(p1)) + endl);    
-        }  
+        }  else {
+            sb.append(endl);
+        }
         
         sb.append(summary_help(p1,p2,mod1,mod2) + endl);
         if(mod2.hasMods()) {
