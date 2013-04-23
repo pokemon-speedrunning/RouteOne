@@ -161,7 +161,8 @@ public class Pokemon implements Battleable {
         return totalExp;
     }
     public int expGiven(int participants) {
-        return (int) ((isWild() ? 1 : 1.5) * (species.getKillExp() / participants) * level / 7);
+        return (species.getKillExp() / participants) * level / 7 * 3
+                / (isWild() ? 3 : 2);
     }
     
     
