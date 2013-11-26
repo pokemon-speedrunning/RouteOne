@@ -7,9 +7,9 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
-//a trainer has a class name and some pokemon, corresponding to some location in memory
+//a trainer has a class and some pokemon, corresponding to some location in memory
 public class Trainer implements Battleable, Iterable<Pokemon>{
-    private String name;
+    private TrainerClass t_class;
     private ArrayList<Pokemon> pokes;
     private int offset;
     
@@ -34,7 +34,7 @@ public class Trainer implements Battleable, Iterable<Pokemon>{
     }
     
     public String toString() {
-        return String.format("%s (0x%X: %s)", name, offset, allPokes());
+        return String.format("%s (0x%X: %s) Prize %d", t_class.getName(), offset, allPokes(), prizeMoney());
     }
     
     public String allPokes() {
@@ -44,6 +44,11 @@ public class Trainer implements Battleable, Iterable<Pokemon>{
         }
         return sb.toString();
     } 
+
+    public int prizeMoney() {
+        Pokemon lastPokemon = pokes.get(pokes.size() - 1);
+        return t_class.getBaseMoney() * lastPokemon.getLevel();
+    }
     
     private static HashMap<Integer,Trainer> allTrainers;
     
@@ -79,21 +84,22 @@ public class Trainer implements Battleable, Iterable<Pokemon>{
             in = new BufferedReader(new InputStreamReader(
                     System.class.getResource("/resources/" + filename).openStream()));
 
-            String currentName = "";
+            TrainerClass currentClass = null;
             Trainer t;
             while(in.ready()) {
                 String text = in.readLine();
                 //names are formatted as [NAME]
                 if(text.startsWith("[")){
                     //TODO: error checking is for noobs
-                    currentName = text.substring(1,text.length()-1); 
+                    String currentName = text.substring(1,text.length()-1); 
+                    currentClass = TrainerNames.getTrainerClassFromName(currentName);
                     continue;
                 } else if (text.startsWith("0x")) { //line is a 0x(pointer): list of pokes
                     String[] parts = text.split(":"); //this should be length 2
                     int offset = Integer.parseInt(parts[0].substring(2),16);
                     
                     t = new Trainer();
-                    t.name = currentName;
+                    t.t_class = currentClass;
                     t.offset = offset;
                     t.pokes = new ArrayList<Pokemon>();
                     
