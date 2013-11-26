@@ -265,7 +265,7 @@ public class Pokemon implements Battleable {
     
     //gains from eating stat/level boosters
     public void eatRareCandy() {
-        if(level < 100) {
+        if(level != 100) {
             level++;
             setExpForLevel();
             calculateStats();
