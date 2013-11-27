@@ -152,3 +152,13 @@ class AddMoney extends GameAction {
         inv.addMoney(amount);
     }
 }
+
+class SwapItems extends GameAction {
+    private Item type1, type2;
+    SwapItems(Item it1, Item it2) { type1 = it1; type2 = it2; }
+    SwapItems(String it1, String it2) { type1 = ItemNames.getItemFromName(it1); type2 = ItemNames.getItemFromName(it2); }
+    @Override
+    void performAction(Pokemon p, Inventory inv) {
+        inv.swap(type1, type2);
+    }
+}

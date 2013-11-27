@@ -43,6 +43,17 @@ public class Battle extends GameAction {
     public void performAction(Pokemon p, Inventory inv) {
         doBattle(p);
         inv.addMoney(opponent.prizeMoney());
+        // Use appropriate xitems
+        boolean xacc = options.getMod1().getUsedXAcc();
+        int xatk = options.getMod1().getAtkStage();
+        int xdef = options.getMod1().getDefStage();
+        int xspd = options.getMod1().getSpdStage();
+        int xspc = options.getMod1().getSpcStage();
+        if(xacc) inv.removeItem("XAccuracy");
+        inv.removeItem("XAttack", xatk);
+        inv.removeItem("XDefend", xdef);
+        inv.removeItem("XSpeed", xspd);
+        inv.removeItem("XSpecial", xspc);
         
         //check for special gym leader badges
         if(Settings.isRB) {

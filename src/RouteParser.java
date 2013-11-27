@@ -208,6 +208,13 @@ public class RouteParser {
             }
             return new SellItem(item, count);
         }
+        else if(firstToken.equalsIgnoreCase("swap")) {
+            if(n < 3) {
+                Main.appendln("ERROR ON LINE " + lineNum);
+                return null;
+            }
+            return new SwapItems(tokens[1], tokens[2]);
+        }
         else if(firstToken.equalsIgnoreCase("addmoney")) {
             int amount = Integer.parseInt(tokens[1]);
             return new AddMoney(amount);
