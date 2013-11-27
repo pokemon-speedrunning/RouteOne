@@ -40,6 +40,7 @@ public class Main {
         
         IVs ivs = new IVs(atkIV,defIV,spdIV,spcIV);
         Pokemon p = null;
+        Inventory inv = new Inventory(3000);
         try {
             p = new Pokemon(PokemonNames.getSpeciesFromName(species),level,ivs,false);
         } catch(NullPointerException e) {
@@ -60,7 +61,7 @@ public class Main {
         int carbos = 0;
         int calcium = 0;
         for(GameAction a : actions) {        
-            a.performAction(p);
+            a.performAction(p, inv);
             if (a instanceof Battle) {
                 StatModifier sm = ((Battle) a).getMod1();
                 XItems[0] += Math.max(0, sm.getAtkStage());

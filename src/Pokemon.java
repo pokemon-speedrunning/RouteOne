@@ -262,6 +262,11 @@ public class Pokemon implements Battleable {
         p.gainStatExp(this.getSpecies(), options.getParticipants());
         p.gainExp(this.expGiven(options.getParticipants()));
     }
+
+    @Override
+    public int prizeMoney() {
+        return 0;
+    }
     
     //gains from eating stat/level boosters
     public void eatRareCandy() {

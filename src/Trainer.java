@@ -45,6 +45,7 @@ public class Trainer implements Battleable, Iterable<Pokemon>{
         return sb.toString();
     } 
 
+    @Override
     public int prizeMoney() {
         Pokemon lastPokemon = pokes.get(pokes.size() - 1);
         return t_class.getBaseMoney() * lastPokemon.getLevel();

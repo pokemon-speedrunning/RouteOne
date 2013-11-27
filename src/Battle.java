@@ -40,28 +40,55 @@ public class Battle extends GameAction {
     }
     
     @Override
-    public void performAction(Pokemon p) {        
+    public void performAction(Pokemon p, Inventory inv) {
         doBattle(p);
+        inv.addMoney(opponent.prizeMoney());
         
         //check for special gym leader badges
         if(Settings.isRB) {
-            if (Trainer.getTrainer(0x3A3B5).equals(opponent)) //brock boulder badge
+            if (Trainer.getTrainer(0x3A3B5).equals(opponent)) { //brock boulder badge
                 p.setAtkBadge(true);
-            else if (Trainer.getTrainer(0x3A3C1).equals(opponent)) //surge thunder badge
+                inv.addItem("TM34");
+            } else if (Trainer.getTrainer(0x3A3BB).equals(opponent)) { // misty
+                inv.addItem("TM11");
+            } else if (Trainer.getTrainer(0x3A3C1).equals(opponent)) { //surge thunder badge
                 p.setDefBadge(true);
-            else if (Trainer.getTrainer(0x3A3D1).equals(opponent)) //koga soul badge
+                inv.addItem("TM24");
+            } else if (Trainer.getTrainer(0x3A3C9).equals(opponent)) { // erika
+                inv.addItem("TM21");
+            } else if (Trainer.getTrainer(0x3A3D1).equals(opponent)) { //koga soul badge
                 p.setSpdBadge(true);
-            else if (Trainer.getTrainer(0x3A3DB).equals(opponent)) //blaine volcano badge
+                inv.addItem("TM06");
+            } else if (Trainer.getTrainer(0x3A3E5).equals(opponent)) { // sabrina
+                inv.addItem("TM46");
+            } else if (Trainer.getTrainer(0x3A3DB).equals(opponent)) { //blaine volcano badge
                 p.setSpcBadge(true);
+                inv.addItem("TM38");
+            } else if (Trainer.getTrainer(0x3A290).equals(opponent)) {
+                inv.addItem("TM27");
+            }
         } else {
-            if (Trainer.getTrainer(0x3A454).equals(opponent)) //brock boulder badge
+            if (Trainer.getTrainer(0x3A454).equals(opponent)) { //brock boulder badge
                 p.setAtkBadge(true);
-            else if (Trainer.getTrainer(0x3A460).equals(opponent)) //surge thunder badge
+                inv.addItem("TM34");
+            } else if (Trainer.getTrainer(0x3A45A).equals(opponent)) { //misty
+                inv.addItem("TM11");
+            } else if (Trainer.getTrainer(0x3A460).equals(opponent)) { //surge thunder badge
                 p.setDefBadge(true);
-            else if (Trainer.getTrainer(0x3A46C).equals(opponent)) //koga soul badge
+                inv.addItem("TM24");
+            } else if (Trainer.getTrainer(0x3A464).equals(opponent)) { //erika
+                inv.addItem("TM21");
+            } else if (Trainer.getTrainer(0x3A46C).equals(opponent)) { //koga soul badge
                 p.setSpdBadge(true);
-            else if (Trainer.getTrainer(0x3A476).equals(opponent)) //blaine volcano badge
+                inv.addItem("TM06");
+            } else if (Trainer.getTrainer(0x3A47E).equals(opponent)) { //sabrina
+                inv.addItem("TM46");
+            } else if (Trainer.getTrainer(0x3A476).equals(opponent)) { //blaine volcano badge
                 p.setSpcBadge(true);
+                inv.addItem("TM38");
+            } else if (Trainer.getTrainer(0x3A30F).equals(opponent)) { //giovanni
+                inv.addItem("TM27");
+            }
         }
     }
     

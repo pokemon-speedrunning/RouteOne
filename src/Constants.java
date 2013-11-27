@@ -1623,6 +1623,7 @@ public class Constants {
         100,
         };
 
+    static final int numItems = 255;
     static final String[] item_names = {
         "#, j (Glitch Item)", // 0x00
         "Master Ball",
@@ -1670,7 +1671,7 @@ public class Constants {
         "Secret Key",
         "???", // 0x2C
         "Bike Voucher",
-        "XAccuracy",
+        "X Accuracy",
         "Leaf Stone",
         "Card Key", // 0x30
         "Nugget",

@@ -135,6 +135,83 @@ public class RouteParser {
         else if(firstToken.equalsIgnoreCase("carbos")) {
             return GameAction.eatCarbos;
         }
+        //inventory manipulation
+        else if(firstToken.equalsIgnoreCase("get")) {
+            if(n < 2) {
+                Main.appendln("ERROR ON LINE " + lineNum);
+                return null;
+            }
+            String item;
+            int count = 1;
+            if(n == 2) {
+                item = tokens[1];
+            } else {
+                count = Integer.parseInt(tokens[1]);
+                item = "";
+                for(int i = 2; i<tokens.length; i++) {
+                    item = item + tokens[i];
+                }
+            }
+            return new GetItem(item, count);
+        }
+        else if(firstToken.equalsIgnoreCase("buy")) {
+            if(n < 2) {
+                Main.appendln("ERROR ON LINE " + lineNum);
+                return null;
+            }
+            String item;
+            int count = 1;
+            if(n == 2) {
+                item = tokens[1];
+            } else {
+                count = Integer.parseInt(tokens[1]);
+                item = "";
+                for(int i = 2; i<tokens.length; i++) {
+                    item = item + tokens[i];
+                }
+            }
+            return new BuyItem(item, count);
+        }
+        else if(firstToken.equalsIgnoreCase("use") || firstToken.equalsIgnoreCase("toss")) {
+            if(n < 2) {
+                Main.appendln("ERROR ON LINE " + lineNum);
+                return null;
+            }
+            String item;
+            int count = 1;
+            if(n == 2) {
+                item = tokens[1];
+            } else {
+                count = Integer.parseInt(tokens[1]);
+                item = "";
+                for(int i = 2; i<tokens.length; i++) {
+                    item = item + tokens[i];
+                }
+            }
+            return new LoseItem(item, count);
+        }
+        else if(firstToken.equalsIgnoreCase("sell")) {
+            if(n < 2) {
+                Main.appendln("ERROR ON LINE " + lineNum);
+                return null;
+            }
+            String item;
+            int count = 1;
+            if(n == 2) {
+                item = tokens[1];
+            } else {
+                count = Integer.parseInt(tokens[1]);
+                item = "";
+                for(int i = 2; i<tokens.length; i++) {
+                    item = item + tokens[i];
+                }
+            }
+            return new SellItem(item, count);
+        }
+        else if(firstToken.equalsIgnoreCase("addmoney")) {
+            int amount = Integer.parseInt(tokens[1]);
+            return new AddMoney(amount);
+        }
         //printing commands
         else if(firstToken.equalsIgnoreCase("stats")) {
             if(n == 1) {
@@ -153,6 +230,9 @@ public class RouteParser {
             } else {
                 return GameAction.printStatRangesNoBoost;
             }
+        }
+        else if(firstToken.equalsIgnoreCase("inventory")) {
+            return GameAction.printInventory;
         }
         
         return null;

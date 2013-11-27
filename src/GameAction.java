@@ -1,53 +1,59 @@
 
 public abstract class GameAction {
-    abstract void performAction(Pokemon p);
+    abstract void performAction(Pokemon p, Inventory inv);
     
     public static final GameAction eatRareCandy = new GameAction() {
-        void performAction(Pokemon p) { p.eatRareCandy(); }
+        void performAction(Pokemon p, Inventory inv) { p.eatRareCandy(); inv.removeItem("Rarecandy"); }
     };
     public static final GameAction eatHPUp = new GameAction() {
-        void performAction(Pokemon p) { p.eatHPUp(); }
+        void performAction(Pokemon p, Inventory inv) { p.eatHPUp(); inv.removeItem("HP UP"); }
     };
     public static final GameAction eatIron = new GameAction() {
-        void performAction(Pokemon p) { p.eatIron(); }
+        void performAction(Pokemon p, Inventory inv) { p.eatIron(); inv.removeItem("Iron"); }
     };
     public static final GameAction eatProtein = new GameAction() {
-        void performAction(Pokemon p) { p.eatProtein(); }
+        void performAction(Pokemon p, Inventory inv) { p.eatProtein(); inv.removeItem("Protein"); }
     };
     public static final GameAction eatCalcium = new GameAction() {
-        void performAction(Pokemon p) { p.eatCalcium(); }
+        void performAction(Pokemon p, Inventory inv) { p.eatCalcium(); inv.removeItem("Calcium"); }
     };
     public static final GameAction eatCarbos = new GameAction() {
-        void performAction(Pokemon p) { p.eatCarbos(); }
+        void performAction(Pokemon p, Inventory inv) { p.eatCarbos(); inv.removeItem("Carbos"); }
     };
     
     //badges
     public static final GameAction getBoulderBadge = new GameAction() {
-        void performAction(Pokemon p) { p.setAtkBadge(true); }
+        void performAction(Pokemon p, Inventory inv) { p.setAtkBadge(true); }
     };
     public static final GameAction getSoulBadge = new GameAction() {
-        void performAction(Pokemon p) { p.setSpdBadge(true); } //gen 1 is buggy as fuck
+        void performAction(Pokemon p, Inventory inv) { p.setSpdBadge(true); } //gen 1 is buggy as fuck
     };
     public static final GameAction getVolcanoBadge = new GameAction() {
-        void performAction(Pokemon p) { p.setSpcBadge(true); }
+        void performAction(Pokemon p, Inventory inv) { p.setSpcBadge(true); }
     };
     public static final GameAction getThunderBadge = new GameAction() {
-        void performAction(Pokemon p) { p.setDefBadge(true); }
+        void performAction(Pokemon p, Inventory inv) { p.setDefBadge(true); }
     };
     
     
     //not really a game action, but it's a nice hack?
     public static final GameAction printAllStats = new GameAction() {
-        void performAction(Pokemon p) { Main.appendln(p.statsWithBoost()); }
+        void performAction(Pokemon p, Inventory inv) { Main.appendln(p.statsWithBoost()); }
     };
     public static final GameAction printAllStatsNoBoost = new GameAction() {
-        void performAction(Pokemon p) { Main.appendln(p.statsWithoutBoost()); }
+        void performAction(Pokemon p, Inventory inv) { Main.appendln(p.statsWithoutBoost()); }
     };
     public static final GameAction printStatRanges = new GameAction() {
-        void performAction(Pokemon p) { Main.appendln(p.statRanges(true)); }
+        void performAction(Pokemon p, Inventory inv) { Main.appendln(p.statRanges(true)); }
     };
     public static final GameAction printStatRangesNoBoost = new GameAction() {
-        void performAction(Pokemon p) { Main.appendln(p.statRanges(false)); }
+        void performAction(Pokemon p, Inventory inv) { Main.appendln(p.statRanges(false)); }
+    };
+    public static final GameAction printMoney = new GameAction() {
+        void performAction(Pokemon p, Inventory inv) { Main.appendln(inv.moneyString()); }
+    };
+    public static final GameAction printInventory = new GameAction() {
+        void performAction(Pokemon p, Inventory inv) { Main.appendln(inv.inventoryString()); }
     };
 
 }
@@ -58,7 +64,7 @@ class LearnMove extends GameAction {
     LearnMove(String s) { move = Move.getMoveByName(s); }
     public Move getMove() { return move; }
     @Override
-    void performAction(Pokemon p) { p.getMoveset().addMove(move); }
+    void performAction(Pokemon p, Inventory inv) { p.getMoveset().addMove(move); }
 }
 
 
@@ -68,7 +74,7 @@ class UnlearnMove extends GameAction {
     UnlearnMove(String s) { move = Move.getMoveByName(s); }
     public Move getMove() { return move; }
     @Override
-    void performAction(Pokemon p) { p.getMoveset().delMove(move); }
+    void performAction(Pokemon p, Inventory inv) { p.getMoveset().delMove(move); }
 }
 
 class Evolve extends GameAction {
@@ -76,7 +82,73 @@ class Evolve extends GameAction {
     Evolve(Species s) { target = s; }
     Evolve(String s) { target = PokemonNames.getSpeciesFromName(s); }
     @Override
-    void performAction(Pokemon p) {
+    void performAction(Pokemon p, Inventory inv) {
         p.evolve(target);
-        p.calculateStats();}
+        p.calculateStats();
+    }
+}
+
+class GetItem extends GameAction {
+    private Item type;
+    private int count;
+    GetItem(Item it) { type = it; count = 1; }
+    GetItem(Item it, int cnt) { type = it; count = cnt; }
+    GetItem(String s) { type = ItemNames.getItemFromName(s); count = 1; }
+    GetItem(String s, int cnt) { type = ItemNames.getItemFromName(s); count = cnt; }
+
+    @Override
+    void performAction(Pokemon p, Inventory inv) {
+        inv.getItem(type, count);
+    }
+}
+
+class LoseItem extends GameAction {
+    private Item type;
+    private int count;
+    LoseItem(Item it) { type = it; count = 1; }
+    LoseItem(Item it, int cnt) { type = it; count = cnt; }
+    LoseItem(String s) { type = ItemNames.getItemFromName(s); count = 1; }
+    LoseItem(String s, int cnt) { type = ItemNames.getItemFromName(s); count = cnt; }
+
+    @Override
+    void performAction(Pokemon p, Inventory inv) {
+        inv.loseItem(type, count);
+    }
+}
+
+class BuyItem extends GameAction {
+    private Item type;
+    private int count;
+    BuyItem(Item it) { type = it; count = 1; }
+    BuyItem(Item it, int cnt) { type = it; count = cnt; }
+    BuyItem(String s) { type = ItemNames.getItemFromName(s); count = 1; }
+    BuyItem(String s, int cnt) { type = ItemNames.getItemFromName(s); count = cnt; }
+
+    @Override
+    void performAction(Pokemon p, Inventory inv) {
+        inv.buyItem(type, count);
+    }
+}
+
+class SellItem extends GameAction {
+    private Item type;
+    private int count;
+    SellItem(Item it) { type = it; count = 1; }
+    SellItem(Item it, int cnt) { type = it; count = cnt; }
+    SellItem(String s) { type = ItemNames.getItemFromName(s); count = 1; }
+    SellItem(String s, int cnt) { type = ItemNames.getItemFromName(s); count = cnt; }
+
+    @Override
+    void performAction(Pokemon p, Inventory inv) {
+        inv.sellItem(type, count);
+    }
+}
+
+class AddMoney extends GameAction {
+    private int amount;
+    AddMoney(int amt) { amount = amt; }
+    @Override
+    void performAction(Pokemon p, Inventory inv) {
+        inv.addMoney(amount);
+    }
 }
