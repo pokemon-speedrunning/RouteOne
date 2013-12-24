@@ -1,0 +1,186 @@
+//to be used with L6 nidoranM
+
+//forest
+0x39E67
+ranges
+lm HORNATTACK
+0x39EA5
+0x39E70
+ranges
+
+//brock gym
+0x39F17
+lm DOUBLEKICK
+0x3A454 //BROCK
+
+//route 3
+0x39E73
+0x39E2F
+0x39EAD //lass
+0x39E7E
+
+evolve NIDORINO //lvl 16
+
+//encounters in mt. moon
+L10 GEODUDE
+//L13 CLEFAIRY
+evolve NIDOKING
+//mt moon
+0x39FCF
+0x3A3D9
+
+//gary + nugget bridge
+//lvl 18
+0x3A292 //rival fight
+
+0x39E8B
+0x39EC4
+0x39E3B
+rc
+rc
+ranges
+um LEER
+lm THRASH
+0x39EC0
+0x39F1F
+0x3A32F
+
+//bill route
+//0x3A008 //elixir hiker
+0x3A012 // not elixir hiker
+0x39EC8 //lass
+0x39F1B
+// 0x3A00C guy with 4
+0x39ECC
+
+//misty
+0x39F3F
+0x3A45A //MISTY
+um TACKLE
+lm BUBBLEBEAM
+
+//vermillion before misty
+//rocket in cerulean
+0x3A32B
+//route 6
+0x39F46
+0x39F25
+//anne gary
+0x3A499 -v 2
+
+//surge
+0x3A460 //SURGE
+//lvl 27
+um HORNATTACK
+lm THUNDERBOLT
+
+//route 9
+0x39F4E
+0x39EA0
+
+//rock tunnel
+0x39FC7
+0x39FBF
+0x39F64
+0x3A026
+0x39F8A
+
+//gambler
+0x3A172
+
+um BUBBLEBEAM
+lm HORNDRILL
+um DOUBLEKICK
+lm ROCKSLIDE
+
+//tower gary
+//vaporeon (0)
+//0x3A4BB -xacc
+//flareon (1)
+0x3A4AF -xacc
+
+//tower
+0x3A551
+0x3A558
+0x3A558
+0x3A3E3 -xacc //jessiejames
+
+//silph
+0x3A3CA -xacc //earthquake
+um THRASH
+lm EARTHQUAKE
+um ROCKSLIDE
+lm ICEBEAM
+0x3A398
+//gary
+//vaporeon
+//0x3A4DF -xacc -xspd 1
+//flareon (1)
+0x3A4D3 -xacc -xspd 1 -v 2
+
+0x3A3E8 -v 2 //jessiejames
+//0x3A305 -xacc -xspd 1 -v 2 //giovanni
+0x3A305 -xatk 1 -v 2 //giovanni gunner strats
+
+//sabrina gym
+0x3A47E -xspd 2 -xacc -v 2 //SABRINA
+
+stats
+//erika gym
+0x3A180
+0x3A464 -xspc 1 //ERIKA
+
+//koga gym
+0x3A1DF
+0x3A1E5
+0x3A46C -xspd 1 -xacc -v 2 //KOGA
+
+// Mansion
+rarecandy
+rarecandy
+rarecandy
+stats // Want to be lvl 44 here
+//Carbos
+//Carbos
+//Get both rare candies
+rarecandy
+rarecandy
+
+//blaine
+0x3A476 -xatk 1 -v 2 //BLAINE
+
+stats
+
+//giovanni gym
+0x3A421
+0x3A27F -v 2
+//0x3A27F -xpsc 1 -bbs 1/1/1/0 -v 2 // Gunner strats
+0x3A30F -xspd 1 -xacc -v 2 // Giovanni
+
+stats
+
+ranges
+//viridian gary
+//vaporeon (0)
+//0x3A507 -xspd 1 -xacc  -v 2
+//flareon (1)
+0x3A4F9 -xspc 1 -v 2
+//Stats as of victory road
+stats
+
+//e4
+0x3A53F -xacc -v 2
+0x3A448 -xacc -v 2
+0x3A59A -xspd 1 -v 2
+0x3A5A6 -xspd 1 -xspc 1 -v 2
+
+ranges
+
+//e4 gary
+//vaporeon (0)
+//0x3A531 -xspc 1 -xacc 
+//flareon (1)
+ranges
+//0x3A523 -xspc 1 -xacc -bbs 0/0/1/0 -v 2
+lm BLIZZARD
+0x3A523 -xspd 1 -bbs 1/1/0/1 -v 2
