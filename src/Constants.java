@@ -2143,7 +2143,7 @@ public class Constants {
         0, // 0xFF
     };
 
-    static final int numTrainerClasses = 46;
+    static final int numTrainerClasses = 47;
     static final String[] trainer_class_names = {
         "xxx",
         "YOUNGSTER",
@@ -2192,6 +2192,7 @@ public class Constants {
         "CHANNELER",
         "AGATHA",
         "LANCE",
+        "JESSIEJAMES",
     };
 
     static final int[] trainer_base_money = {
@@ -2242,5 +2243,6 @@ public class Constants {
         30,
         99,
         99,
+        30, //JESSIEJAMES
     };
 }
