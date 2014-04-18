@@ -36,14 +36,14 @@ public class DamageCalculator {
         }
      
         if(Type.isPhysicalType(attack.getType())) {
-            int a =(int) (((int)((attacker.getLevel() * 0.4 * (crit ? 2 : 1)) + 2) * (crit ? aa_orig : atk_atk) * 
+            int a =(int) ((int) (((int)((attacker.getLevel() * 0.4 * (crit ? 2 : 1)) + 2) * (crit ? aa_orig : atk_atk) * 
                    attack.getPower() / 50 / (crit ? dd_orig : def_def) + 2) *
-                   (STAB ? 1.5 : 1) * effectiveMult) * rangeNum / 255;
+                   (STAB ? 1.5 : 1)) * effectiveMult) * rangeNum / 255;
             return Math.max(a, 1);
         } else {
-            int a =(int) (((int)((attacker.getLevel() * 0.4 * (crit ? 2 : 1)) + 2) * (crit ? as_orig : atk_spc) * 
+            int a =(int) ((int) (((int)((attacker.getLevel() * 0.4 * (crit ? 2 : 1)) + 2) * (crit ? as_orig : atk_spc) * 
                    attack.getPower() / 50 / (crit ? ds_orig : def_spc) + 2) *
-                   (STAB ? 1.5 : 1) * effectiveMult) * rangeNum / 255; 
+                   (STAB ? 1.5 : 1)) * effectiveMult) * rangeNum / 255; 
             return Math.max(a, 1);
         }
             
