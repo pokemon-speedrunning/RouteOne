@@ -1,0 +1,179 @@
+//to be used with L3 or 4 nidoran
+
+0x3A3B5 -sxp 2 //brock
+lm HORNATTACK
+
+//4 ppl at route 3
+0x39DDA -ydef -1 
+0x39D99 -ydef -1
+0x39DDF 
+0x39DE5
+lm POISONSTING
+
+
+// mt.moon
+0x39F26 -ydef -1 // magnetorb nerd
+0x39E1C  // oddish girl
+evolve NIDORINO
+evolve NIDOKING
+// Water Gun goes over either Tackle or Leer (if no Paras yet)
+// some strats don't teach it at all
+lm WATERGUN
+um TACKLE
+// Geodudes?
+//L9 GEODUDE
+//L9 GEODUDE
+// Hiker?
+//0x39F5E // hiker
+// Forced trainers at end
+0x3A29C //mt moon rocket
+0x39F2A//mt moon nerd
+
+// Cerulean enter
+0x3A209 //cerulean rival fight (if you are squirtle)
+// Candies here if Hiker + Geodude(s)
+
+
+//NUGGET BRIDGE
+0x39DF2 //1: bug catcher
+0x39E27 //2: lass
+0x39DA5 //3: youngster
+// Candies+Thrash here if Hiker + no extra
+// Thrash here if Candied earlier (well, middle of the fight)
+0x39E23  //4: lass
+// Candies+Thrash here if no Hiker + Geodudes
+0x39E80 //5: jrtrainerm
+// Candies+Thrash here if no Hiker + no Geodudes
+rarecandy
+rarecandy
+// Thrash can go over Leer, Tackle or Poison Sting
+// just depends on your route really
+lm THRASH
+um LEER
+
+0x3A2B0 //nugget rocket
+
+// Fight if not going WaterGunless
+0x39F6D //onix hiker
+// Fight only if going WaterGunless
+// 0x39F63// machop&geodude hiker
+// Compulsory Route 25 trainers
+0x39E2B  //lass
+0x39E7C //jrtrainerm
+0x39E2F //lass
+
+//MISTY
+0x39E9D //goldeen
+0x3A3BB //MISTY
+
+//BETWEEN CERULEAN AND VERMILLION
+0x3A2AC //rocket
+0x39EA4 //pidgey girl
+0x39E86 //jrtrainerm
+
+// SS ANNE
+// Bubblebeam normally always goes over Water Gun
+lm BUBBLEBEAM
+um WATERGUN
+0x3A40B//ss anne rival fight (for squirtle)
+
+//SURGE
+0x3A3C1 //SURGE fight
+
+// Tbolt can replace anything but Thrash/Bubblebeam
+lm THUNDERBOLT
+um HORNATTACK
+
+//EAST OF CERULEAN (ROUTE 9)
+0x39EAC // 4 turn thrash girl
+0x39E07 // bug catcher
+
+//ROCK TUNNEL
+0x39F22 //maniac (cubone for redbar)
+0x39F1A //maniac (L25 slowpoke)
+0x39EC2 // jrtrainerf (oddish troll)
+0x39F81  // hiker
+0x39EE8 // jrtrainerf
+
+//WEST OF LAVENDER (ROUTE 8)
+0x3A0CD  //gambler
+
+//shopping~
+// Adjust moveset to be Thrash, Tbolt, Horn Drill, RockSlide
+lm HORNDRILL
+um BUBBLEBEAM
+lm ROCKSLIDE
+um POISONSTING
+
+//LAVENDER TOWER
+0x3A42B -xacc //rival fight (for squirtles)
+0x3A4E3 -v 2 // (not sure about actual offset for these)
+
+0x3A507 // gastlies
+0x3A504 //
+
+0x3A2ED //rockets
+0x3A2F2 -xacc //
+0x3A2F6 //
+
+// trip to safari zone
+lm ICEBEAM
+um ROCKSLIDE
+
+//SILPH
+0x3A34B // EQ rocket (maybe use xacc)
+lm EARTHQUAKE
+um THRASH
+0x3A319 // CK rocket
+0x3A44F -xspd 1 -xacc //rival silph co (for squirtle)
+0x3A355 //rocket
+0x3A286 -xacc //giovanni
+
+//KOGA
+0x3A13A //juggler 
+0x3A140 -v 2 //juggler 
+// hack here for boom strats:
+// 3A3D2 is koga without Weezing's (stat) EXP at the end
+// 3A3D1 is the original koga
+// some routes EQ koga instead of xacc
+0x3A3D2 -xacc //KOGA
+
+// mansion candies
+rarecandy
+rarecandy
+rarecandy
+rarecandy
+rarecandy
+
+//ERIKA
+0x3A0DB //eggs
+0x3A3C9 //ERIKA
+
+//BLAINE
+0x3A3DB //BLAINE (some routes xacc)
+
+//SABRINA
+// elixir here if bad special
+0x3A3E5 //SABRINA (very low speed X speeds)
+
+//GIOVANNI
+0x3A382 // rhyhorn
+// elixir here if good special
+0x3A1DA -xspc 1 -bbs 1/1/1/0 // blackbelt
+0x3A290  // GIOVANNI (very low speed X speeds, can also X special)
+    
+//WEST OF VIRIDIAN
+// very bad speed: Xacc xspeed
+// ok/good speed: Xacc xspec
+0x3A475 -xacc -xspc 1 -bbs 1/1/1/0//rival fight (for squirtle)   
+
+//E4
+0x3A4BB -xacc -v 2//LORELEI, very low speed X Speeds
+0x3A3A9 -xacc //BRUNO
+0x3A516 -xacc -v 2 //TROLL (AGATHA)
+// very low special might use a second speed/special here to guarantee aerodactyl
+0x3A522 -xspc 1 -xspd 1 -v 2 //LANCE
+// rival:
+// if 15 speed at level 8 + good special, xacc xspec drillx2 ib drillx3
+// if not, xacc xspeed drill eq drillx4
+0x3A49F -xspd 1 -xacc -bbs 1/1/0/1 //GARY  OAK
