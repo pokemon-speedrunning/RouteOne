@@ -67,7 +67,8 @@ public class Battle extends GameAction {
                 inv.addItem("TM24");
             } else if (Trainer.getTrainer(0x3A3C9).equals(opponent)) { // erika
                 inv.addItem("TM21");
-            } else if (Trainer.getTrainer(0x3A3D1).equals(opponent)) { //koga soul badge
+            } else if (Trainer.getTrainer(0x3A3D1).equals(opponent)
+            			|| Trainer.getTrainer(0x3A3D2).equals(opponent)) { //koga soul badge
                 p.setSpdBadge(true);
                 inv.addItem("TM06");
             } else if (Trainer.getTrainer(0x3A3E5).equals(opponent)) { // sabrina
