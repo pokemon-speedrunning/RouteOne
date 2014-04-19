@@ -118,6 +118,33 @@ public class Battle extends GameAction {
             for(Pokemon opps : t) {
                 if(getVerbose() == BattleOptions.ALL) printBattle(p, (Pokemon) opps);
                 else if (getVerbose() == BattleOptions.SOME) printShortBattle(p, (Pokemon) opps);
+                if (getVerbose() != BattleOptions.NONE) {
+					if (options.getMod1().modSpdWithIV(p, 0) <= options.getMod2().modSpd(opps)
+							&& options.getMod1().modSpdWithIV(p, 15) >= options.getMod2().modSpd(opps)) {
+						int tieDV = 16, outspeedDV = 16;
+						int oppSpd = options.getMod2().modSpd(opps);
+						for (int sDV = 0; sDV < 16; sDV++) {
+							int mySpd = options.getMod1().modSpdWithIV(p, sDV);
+							if (mySpd == oppSpd && sDV < tieDV) {
+								tieDV = sDV;
+							}
+							if (mySpd > oppSpd && sDV < outspeedDV) {
+								outspeedDV = sDV;
+								break;
+							}
+						}
+						Main.append("(Speed DV required");
+						if (tieDV != 16 && outspeedDV != 16 && (tieDV != outspeedDV)) {
+							Main.append(" to outspeed: " + outspeedDV + ", to speedtie: " + tieDV);
+						} else if (outspeedDV != 16) {
+							Main.append(" to outspeed: " + outspeedDV);
+						} else {
+							Main.append(" to speedtie: " + tieDV);
+						}
+						Main.appendln(")");
+						Main.appendln("");
+					}
+				}
                 opps.battle(p, options);
                 //test if you leveled up on this pokemon
                 if(p.getLevel() > lastLvl) {
