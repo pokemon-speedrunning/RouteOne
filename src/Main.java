@@ -1,8 +1,8 @@
-import java.util.List;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.List;
 
 import org.ini4j.InvalidFileFormatException;
 import org.ini4j.Wini;
@@ -60,7 +60,8 @@ public class Main {
         int protein = 0;
         int carbos = 0;
         int calcium = 0;
-        for(GameAction a : actions) {        
+        for(GameAction a : actions) {    
+        	try {
             a.performAction(p, inv);
             if (a instanceof Battle) {
                 StatModifier sm = ((Battle) a).getMod1();
@@ -83,6 +84,10 @@ public class Main {
             } else if (a == GameAction.eatCalcium){
                 calcium++;
             }
+        	}
+        	catch(Exception ex) {
+        		System.out.println("exception parsing a game action ("+a+")");
+        	}
         }        
         
         if(ini.get("util", "printxitems", boolean.class)) {

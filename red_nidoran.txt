@@ -1,7 +1,14 @@
 //to be used with L3 or 4 nidoran
+buy 7 POKEBALL
+get POTION
+get ANTIDOTE
 
 0x3A3B5 -sxp 2 //brock
 lm HORNATTACK
+
+// shop
+buy 9 POTION
+buy 1 ESCAPEROPE // can also pick up later
 
 //4 ppl at route 3
 0x39DDA -ydef -1 
@@ -12,12 +19,16 @@ lm POISONSTING
 
 
 // mt.moon
+get TM12
 0x39F26 -ydef -1 // magnetorb nerd
+get RARECANDY
+// maybe: get ESCAPEROPE
 0x39E1C  // oddish girl
 evolve NIDORINO
-evolve NIDOKING
+
 // Water Gun goes over either Tackle or Leer (if no Paras yet)
 // some strats don't teach it at all
+use TM12
 lm WATERGUN
 um TACKLE
 // Geodudes?
@@ -25,11 +36,16 @@ um TACKLE
 //L9 GEODUDE
 // Hiker?
 //0x39F5E // hiker
+get MOONSTONE
 // Forced trainers at end
+use MOONSTONE
+evolve NIDOKING
 0x3A29C //mt moon rocket
-0x39F2A//mt moon nerd
+0x39F2A //mt moon nerd
+get HELIXFOSSIL
 
 // Cerulean enter
+get RARECANDY
 0x3A209 //cerulean rival fight (if you are squirtle)
 // Candies here if Hiker + Geodude(s)
 
@@ -52,6 +68,7 @@ lm THRASH
 um LEER
 
 0x3A2B0 //nugget rocket
+get NUGGET
 
 // Fight if not going WaterGunless
 0x39F6D //onix hiker
@@ -61,6 +78,9 @@ um LEER
 0x39E2B  //lass
 0x39E7C //jrtrainerm
 0x39E2F //lass
+get ETHER // occasionally you get max ether later
+get SSTICKET // from bill
+use ESCAPEROPE
 
 //MISTY
 0x39E9D //goldeen
@@ -68,19 +88,37 @@ um LEER
 
 //BETWEEN CERULEAN AND VERMILLION
 0x3A2AC //rocket
+get TM28
+get FULLRESTORE
 0x39EA4 //pidgey girl
 0x39E86 //jrtrainerm
 
+// shop vermillion
+toss ANTIDOTE // don't assume we get the money from this
+sell TM34
+sell NUGGET
+buy 3 SUPERPOTION
+buy 3 REPEL
+
 // SS ANNE
 // Bubblebeam normally always goes over Water Gun
+use TM11
 lm BUBBLEBEAM
 um WATERGUN
 0x3A40B//ss anne rival fight (for squirtle)
+get HM01
 
 //SURGE
+swap POKEBALL REPEL
+use TM28
 0x3A3C1 //SURGE fight
+get BIKEVOUCHER
 
 // Tbolt can replace anything but Thrash/Bubblebeam
+use BIKEVOUCHER
+get BICYCLE
+swap POTION BICYCLE
+use TM24
 lm THUNDERBOLT
 um HORNATTACK
 
@@ -89,42 +127,89 @@ um HORNATTACK
 0x39E07 // bug catcher
 
 //ROCK TUNNEL
+use REPEL
 0x39F22 //maniac (cubone for redbar)
 0x39F1A //maniac (L25 slowpoke)
 0x39EC2 // jrtrainerf (oddish troll)
+use REPEL
+use REPEL
 0x39F81  // hiker
 0x39EE8 // jrtrainerf
+
+// max ether?
+// get MAXETHER
 
 //WEST OF LAVENDER (ROUTE 8)
 0x3A0CD  //gambler
 
+// underground
+get ELIXER
+// race/bad stats; get NUGGET
+
 //shopping~
+// race/bad stats; sell NUGGET
+buy POKEDOLL
+buy 10 XACCURACY
+buy 4 XSPEED
+buy 4 XSPECIAL
+buy 2 FRESHWATER
+buy SODAPOP
+use FRESHWATER
+get TM13
+use SODAPOP
+get TM48
+buy TM07
+buy 10 SUPERREPEL
+
 // Adjust moveset to be Thrash, Tbolt, Horn Drill, RockSlide
+get HM02
+swap HELIXFOSSIL SUPERREPEL
+use TM07
 lm HORNDRILL
 um BUBBLEBEAM
+use SUPERREPEL
+swap ETHER XACCURACY
+use TM48
 lm ROCKSLIDE
 um POISONSTING
 
 //LAVENDER TOWER
 0x3A42B -xacc //rival fight (for squirtles)
-0x3A4E3 -v 2 // (not sure about actual offset for these)
-
-0x3A507 -v 2// gastlies
-0x3A504 -v 2//
-
+0x3A4E3 // L23 gastlies
+get ELIXER
+get ELIXER
+0x3A507 // L24 gastlies
+0x3A504 // ...
+get RARECANDY
+use POKEDOLL
 0x3A2ED //rockets
 0x3A2F2 -xacc //
 0x3A2F6 //
+get POKEFLUTE
 
 // trip to safari zone
+use SUPERREPEL
+get RARECANDY
+use SUPERREPEL
+swap SSTICKET XSPEED
+use TM13
 lm ICEBEAM
 um ROCKSLIDE
+get FULLRESTORE
+use SUPERREPEL
+get GOLDTEETH
+get HM03
 
 //SILPH
+use FRESHWATER
 0x3A34B // EQ rocket (maybe use xacc)
+get RARECANDY
+get TM26
+use TM26
 lm EARTHQUAKE
 um THRASH
 0x3A319 // CK rocket
+get CARDKEY
 // Rival Silph Co:
 // normal is xacc xspeed
 // might also xacc xspeed xspecial to manip redbar on gyara
@@ -134,7 +219,8 @@ um THRASH
 
 //KOGA
 0x3A13A //juggler 
-0x3A140 -v 2 //juggler 
+use ELIXER
+0x3A140 //juggler 
 // hack here for boom strats:
 // 3A3D2 is koga without Weezing's (stat) EXP at the end
 // 3A3D1 is the original koga
@@ -142,11 +228,17 @@ um THRASH
 0x3A3D2 -xacc //KOGA
 
 // mansion candies
+use GOLDTEETH
+get HM04
+use SUPERREPEL
 rarecandy
 rarecandy
 rarecandy
+use SUPERREPEL
 rarecandy
 rarecandy
+get SECRETKEY
+// carboses also go here for convenience
 
 //ERIKA
 0x3A0DB //eggs
@@ -162,21 +254,24 @@ rarecandy
 //GIOVANNI
 0x3A382 // rhyhorn
 // elixir here if good special
+use ELIXER
 0x3A1DA -xspc 1 -bbs 1/1/1/0 // blackbelt
 0x3A290  // GIOVANNI (very low speed X speeds, can also X special)
     
 //WEST OF VIRIDIAN
+use SUPERREPEL
 // very bad speed: Xacc xspeed
 // ok/good speed: Xacc xspec
-0x3A475 -xacc -xspc 1 -bbs 1/1/1/0//rival fight (for squirtle)   
+0x3A475 -xacc -xspc 1 -bbs 1/1/1/0//rival fight (for squirtle)
+use 3 SUPERREPEL
 
 //E4
-0x3A4BB -xacc -v 2//LORELEI, very low speed X Speeds
+0x3A4BB -xacc //LORELEI, very low speed X Speeds
 0x3A3A9 -xacc //BRUNO
-0x3A516 -xacc -xspd 1 -v 2 //TROLL (AGATHA)
+0x3A516 -xacc -xspd 1 //TROLL (AGATHA)
 // very low special might use a second speed/special here to guarantee aerodactyl
 // badge boosts aren't present on gyarados
-0x3A522 -xspc 1 -xspd 1 -bbs 1/1/0/1 -v 2 //LANCE
+0x3A522 -xspc 1 -xspd 1 -bbs 1/1/0/1 //LANCE
 // rival:
 // if 15 speed at level 8 + good special, xacc xspec drillx2 ib drillx3
 // if not, xacc xspeed drill eq drillx4
