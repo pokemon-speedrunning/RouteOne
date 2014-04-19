@@ -109,8 +109,8 @@ um POISONSTING
 0x3A42B -xacc //rival fight (for squirtles)
 0x3A4E3 -v 2 // (not sure about actual offset for these)
 
-0x3A507 // gastlies
-0x3A504 //
+0x3A507 -v 2// gastlies
+0x3A504 -v 2//
 
 0x3A2ED //rockets
 0x3A2F2 -xacc //
@@ -125,6 +125,9 @@ um ROCKSLIDE
 lm EARTHQUAKE
 um THRASH
 0x3A319 // CK rocket
+// Rival Silph Co:
+// normal is xacc xspeed
+// might also xacc xspeed xspecial to manip redbar on gyara
 0x3A44F -xspd 1 -xacc //rival silph co (for squirtle)
 0x3A355 //rocket
 0x3A286 -xacc //giovanni
@@ -170,9 +173,10 @@ rarecandy
 //E4
 0x3A4BB -xacc -v 2//LORELEI, very low speed X Speeds
 0x3A3A9 -xacc //BRUNO
-0x3A516 -xacc -v 2 //TROLL (AGATHA)
+0x3A516 -xacc -xspd 1 -v 2 //TROLL (AGATHA)
 // very low special might use a second speed/special here to guarantee aerodactyl
-0x3A522 -xspc 1 -xspd 1 -v 2 //LANCE
+// badge boosts aren't present on gyarados
+0x3A522 -xspc 1 -xspd 1 -bbs 1/1/0/1 -v 2 //LANCE
 // rival:
 // if 15 speed at level 8 + good special, xacc xspec drillx2 ib drillx3
 // if not, xacc xspeed drill eq drillx4
