@@ -135,6 +135,18 @@ public class RouteParser {
         else if(firstToken.equalsIgnoreCase("carbos")) {
             return GameAction.eatCarbos;
         }
+        else if(firstToken.equalsIgnoreCase("boulderbadge")) {
+            return GameAction.getBoulderBadge;
+        }
+        else if(firstToken.equalsIgnoreCase("soulbadge")) {
+            return GameAction.getSoulBadge;
+        }
+        else if(firstToken.equalsIgnoreCase("thunderbadge")) {
+            return GameAction.getThunderBadge;
+        }
+        else if(firstToken.equalsIgnoreCase("volcanobadge")) {
+            return GameAction.getVolcanoBadge;
+        }
         //inventory manipulation
         else if(firstToken.equalsIgnoreCase("get")) {
             if(n < 2) {
