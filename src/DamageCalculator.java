@@ -147,7 +147,7 @@ public class DamageCalculator {
 			} else {
 				sb.append("low dmg miss");
 			}
-            sb.append("%\t(crit: ");
+            sb.append("\t(crit: ");
             
             //do it again, for crits
             double critMinPct = 100.0 * critMinDmg / enemyHP;
