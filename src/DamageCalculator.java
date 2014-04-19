@@ -176,6 +176,7 @@ public class DamageCalculator {
 				minDmgWork += minDmg;
 				maxDmgWork += maxDmg;
 				if (maxDmgWork >= oppHP && minDmgWork < oppHP) {
+					System.out.println("working out a " + hits + "-shot");
 					double nShotPct = nShotPercentage(m, p1, p2, mod1, mod2, hits, 0);
 					sb.append(String.format("\t(%d shot prob.: %.04f%%)", hits, nShotPct) + endl);
 				}
