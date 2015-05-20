@@ -3,3 +3,4 @@ out.txt
 *.class
 build/
 *out.txt
+*.jar
