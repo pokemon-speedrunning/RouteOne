@@ -2,3 +2,4 @@ bin/
 out.txt
 *.class
 build/
+*out.txt
