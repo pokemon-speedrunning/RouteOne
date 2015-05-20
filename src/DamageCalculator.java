@@ -126,7 +126,7 @@ public class DamageCalculator {
 		        	sb.append("          NON-CRITS");
 		        	for(Integer i : dmgMap.keySet())
 		        	{
-		        		if((i - minDmg) % 10 == 0)
+		        		if((i - minDmg) % 7 == 0)
 		        		{
 		        			sb.append(endl);
 		        			if(i.intValue() == p2.getHP() && minDmg != p2.getHP())
@@ -149,7 +149,7 @@ public class DamageCalculator {
 		        	sb.append("          CRITS");
 		        	for(Integer i : critMap.keySet())
 		        	{
-		        		if((i - minCritDmg) % 10 == 0)
+		        		if((i - minCritDmg) % 7 == 0)
 		        		{
 		        			sb.append(endl);
 		        			if(i.intValue() == p2.getHP() && minCritDmg != p2.getHP())
@@ -198,7 +198,7 @@ public class DamageCalculator {
 		        	sb.append("          NON-CRITS");
 		        	for(Integer i : dmgMap.keySet())
 		        	{
-		        		if((i - minDmg) % 10 == 0)
+		        		if((i - minDmg) % 7 == 0)
 		        		{
 		        			sb.append(endl);
 		        			if(i.intValue() == p1.getHP() && minDmg != p1.getHP())
@@ -221,7 +221,7 @@ public class DamageCalculator {
 		        	sb.append("          CRITS");
 		        	for(Integer i : critMap.keySet())
 		        	{
-		        		if((i - minCritDmg) % 10 == 0)
+		        		if((i - minCritDmg) % 7 == 0)
 		        		{
 		        			sb.append(endl);
 		        			if(i.intValue() == p1.getHP() && minCritDmg != p1.getHP())
