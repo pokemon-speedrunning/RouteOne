@@ -44,10 +44,18 @@ public abstract class GameAction {
         void performAction(Pokemon p, Inventory inv) { Main.appendln(p.statsWithoutBoost()); }
     };
     public static final GameAction printStatRanges = new GameAction() {
-        void performAction(Pokemon p, Inventory inv) { Main.appendln(p.statRanges(true)); }
+        void performAction(Pokemon p, Inventory inv) { 
+			Main.appendln(p.statRanges(true)); 
+            Main.appendln(String.format("LVL: %d EXP NEEDED: %d/%d", p.getLevel(),
+                    p.expToNextLevel(), p.expForLevel()));
+		}
     };
     public static final GameAction printStatRangesNoBoost = new GameAction() {
-        void performAction(Pokemon p, Inventory inv) { Main.appendln(p.statRanges(false)); }
+        void performAction(Pokemon p, Inventory inv) { 
+			Main.appendln(p.statRanges(false)); 
+        	Main.appendln(String.format("LVL: %d EXP NEEDED: %d/%d", p.getLevel(),
+                p.expToNextLevel(), p.expForLevel()));
+		}
     };
     public static final GameAction printMoney = new GameAction() {
         void performAction(Pokemon p, Inventory inv) { Main.appendln(inv.moneyString()); }

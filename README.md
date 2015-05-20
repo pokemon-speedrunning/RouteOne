@@ -1,8 +1,7 @@
-RouteOne v1.04 beta, by HRoll
+Entrpntr's fork of RouteOne. Do not have any expectation of config/route/output files reflecting optimal strats; these files are in a forever-tinkering state.
 
-RouteTwo is available from: https://github.com/Dabomstew/pokemon-routetwo
 
-README
+ORIGINAL README (Hroll/Dabomstew)
 
 To use RouteOne, execute the .jar file with a proper config.ini file. To run this, you will need Java 7 (http://www.java.com/en/download/win8.jsp?locale=en). Make sure you have a proper route file whose filename is given under the appropriate option in the config file. To read your output, simply open the text file whose filename you specified in the config file.
 

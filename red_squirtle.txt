@@ -1,0 +1,104 @@
+//to be used with L5 squirtle
+
+ranges
+
+0x3A1E7 -ydef -1 -v EVERYTHING //first rival fight
+
+ranges 
+
+L3 RATTATA 15 15 15 15 -ydef -1 -v EVERYTHING
+
+0x39DD7 -lvranges -ydef -2 -v EVERYTHING //lvl9 bug
+
+//L2 PIDGEY 15 15 15 15 -ydef -1 -v EVERYTHING
+
+learnmove BUBBLE
+
+//0x39E78 -v EVERYTHING
+0x3A3B5 -lvranges -v EVERYTHING //brock
+
+//4 ppl at route 3
+0x39DDA -ydef -0 -bbs 0/0/0/0 -lvranges -v EVERYTHING
+0x39D99 -ydef -1 -bbs 0/0/0/0 -lvranges -v EVERYTHING
+    //0x39E10 -bbs 0/0/0/0 -v EVERYTHING
+lm WATERGUN
+0x39DDF -lvranges -v EVERYTHING
+0x39DE5 -v EVERYTHING 
+learnmove WATERGUN
+
+//stats 
+lm MEGAPUNCH
+//L8 PARAS 9 8 8 8 -v EVERYTHING
+um TACKLE
+
+//L8 GEODUDE -v ALL
+//L8 GEODUDE -v ALL
+//L8 GEODUDE -v ALL
+//L8 GEODUDE -v ALL
+//L9 GEODUDE -v ALL
+
+//0x39F5E -lvranges -v EVERYTHING
+//evolve WARTORTLE
+0x3A29C -lvranges -v EVERYTHING -xdef 0 //mt moon rocket
+evolve WARTORTLE
+0x39F2A -lvranges -v EVERYTHING //mt moon nerd
+//L12 ZUBAT 13 12 13 12 -v ALL
+
+//MISTY
+0x39E9D -lvranges -ydef -1 -bbs 0/0/0/0 -v ALL //goldeen
+0x3A3BB -lvranges -ydef -0 -v ALL  //MISTY
+
+lm BUBBLEBEAM
+um TAILWHIP
+
+0x3A209 -ydef -0 -v EVERYTHING  //cerulean rival fight (if you are squirtle)
+
+//NUGGET BRIDGE
+0x39DF2 -v EVERYTHING   //1: bug catcher
+0x39E27 -v ALL   //2: lass
+0x39DA5 -v ALL   //3: youngster
+0x39E23 -v ALL   //4: lass
+0x39E80 -v ALL   //5: jrtrainerm
+0x3A2B0 -v ALL   //rocket
+0x39F6D -v ALL   // onix hiker
+//0x39F63 -v EVERYTHING // elixir hiker
+0x39E2B -v ALL   //lass
+0x39E7C -v ALL   //jrtrainerm
+0x39E2F -lvranges -v ALL   //lass
+
+lm BITE
+um BUBBLE
+
+//BETWEEN CERULEAN AND VERMILLION
+0x3A2AC -v EVERYTHING   //rocket
+0x39EA4 -v ALL   //pidgey girl
+0x39E86 -lvranges -v ALL   //jrtrainerm
+0x3A40B -lvranges -xatk -0 -v ALL   //ss anne rival fight (for squirtle)
+
+lm DIG
+um WATERGUN
+
+//SURGE
+0x3A3C1 -lvranges -v ALL  //SURGE fight
+
+//EAST OF CERULEAN (ROUTE 9)
+0x39EAC -lvranges -v ALL //jrtrainerf
+0x39E07 -v ALL //bug catcher
+
+//ROCK TUNNEL
+0x39F22 -v EVERYTHING //maniac
+0x39F1A -v EVERYTHING //maniac
+0x39EC2 -lvranges -xatk -0 -v EVERYTHING //jrtrainerf
+0x39F81 -v ALL //hiker
+0x39EE8 -lvranges -v EVERYTHING //jrtrainerf
+0x3A0CD -v ALL //gambler
+
+//LAVENDER TOWER
+0x3A42B -lvranges -xatk 1 -v ALL //rival fight (for squirtles)
+0x3A4CD -lvranges -v ALL // (not sure about actual offset for these)
+
+0x3A4CA -v ALL // gastlies
+0x3A4CA -v ALL //
+0x3A2ED -lvranges -v ALL  //rockets
+0x3A2F2 -lvranges -v EVERYTHING //
+0x3A2F6 -v ALL //

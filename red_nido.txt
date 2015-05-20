@@ -1,0 +1,87 @@
+//ranges
+
+boulderbadge
+thunderbadge
+
+lm ICEBEAM
+um FURYATTACK
+
+lm HORNDRILL
+um HORNATTACK
+
+//lm THUNDERBOLT
+rc
+ranges
+evolve NIDOKING
+ranges
+//protein
+//carbos
+//carbos
+//carbos
+
+//SILPH
+0x3A34B -v ALL // rocket
+lm EARTHQUAKE
+um POISONSTING
+0x3A319  -v ALL //rocket
+0x3A44F -lvranges -v ALL //rival silph co (for squirtle)
+0x3A355 -lvranges -v ALL //rocket
+//rc
+//rc
+//rc
+0x3A286 -v ALL //giovanni
+
+// KOGA GYM
+0x3A13A -v ALL //juggler 
+//rc
+rc
+0x3A140 -v ALL //juggler 
+0x3A3D1 -lvrangesb -v ALL //KOGA
+
+rc
+rc
+rc
+rc
+//rc
+//rc
+//rc
+
+lm SURF
+um FOCUSENERGY
+
+//BLAINE
+0x3A3DB -xspc 1 -xspd 1 -bbs 2/2/1/0 -lvrangesb -v ALL //BLAINE
+//rc
+//rc
+//rc
+//rc
+//SABRINA
+0x3A3E5 -lvrangesb -v ALL //SABRINA
+
+//ERIKA
+0x3A0DB -v ALL //eggs
+0x3A3C9 -v ALL //ERIKA
+        
+//GIOVANNI
+0x3A382 -v ALL //cooltrainer
+0x3A1DA -xspc 1 -bbs 1/1/1/0 -lvrangesb -v ALL //karate king
+//rc
+//rc
+0x3A290 -lvrangesb -v ALL //GIOVANNI
+    
+//WEST OF VIRIDIAN
+0x3A475 -bbs 1/1/0/1 -lvranges -v ALL //rival fight (for squirtle)
+
+//E4
+
+0x3A4BB -lvrangesb -v ALL //LORELEI
+0x3A3A9 -v ALL -lvrangesb //BRUNO
+//rc
+ranges -b
+0x3A516 -lvranges -v EVERYTHING //AGATHA
+
+//lm THUNDERBOLT
+//um EARTHQUAKE
+
+0x3A522 -lvranges -xspc 2 -bbs 2/2/2/0 -v EVERYTHING //LANCE
+0x3A49F -lvranges -xspc 1 -v EVERYTHING //GARY  OAK
