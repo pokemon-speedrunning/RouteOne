@@ -1,7 +1,7 @@
-Entrpntr's fork of RouteOne. Do not have any expectation of config/route/output files reflecting optimal strats; these files are in a forever-tinkering state.
+Fork of HRoll's RouteOne with changes mainly by Dabomstew (in April 2014) and entrpntr (more recently). Don't expect route files to 100% reflect the most up-to-date strats, as strats are always changing. Create an issue on Dabomstew/poke-router to send in a bug report, the original author is no longer active.
 
 
-ORIGINAL README (Hroll/Dabomstew)
+ORIGINAL README (HRoll)
 
 To use RouteOne, execute the .jar file with a proper config.ini file. To run this, you will need Java 7 (http://www.java.com/en/download/win8.jsp?locale=en). Make sure you have a proper route file whose filename is given under the appropriate option in the config file. To read your output, simply open the text file whose filename you specified in the config file.
 
