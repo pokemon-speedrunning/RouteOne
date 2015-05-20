@@ -805,73 +805,6 @@ Harden
 
 
 LVL: 15 EXP NEEDED: 285/500
-L15 Squirtle vs L8 Paras          >>> EXP GIVEN: 80
-Squirtle (39/25/25/23/23) 
-Tackle	9-11 37.50-45.83%	(crit: 14-17 58.33-70.83%)
-	(1 non-crit + 1 crit death prob.: 92.1105%)
-Tail Whip	
-Bubble	3-4 12.50-16.67%	(crit: 5-7 20.83-29.17%)
-	(6 shot prob.: 0.0000%)
-	(7 shot prob.: 0.0546%)
-	(4 crits death prob.: 82.3951%)
-	(1 non-crit + 3 crits death prob.: 0.0064%)
-	(1 non-crit + 4 crits death prob.: 99.9993%)
-	(2 non-crits + 3 crits death prob.: 86.7944%)
-	(3 non-crits + 2 crits death prob.: 0.0155%)
-	(4 non-crits + 2 crits death prob.: 91.2049%)
-	(5 non-crits + 1 crit death prob.: 0.0310%)
-Water Gun	6-8 25.00-33.33%	(crit: 11-14 45.83-58.33%)
-	(3 shot prob.: 0.0017%)
-	(2 crits death prob.: 95.0033%)
-	(2 non-crits + 1 crit death prob.: 99.8348%)
-Mega Punch	19-23 79.17-95.83%	(crit: 30-36 125.00-150.00%)
-
-Tackle
-          NON-CRITS
-              9:  38.46%      10:  58.97%      11:   2.56%     
-
-          CRITS
-             14:  20.51%      15:  38.46%      16:  38.46%      17:   2.56%     
-
-Bubble
-          NON-CRITS
-              3:  97.44%       4:   2.56%     
-
-          CRITS
-              5:   5.13%       6:  92.31%       7:   2.56%     
-
-Water Gun
-          NON-CRITS
-              6:  17.95%       7:  79.49%       8:   2.56%     
-
-          CRITS
-             11:   5.13%      12:  46.15%      13:  46.15%      14:   2.56%     
-
-Mega Punch
-          NON-CRITS
-             19:  12.82%      20:  28.21%      21:  28.21%      22:  28.21%      23:   2.56%     
-
-          CRITS
-             24: 100.00%     
-
-Paras (24/17/15/10/15): 
-Scratch	3-4 7.69-10.26%	(crit: 5-6 12.82-15.38%)
-	(10 shot prob.: 0.0000%)
-	(7 crits death prob.: 0.0014%)
-	(3 non-crits + 5 crits death prob.: 0.0001%)
-	(4 non-crits + 4 crits death prob.: 0.0000%)
-	(4 non-crits + 5 crits death prob.: 2.0994%)
-	(5 non-crits + 4 crits death prob.: 0.0049%)
-
-Scratch
-          NON-CRITS
-              3:  97.44%       4:   2.56%     
-
-          CRITS
-              5:  97.44%       6:   2.56%     
-
-
-LVL: 15 EXP NEEDED: 205/500
 ROCKET (0x3A29C: L13 Rattata, L13 Zubat, ) Prize 390
 L15 Squirtle vs L13 Rattata          >>> EXP GIVEN: 157
 Squirtle (39/25/25/23/23) 
@@ -935,7 +868,7 @@ Quick Attack
              12:  10.26%      13:  43.59%      14:  43.59%      15:   2.56%     
 
 
-LVL: 15 EXP NEEDED: 48/500
+LVL: 15 EXP NEEDED: 128/500
 L15 Squirtle vs L13 Zubat          >>> EXP GIVEN: 150
 Squirtle (39/25/25/23/23) 
 Tail Whip	
@@ -997,9 +930,9 @@ HP  |  41|  41|  41|  42|  42|  42|  43|  43|  43|  44|  44|  44|  45|  45|  45|
 ATK |  21|  21|  22|  22|  22|  23|  23|  23|  24|  24|  24|  25|  25|  25|  25|  26
 DEF |  26|  27|  27|  27|  28|  28|  28|  29|  29|  29|  30|  30|  30|  31|  31|  31
 SPD |  19|  20|  20|  20|  21|  21|  21|  22|  22|  22|  23|  23|  23|  24|  24|  24
-SPC |  21|  22|  22|  22|  23|  23|  23|  24|  24|  24|  25|  25|  25|  26|  26|  26
+SPC |  21|  22|  22|  22|  23|  23|  23|  24|  24|  24|  25|  25|  25|  25|  26|  26
 
-LVL: 16 EXP NEEDED: 483/585
+LVL: 16 EXP NEEDED: 563/585
 SUPER NERD (0x39F2A: L12 Grimer, L12 Voltorb, L12 Koffing, ) Prize 300
 L16 Wartortle vs L12 Grimer          >>> EXP GIVEN: 231
 Wartortle (46/33/31/29/29) 
@@ -1054,7 +987,7 @@ Pound
               7:  25.64%       8:  71.79%       9:   2.56%     
 
 
-LVL: 16 EXP NEEDED: 252/585
+LVL: 16 EXP NEEDED: 332/585
 L16 Wartortle vs L12 Voltorb          >>> EXP GIVEN: 264
 Wartortle (46/33/31/29/29) 
 Tail Whip	
@@ -1099,61 +1032,55 @@ Tackle
               4:  97.44%       5:   2.56%     
 
 
-L17 Wartortle
-Stat ranges WITHOUT badge boosts:
-IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
-------------------------------------------------------------------------------------
-HP  |  48|  48|  48|  49|  49|  49|  50|  50|  50|  51|  51|  51|  52|  52|  53|  53
-ATK |  27|  27|  28|  28|  28|  29|  29|  29|  30|  30|  31|  31|  31|  32|  32|  32
-DEF |  33|  33|  34|  34|  34|  35|  35|  35|  36|  36|  36|  37|  37|  37|  38|  38
-SPD |  26|  26|  26|  27|  27|  27|  28|  28|  28|  29|  29|  29|  30|  30|  30|  31
-SPC |  28|  28|  28|  29|  29|  29|  30|  30|  30|  31|  31|  31|  32|  32|  32|  33
-
-LVL: 17 EXP NEEDED: 666/678
-L17 Wartortle vs L12 Koffing          >>> EXP GIVEN: 292
-Wartortle (48/34/33/30/31) 
+LVL: 16 EXP NEEDED: 68/585
+L16 Wartortle vs L12 Koffing          >>> EXP GIVEN: 292
+Wartortle (46/33/31/29/29) 
 Tail Whip	
-Bubble	7-9 21.21-27.27%	(crit: 12-15 36.36-45.45%)
+Bubble	7-9 21.21-27.27%	(crit: 11-13 33.33-39.39%)
 	(4 shot prob.: 4.1507%)
-	(1 non-crit + 2 crits death prob.: 96.6823%)
-	(2 non-crits + 1 crit death prob.: 0.0017%)
-Water Gun	13-16 39.39-48.48%	(crit: 23-28 69.70-84.85%)
-Mega Punch	14-17 42.42-51.52%	(crit: 22-27 66.67-81.82%)
-	(2 shot prob.: 2.0381%)
+	(1 non-crit + 2 crits death prob.: 2.5961%)
+	(3 non-crits + 1 crit death prob.: 99.1787%)
+Water Gun	12-15 36.36-45.45%	(crit: 21-25 63.64-75.76%)
+Mega Punch	13-16 39.39-48.48%	(crit: 21-25 63.64-75.76%)
 
 Bubble
           NON-CRITS
               7:  25.64%       8:  71.79%       9:   2.56%     
 
           CRITS
-             12:  10.26%      13:  43.59%      14:  43.59%      15:   2.56%     
+             11:  48.72%      12:  48.72%      13:   2.56%     
 
 Water Gun
+          NON-CRITS
+             12:  10.26%      13:  43.59%      14:  43.59%      15:   2.56%     
+
+          CRITS
+             21:  20.51%      22:  25.64%      23:  25.64%      24:  25.64%      25:   2.56%     
+
+Mega Punch
           NON-CRITS
              13:  17.95%      14:  41.03%      15:  38.46%      16:   2.56%     
 
           CRITS
-             23:   5.13%      24:  23.08%      25:  23.08%      26:  23.08%      27:  23.08%      28:   2.56%     
-
-Mega Punch
-          NON-CRITS
-             14:  20.51%      15:  38.46%      16:  38.46%      17:   2.56%     
-
-          CRITS
-             22:   2.56%      23:  23.08%      24:  25.64%      25:  23.08%      26:  23.08%      27:   2.56%     
+             21:  20.51%      22:  25.64%      23:  25.64%      24:  25.64%      25:   2.56%     
 
 Koffing (33/22/29/15/21): 
-Tackle	3-4 6.25-8.33%	(crit: 5-7 10.42-14.58%)
-	(7 crits death prob.: 0.0000%)
-	(8 crits death prob.: 70.6370%)
+Tackle	3-4 6.52-8.70%	(crit: 5-7 10.87-15.22%)
+	(7 crits death prob.: 0.0012%)
+	(8 crits death prob.: 99.4531%)
 	(9 crits death prob.: 100.0000%)
-	(4 non-crits + 5 crits death prob.: 0.0000%)
+	(3 non-crits + 5 crits death prob.: 0.0000%)
+	(4 non-crits + 5 crits death prob.: 0.0042%)
 	(5 non-crits + 4 crits death prob.: 0.0000%)
-	(5 non-crits + 5 crits death prob.: 0.1477%)
-Smog	3-4 6.25-8.33%	(crit: 5-6 10.42-12.50%)
-	(8 crits death prob.: 0.0000%)
-	(9 crits death prob.: 0.1261%)
-	(5 non-crits + 5 crits death prob.: 0.0000%)
+	(5 non-crits + 5 crits death prob.: 18.4602%)
+Smog	3-4 6.52-8.70%	(crit: 5-7 10.87-15.22%)
+	(7 crits death prob.: 0.0012%)
+	(8 crits death prob.: 99.4531%)
+	(9 crits death prob.: 100.0000%)
+	(3 non-crits + 5 crits death prob.: 0.0000%)
+	(4 non-crits + 5 crits death prob.: 0.0042%)
+	(5 non-crits + 4 crits death prob.: 0.0000%)
+	(5 non-crits + 5 crits death prob.: 18.4602%)
 
 Tackle
           NON-CRITS
@@ -1167,10 +1094,20 @@ Smog
               3:  97.44%       4:   2.56%     
 
           CRITS
-              5:  97.44%       6:   2.56%     
+              5:   5.13%       6:  92.31%       7:   2.56%     
 
 
-LVL: 17 EXP NEEDED: 374/678
+L17 Wartortle
+Stat ranges WITHOUT badge boosts:
+IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
+------------------------------------------------------------------------------------
+HP  |  48|  48|  48|  49|  49|  49|  50|  50|  50|  51|  51|  51|  52|  52|  53|  53
+ATK |  27|  27|  28|  28|  28|  29|  29|  29|  30|  30|  31|  31|  31|  32|  32|  32
+DEF |  33|  33|  34|  34|  34|  35|  35|  35|  36|  36|  36|  37|  37|  37|  38|  38
+SPD |  26|  26|  26|  27|  27|  27|  28|  28|  28|  29|  29|  29|  30|  30|  30|  31
+SPC |  28|  28|  28|  29|  29|  29|  30|  30|  30|  31|  31|  31|  32|  32|  32|  33
+
+LVL: 17 EXP NEEDED: 454/678
 JRTRAINERF (0x39E9D: L19 Goldeen, ) Prize 380
 L17 Wartortle vs L19 Goldeen          >>> EXP GIVEN: 451
 Wartortle (48/34/33/30/31) 
@@ -1203,6 +1140,48 @@ Supersonic
 
 (Speed DV required to speedtie: 15)
 
+LVL: 17 EXP NEEDED: 3/678
+MISTY (0x3A3BB: L18 Staryu, L21 Starmie, ) Prize 2079
+L17 Wartortle vs L18 Staryu          >>> EXP GIVEN: 408
+Wartortle (48/34/33/30/31) 
+Tail Whip	
+Bubble	2-3 4.88-7.32%	(crit: 4-5 9.76-12.20%)
+	(9 crits death prob.: 0.0001%)
+	(10 crits death prob.: 22.8759%)
+Water Gun	5-6 12.20-14.63%	(crit: 7-9 17.07-21.95%)
+	(7 shot prob.: 0.0000%)
+	(8 shot prob.: 18.7634%)
+	(5 crits death prob.: 3.9265%)
+	(1 non-crit + 4 crits death prob.: 0.0002%)
+	(1 non-crit + 5 crits death prob.: 99.8920%)
+	(2 non-crits + 4 crits death prob.: 75.2615%)
+	(3 non-crits + 3 crits death prob.: 0.5222%)
+	(4 non-crits + 2 crits death prob.: 0.0000%)
+	(5 non-crits + 2 crits death prob.: 61.1329%)
+Mega Punch	15-18 36.59-43.90%	(crit: 24-29 58.54-70.73%)
+	(1 non-crit + 1 crit death prob.: 89.3491%)
+
+Staryu (41/24/27/38/33): 
+Tackle	5-6 10.42-12.50%	(crit: 8-10 16.67-20.83%)
+	(8 shot prob.: 0.0000%)
+	(9 shot prob.: 0.1261%)
+	(5 crits death prob.: 0.0071%)
+	(1 non-crit + 5 crits death prob.: 80.6485%)
+	(2 non-crits + 4 crits death prob.: 0.3279%)
+	(3 non-crits + 3 crits death prob.: 0.0000%)
+	(3 non-crits + 4 crits death prob.: 98.8580%)
+	(4 non-crits + 3 crits death prob.: 6.4399%)
+	(5 non-crits + 2 crits death prob.: 0.0000%)
+Water Gun	5-6 10.42-12.50%	(crit: 9-11 18.75-22.92%)
+	(8 shot prob.: 0.0000%)
+	(9 shot prob.: 0.1261%)
+	(5 crits death prob.: 72.6369%)
+	(1 non-crit + 4 crits death prob.: 0.0076%)
+	(2 non-crits + 4 crits death prob.: 85.0710%)
+	(3 non-crits + 3 crits death prob.: 0.0161%)
+	(4 non-crits + 3 crits death prob.: 94.8719%)
+	(5 non-crits + 2 crits death prob.: 0.0329%)
+
 L18 Wartortle
 Stat ranges WITHOUT badge boosts:
 IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
@@ -1213,50 +1192,7 @@ DEF |  35|  35|  35|  36|  36|  37|  37|  37|  38|  38|  38|  39|  39|  39|  40|
 SPD |  27|  27|  28|  28|  28|  29|  29|  29|  30|  30|  30|  31|  31|  32|  32|  32
 SPC |  29|  30|  30|  30|  31|  31|  31|  32|  32|  32|  33|  33|  33|  34|  34|  35
 
-LVL: 18 EXP NEEDED: 700/777
-MISTY (0x3A3BB: L18 Staryu, L21 Starmie, ) Prize 2079
-L18 Wartortle vs L18 Staryu          >>> EXP GIVEN: 408
-Wartortle (50/37/35/32/33) 
-Tail Whip	
-Bubble	2-3 4.88-7.32%	(crit: 5-6 12.20-14.63%)
-	(7 crits death prob.: 0.0000%)
-	(8 crits death prob.: 18.7634%)
-	(4 non-crits + 5 crits death prob.: 0.0000%)
-	(5 non-crits + 5 crits death prob.: 0.0000%)
-Water Gun	5-6 12.20-14.63%	(crit: 8-10 19.51-24.39%)
-	(7 shot prob.: 0.0000%)
-	(8 shot prob.: 18.7634%)
-	(5 crits death prob.: 99.5885%)
-	(1 non-crit + 4 crits death prob.: 25.1390%)
-	(2 non-crits + 3 crits death prob.: 0.0002%)
-	(3 non-crits + 3 crits death prob.: 76.5378%)
-	(4 non-crits + 2 crits death prob.: 0.0219%)
-Mega Punch	17-21 41.46-51.22%	(crit: 28-33 68.29-80.49%)
-	(2 shot prob.: 1.6437%)
-
-Staryu (41/24/27/38/33): 
-Tackle	5-6 10.00-12.00%	(crit: 7-9 14.00-18.00%)
-	(9 shot prob.: 0.0001%)
-	(6 crits death prob.: 0.2885%)
-	(7 crits death prob.: 99.9927%)
-	(1 non-crit + 5 crits death prob.: 0.0000%)
-	(2 non-crits + 5 crits death prob.: 29.8341%)
-	(3 non-crits + 4 crits death prob.: 0.0284%)
-	(4 non-crits + 3 crits death prob.: 0.0000%)
-	(4 non-crits + 4 crits death prob.: 95.2059%)
-	(5 non-crits + 3 crits death prob.: 9.2641%)
-Water Gun	5-6 10.00-12.00%	(crit: 8-10 16.00-20.00%)
-	(9 shot prob.: 0.0001%)
-	(5 crits death prob.: 0.0000%)
-	(6 crits death prob.: 98.2800%)
-	(1 non-crit + 5 crits death prob.: 18.9034%)
-	(2 non-crits + 4 crits death prob.: 0.0004%)
-	(3 non-crits + 4 crits death prob.: 63.5952%)
-	(4 non-crits + 3 crits death prob.: 0.0284%)
-	(5 non-crits + 2 crits death prob.: 0.0000%)
-	(5 non-crits + 3 crits death prob.: 96.7474%)
-
-LVL: 18 EXP NEEDED: 292/777
+LVL: 18 EXP NEEDED: 372/777
 L18 Wartortle vs L21 Starmie          >>> EXP GIVEN: 931
 Wartortle (50/37/35/32/33) 
 Tail Whip	
@@ -1299,7 +1235,7 @@ DEF |  37|  37|  37|  38|  38|  39|  39|  39|  40|  40|  40|  41|  41|  42|  42|
 SPD |  28|  29|  29|  29|  30|  30|  31|  31|  31|  32|  32|  32|  33|  33|  34|  34
 SPC |  31|  31|  31|  32|  32|  32|  33|  33|  34|  34|  34|  35|  35|  35|  36|  36
 
-LVL: 19 EXP NEEDED: 246/885
+LVL: 19 EXP NEEDED: 326/885
 RIVAL1 (0x3A209: L18 Pidgeotto, L15 Abra, L15 Rattata, L17 Bulbasaur, ) Prize 595
 L19 Wartortle vs L18 Pidgeotto          >>> EXP GIVEN: 435
 Wartortle (52/39/37/34/34) 
@@ -1376,7 +1312,7 @@ Quick Attack
 
 (Speed DV required to outspeed: 14, to speedtie: 12)
 
-LVL: 20 EXP NEEDED: 809/998
+LVL: 20 EXP NEEDED: 889/998
 L20 Wartortle vs L15 Abra          >>> EXP GIVEN: 234
 Wartortle (55/40/38/35/36) 
 Bubble	5-7 14.71-20.59%	(crit: 10-12 29.41-35.29%)
@@ -1428,7 +1364,7 @@ Teleport
 
 (Speed DV required to outspeed: 13, to speedtie: 10)
 
-LVL: 20 EXP NEEDED: 575/998
+LVL: 20 EXP NEEDED: 655/998
 L20 Wartortle vs L15 Rattata          >>> EXP GIVEN: 183
 Wartortle (55/40/38/35/36) 
 Bubble	15-18 41.67-50.00%	(crit: 25-30 69.44-83.33%)
@@ -1513,7 +1449,7 @@ Hyper Fang
              20:  17.95%      21:  25.64%      22:  28.21%      23:  25.64%      24:   2.56%     
 
 
-LVL: 20 EXP NEEDED: 392/998
+LVL: 20 EXP NEEDED: 472/998
 L20 Wartortle vs L17 Bulbasaur          >>> EXP GIVEN: 232
 Wartortle (55/40/38/35/36) 
 Bubble	3-4 6.67-8.89%	(crit: 5-7 11.11-15.56%)
@@ -1597,7 +1533,7 @@ Vine Whip
              25:  10.26%      26:  23.08%      27:  20.51%      28:  23.08%      29:  20.51%      30:   2.56%     
 
 
-LVL: 20 EXP NEEDED: 160/998
+LVL: 20 EXP NEEDED: 240/998
 BUG CATCHER (0x39DF2: L14 Caterpie, L14 Weedle, ) Prize 140
 L20 Wartortle vs L14 Caterpie          >>> EXP GIVEN: 159
 Wartortle (55/40/38/35/36) 
@@ -1653,7 +1589,7 @@ Tackle
               4:  97.44%       5:   2.56%     
 
 
-LVL: 20 EXP NEEDED: 1/998
+LVL: 20 EXP NEEDED: 81/998
 L20 Wartortle vs L14 Weedle          >>> EXP GIVEN: 156
 Wartortle (55/40/38/35/36) 
 Bubble	17-21 45.95-56.76%	(crit: 28-34 75.68-91.89%)
@@ -1705,7 +1641,7 @@ Poison Sting
               3:  97.44%       4:   2.56%     
 
 
-LVL: 21 EXP NEEDED: 964/1119
+LVL: 21 EXP NEEDED: 1044/1119
 LASS (0x39E27: L14 Pidgey, L14 NidoranF, ) Prize 210
 L21 Wartortle vs L14 Pidgey          >>> EXP GIVEN: 165
 Wartortle (57/42/40/37/38) 
@@ -1738,7 +1674,7 @@ Quick Attack	5-6 8.77-10.53%	(crit: 8-10 14.04-17.54%)
 	(4 non-crits + 4 crits death prob.: 5.2695%)
 	(5 non-crits + 3 crits death prob.: 0.0000%)
 
-LVL: 21 EXP NEEDED: 799/1119
+LVL: 21 EXP NEEDED: 879/1119
 L21 Wartortle vs L14 NidoranF          >>> EXP GIVEN: 177
 Wartortle (57/42/40/37/38) 
 Bubble	12-15 29.27-36.59%	(crit: 21-25 51.22-60.98%)
@@ -1758,7 +1694,7 @@ Scratch	3-4 5.26-7.02%	(crit: 5-7 8.77-12.28%)
 	(10 crits death prob.: 99.9030%)
 Poison Sting	3-4 5.26-7.02%	(crit: 3-4 5.26-7.02%)
 
-LVL: 21 EXP NEEDED: 622/1119
+LVL: 21 EXP NEEDED: 702/1119
 YOUNGSTER (0x39DA5: L14 Rattata, L14 Ekans, L14 Zubat, ) Prize 210
 L21 Wartortle vs L14 Rattata          >>> EXP GIVEN: 171
 Wartortle (57/42/40/37/38) 
@@ -1798,7 +1734,7 @@ Hyper Fang	10-12 17.54-21.05%	(crit: 16-19 28.07-33.33%)
 	(2 non-crits + 2 crits death prob.: 21.1727%)
 	(4 non-crits + 1 crit death prob.: 98.8892%)
 
-LVL: 21 EXP NEEDED: 451/1119
+LVL: 21 EXP NEEDED: 531/1119
 L21 Wartortle vs L14 Ekans          >>> EXP GIVEN: 186
 Wartortle (57/42/40/37/38) 
 Bubble	12-15 33.33-41.67%	(crit: 21-25 58.33-69.44%)
@@ -1814,7 +1750,7 @@ Leer
 Poison Sting	3-4 5.26-7.02%	(crit: 5-6 8.77-10.53%)
 	(10 crits death prob.: 0.0000%)
 
-LVL: 21 EXP NEEDED: 265/1119
+LVL: 21 EXP NEEDED: 345/1119
 L21 Wartortle vs L14 Zubat          >>> EXP GIVEN: 162
 Wartortle (57/42/40/37/38) 
 Bubble	12-15 32.43-40.54%	(crit: 21-25 56.76-67.57%)
@@ -1830,7 +1766,7 @@ Zubat (37/20/17/22/18):
 Leech Life	2-3 3.51-5.26%	(crit: 3-4 5.26-7.02%)
 Supersonic	
 
-LVL: 21 EXP NEEDED: 103/1119
+LVL: 21 EXP NEEDED: 183/1119
 LASS (0x39E23: L16 Pidgey, L16 NidoranF, ) Prize 240
 L21 Wartortle vs L16 Pidgey          >>> EXP GIVEN: 187
 Wartortle (57/42/40/37/38) 
@@ -1867,9 +1803,9 @@ Quick Attack	5-7 8.77-12.28%	(crit: 10-12 17.54-21.05%)
 	(5 non-crits + 2 crits death prob.: 0.0000%)
 	(5 non-crits + 3 crits death prob.: 99.9997%)
 
-LVL: 22 EXP NEEDED: 1164/1248
+LVL: 22 EXP NEEDED: 1244/1248
 L22 Wartortle vs L16 NidoranF          >>> EXP GIVEN: 201
-Wartortle (60/45/42/39/39) 
+Wartortle (59/45/42/39/39) 
 Bubble	11-13 23.91-28.26%	(crit: 20-24 43.48-52.17%)
 	(4 shot prob.: 71.8339%)
 	(2 crits death prob.: 9.4017%)
@@ -1883,20 +1819,20 @@ BubbleBeam	34-40 73.91-86.96%	(crit: 63-75 136.96-163.04%)
 
 NidoranF (46/22/24/20/20): 
 Growl	
-Tackle	3-4 5.00-6.67%	(crit: 5-7 8.33-11.67%)
-	(9 crits death prob.: 0.0000%)
-	(10 crits death prob.: 66.1918%)
-Scratch	4-5 6.67-8.33%	(crit: 5-7 8.33-11.67%)
-	(9 crits death prob.: 0.0000%)
-	(10 crits death prob.: 66.1918%)
+Tackle	3-4 5.08-6.78%	(crit: 5-7 8.47-11.86%)
+	(9 crits death prob.: 0.0001%)
+	(10 crits death prob.: 92.5451%)
+Scratch	4-5 6.78-8.47%	(crit: 5-7 8.47-11.86%)
+	(9 crits death prob.: 0.0001%)
+	(10 crits death prob.: 92.5451%)
 	(5 non-crits + 5 crits death prob.: 0.0000%)
-Poison Sting	3-4 5.00-6.67%	(crit: 5-6 8.33-10.00%)
+Poison Sting	3-4 5.08-6.78%	(crit: 5-6 8.47-10.17%)
 	(10 crits death prob.: 0.0000%)
 
-LVL: 22 EXP NEEDED: 963/1248
+LVL: 22 EXP NEEDED: 1043/1248
 JRTRAINERM (0x39E80: L18 Mankey, ) Prize 360
 L22 Wartortle vs L18 Mankey          >>> EXP GIVEN: 285
-Wartortle (60/45/42/39/39) 
+Wartortle (59/45/42/39/39) 
 Bubble	11-13 24.44-28.89%	(crit: 20-24 44.44-53.33%)
 	(4 shot prob.: 94.3668%)
 	(2 crits death prob.: 25.1808%)
@@ -1908,31 +1844,31 @@ Mega Punch	32-38 71.11-84.44%	(crit: 52-62 115.56-137.78%)
 BubbleBeam	34-40 75.56-88.89%	(crit: 63-75 140.00-166.67%)
 
 Mankey (45/37/20/33/20): 
-Scratch	6-8 10.00-13.33%	(crit: 11-13 18.33-21.67%)
-	(8 shot prob.: 0.0013%)
-	(9 shot prob.: 94.6222%)
-	(5 crits death prob.: 6.9038%)
-	(1 non-crit + 4 crits death prob.: 0.0000%)
-	(2 non-crits + 4 crits death prob.: 60.8207%)
-	(3 non-crits + 3 crits death prob.: 0.0091%)
-	(4 non-crits + 3 crits death prob.: 97.6448%)
-	(5 non-crits + 2 crits death prob.: 2.7627%)
+Scratch	6-8 10.17-13.56%	(crit: 11-13 18.64-22.03%)
+	(8 shot prob.: 0.0323%)
+	(9 shot prob.: 98.8930%)
+	(5 crits death prob.: 25.0350%)
+	(1 non-crit + 4 crits death prob.: 0.0001%)
+	(2 non-crits + 4 crits death prob.: 86.3176%)
+	(3 non-crits + 3 crits death prob.: 0.1786%)
+	(4 non-crits + 3 crits death prob.: 99.7394%)
+	(5 non-crits + 2 crits death prob.: 15.8730%)
 Leer	
-Karate Chop	7-9 11.67-15.00%	(crit: 13-16 21.67-26.67%)
-	(7 shot prob.: 0.0006%)
-	(8 shot prob.: 97.2184%)
-	(4 crits death prob.: 4.9495%)
-	(1 non-crit + 4 crits death prob.: 99.9734%)
-	(2 non-crits + 3 crits death prob.: 21.6380%)
-	(4 non-crits + 2 crits death prob.: 53.4248%)
-	(5 non-crits + 1 crit death prob.: 0.0000%)
+Karate Chop	7-9 11.86-15.25%	(crit: 13-16 22.03-27.12%)
+	(7 shot prob.: 0.0169%)
+	(8 shot prob.: 99.5446%)
+	(4 crits death prob.: 17.1531%)
+	(2 non-crits + 3 crits death prob.: 45.7173%)
+	(3 non-crits + 2 crits death prob.: 0.0000%)
+	(4 non-crits + 2 crits death prob.: 77.6277%)
+	(5 non-crits + 1 crit death prob.: 0.0003%)
 
 (Speed DV required to outspeed: 3, to speedtie: 1)
 
-LVL: 22 EXP NEEDED: 678/1248
+LVL: 22 EXP NEEDED: 758/1248
 ROCKET (0x3A2B0: L15 Ekans, L15 Zubat, ) Prize 450
 L22 Wartortle vs L15 Ekans          >>> EXP GIVEN: 198
-Wartortle (60/45/42/39/39) 
+Wartortle (59/45/42/39/39) 
 Bubble	12-15 32.43-40.54%	(crit: 21-25 56.76-67.57%)
 	(3 shot prob.: 99.8921%)
 	(1 non-crit + 1 crit death prob.: 38.0671%)
@@ -1943,14 +1879,14 @@ BubbleBeam	35-42 94.59-113.51%	(crit: 66-78 178.38-210.81%)
 	(One shot prob.: 79.49%)
 
 Ekans (37/25/20/23/19): 
-Wrap	2-3 3.33-5.00%	(crit: 3-4 5.00-6.67%)
+Wrap	2-3 3.39-5.08%	(crit: 3-4 5.08-6.78%)
 Leer	
-Poison Sting	3-4 5.00-6.67%	(crit: 5-6 8.33-10.00%)
+Poison Sting	3-4 5.08-6.78%	(crit: 5-6 8.47-10.17%)
 	(10 crits death prob.: 0.0000%)
 
-LVL: 22 EXP NEEDED: 480/1248
+LVL: 22 EXP NEEDED: 560/1248
 L22 Wartortle vs L15 Zubat          >>> EXP GIVEN: 172
-Wartortle (60/45/42/39/39) 
+Wartortle (59/45/42/39/39) 
 Bubble	12-15 30.77-38.46%	(crit: 21-25 53.85-64.10%)
 	(3 shot prob.: 91.2945%)
 	(1 non-crit + 1 crit death prob.: 1.8409%)
@@ -1961,138 +1897,43 @@ BubbleBeam	35-42 89.74-107.69%	(crit: 66-78 169.23-200.00%)
 	(One shot prob.: 48.72%)
 
 Zubat (39/21/17/23/19): 
-Leech Life	2-3 3.33-5.00%	(crit: 3-4 5.00-6.67%)
+Leech Life	2-3 3.39-5.08%	(crit: 3-4 5.08-6.78%)
 Supersonic	
-Bite	5-6 8.33-10.00%	(crit: 8-10 13.33-16.67%)
+Bite	5-6 8.47-10.17%	(crit: 8-10 13.56-16.95%)
 	(10 shot prob.: 0.0000%)
 	(6 crits death prob.: 0.0000%)
-	(7 crits death prob.: 84.0972%)
-	(2 non-crits + 5 crits death prob.: 0.0000%)
-	(3 non-crits + 5 crits death prob.: 20.5254%)
-	(4 non-crits + 4 crits death prob.: 0.0013%)
+	(7 crits death prob.: 95.7630%)
+	(2 non-crits + 5 crits death prob.: 0.0006%)
+	(3 non-crits + 5 crits death prob.: 52.0846%)
+	(4 non-crits + 4 crits death prob.: 0.0329%)
 	(5 non-crits + 3 crits death prob.: 0.0000%)
-	(5 non-crits + 4 crits death prob.: 64.9369%)
+	(5 non-crits + 4 crits death prob.: 90.4331%)
 
-LVL: 22 EXP NEEDED: 308/1248
-HIKER (0x39F63: L15 Machop, L15 Geodude, ) Prize 525
-L22 Wartortle vs L15 Machop          >>> EXP GIVEN: 282
-Wartortle (60/45/42/39/39) 
-Bubble	13-16 27.08-33.33%	(crit: 23-28 47.92-58.33%)
-	(3 shot prob.: 0.0017%)
-	(2 crits death prob.: 97.3702%)
-Water Gun	25-30 52.08-62.50%	(crit: 45-54 93.75-112.50%)
-	(Crit one shot prob.: 74.36%)
-Mega Punch	28-34 58.33-70.83%	(crit: 48-57 100.00-118.75%)
-BubbleBeam	39-46 81.25-95.83%	(crit: 74-87 154.17-181.25%)
+LVL: 22 EXP NEEDED: 388/1248
+HIKER (0x39F6D: L17 Onix, ) Prize 595
+L22 Wartortle vs L17 Onix          >>> EXP GIVEN: 393
+Wartortle (59/45/42/39/39) 
+Bubble	54-64 131.71-156.10%	(crit: 95-112 231.71-273.17%)
+Water Gun	102-120 248.78-292.68%	(crit: 183-216 446.34-526.83%)
+Mega Punch	5-6 12.20-14.63%	(crit: 8-10 19.51-24.39%)
+	(7 shot prob.: 0.0000%)
+	(8 shot prob.: 18.7634%)
+	(5 crits death prob.: 99.5885%)
+	(1 non-crit + 4 crits death prob.: 25.1390%)
+	(2 non-crits + 3 crits death prob.: 0.0002%)
+	(3 non-crits + 3 crits death prob.: 76.5378%)
+	(4 non-crits + 2 crits death prob.: 0.0219%)
+BubbleBeam	156-184 380.49-448.78%	(crit: 296-348 721.95-848.78%)
 
-Bubble
-          NON-CRITS
-             13:  17.95%      14:  41.03%      15:  38.46%      16:   2.56%     
+Onix (41/23/62/31/17): 
+Tackle	4-5 6.78-8.47%	(crit: 5-7 8.47-11.86%)
+	(9 crits death prob.: 0.0001%)
+	(10 crits death prob.: 92.5451%)
+	(5 non-crits + 5 crits death prob.: 0.0000%)
+Screech	
+Bind	2-3 3.39-5.08%	(crit: 3-4 5.08-6.78%)
 
-          CRITS
-             23:   5.13%      24:  23.08%      25:  23.08%      26:  23.08%      27:  23.08%      28:   2.56%     
-
-Water Gun
-          NON-CRITS
-             25:  10.26%      26:  23.08%      27:  20.51%      28:  23.08%      29:  20.51%      30:   2.56%     
-
-          CRITS
-             45:   2.56%      46:  10.26%      47:  12.82%     
-
-             48:  74.36%     
-
-Mega Punch
-          NON-CRITS
-             28:   2.56%      29:  17.95%      30:  20.51%      31:  17.95%      32:  20.51%      33:  17.95%      34:   2.56%     
-
-          CRITS
-             48: 100.00%     
-
-BubbleBeam
-          NON-CRITS
-             39:  12.82%      40:  15.38%      41:  12.82%      42:  15.38%      43:  12.82%      44:  15.38%      45:  12.82%      46:   2.56%     
-
-          CRITS
-             48: 100.00%     
-
-Machop (48/31/22/17/17): 
-Karate Chop	5-7 8.33-11.67%	(crit: 10-12 16.67-20.00%)
-	(9 shot prob.: 0.0000%)
-	(10 shot prob.: 66.1918%)
-	(5 crits death prob.: 0.0000%)
-	(1 non-crit + 5 crits death prob.: 31.9380%)
-	(2 non-crits + 4 crits death prob.: 0.0003%)
-	(3 non-crits + 4 crits death prob.: 74.8317%)
-	(4 non-crits + 3 crits death prob.: 0.0195%)
-	(5 non-crits + 3 crits death prob.: 97.5419%)
-
-Karate Chop
-          NON-CRITS
-              5:   5.13%       6:  92.31%       7:   2.56%     
-
-          CRITS
-             10:  43.59%      11:  53.85%      12:   2.56%     
-
-
-LVL: 22 EXP NEEDED: 26/1248
-L22 Wartortle vs L15 Geodude          >>> EXP GIVEN: 276
-Wartortle (60/45/42/39/39) 
-Bubble	54-64 138.46-164.10%	(crit: 102-120 261.54-307.69%)
-Water Gun	105-124 269.23-317.95%	(crit: 197-232 505.13-594.87%)
-Mega Punch	8-10 20.51-25.64%	(crit: 14-17 35.90-43.59%)
-	(4 shot prob.: 0.0044%)
-	(1 non-crit + 2 crits death prob.: 70.2271%)
-	(3 non-crits + 1 crit death prob.: 99.2403%)
-BubbleBeam	166-196 425.64-502.56%	(crit: 316-372 810.26-953.85%)
-
-Bubble
-          NON-CRITS
-             39: 100.00%     
-
-          CRITS
-             39: 100.00%     
-
-Water Gun
-          NON-CRITS
-             39: 100.00%     
-
-          CRITS
-             39: 100.00%     
-
-Mega Punch
-          NON-CRITS
-              8:  33.33%       9:  64.10%      10:   2.56%     
-
-          CRITS
-             14:  20.51%      15:  38.46%      16:  38.46%      17:   2.56%     
-
-BubbleBeam
-          NON-CRITS
-             39: 100.00%     
-
-          CRITS
-             39: 100.00%     
-
-Geodude (39/31/37/13/16): 
-Tackle	5-6 8.33-10.00%	(crit: 7-9 11.67-15.00%)
-	(10 shot prob.: 0.0000%)
-	(7 crits death prob.: 0.0006%)
-	(8 crits death prob.: 97.2184%)
-	(3 non-crits + 5 crits death prob.: 0.0000%)
-	(4 non-crits + 4 crits death prob.: 0.0000%)
-	(4 non-crits + 5 crits death prob.: 31.6763%)
-	(5 non-crits + 4 crits death prob.: 0.0595%)
-Defense Curl	
-
-Tackle
-          NON-CRITS
-              5:  97.44%       6:   2.56%     
-
-          CRITS
-              7:  25.64%       8:  71.79%       9:   2.56%     
-
-
-LVL: 23 EXP NEEDED: 1133/1383
+LVL: 23 EXP NEEDED: 1378/1383
 LASS (0x39E2B: L15 NidoranM, L15 NidoranF, ) Prize 225
 L23 Wartortle vs L15 NidoranM          >>> EXP GIVEN: 192
 Wartortle (62/47/44/40/41) 
@@ -2123,7 +1964,7 @@ Horn Attack	5-7 8.06-11.29%	(crit: 9-11 14.52-17.74%)
 	(5 non-crits + 4 crits death prob.: 100.0000%)
 Poison Sting	3-4 4.84-6.45%	(crit: 5-6 8.06-9.68%)
 
-LVL: 23 EXP NEEDED: 941/1383
+LVL: 23 EXP NEEDED: 1186/1383
 L23 Wartortle vs L15 NidoranF          >>> EXP GIVEN: 189
 Wartortle (62/47/44/40/41) 
 Bubble	13-16 30.23-37.21%	(crit: 23-28 53.49-65.12%)
@@ -2142,7 +1983,7 @@ Scratch	4-5 6.45-8.06%	(crit: 5-7 8.06-11.29%)
 	(10 crits death prob.: 1.7279%)
 Poison Sting	3-4 4.84-6.45%	(crit: 5-6 8.06-9.68%)
 
-LVL: 23 EXP NEEDED: 752/1383
+LVL: 23 EXP NEEDED: 997/1383
 JRTRAINERM (0x39E7C: L14 Rattata, L14 Ekans, ) Prize 280
 L23 Wartortle vs L14 Rattata          >>> EXP GIVEN: 171
 Wartortle (62/47/44/40/41) 
@@ -2176,7 +2017,7 @@ Hyper Fang	8-10 12.90-16.13%	(crit: 15-18 24.19-29.03%)
 	(3 non-crits + 2 crits death prob.: 1.1857%)
 	(5 non-crits + 1 crit death prob.: 8.7605%)
 
-LVL: 23 EXP NEEDED: 581/1383
+LVL: 23 EXP NEEDED: 826/1383
 L23 Wartortle vs L14 Ekans          >>> EXP GIVEN: 186
 Wartortle (62/47/44/40/41) 
 Bubble	15-18 41.67-50.00%	(crit: 25-30 69.44-83.33%)
@@ -2190,7 +2031,7 @@ Wrap	2-3 3.23-4.84%	(crit: 3-4 4.84-6.45%)
 Leer	
 Poison Sting	3-4 4.84-6.45%	(crit: 5-6 8.06-9.68%)
 
-LVL: 23 EXP NEEDED: 395/1383
+LVL: 23 EXP NEEDED: 640/1383
 LASS (0x39E2F: L13 Oddish, L13 Pidgey, L13 Oddish, ) Prize 195
 L23 Wartortle vs L13 Oddish          >>> EXP GIVEN: 216
 Wartortle (62/47/44/40/41) 
@@ -2223,7 +2064,7 @@ Absorb	6-8 9.68-12.90%	(crit: 11-14 17.74-22.58%)
 	(4 non-crits + 3 crits death prob.: 98.9307%)
 	(5 non-crits + 2 crits death prob.: 2.5459%)
 
-LVL: 23 EXP NEEDED: 179/1383
+LVL: 23 EXP NEEDED: 424/1383
 L23 Wartortle vs L13 Pidgey          >>> EXP GIVEN: 153
 Wartortle (62/47/44/40/41) 
 Bubble	16-19 45.71-54.29%	(crit: 28-33 80.00-94.29%)
@@ -2250,7 +2091,7 @@ Quick Attack	5-6 8.06-9.68%	(crit: 7-9 11.29-14.52%)
 	(5 non-crits + 4 crits death prob.: 0.0001%)
 	(5 non-crits + 5 crits death prob.: 98.5272%)
 
-LVL: 23 EXP NEEDED: 26/1383
+LVL: 23 EXP NEEDED: 271/1383
 L23 Wartortle vs L13 Oddish          >>> EXP GIVEN: 216
 Wartortle (62/47/44/40/41) 
 Bubble	5-6 13.89-16.67%	(crit: 8-10 22.22-27.78%)
@@ -2282,73 +2123,62 @@ Absorb	6-8 9.68-12.90%	(crit: 11-14 17.74-22.58%)
 	(4 non-crits + 3 crits death prob.: 98.9307%)
 	(5 non-crits + 2 crits death prob.: 2.5459%)
 
-L24 Wartortle
-Stat ranges WITHOUT badge boosts:
-IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
-------------------------------------------------------------------------------------
-HP  |  64|  65|  65|  66|  66|  67|  67|  68|  68|  69|  69|  70|  70|  71|  71|  72
-ATK |  38|  38|  39|  39|  40|  40|  41|  41|  41|  42|  42|  43|  43|  44|  44|  45
-DEF |  46|  46|  47|  47|  48|  48|  49|  49|  50|  50|  51|  51|  52|  52|  53|  53
-SPD |  35|  36|  36|  37|  37|  38|  38|  39|  39|  40|  40|  41|  41|  42|  42|  43
-SPC |  38|  39|  39|  40|  40|  41|  41|  42|  42|  43|  43|  44|  44|  45|  45|  46
-
-LVL: 24 EXP NEEDED: 1337/1527
+LVL: 23 EXP NEEDED: 55/1383
 ROCKET (0x3A2AC: L17 Machop, L17 Drowzee, ) Prize 510
-L24 Wartortle vs L17 Machop          >>> EXP GIVEN: 319
-Wartortle (64/48/46/42/43) 
-Water Gun	26-31 49.06-58.49%	(crit: 51-60 96.23-113.21%)
-	(Crit one shot prob.: 76.92%)
-	(2 shot prob.: 97.6331%)
-Mega Punch	31-37 58.49-69.81%	(crit: 52-62 98.11-116.98%)
-	(Crit one shot prob.: 97.44%)
-BubbleBeam	43-51 81.13-96.23%	(crit: 79-94 149.06-177.36%)
-Bite	23-28 43.40-52.83%	(crit: 39-47 73.58-88.68%)
-	(2 shot prob.: 19.5924%)
+L23 Wartortle vs L17 Machop          >>> EXP GIVEN: 319
+Wartortle (62/47/44/40/41) 
+Water Gun	25-30 47.17-56.60%	(crit: 45-54 84.91-101.89%)
+	(Crit one shot prob.: 12.82%)
+	(2 shot prob.: 84.6811%)
+Mega Punch	30-36 56.60-67.92%	(crit: 49-58 92.45-109.43%)
+	(Crit one shot prob.: 56.41%)
+BubbleBeam	40-48 75.47-90.57%	(crit: 74-87 139.62-164.15%)
+Bite	22-27 41.51-50.94%	(crit: 37-44 69.81-83.02%)
+	(2 shot prob.: 1.2492%)
 
 Water Gun
           NON-CRITS
-             26:  15.38%      27:  20.51%      28:  20.51%      29:  20.51%      30:  20.51%      31:   2.56%     
+             25:  10.26%      26:  23.08%      27:  20.51%      28:  23.08%      29:  20.51%      30:   2.56%     
 
           CRITS
-             51:  10.26%      52:  12.82%     
+             45:   2.56%      46:  10.26%      47:  12.82%      48:  12.82%      49:  12.82%      50:  10.26%      51:  12.82%      52:  12.82%     
 
-             53:  76.92%     
+             53:  12.82%     
 
 Mega Punch
           NON-CRITS
-             31:  10.26%      32:  17.95%      33:  17.95%      34:  17.95%      35:  17.95%      36:  15.38%      37:   2.56%     
+             30:   7.69%      31:  17.95%      32:  17.95%      33:  17.95%      34:  17.95%      35:  17.95%      36:   2.56%     
 
           CRITS
-             52:   2.56%     
+             49:   7.69%      50:  12.82%      51:  10.26%      52:  12.82%     
 
-             53:  97.44%     
+             53:  56.41%     
 
 BubbleBeam
           NON-CRITS
-             43:   7.69%      44:  12.82%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%      49:  12.82%      50:  12.82%      51:   2.56%     
+             40:   2.56%      41:  15.38%      42:  12.82%      43:  12.82%      44:  15.38%      45:  12.82%      46:  12.82%      47:  12.82%      48:   2.56%     
 
           CRITS
              53: 100.00%     
 
 Bite
           NON-CRITS
-             23:   5.13%      24:  23.08%      25:  23.08%      26:  23.08%      27:  23.08%      28:   2.56%     
+             22:   2.56%      23:  23.08%      24:  25.64%      25:  23.08%      26:  23.08%      27:   2.56%     
 
           CRITS
-             39:   2.56%      40:  12.82%      41:  12.82%      42:  15.38%      43:  12.82%      44:  15.38%      45:  12.82%      46:  12.82%      47:   2.56%     
+             37:  10.26%      38:  15.38%      39:  12.82%      40:  15.38%      41:  15.38%      42:  15.38%      43:  12.82%      44:   2.56%     
 
 Machop (53/35/24/19/19): 
-Karate Chop	6-8 9.38-12.50%	(crit: 11-13 17.19-20.31%)
+Karate Chop	6-8 9.68-12.90%	(crit: 11-13 17.74-20.97%)
 	(8 shot prob.: 0.0000%)
-	(9 shot prob.: 5.0184%)
-	(10 shot prob.: 99.9604%)
-	(5 crits death prob.: 0.0001%)
-	(1 non-crit + 5 crits death prob.: 78.8301%)
-	(2 non-crits + 4 crits death prob.: 0.1323%)
-	(3 non-crits + 4 crits death prob.: 99.4044%)
-	(4 non-crits + 3 crits death prob.: 11.2954%)
-	(5 non-crits + 2 crits death prob.: 0.0000%)
-	(5 non-crits + 3 crits death prob.: 99.9978%)
+	(9 shot prob.: 56.0305%)
+	(10 shot prob.: 99.9998%)
+	(5 crits death prob.: 0.0882%)
+	(1 non-crit + 5 crits death prob.: 99.5074%)
+	(2 non-crits + 4 crits death prob.: 8.8691%)
+	(3 non-crits + 3 crits death prob.: 0.0000%)
+	(4 non-crits + 3 crits death prob.: 65.8759%)
+	(5 non-crits + 2 crits death prob.: 0.0153%)
 
 Karate Chop
           NON-CRITS
@@ -2358,7 +2188,7 @@ Karate Chop
              11:  48.72%      12:  48.72%      13:   2.56%     
 
 
-LVL: 24 EXP NEEDED: 1018/1527
+LVL: 24 EXP NEEDED: 1263/1527
 L24 Wartortle vs L17 Drowzee          >>> EXP GIVEN: 370
 Wartortle (64/48/46/42/43) 
 Water Gun	13-16 26.00-32.00%	(crit: 26-31 52.00-62.00%)
@@ -2425,7 +2255,7 @@ Confusion
              18:  10.26%      19:  28.21%      20:  30.77%      21:  28.21%      22:   2.56%     
 
 
-LVL: 24 EXP NEEDED: 648/1527
+LVL: 24 EXP NEEDED: 893/1527
 JRTRAINERF (0x39EA4: L16 Pidgey, L16 Pidgey, L16 Pidgey, ) Prize 320
 L24 Wartortle vs L16 Pidgey          >>> EXP GIVEN: 187
 Wartortle (64/48/46/42/43) 
@@ -2456,7 +2286,7 @@ Quick Attack	5-7 7.81-10.94%	(crit: 8-10 12.50-15.63%)
 	(5 non-crits + 3 crits death prob.: 0.0000%)
 	(5 non-crits + 4 crits death prob.: 83.5473%)
 
-LVL: 24 EXP NEEDED: 461/1527
+LVL: 24 EXP NEEDED: 706/1527
 L24 Wartortle vs L16 Pidgey          >>> EXP GIVEN: 187
 Wartortle (64/48/46/42/43) 
 Water Gun	28-34 68.29-82.93%	(crit: 53-63 129.27-153.66%)
@@ -2486,7 +2316,7 @@ Quick Attack	5-7 7.81-10.94%	(crit: 8-10 12.50-15.63%)
 	(5 non-crits + 3 crits death prob.: 0.0000%)
 	(5 non-crits + 4 crits death prob.: 83.5473%)
 
-LVL: 24 EXP NEEDED: 274/1527
+LVL: 24 EXP NEEDED: 519/1527
 L24 Wartortle vs L16 Pidgey          >>> EXP GIVEN: 187
 Wartortle (64/48/46/42/43) 
 Water Gun	28-34 68.29-82.93%	(crit: 53-63 129.27-153.66%)
@@ -2516,7 +2346,7 @@ Quick Attack	5-7 7.81-10.94%	(crit: 8-10 12.50-15.63%)
 	(5 non-crits + 3 crits death prob.: 0.0000%)
 	(5 non-crits + 4 crits death prob.: 83.5473%)
 
-LVL: 24 EXP NEEDED: 87/1527
+LVL: 24 EXP NEEDED: 332/1527
 JRTRAINERM (0x39E86: L16 Spearow, L16 Raticate, ) Prize 320
 L24 Wartortle vs L16 Spearow          >>> EXP GIVEN: 198
 Wartortle (64/48/46/42/43) 
@@ -2539,6 +2369,44 @@ Growl
 Leer	
 Fury Attack	3-4 4.69-6.25%	(crit: 5-6 7.81-9.38%)
 
+LVL: 24 EXP NEEDED: 134/1527
+L24 Wartortle vs L16 Raticate          >>> EXP GIVEN: 397
+Wartortle (64/48/46/42/43) 
+Water Gun	22-27 47.83-58.70%	(crit: 41-49 89.13-106.52%)
+	(Crit one shot prob.: 41.03%)
+	(2 shot prob.: 98.7508%)
+Mega Punch	28-34 60.87-73.91%	(crit: 48-57 104.35-123.91%)
+BubbleBeam	35-42 76.09-91.30%	(crit: 67-79 145.65-171.74%)
+Bite	22-26 47.83-56.52%	(crit: 36-43 78.26-93.48%)
+	(2 shot prob.: 82.8402%)
+
+Raticate (46/33/26/38/23): 
+Tackle	7-9 10.94-14.06%	(crit: 11-13 17.19-20.31%)
+	(8 shot prob.: 15.4770%)
+	(9 shot prob.: 99.9995%)
+	(5 crits death prob.: 0.0001%)
+	(1 non-crit + 5 crits death prob.: 93.8075%)
+	(2 non-crits + 4 crits death prob.: 7.6397%)
+	(3 non-crits + 3 crits death prob.: 0.0002%)
+	(4 non-crits + 3 crits death prob.: 95.0320%)
+	(5 non-crits + 2 crits death prob.: 10.9339%)
+Tail Whip	
+Quick Attack	7-9 10.94-14.06%	(crit: 12-15 18.75-23.44%)
+	(8 shot prob.: 15.4770%)
+	(9 shot prob.: 99.9995%)
+	(5 crits death prob.: 98.4630%)
+	(1 non-crit + 4 crits death prob.: 6.1943%)
+	(2 non-crits + 4 crits death prob.: 99.9828%)
+	(3 non-crits + 3 crits death prob.: 50.0416%)
+	(4 non-crits + 2 crits death prob.: 0.0003%)
+	(5 non-crits + 2 crits death prob.: 92.5085%)
+Hyper Fang	13-16 20.31-25.00%	(crit: 22-27 34.38-42.19%)
+	(4 shot prob.: 0.0000%)
+	(1 non-crit + 2 crits death prob.: 44.5254%)
+	(3 non-crits + 1 crit death prob.: 98.3591%)
+
+(Speed DV required to outspeed: 7, to speedtie: 5)
+
 L25 Wartortle
 Stat ranges WITHOUT badge boosts:
 IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
@@ -2546,50 +2414,10 @@ IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |
 HP  |  67|  68|  68|  69|  69|  70|  70|  71|  71|  72|  72|  73|  73|  74|  74|  75
 ATK |  39|  40|  40|  41|  41|  42|  42|  43|  43|  44|  44|  45|  45|  46|  46|  47
 DEF |  48|  48|  49|  49|  50|  50|  51|  51|  52|  52|  53|  53|  54|  54|  55|  55
-SPD |  37|  37|  38|  38|  39|  39|  40|  40|  41|  41|  42|  42|  43|  43|  44|  44
-SPC |  40|  41|  41|  42|  42|  43|  43|  44|  44|  45|  45|  46|  46|  47|  47|  48
+SPD |  37|  38|  38|  39|  39|  40|  40|  41|  41|  42|  42|  43|  43|  44|  44|  45
+SPC |  40|  40|  41|  41|  42|  42|  43|  43|  44|  44|  45|  45|  46|  46|  47|  47
 
-LVL: 25 EXP NEEDED: 1565/1676
-L25 Wartortle vs L16 Raticate          >>> EXP GIVEN: 397
-Wartortle (67/50/48/44/45) 
-Water Gun	25-30 54.35-65.22%	(crit: 45-54 97.83-117.39%)
-	(Crit one shot prob.: 97.44%)
-Mega Punch	32-38 69.57-82.61%	(crit: 52-62 113.04-134.78%)
-BubbleBeam	40-48 86.96-104.35%	(crit: 72-85 156.52-184.78%)
-	(One shot prob.: 28.21%)
-Bite	24-29 52.17-63.04%	(crit: 39-47 84.78-102.17%)
-	(Crit one shot prob.: 15.38%)
-
-Raticate (46/33/26/38/23): 
-Tackle	5-7 7.46-10.45%	(crit: 10-12 14.93-17.91%)
-	(10 shot prob.: 0.0000%)
-	(6 crits death prob.: 1.0768%)
-	(1 non-crit + 5 crits death prob.: 0.0000%)
-	(2 non-crits + 5 crits death prob.: 9.9674%)
-	(3 non-crits + 4 crits death prob.: 0.0000%)
-	(3 non-crits + 5 crits death prob.: 99.9870%)
-	(4 non-crits + 4 crits death prob.: 42.0521%)
-	(5 non-crits + 3 crits death prob.: 0.0011%)
-	(5 non-crits + 4 crits death prob.: 99.9999%)
-Tail Whip	
-Quick Attack	7-9 10.45-13.43%	(crit: 11-13 16.42-19.40%)
-	(8 shot prob.: 0.0200%)
-	(9 shot prob.: 98.9587%)
-	(6 crits death prob.: 98.6630%)
-	(1 non-crit + 5 crits death prob.: 21.1637%)
-	(2 non-crits + 4 crits death prob.: 0.0064%)
-	(3 non-crits + 4 crits death prob.: 98.7275%)
-	(4 non-crits + 3 crits death prob.: 27.3856%)
-	(5 non-crits + 2 crits death prob.: 0.0114%)
-Hyper Fang	12-15 17.91-22.39%	(crit: 21-25 31.34-37.31%)
-	(5 shot prob.: 61.4057%)
-	(3 crits death prob.: 75.6031%)
-	(2 non-crits + 2 crits death prob.: 99.9557%)
-	(3 non-crits + 1 crit death prob.: 0.7720%)
-
-(Speed DV required to outspeed: 4, to speedtie: 2)
-
-LVL: 25 EXP NEEDED: 1168/1676
+LVL: 25 EXP NEEDED: 1413/1676
 RIVAL2 (0x3A40B: L19 Pidgeotto, L16 Raticate, L18 Kadabra, L20 Ivysaur, ) Prize 1300
 L25 Wartortle vs L19 Pidgeotto          >>> EXP GIVEN: 459
 Wartortle (67/50/48/44/45) 
@@ -2620,7 +2448,7 @@ Quick Attack	7-9 10.45-13.43%	(crit: 12-15 17.91-22.39%)
 	(4 non-crits + 3 crits death prob.: 99.8684%)
 	(5 non-crits + 2 crits death prob.: 27.6875%)
 
-LVL: 25 EXP NEEDED: 709/1676
+LVL: 25 EXP NEEDED: 954/1676
 L25 Wartortle vs L16 Raticate          >>> EXP GIVEN: 397
 Wartortle (67/50/48/44/45) 
 Water Gun	25-30 54.35-65.22%	(crit: 45-54 97.83-117.39%)
@@ -2658,9 +2486,9 @@ Hyper Fang	12-15 17.91-22.39%	(crit: 21-25 31.34-37.31%)
 	(2 non-crits + 2 crits death prob.: 99.9557%)
 	(3 non-crits + 1 crit death prob.: 0.7720%)
 
-(Speed DV required to outspeed: 4, to speedtie: 2)
+(Speed DV required to outspeed: 3, to speedtie: 1)
 
-LVL: 25 EXP NEEDED: 312/1676
+LVL: 25 EXP NEEDED: 557/1676
 L25 Wartortle vs L18 Kadabra          >>> EXP GIVEN: 558
 Wartortle (67/50/48/44/45) 
 Water Gun	12-15 26.67-33.33%	(crit: 21-25 46.67-55.56%)
@@ -2676,19 +2504,21 @@ Confusion	15-18 22.39-26.87%	(crit: 25-30 37.31-44.78%)
 	(4 shot prob.: 12.9957%)
 	(1 non-crit + 2 crits death prob.: 98.1389%)
 
+(Speed DV required to speedtie: 15)
+
 L26 Wartortle
 Stat ranges WITHOUT badge boosts:
 IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
 ------------------------------------------------------------------------------------
-HP  |  70|  70|  71|  71|  72|  72|  73|  73|  74|  74|  75|  75|  76|  76|  77|  77
-ATK |  41|  41|  42|  42|  43|  44|  44|  45|  45|  46|  46|  47|  47|  48|  48|  49
+HP  |  69|  70|  70|  71|  71|  72|  72|  73|  73|  74|  75|  75|  76|  76|  77|  77
+ATK |  41|  41|  42|  42|  43|  43|  44|  44|  45|  45|  46|  46|  47|  47|  48|  48
 DEF |  49|  50|  51|  51|  52|  52|  53|  53|  54|  54|  55|  55|  56|  56|  57|  57
 SPD |  38|  39|  39|  40|  40|  41|  41|  42|  42|  43|  44|  44|  45|  45|  46|  46
 SPC |  41|  42|  42|  43|  44|  44|  45|  45|  46|  46|  47|  47|  48|  48|  49|  49
 
-LVL: 26 EXP NEEDED: 1587/1833
+LVL: 26 EXP NEEDED: 1832/1833
 L26 Wartortle vs L20 Ivysaur          >>> EXP GIVEN: 603
-Wartortle (70/52/49/46/47) 
+Wartortle (69/52/49/46/47) 
 Water Gun	7-9 12.28-15.79%	(crit: 13-16 22.81-28.07%)
 	(7 shot prob.: 3.2432%)
 	(8 shot prob.: 99.9981%)
@@ -2707,23 +2537,23 @@ Bite	20-24 35.09-42.11%	(crit: 33-39 57.89-68.42%)
 	(1 non-crit + 1 crit death prob.: 63.3794%)
 
 Ivysaur (57/33/33/32/40): 
-Tackle	5-6 7.14-8.57%	(crit: 8-10 11.43-14.29%)
+Tackle	5-6 7.25-8.70%	(crit: 8-10 11.59-14.49%)
 	(7 crits death prob.: 0.0000%)
-	(8 crits death prob.: 51.8301%)
-	(4 non-crits + 5 crits death prob.: 0.0001%)
+	(8 crits death prob.: 76.6431%)
+	(4 non-crits + 5 crits death prob.: 0.0017%)
 	(5 non-crits + 4 crits death prob.: 0.0000%)
-	(5 non-crits + 5 crits death prob.: 22.1423%)
+	(5 non-crits + 5 crits death prob.: 53.5789%)
 Growl	
 Leech Seed	
-Vine Whip	17-20 24.29-28.57%	(crit: 30-36 42.86-51.43%)
-	(4 shot prob.: 93.8272%)
-	(2 crits death prob.: 5.1282%)
-	(2 non-crits + 1 crit death prob.: 39.3752%)
+Vine Whip	17-20 24.64-28.99%	(crit: 30-36 43.48-52.17%)
+	(4 shot prob.: 98.7654%)
+	(2 crits death prob.: 12.4918%)
+	(2 non-crits + 1 crit death prob.: 57.1503%)
 
-LVL: 26 EXP NEEDED: 984/1833
+LVL: 26 EXP NEEDED: 1229/1833
 LTSURGE (0x3A3C1: L21 Voltorb, L18 Pikachu, L24 Raichu, ) Prize 2376
 L26 Wartortle vs L21 Voltorb          >>> EXP GIVEN: 463
-Wartortle (70/52/49/46/47) 
+Wartortle (69/52/49/46/47) 
 Mega Punch	30-36 58.82-70.59%	(crit: 50-59 98.04-115.69%)
 	(Crit one shot prob.: 89.74%)
 BubbleBeam	31-37 60.78-72.55%	(crit: 57-67 111.76-131.37%)
@@ -2732,14 +2562,14 @@ Bite	22-27 43.14-52.94%	(crit: 37-44 72.55-86.27%)
 Dig	76-90 149.02-176.47%	(crit: 124-146 243.14-286.27%)
 
 Voltorb (51/21/29/50/31): 
-Tackle	4-5 5.71-7.14%	(crit: 5-7 7.14-10.00%)
+Tackle	4-5 5.80-7.25%	(crit: 5-7 7.25-10.14%)
 	(10 crits death prob.: 0.0000%)
 Screech	
 SonicBoom	
 
-LVL: 26 EXP NEEDED: 521/1833
+LVL: 26 EXP NEEDED: 766/1833
 L26 Wartortle vs L18 Pikachu          >>> EXP GIVEN: 315
-Wartortle (70/52/49/46/47) 
+Wartortle (69/52/49/46/47) 
 Mega Punch	48-57 111.63-132.56%	(crit: 79-93 183.72-216.28%)
 BubbleBeam	39-46 90.70-106.98%	(crit: 69-82 160.47-190.70%)
 	(One shot prob.: 43.59%)
@@ -2748,24 +2578,25 @@ Bite	36-43 83.72-100.00%	(crit: 59-70 137.21-162.79%)
 Dig	120-142 279.07-330.23%	(crit: 197-232 458.14-539.53%)
 
 Pikachu (43/28/18/40/25): 
-ThunderShock	11-14 15.71-20.00%	(crit: 20-24 28.57-34.29%)
-	(5 shot prob.: 0.0000%)
-	(6 shot prob.: 99.9666%)
-	(3 crits death prob.: 0.6136%)
-	(2 non-crits + 2 crits death prob.: 26.2155%)
-	(4 non-crits + 1 crit death prob.: 88.5023%)
+ThunderShock	11-14 15.94-20.29%	(crit: 20-24 28.99-34.78%)
+	(5 shot prob.: 0.0001%)
+	(6 shot prob.: 99.9976%)
+	(3 crits death prob.: 3.4626%)
+	(2 non-crits + 2 crits death prob.: 46.1515%)
+	(4 non-crits + 1 crit death prob.: 96.5757%)
 Growl	
 Thunder Wave	
-Quick Attack	5-6 7.14-8.57%	(crit: 7-9 10.00-12.86%)
+Quick Attack	5-6 7.25-8.70%	(crit: 7-9 10.14-13.04%)
 	(8 crits death prob.: 0.0000%)
-	(9 crits death prob.: 62.9542%)
-	(5 non-crits + 5 crits death prob.: 0.0001%)
+	(9 crits death prob.: 84.2309%)
+	(4 non-crits + 5 crits death prob.: 0.0000%)
+	(5 non-crits + 5 crits death prob.: 0.0034%)
 
 (Speed DV required to outspeed: 5, to speedtie: 3)
 
-LVL: 26 EXP NEEDED: 206/1833
+LVL: 26 EXP NEEDED: 451/1833
 L26 Wartortle vs L24 Raichu          >>> EXP GIVEN: 627
-Wartortle (70/52/49/46/47) 
+Wartortle (69/52/49/46/47) 
 Mega Punch	25-30 37.88-45.45%	(crit: 41-49 62.12-74.24%)
 BubbleBeam	20-24 30.30-36.36%	(crit: 34-40 51.52-60.61%)
 	(3 shot prob.: 41.8770%)
@@ -2776,11 +2607,11 @@ Dig	62-74 93.94-112.12%	(crit: 103-122 156.06-184.85%)
 	(One shot prob.: 71.79%)
 
 Raichu (66/52/35/56/52): 
-ThunderShock	27-32 38.57-45.71%	(crit: 51-60 72.86-85.71%)
+ThunderShock	27-32 39.13-46.38%	(crit: 51-60 73.91-86.96%)
 Growl	
 Thunder Wave	
-Thunderbolt	62-74 88.57-105.71%	(crit: 117-138 167.14-197.14%)
-	(One shot prob.: 35.90%)
+Thunderbolt	62-74 89.86-107.25%	(crit: 117-138 169.57-200.00%)
+	(One shot prob.: 46.15%)
 
 L27 Wartortle
 Stat ranges WITHOUT badge boosts:
@@ -2792,7 +2623,7 @@ DEF |  51|  52|  53|  53|  54|  54|  55|  55|  56|  56|  57|  57|  58|  59|  59|
 SPD |  40|  40|  41|  41|  42|  43|  43|  44|  44|  45|  45|  46|  46|  47|  47|  48
 SPC |  43|  44|  44|  45|  45|  46|  46|  47|  47|  48|  49|  49|  50|  50|  51|  51
 
-LVL: 27 EXP NEEDED: 1577/1998
+LVL: 27 EXP NEEDED: 1822/1998
 JRTRAINERF (0x39EAC: L18 Oddish, L18 Bellsprout, L18 Oddish, L18 Bellsprout, ) Prize 360
 L27 Wartortle vs L18 Oddish          >>> EXP GIVEN: 300
 Wartortle (72/55/57/47/49) 
@@ -2818,7 +2649,7 @@ Absorb	10-12 13.89-16.67%	(crit: 15-18 20.83-25.00%)
 PoisonPowder	
 Stun Spore	
 
-LVL: 27 EXP NEEDED: 1277/1998
+LVL: 27 EXP NEEDED: 1522/1998
 L27 Wartortle vs L18 Bellsprout          >>> EXP GIVEN: 324
 Wartortle (72/55/57/47/49) 
 Mega Punch	45-54 93.75-112.50%	(crit: 78-92 162.50-191.67%)
@@ -2835,7 +2666,7 @@ Wrap	2-3 2.78-4.17%	(crit: 4-5 5.56-6.94%)
 PoisonPowder	
 Sleep Powder	
 
-LVL: 27 EXP NEEDED: 953/1998
+LVL: 27 EXP NEEDED: 1198/1998
 L27 Wartortle vs L18 Oddish          >>> EXP GIVEN: 300
 Wartortle (72/55/57/47/49) 
 Mega Punch	34-41 72.34-87.23%	(crit: 57-68 121.28-144.68%)
@@ -2860,7 +2691,7 @@ Absorb	10-12 13.89-16.67%	(crit: 15-18 20.83-25.00%)
 PoisonPowder	
 Stun Spore	
 
-LVL: 27 EXP NEEDED: 653/1998
+LVL: 27 EXP NEEDED: 898/1998
 L27 Wartortle vs L18 Bellsprout          >>> EXP GIVEN: 324
 Wartortle (72/55/57/47/49) 
 Mega Punch	45-54 93.75-112.50%	(crit: 78-92 162.50-191.67%)
@@ -2877,7 +2708,7 @@ Wrap	2-3 2.78-4.17%	(crit: 4-5 5.56-6.94%)
 PoisonPowder	
 Sleep Powder	
 
-LVL: 27 EXP NEEDED: 329/1998
+LVL: 27 EXP NEEDED: 574/1998
 BUG CATCHER (0x39E07: L20 Caterpie, L20 Weedle, L20 Venonat, ) Prize 200
 L27 Wartortle vs L20 Caterpie          >>> EXP GIVEN: 226
 Wartortle (72/55/57/47/49) 
@@ -2891,7 +2722,7 @@ Caterpie (51/20/22/26/16):
 Tackle	3-4 4.17-5.56%	(crit: 5-6 6.94-8.33%)
 String Shot	
 
-LVL: 27 EXP NEEDED: 103/1998
+LVL: 27 EXP NEEDED: 348/1998
 L27 Wartortle vs L20 Weedle          >>> EXP GIVEN: 222
 Wartortle (72/55/57/47/49) 
 Mega Punch	45-54 91.84-110.20%	(crit: 78-92 159.18-187.76%)
@@ -2904,48 +2735,33 @@ Weedle (49/22/20/28/16):
 Poison Sting	3-4 4.17-5.56%	(crit: 5-6 6.94-8.33%)
 String Shot	
 
-LVL: 28 EXP NEEDED: 2050/2169
-L28 Wartortle vs L20 Venonat          >>> EXP GIVEN: 321
-Wartortle (74/57/59/49/50) 
-Mega Punch	37-44 64.91-77.19%	(crit: 60-71 105.26-124.56%)
-BubbleBeam	46-55 80.70-96.49%	(crit: 85-100 149.12-175.44%)
-Bite	28-33 49.12-57.89%	(crit: 45-54 78.95-94.74%)
-	(2 shot prob.: 95.7922%)
-Dig	45-54 78.95-94.74%	(crit: 74-88 129.82-154.39%)
+LVL: 27 EXP NEEDED: 126/1998
+L27 Wartortle vs L20 Venonat          >>> EXP GIVEN: 321
+Wartortle (72/55/57/47/49) 
+Mega Punch	33-39 57.89-68.42%	(crit: 56-66 98.25-115.79%)
+	(Crit one shot prob.: 89.74%)
+BubbleBeam	41-49 71.93-85.96%	(crit: 79-94 138.60-164.91%)
+Bite	25-30 43.86-52.63%	(crit: 42-50 73.68-87.72%)
+	(2 shot prob.: 17.0283%)
+Dig	40-48 70.18-84.21%	(crit: 69-82 121.05-143.86%)
 
 Venonat (57/30/28/26/24): 
-Tackle	4-5 5.41-6.76%	(crit: 7-9 9.46-12.16%)
-	(9 crits death prob.: 0.2980%)
-	(10 crits death prob.: 99.6263%)
+Tackle	4-5 5.56-6.94%	(crit: 7-9 9.72-12.50%)
+	(8 crits death prob.: 0.0000%)
+	(9 crits death prob.: 12.9099%)
+	(10 crits death prob.: 99.9964%)
 Disable	
 
-LVL: 28 EXP NEEDED: 1729/2169
-L28 Wartortle vs L15 Zubat          >>> EXP GIVEN: 115
-Wartortle (74/57/59/49/50) 
-Mega Punch	51-61 124.39-148.78%	(crit: 84-99 204.88-241.46%)
-BubbleBeam	53-63 129.27-153.66%	(crit: 97-114 236.59-278.05%)
-Bite	39-46 95.12-112.20%	(crit: 63-75 153.66-182.93%)
-	(One shot prob.: 71.79%)
-Dig	
-
-Zubat (41/23/20/26/21): 
-Leech Life	2-3 2.70-4.05%	(crit: 3-4 4.05-5.41%)
-Supersonic	
-Bite	4-5 5.41-6.76%	(crit: 7-9 9.46-12.16%)
-	(9 crits death prob.: 0.2980%)
-	(10 crits death prob.: 99.6263%)
-
-LVL: 28 EXP NEEDED: 1614/2169
+LVL: 28 EXP NEEDED: 1974/2169
 POKEMANIAC (0x39F22: L23 Cubone, L23 Slowpoke, ) Prize 1150
 L28 Wartortle vs L23 Cubone          >>> EXP GIVEN: 427
-Wartortle (74/57/59/49/50) 
-Mega Punch	20-24 33.90-40.68%	(crit: 33-39 55.93-66.10%)
-	(1 non-crit + 1 crit death prob.: 30.1118%)
+Wartortle (74/56/59/49/50) 
+Mega Punch	20-24 33.90-40.68%	(crit: 32-38 54.24-64.41%)
+	(1 non-crit + 1 crit death prob.: 16.3051%)
 BubbleBeam	83-98 140.68-166.10%	(crit: 149-176 252.54-298.31%)
-Bite	16-19 27.12-32.20%	(crit: 25-30 42.37-50.85%)
-	(2 crits death prob.: 1.1177%)
-	(2 non-crits + 1 crit death prob.: 94.7403%)
-Dig	25-30 42.37-50.85%	(crit: 41-49 69.49-83.05%)
+Bite	15-18 25.42-30.51%	(crit: 24-29 40.68-49.15%)
+	(2 non-crits + 1 crit death prob.: 53.1145%)
+Dig	25-30 42.37-50.85%	(crit: 40-48 67.80-81.36%)
 	(2 shot prob.: 1.1177%)
 
 Mega Punch
@@ -2953,7 +2769,7 @@ Mega Punch
              20:  17.95%      21:  25.64%      22:  28.21%      23:  25.64%      24:   2.56%     
 
           CRITS
-             33:  15.38%      34:  15.38%      35:  17.95%      36:  15.38%      37:  17.95%      38:  15.38%      39:   2.56%     
+             32:  12.82%      33:  17.95%      34:  15.38%      35:  17.95%      36:  17.95%      37:  15.38%      38:   2.56%     
 
 BubbleBeam
           NON-CRITS
@@ -2964,17 +2780,17 @@ BubbleBeam
 
 Bite
           NON-CRITS
-             16:  30.77%      17:  33.33%      18:  33.33%      19:   2.56%     
+             15:  25.64%      16:  35.90%      17:  35.90%      18:   2.56%     
 
           CRITS
-             25:  10.26%      26:  23.08%      27:  20.51%      28:  23.08%      29:  20.51%      30:   2.56%     
+             24:   7.69%      25:  23.08%      26:  23.08%      27:  23.08%      28:  20.51%      29:   2.56%     
 
 Dig
           NON-CRITS
              25:  10.26%      26:  23.08%      27:  20.51%      28:  23.08%      29:  20.51%      30:   2.56%     
 
           CRITS
-             41:   5.13%      42:  12.82%      43:  12.82%      44:  15.38%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%      49:   2.56%     
+             40:   2.56%      41:  15.38%      42:  12.82%      43:  12.82%      44:  15.38%      45:  12.82%      46:  12.82%      47:  12.82%      48:   2.56%     
 
 Cubone (59/32/52/24/27): 
 Bone Club	11-13 14.86-17.57%	(crit: 21-25 28.38-33.78%)
@@ -2992,26 +2808,26 @@ Bone Club
              21:  20.51%      22:  25.64%      23:  25.64%      24:  25.64%      25:   2.56%     
 
 
-LVL: 28 EXP NEEDED: 1187/2169
+LVL: 28 EXP NEEDED: 1547/2169
 L28 Wartortle vs L23 Slowpoke          >>> EXP GIVEN: 487
-Wartortle (74/57/59/49/50) 
-Mega Punch	28-33 35.90-42.31%	(crit: 45-53 57.69-67.95%)
-	(1 non-crit + 1 crit death prob.: 63.7081%)
+Wartortle (74/56/59/49/50) 
+Mega Punch	27-32 34.62-41.03%	(crit: 44-52 56.41-66.67%)
+	(1 non-crit + 1 crit death prob.: 39.4477%)
 BubbleBeam	20-24 25.64-30.77%	(crit: 37-44 47.44-56.41%)
 	(2 crits death prob.: 83.6949%)
 	(2 non-crits + 1 crit death prob.: 99.6696%)
-Bite	21-25 26.92-32.05%	(crit: 34-40 43.59-51.28%)
-	(2 crits death prob.: 4.0105%)
-	(2 non-crits + 1 crit death prob.: 96.7093%)
-Dig	34-41 43.59-52.56%	(crit: 56-66 71.79-84.62%)
-	(2 shot prob.: 17.4227%)
+Bite	20-24 25.64-30.77%	(crit: 33-39 42.31-50.00%)
+	(2 crits death prob.: 0.0657%)
+	(2 non-crits + 1 crit death prob.: 72.6496%)
+Dig	34-40 43.59-51.28%	(crit: 55-65 70.51-83.33%)
+	(2 shot prob.: 4.0105%)
 
 Mega Punch
           NON-CRITS
-             28:  20.51%      29:  17.95%      30:  20.51%      31:  20.51%      32:  17.95%      33:   2.56%     
+             27:  17.95%      28:  20.51%      29:  20.51%      30:  20.51%      31:  17.95%      32:   2.56%     
 
           CRITS
-             45:  12.82%      46:  12.82%      47:  10.26%      48:  12.82%      49:  12.82%      50:  12.82%      51:  12.82%      52:  10.26%      53:   2.56%     
+             44:  10.26%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%      49:  12.82%      50:  12.82%      51:  10.26%      52:   2.56%     
 
 BubbleBeam
           NON-CRITS
@@ -3022,18 +2838,18 @@ BubbleBeam
 
 Bite
           NON-CRITS
-             21:  20.51%      22:  25.64%      23:  25.64%      24:  25.64%      25:   2.56%     
+             20:  17.95%      21:  25.64%      22:  28.21%      23:  25.64%      24:   2.56%     
 
           CRITS
-             34:  17.95%      35:  15.38%      36:  15.38%      37:  17.95%      38:  15.38%      39:  15.38%      40:   2.56%     
+             33:  15.38%      34:  15.38%      35:  17.95%      36:  15.38%      37:  17.95%      38:  15.38%      39:   2.56%     
 
 Dig
           NON-CRITS
-             34:   2.56%      35:  15.38%      36:  17.95%      37:  15.38%      38:  15.38%      39:  15.38%      40:  15.38%      41:   2.56%     
+             34:  17.95%      35:  15.38%      36:  15.38%      37:  17.95%      38:  15.38%      39:  15.38%      40:   2.56%     
 
           CRITS
-             56:  10.26%      57:  10.26%      58:   7.69%      59:  10.26%      60:  10.26%      61:  10.26%      62:  10.26%      63:  10.26%      64:  10.26%      65:   7.69%     
-             66:   2.56%     
+             55:   7.69%      56:  10.26%      57:  10.26%      58:  10.26%      59:  10.26%      60:  10.26%      61:  10.26%      62:  10.26%      63:  10.26%      64:   7.69%     
+             65:   2.56%     
 
 Slowpoke (78/39/38/15/27): 
 Confusion	8-10 10.81-13.51%	(crit: 15-18 20.27-24.32%)
@@ -3067,28 +2883,28 @@ Headbutt
              18:  10.26%      19:  28.21%      20:  30.77%      21:  28.21%      22:   2.56%     
 
 
-LVL: 28 EXP NEEDED: 700/2169
+LVL: 28 EXP NEEDED: 1060/2169
 POKEMANIAC (0x39F1A: L25 Slowpoke, ) Prize 1250
 L28 Wartortle vs L25 Slowpoke          >>> EXP GIVEN: 529
-Wartortle (74/57/59/49/50) 
-Mega Punch	25-30 29.76-35.71%	(crit: 41-49 48.81-58.33%)
+Wartortle (74/56/59/49/50) 
+Mega Punch	25-30 29.76-35.71%	(crit: 40-48 47.62-57.14%)
 	(3 shot prob.: 24.8369%)
-	(2 crits death prob.: 98.4221%)
+	(2 crits death prob.: 91.5187%)
 BubbleBeam	19-23 22.62-27.38%	(crit: 34-41 40.48-48.81%)
 	(4 shot prob.: 44.4935%)
 	(2 non-crits + 1 crit death prob.: 2.6467%)
 Bite	19-23 22.62-27.38%	(crit: 31-37 36.90-44.05%)
 	(4 shot prob.: 44.4935%)
 	(1 non-crit + 2 crits death prob.: 96.8762%)
-Dig	32-38 38.10-45.24%	(crit: 51-61 60.71-72.62%)
-	(1 non-crit + 1 crit death prob.: 99.6713%)
+Dig	31-37 36.90-44.05%	(crit: 51-60 60.71-71.43%)
+	(1 non-crit + 1 crit death prob.: 95.7922%)
 
 Mega Punch
           NON-CRITS
              25:  10.26%      26:  23.08%      27:  20.51%      28:  23.08%      29:  20.51%      30:   2.56%     
 
           CRITS
-             41:   5.13%      42:  12.82%      43:  12.82%      44:  15.38%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%      49:   2.56%     
+             40:   2.56%      41:  15.38%      42:  12.82%      43:  12.82%      44:  15.38%      45:  12.82%      46:  12.82%      47:  12.82%      48:   2.56%     
 
 BubbleBeam
           NON-CRITS
@@ -3106,11 +2922,10 @@ Bite
 
 Dig
           NON-CRITS
-             32:  12.82%      33:  17.95%      34:  15.38%      35:  17.95%      36:  17.95%      37:  15.38%      38:   2.56%     
+             31:  10.26%      32:  17.95%      33:  17.95%      34:  17.95%      35:  17.95%      36:  15.38%      37:   2.56%     
 
           CRITS
-             51:   2.56%      52:  10.26%      53:  10.26%      54:  10.26%      55:  12.82%      56:  10.26%      57:  10.26%      58:  10.26%      59:  10.26%      60:  10.26%     
-             61:   2.56%     
+             51:  10.26%      52:  12.82%      53:  10.26%      54:  10.26%      55:  10.26%      56:  12.82%      57:  10.26%      58:  10.26%      59:  10.26%      60:   2.56%     
 
 Slowpoke (84/42/41/16/29): 
 Confusion	10-12 13.51-16.22%	(crit: 17-21 22.97-28.38%)
@@ -3142,28 +2957,28 @@ Headbutt
              22:  23.08%      23:  25.64%      24:  25.64%      25:  23.08%      26:   2.56%     
 
 
-LVL: 28 EXP NEEDED: 171/2169
+LVL: 28 EXP NEEDED: 531/2169
 JRTRAINERF (0x39EC2: L22 Oddish, L22 Bulbasaur, ) Prize 440
 L28 Wartortle vs L22 Oddish          >>> EXP GIVEN: 367
-Wartortle (74/57/59/49/50) 
-Mega Punch	33-39 60.00-70.91%	(crit: 53-63 96.36-114.55%)
-	(Crit one shot prob.: 84.62%)
+Wartortle (74/56/59/49/50) 
+Mega Punch	32-38 58.18-69.09%	(crit: 52-62 94.55-112.73%)
+	(Crit one shot prob.: 74.36%)
 BubbleBeam	13-16 23.64-29.09%	(crit: 25-30 45.45-54.55%)
 	(4 shot prob.: 94.8044%)
 	(2 crits death prob.: 51.4135%)
 	(2 non-crits + 1 crit death prob.: 76.0481%)
 Bite	24-29 43.64-52.73%	(crit: 39-47 70.91-85.45%)
 	(2 shot prob.: 17.1598%)
-Dig	40-48 72.73-87.27%	(crit: 66-78 120.00-141.82%)
+Dig	39-46 70.91-83.64%	(crit: 64-76 116.36-138.18%)
 
 Mega Punch
           NON-CRITS
-             33:  15.38%      34:  15.38%      35:  17.95%      36:  15.38%      37:  17.95%      38:  15.38%      39:   2.56%     
+             32:  12.82%      33:  17.95%      34:  15.38%      35:  17.95%      36:  17.95%      37:  15.38%      38:   2.56%     
 
           CRITS
-             53:   5.13%      54:  10.26%     
+             52:   2.56%      53:  12.82%      54:  10.26%     
 
-             55:  84.62%     
+             55:  74.36%     
 
 BubbleBeam
           NON-CRITS
@@ -3181,7 +2996,7 @@ Bite
 
 Dig
           NON-CRITS
-             40:   2.56%      41:  15.38%      42:  12.82%      43:  12.82%      44:  15.38%      45:  12.82%      46:  12.82%      47:  12.82%      48:   2.56%     
+             39:  12.82%      40:  15.38%      41:  12.82%      42:  15.38%      43:  12.82%      44:  15.38%      45:  12.82%      46:   2.56%     
 
           CRITS
              55: 100.00%     
@@ -3205,6 +3020,59 @@ Absorb
              20:  17.95%      21:  25.64%      22:  28.21%      23:  25.64%      24:   2.56%     
 
 
+LVL: 28 EXP NEEDED: 164/2169
+L28 Wartortle vs L22 Bulbasaur          >>> EXP GIVEN: 301
+Wartortle (74/56/59/49/50) 
+Mega Punch	34-40 61.82-72.73%	(crit: 56-66 101.82-120.00%)
+BubbleBeam	15-18 27.27-32.73%	(crit: 28-33 50.91-60.00%)
+Bite	26-31 47.27-56.36%	(crit: 42-50 76.36-90.91%)
+	(2 shot prob.: 80.8021%)
+Dig	42-50 76.36-90.91%	(crit: 69-82 125.45-149.09%)
+
+Mega Punch
+          NON-CRITS
+             34:  17.95%      35:  15.38%      36:  15.38%      37:  17.95%      38:  15.38%      39:  15.38%      40:   2.56%     
+
+          CRITS
+             55: 100.00%     
+
+BubbleBeam
+          NON-CRITS
+             15:  25.64%      16:  35.90%      17:  35.90%      18:   2.56%     
+
+          CRITS
+             28:  20.51%      29:  17.95%      30:  20.51%      31:  20.51%      32:  17.95%      33:   2.56%     
+
+Bite
+          NON-CRITS
+             26:  15.38%      27:  20.51%      28:  20.51%      29:  20.51%      30:  20.51%      31:   2.56%     
+
+          CRITS
+             42:   7.69%      43:  12.82%      44:  12.82%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%      49:  12.82%      50:   2.56%     
+
+Dig
+          NON-CRITS
+             42:   7.69%      43:  12.82%      44:  12.82%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%      49:  12.82%      50:   2.56%     
+
+          CRITS
+             55: 100.00%     
+
+Bulbasaur (55/30/30/28/37): 
+Growl	
+Leech Seed	
+Vine Whip	17-20 22.97-27.03%	(crit: 27-32 36.49-43.24%)
+	(4 shot prob.: 21.1338%)
+	(1 non-crit + 2 crits death prob.: 88.0949%)
+PoisonPowder	
+
+Vine Whip
+          NON-CRITS
+             17:  33.33%      18:  33.33%      19:  30.77%      20:   2.56%     
+
+          CRITS
+             27:  17.95%      28:  20.51%      29:  20.51%      30:  20.51%      31:  17.95%      32:   2.56%     
+
+
 L29 Wartortle
 Stat ranges WITHOUT badge boosts:
 IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
@@ -3215,61 +3083,7 @@ DEF |  55|  56|  56|  57|  58|  58|  59|  59|  60|  60|  61|  62|  62|  63|  63|
 SPD |  43|  43|  44|  45|  45|  46|  46|  47|  47|  48|  49|  49|  50|  50|  51|  51
 SPC |  46|  47|  47|  48|  49|  49|  50|  50|  51|  51|  52|  53|  53|  54|  54|  55
 
-LVL: 29 EXP NEEDED: 2153/2349
-L29 Wartortle vs L22 Bulbasaur          >>> EXP GIVEN: 301
-Wartortle (77/58/61/51/52) 
-Mega Punch	35-42 63.64-76.36%	(crit: 60-71 109.09-129.09%)
-BubbleBeam	15-18 27.27-32.73%	(crit: 29-35 52.73-63.64%)
-Bite	27-32 49.09-58.18%	(crit: 45-54 81.82-98.18%)
-	(2 shot prob.: 96.7784%)
-Dig	44-52 80.00-94.55%	(crit: 74-88 134.55-160.00%)
-
-Mega Punch
-          NON-CRITS
-             35:   5.13%      36:  15.38%      37:  15.38%      38:  15.38%      39:  15.38%      40:  15.38%      41:  15.38%      42:   2.56%     
-
-          CRITS
-             55: 100.00%     
-
-BubbleBeam
-          NON-CRITS
-             15:  25.64%      16:  35.90%      17:  35.90%      18:   2.56%     
-
-          CRITS
-             29:   5.13%      30:  17.95%      31:  20.51%      32:  17.95%      33:  17.95%      34:  17.95%      35:   2.56%     
-
-Bite
-          NON-CRITS
-             27:  17.95%      28:  20.51%      29:  20.51%      30:  20.51%      31:  17.95%      32:   2.56%     
-
-          CRITS
-             45:   2.56%      46:  10.26%      47:  12.82%      48:  12.82%      49:  12.82%      50:  10.26%      51:  12.82%      52:  12.82%      53:  10.26%      54:   2.56%     
-
-Dig
-          NON-CRITS
-             44:  10.26%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%      49:  12.82%      50:  12.82%      51:  10.26%      52:   2.56%     
-
-          CRITS
-             55: 100.00%     
-
-Bulbasaur (55/30/30/28/37): 
-Growl	
-Leech Seed	
-Vine Whip	15-18 19.48-23.38%	(crit: 27-32 35.06-41.56%)
-	(5 shot prob.: 99.1133%)
-	(1 non-crit + 2 crits death prob.: 16.8007%)
-	(3 non-crits + 1 crit death prob.: 68.5852%)
-PoisonPowder	
-
-Vine Whip
-          NON-CRITS
-             15:  25.64%      16:  35.90%      17:  35.90%      18:   2.56%     
-
-          CRITS
-             27:  17.95%      28:  20.51%      29:  20.51%      30:  20.51%      31:  17.95%      32:   2.56%     
-
-
-LVL: 29 EXP NEEDED: 1852/2349
+LVL: 29 EXP NEEDED: 2212/2349
 HIKER (0x39F81: L21 Geodude, L21 Geodude, L21 Graveler, ) Prize 735
 L29 Wartortle vs L21 Geodude          >>> EXP GIVEN: 387
 Wartortle (77/58/61/51/52) 
@@ -3303,7 +3117,7 @@ Rock Throw	10-12 12.99-15.58%	(crit: 18-22 23.38-28.57%)
 	(5 non-crits + 1 crit death prob.: 0.6927%)
 Selfdestruct	31-37 40.26-48.05%	(crit: 62-73 80.52-94.81%)
 
-LVL: 29 EXP NEEDED: 1465/2349
+LVL: 29 EXP NEEDED: 1825/2349
 L29 Wartortle vs L21 Geodude          >>> EXP GIVEN: 387
 Wartortle (77/58/61/51/52) 
 Mega Punch	11-13 21.57-25.49%	(crit: 17-21 33.33-41.18%)
@@ -3336,7 +3150,7 @@ Rock Throw	10-12 12.99-15.58%	(crit: 18-22 23.38-28.57%)
 	(5 non-crits + 1 crit death prob.: 0.6927%)
 Selfdestruct	31-37 40.26-48.05%	(crit: 62-73 80.52-94.81%)
 
-LVL: 29 EXP NEEDED: 1078/2349
+LVL: 29 EXP NEEDED: 1438/2349
 L29 Wartortle vs L21 Graveler          >>> EXP GIVEN: 603
 Wartortle (77/58/61/51/52) 
 Mega Punch	9-11 15.79-19.30%	(crit: 16-19 28.07-33.33%)
@@ -3374,7 +3188,7 @@ Selfdestruct	35-42 45.45-54.55%	(crit: 70-83 90.91-107.79%)
 	(Crit one shot prob.: 48.72%)
 	(2 shot prob.: 54.7666%)
 
-LVL: 29 EXP NEEDED: 475/2349
+LVL: 29 EXP NEEDED: 835/2349
 JRTRAINERF (0x39EE8: L20 Meowth, L20 Oddish, L20 Pidgey, ) Prize 400
 L29 Wartortle vs L20 Meowth          >>> EXP GIVEN: 295
 Wartortle (77/58/61/51/52) 
@@ -3464,7 +3278,7 @@ Pay Day
 
 (Speed DV required to outspeed: 3, to speedtie: 2)
 
-LVL: 29 EXP NEEDED: 180/2349
+LVL: 29 EXP NEEDED: 540/2349
 L29 Wartortle vs L20 Oddish          >>> EXP GIVEN: 333
 Wartortle (77/58/61/51/52) 
 Mega Punch	35-42 68.63-82.35%	(crit: 60-71 117.65-139.22%)
@@ -3527,27 +3341,20 @@ Absorb
              17:  33.33%      18:  33.33%      19:  30.77%      20:   2.56%     
 
 
-L30 Wartortle
-Stat ranges WITHOUT badge boosts:
-IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
-------------------------------------------------------------------------------------
-HP  |  79|  80|  81|  81|  82|  82|  83|  84|  84|  85|  85|  86|  87|  87|  88|  88
-ATK |  47|  48|  48|  49|  50|  50|  51|  51|  52|  53|  53|  54|  54|  55|  56|  56
-DEF |  57|  58|  59|  59|  60|  60|  61|  62|  62|  63|  63|  64|  65|  65|  66|  66
-SPD |  44|  45|  45|  46|  47|  47|  48|  48|  49|  50|  50|  51|  51|  52|  53|  53
-SPC |  48|  49|  49|  50|  50|  51|  52|  52|  53|  53|  54|  55|  55|  56|  56|  57
-
-LVL: 30 EXP NEEDED: 2381/2534
-L30 Wartortle vs L20 Pidgey          >>> EXP GIVEN: 235
-Wartortle (79/60/64/53/54) 
-Mega Punch	49-58 100.00-118.37%	(crit: 80-95 163.27-193.88%)
-BubbleBeam	58-69 118.37-140.82%	(crit: 107-126 218.37-257.14%)
-Bite	37-44 75.51-89.80%	(crit: 61-72 124.49-146.94%)
+LVL: 29 EXP NEEDED: 207/2349
+L29 Wartortle vs L20 Pidgey          >>> EXP GIVEN: 235
+Wartortle (77/58/61/51/52) 
+Mega Punch	44-52 89.80-106.12%	(crit: 74-88 151.02-179.59%)
+	(One shot prob.: 38.46%)
+BubbleBeam	51-61 104.08-124.49%	(crit: 99-117 202.04-238.78%)
+Bite	33-39 67.35-79.59%	(crit: 57-67 116.33-136.73%)
 Dig	
 
 Mega Punch
           NON-CRITS
-             49: 100.00%     
+             44:  10.26%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%     
+
+             49:  38.46%     
 
           CRITS
              49: 100.00%     
@@ -3561,25 +3368,25 @@ BubbleBeam
 
 Bite
           NON-CRITS
-             37:  10.26%      38:  15.38%      39:  12.82%      40:  15.38%      41:  15.38%      42:  15.38%      43:  12.82%      44:   2.56%     
+             33:  15.38%      34:  15.38%      35:  17.95%      36:  15.38%      37:  17.95%      38:  15.38%      39:   2.56%     
 
           CRITS
              49: 100.00%     
 
 Pidgey (49/26/24/30/22): 
-Gust	5-7 6.33-8.86%	(crit: 10-12 12.66-15.19%)
-	(7 crits death prob.: 0.0848%)
-	(3 non-crits + 5 crits death prob.: 0.0000%)
-	(4 non-crits + 5 crits death prob.: 10.2200%)
-	(5 non-crits + 4 crits death prob.: 0.0000%)
-	(5 non-crits + 5 crits death prob.: 99.9532%)
+Gust	5-7 6.49-9.09%	(crit: 10-12 12.99-15.58%)
+	(7 crits death prob.: 4.6524%)
+	(3 non-crits + 5 crits death prob.: 0.0007%)
+	(4 non-crits + 5 crits death prob.: 60.3857%)
+	(5 non-crits + 4 crits death prob.: 0.0259%)
+	(5 non-crits + 5 crits death prob.: 99.9999%)
 Sand-Attack	
-Quick Attack	5-7 6.33-8.86%	(crit: 10-12 12.66-15.19%)
-	(7 crits death prob.: 0.0848%)
-	(3 non-crits + 5 crits death prob.: 0.0000%)
-	(4 non-crits + 5 crits death prob.: 10.2200%)
-	(5 non-crits + 4 crits death prob.: 0.0000%)
-	(5 non-crits + 5 crits death prob.: 99.9532%)
+Quick Attack	5-7 6.49-9.09%	(crit: 10-12 12.99-15.58%)
+	(7 crits death prob.: 4.6524%)
+	(3 non-crits + 5 crits death prob.: 0.0007%)
+	(4 non-crits + 5 crits death prob.: 60.3857%)
+	(5 non-crits + 4 crits death prob.: 0.0259%)
+	(5 non-crits + 5 crits death prob.: 99.9999%)
 Whirlwind	
 
 Gust
@@ -3597,7 +3404,17 @@ Quick Attack
              10:  43.59%      11:  53.85%      12:   2.56%     
 
 
-LVL: 30 EXP NEEDED: 2146/2534
+L30 Wartortle
+Stat ranges WITHOUT badge boosts:
+IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
+------------------------------------------------------------------------------------
+HP  |  79|  80|  81|  81|  82|  82|  83|  84|  84|  85|  85|  86|  87|  87|  88|  88
+ATK |  47|  48|  48|  49|  50|  50|  51|  51|  52|  53|  53|  54|  54|  55|  56|  56
+DEF |  57|  58|  59|  59|  60|  60|  61|  62|  62|  63|  63|  64|  65|  65|  66|  66
+SPD |  44|  45|  45|  46|  47|  47|  48|  48|  49|  50|  50|  51|  51|  52|  53|  53
+SPC |  48|  49|  49|  50|  50|  51|  52|  52|  53|  53|  54|  55|  55|  56|  56|  57
+
+LVL: 30 EXP NEEDED: 2506/2534
 GAMBLER (0x3A0CD: L24 Growlithe, L24 Vulpix, ) Prize 1680
 L30 Wartortle vs L24 Growlithe          >>> EXP GIVEN: 468
 Wartortle (79/60/64/53/54) 
@@ -3622,7 +3439,7 @@ Ember	4-5 5.06-6.33%	(crit: 6-8 7.59-10.13%)
 	(10 crits death prob.: 0.0000%)
 Leer	
 
-LVL: 30 EXP NEEDED: 1678/2534
+LVL: 30 EXP NEEDED: 2038/2534
 L30 Wartortle vs L24 Vulpix          >>> EXP GIVEN: 324
 Wartortle (79/60/64/53/54) 
 Mega Punch	42-50 75.00-89.29%	(crit: 69-82 123.21-146.43%)
@@ -3642,7 +3459,7 @@ Quick Attack	4-5 5.06-6.33%	(crit: 8-10 10.13-12.66%)
 	(9 crits death prob.: 43.7276%)
 Roar	
 
-LVL: 30 EXP NEEDED: 1354/2534
+LVL: 30 EXP NEEDED: 1714/2534
 RIVAL2 (0x3A42B: L25 Pidgeotto, L23 Gyarados, L22 Growlithe, L20 Kadabra, L25 Ivysaur, ) Prize 1625
 L30 Wartortle vs L25 Pidgeotto          >>> EXP GIVEN: 604
 Wartortle (79/60/64/53/54) +[1/0/0/0] -> (79/91/64/53/54) 
@@ -3676,7 +3493,7 @@ Whirlwind
 
 (Speed DV required to outspeed: 1, to speedtie: 0)
 
-LVL: 30 EXP NEEDED: 750/2534
+LVL: 30 EXP NEEDED: 1110/2534
 L30 Wartortle vs L23 Gyarados          >>> EXP GIVEN: 1054
 Wartortle (79/60/64/53/54) +[1/0/0/0] -> (79/91/64/53/54) 
 Mega Punch	39-47 48.75-58.75%	(crit: 43-51 53.75-63.75%)
@@ -3703,38 +3520,40 @@ Hydro Pump	17-21 21.52-26.58%	(crit: 31-37 39.24-46.84%)
 
 (Speed DV required to outspeed: 3, to speedtie: 1)
 
+LVL: 30 EXP NEEDED: 56/2534
+L30 Wartortle vs L22 Growlithe          >>> EXP GIVEN: 429
+Wartortle (79/60/64/53/54) +[1/0/0/0] -> (79/91/64/53/54) 
+Mega Punch	62-74 105.08-125.42%	(crit: 69-82 116.95-138.98%)
+BubbleBeam	86-102 145.76-172.88%	(crit: 158-186 267.80-315.25%)
+Bite	47-56 79.66-94.92%	(crit: 52-62 88.14-105.08%)
+	(Crit one shot prob.: 33.33%)
+Dig	158-186 267.80-315.25%	(crit: 173-204 293.22-345.76%)
+
+Growlithe (59/39/28/34/30): 
+Bite	7-9 8.86-11.39%	(crit: 14-17 17.72-21.52%)
+	(9 shot prob.: 0.0000%)
+	(10 shot prob.: 30.3353%)
+	(5 crits death prob.: 9.2295%)
+	(1 non-crit + 5 crits death prob.: 99.8773%)
+	(2 non-crits + 4 crits death prob.: 11.8430%)
+	(3 non-crits + 4 crits death prob.: 99.9496%)
+	(4 non-crits + 3 crits death prob.: 15.1179%)
+	(5 non-crits + 2 crits death prob.: 0.0000%)
+	(5 non-crits + 3 crits death prob.: 99.9803%)
+Roar	
+Ember	3-4 3.80-5.06%	(crit: 5-7 6.33-8.86%)
+
 L31 Wartortle
 Stat ranges WITHOUT badge boosts:
 IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
 ------------------------------------------------------------------------------------
-HP  |  82|  83|  83|  84|  85|  85|  86|  86|  87|  88|  88|  89|  89|  90|  91|  91
+HP  |  82|  82|  83|  84|  84|  85|  85|  86|  87|  87|  88|  89|  89|  90|  90|  91
 ATK |  49|  49|  50|  51|  51|  52|  53|  53|  54|  54|  55|  56|  56|  57|  58|  58
 DEF |  59|  60|  60|  61|  62|  62|  63|  63|  64|  65|  65|  66|  67|  67|  68|  68
 SPD |  46|  46|  47|  48|  48|  49|  49|  50|  51|  51|  52|  53|  53|  54|  54|  55
-SPC |  50|  50|  51|  52|  52|  53|  53|  54|  55|  55|  56|  57|  57|  58|  58|  59
+SPC |  49|  50|  51|  51|  52|  53|  53|  54|  54|  55|  56|  56|  57|  58|  58|  59
 
-LVL: 31 EXP NEEDED: 2423/2727
-L31 Wartortle vs L22 Growlithe          >>> EXP GIVEN: 429
-Wartortle (82/63/66/54/56) +[1/0/0/0] -> (82/94/66/54/56) 
-Mega Punch	65-77 110.17-130.51%	(crit: 72-85 122.03-144.07%)
-BubbleBeam	88-104 149.15-176.27%	(crit: 165-194 279.66-328.81%)
-Bite	49-58 83.05-98.31%	(crit: 54-64 91.53-108.47%)
-	(Crit one shot prob.: 51.28%)
-Dig	163-192 276.27-325.42%	(crit: 180-212 305.08-359.32%)
-
-Growlithe (59/39/28/34/30): 
-Bite	7-9 8.54-10.98%	(crit: 14-17 17.07-20.73%)
-	(10 shot prob.: 0.2850%)
-	(5 crits death prob.: 0.0451%)
-	(1 non-crit + 5 crits death prob.: 90.3749%)
-	(2 non-crits + 4 crits death prob.: 0.0659%)
-	(3 non-crits + 4 crits death prob.: 93.4336%)
-	(4 non-crits + 3 crits death prob.: 0.0958%)
-	(5 non-crits + 3 crits death prob.: 95.7758%)
-Roar	
-Ember	3-4 3.66-4.88%	(crit: 5-7 6.10-8.54%)
-
-LVL: 31 EXP NEEDED: 1994/2727
+LVL: 31 EXP NEEDED: 2354/2727
 L31 Wartortle vs L20 Kadabra          >>> EXP GIVEN: 621
 Wartortle (82/63/66/54/56) +[1/0/0/0] -> (82/94/66/54/56) 
 Mega Punch	91-107 185.71-218.37%	(crit: 100-118 204.08-240.82%)
@@ -3754,7 +3573,7 @@ Disable
 
 (Speed DV required to outspeed: 8, to speedtie: 7)
 
-LVL: 31 EXP NEEDED: 1373/2727
+LVL: 31 EXP NEEDED: 1733/2727
 L31 Wartortle vs L25 Ivysaur          >>> EXP GIVEN: 754
 Wartortle (82/63/66/54/56) +[1/0/0/0] -> (82/94/66/54/56) 
 Mega Punch	45-54 65.22-78.26%	(crit: 51-60 73.91-86.96%)
@@ -3775,7 +3594,7 @@ Vine Whip	22-26 26.83-31.71%	(crit: 37-44 45.12-53.66%)
 	(2 non-crits + 1 crit death prob.: 99.4538%)
 PoisonPowder	
 
-LVL: 31 EXP NEEDED: 619/2727
+LVL: 31 EXP NEEDED: 979/2727
 CHANNELER (0x3A4CD: L23 Gastly, L23 Gastly, ) Prize 690
 L31 Wartortle vs L23 Gastly          >>> EXP GIVEN: 468
 Wartortle (82/63/66/54/56) 
@@ -3790,7 +3609,7 @@ Lick	3-4 3.66-4.88%	(crit: 5-7 6.10-8.54%)
 Confuse Ray	
 Night Shade	
 
-LVL: 31 EXP NEEDED: 151/2727
+LVL: 31 EXP NEEDED: 511/2727
 L31 Wartortle vs L23 Gastly          >>> EXP GIVEN: 468
 Wartortle (82/63/66/54/56) 
 Mega Punch	
@@ -3804,17 +3623,25 @@ Lick	3-4 3.66-4.88%	(crit: 5-7 6.10-8.54%)
 Confuse Ray	
 Night Shade	
 
-L32 Wartortle
-Stat ranges WITHOUT badge boosts:
-IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
-------------------------------------------------------------------------------------
-HP  |  84|  85|  86|  86|  87|  88|  88|  89|  90|  90|  91|  91|  92|  93|  93|  94
-ATK |  50|  51|  52|  52|  53|  53|  54|  55|  55|  56|  57|  57|  58|  59|  59|  60
-DEF |  61|  62|  62|  63|  64|  64|  65|  66|  66|  67|  68|  68|  69|  69|  70|  71
-SPD |  47|  48|  49|  49|  50|  51|  51|  52|  53|  53|  54|  54|  55|  56|  56|  57
-SPC |  51|  52|  53|  53|  54|  54|  55|  56|  56|  57|  58|  58|  59|  60|  60|  61
+LVL: 31 EXP NEEDED: 43/2727
+CHANNELER (0x3A4CA: L24 Gastly, ) Prize 720
+L31 Wartortle vs L24 Gastly          >>> EXP GIVEN: 487
+Wartortle (82/63/66/54/56) 
+Mega Punch	
+BubbleBeam	25-30 48.08-57.69%	(crit: 44-52 84.62-100.00%)
+	(Crit one shot prob.: 2.56%)
+	(2 shot prob.: 94.2143%)
+Bite	
+Dig	132-156 253.85-300.00%	(crit: 217-256 417.31-492.31%)
 
-LVL: 32 EXP NEEDED: 2611/2928
+Gastly (52/26/23/47/56): 
+Lick	3-4 3.66-4.88%	(crit: 5-7 6.10-8.54%)
+Confuse Ray	
+Night Shade	
+
+(Speed DV required to outspeed: 3, to speedtie: 2)
+
+LVL: 32 EXP NEEDED: 2484/2928
 CHANNELER (0x3A4CA: L24 Gastly, ) Prize 720
 L32 Wartortle vs L24 Gastly          >>> EXP GIVEN: 487
 Wartortle (84/65/68/56/58) 
@@ -3832,25 +3659,7 @@ Night Shade
 
 (Speed DV required to outspeed: 1, to speedtie: 0)
 
-LVL: 32 EXP NEEDED: 2124/2928
-CHANNELER (0x3A4CA: L24 Gastly, ) Prize 720
-L32 Wartortle vs L24 Gastly          >>> EXP GIVEN: 487
-Wartortle (84/65/68/56/58) 
-Mega Punch	
-BubbleBeam	25-30 48.08-57.69%	(crit: 48-57 92.31-109.62%)
-	(Crit one shot prob.: 58.97%)
-	(2 shot prob.: 94.2143%)
-Bite	
-Dig	137-162 263.46-311.54%	(crit: 234-276 450.00-530.77%)
-
-Gastly (52/26/23/47/56): 
-Lick	3-4 3.57-4.76%	(crit: 5-7 5.95-8.33%)
-Confuse Ray	
-Night Shade	
-
-(Speed DV required to outspeed: 1, to speedtie: 0)
-
-LVL: 32 EXP NEEDED: 1637/2928
+LVL: 32 EXP NEEDED: 1997/2928
 ROCKET (0x3A2ED: L25 Zubat, L25 Zubat, L25 Golbat, ) Prize 750
 L32 Wartortle vs L25 Zubat          >>> EXP GIVEN: 288
 Wartortle (84/65/68/56/58) 
@@ -3872,7 +3681,7 @@ Bite	6-8 7.14-9.52%	(crit: 12-15 14.29-17.86%)
 	(5 non-crits + 4 crits death prob.: 99.2880%)
 Confuse Ray	
 
-LVL: 32 EXP NEEDED: 1349/2928
+LVL: 32 EXP NEEDED: 1709/2928
 L32 Wartortle vs L25 Zubat          >>> EXP GIVEN: 288
 Wartortle (84/65/68/56/58) 
 Mega Punch	49-58 83.05-98.31%	(crit: 83-98 140.68-166.10%)
@@ -3893,7 +3702,7 @@ Bite	6-8 7.14-9.52%	(crit: 12-15 14.29-17.86%)
 	(5 non-crits + 4 crits death prob.: 99.2880%)
 Confuse Ray	
 
-LVL: 32 EXP NEEDED: 1061/2928
+LVL: 32 EXP NEEDED: 1421/2928
 L32 Wartortle vs L25 Golbat          >>> EXP GIVEN: 915
 Wartortle (84/65/68/56/58) 
 Mega Punch	29-35 38.16-46.05%	(crit: 49-58 64.47-76.32%)
@@ -3916,7 +3725,7 @@ Confuse Ray
 
 (Speed DV required to outspeed: 12, to speedtie: 10)
 
-LVL: 32 EXP NEEDED: 146/2928
+LVL: 32 EXP NEEDED: 506/2928
 ROCKET (0x3A2F2: L26 Koffing, L26 Drowzee, ) Prize 780
 L32 Wartortle vs L26 Koffing          >>> EXP GIVEN: 634
 Wartortle (84/65/68/56/58) 
@@ -3989,13 +3798,13 @@ L33 Wartortle
 Stat ranges WITHOUT badge boosts:
 IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
 ------------------------------------------------------------------------------------
-HP  |  87|  88|  88|  89|  90|  90|  91|  92|  92|  93|  94|  94|  95|  96|  96|  97
-ATK |  52|  53|  53|  54|  55|  55|  56|  57|  57|  58|  59|  59|  60|  61|  61|  62
+HP  |  87|  87|  88|  89|  89|  90|  91|  91|  92|  93|  93|  94|  95|  95|  96|  97
+ATK |  52|  52|  53|  54|  54|  55|  56|  56|  57|  58|  58|  59|  60|  60|  61|  62
 DEF |  63|  64|  64|  65|  66|  66|  67|  68|  68|  69|  70|  70|  71|  71|  72|  73
 SPD |  49|  49|  50|  51|  51|  52|  53|  53|  54|  55|  55|  56|  57|  57|  58|  59
 SPC |  53|  54|  54|  55|  56|  56|  57|  58|  58|  59|  60|  60|  61|  62|  62|  63
 
-LVL: 33 EXP NEEDED: 2647/3135
+LVL: 33 EXP NEEDED: 3007/3135
 L33 Wartortle vs L26 Drowzee          >>> EXP GIVEN: 567
 Wartortle (87/67/70/58/60) 
 Mega Punch	44-52 61.97-73.24%	(crit: 73-86 102.82-121.13%)
@@ -4067,7 +3876,7 @@ Headbutt
              15:  25.64%      16:  35.90%      17:  35.90%      18:   2.56%     
 
 
-LVL: 33 EXP NEEDED: 2080/3135
+LVL: 33 EXP NEEDED: 2440/3135
 ROCKET (0x3A2F6: L23 Zubat, L23 Rattata, L23 Raticate, L23 Zubat, ) Prize 690
 L33 Wartortle vs L23 Zubat          >>> EXP GIVEN: 265
 Wartortle (87/67/70/58/60) 
@@ -4086,7 +3895,7 @@ Bite	5-7 5.75-8.05%	(crit: 11-13 12.64-14.94%)
 	(5 non-crits + 5 crits death prob.: 78.3141%)
 Confuse Ray	
 
-LVL: 33 EXP NEEDED: 1815/3135
+LVL: 33 EXP NEEDED: 2175/3135
 L33 Wartortle vs L23 Rattata          >>> EXP GIVEN: 280
 Wartortle (87/67/70/58/60) 
 Mega Punch	58-69 116.00-138.00%	(crit: 97-114 194.00-228.00%)
@@ -4116,7 +3925,7 @@ Hyper Fang	12-15 13.79-17.24%	(crit: 23-28 26.44-32.18%)
 	(5 non-crits + 1 crit death prob.: 99.8564%)
 Focus Energy	
 
-LVL: 33 EXP NEEDED: 1535/3135
+LVL: 33 EXP NEEDED: 1895/3135
 L33 Wartortle vs L23 Raticate          >>> EXP GIVEN: 571
 Wartortle (87/67/70/58/60) 
 Mega Punch	39-46 63.93-75.41%	(crit: 64-76 104.92-124.59%)
@@ -4151,7 +3960,7 @@ Hyper Fang	16-19 18.39-21.84%	(crit: 31-37 35.63-42.53%)
 
 (Speed DV required to outspeed: 8, to speedtie: 6)
 
-LVL: 33 EXP NEEDED: 964/3135
+LVL: 33 EXP NEEDED: 1324/3135
 L33 Wartortle vs L23 Zubat          >>> EXP GIVEN: 265
 Wartortle (87/67/70/58/60) 
 Mega Punch	58-69 105.45-125.45%	(crit: 97-114 176.36-207.27%)
@@ -4169,37 +3978,4 @@ Bite	5-7 5.75-8.05%	(crit: 11-13 12.64-14.94%)
 	(5 non-crits + 5 crits death prob.: 78.3141%)
 Confuse Ray	
 
-LVL: 33 EXP NEEDED: 699/3135
-L34 Wartortle
-Stat ranges WITHOUT badge boosts:
-IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
-------------------------------------------------------------------------------------
-HP  |  89|  90|  91|  91|  92|  93|  93|  94|  95|  96|  96|  97|  98|  98|  99| 100
-ATK |  53|  54|  55|  56|  56|  57|  58|  58|  59|  60|  60|  61|  62|  62|  63|  64
-DEF |  65|  66|  66|  67|  68|  68|  69|  70|  70|  71|  72|  73|  73|  74|  75|  75
-SPD |  50|  51|  52|  52|  53|  54|  54|  55|  56|  57|  57|  58|  59|  59|  60|  61
-SPC |  55|  56|  56|  57|  58|  58|  59|  60|  60|  61|  62|  62|  63|  64|  64|  65
-
-LVL: 34 EXP NEEDED: 3351/3351
-L35 Wartortle
-Stat ranges WITHOUT badge boosts:
-IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
-------------------------------------------------------------------------------------
-HP  |  92|  92|  93|  94|  95|  95|  96|  97|  97|  98|  99|  99| 100| 101| 102| 102
-ATK |  55|  56|  56|  57|  58|  58|  59|  60|  61|  61|  62|  63|  63|  64|  65|  65
-DEF |  67|  68|  68|  69|  70|  70|  71|  72|  72|  73|  74|  75|  75|  76|  77|  77
-SPD |  52|  52|  53|  54|  55|  55|  56|  57|  57|  58|  59|  59|  60|  61|  62|  62
-SPC |  56|  57|  58|  58|  59|  60|  61|  61|  62|  63|  63|  64|  65|  65|  66|  67
-
-LVL: 35 EXP NEEDED: 3572/3572
-L36 Wartortle
-Stat ranges WITHOUT badge boosts:
-IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
-------------------------------------------------------------------------------------
-HP  |  94|  95|  96|  96|  97|  98|  98|  99| 100| 101| 101| 102| 103| 103| 104| 105
-ATK |  56|  57|  58|  59|  59|  60|  61|  61|  62|  63|  64|  64|  65|  66|  66|  67
-DEF |  69|  69|  70|  71|  71|  72|  73|  74|  74|  75|  76|  77|  77|  78|  79|  79
-SPD |  53|  54|  55|  55|  56|  57|  57|  58|  59|  60|  60|  61|  62|  62|  63|  64
-SPC |  58|  59|  59|  60|  61|  61|  62|  63|  64|  64|  65|  66|  66|  67|  68|  69
-
-LVL: 36 EXP NEEDED: 3801/3801
+LVL: 33 EXP NEEDED: 1059/3135

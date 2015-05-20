@@ -22,16 +22,17 @@ SPC |  56|  56|  57|  58|  58|  59|  60|  60|  61|  62|  62|  63|  64|  64|  65|
 LVL: 34 EXP NEEDED: 3351/3351
 ROCKET (0x3A34B: L33 Machoke, ) Prize 990
 L34 Nidoking vs L33 Machoke          >>> EXP GIVEN: 1032
-Nidoking (99/79/69/69/56) 
-Poison Sting	10-12 9.90-11.88%	(crit: 16-19 15.84-18.81%)
+Nidoking (99/75/69/63/56) 
+Poison Sting	10-12 9.90-11.88%	(crit: 15-18 14.85-17.82%)
 	(9 shot prob.: 0.0543%)
 	(10 shot prob.: 99.9752%)
-	(6 crits death prob.: 82.1797%)
-	(1 non-crit + 5 crits death prob.: 1.0335%)
-	(2 non-crits + 5 crits death prob.: 99.9476%)
-	(3 non-crits + 4 crits death prob.: 41.3468%)
-	(4 non-crits + 3 crits death prob.: 0.0028%)
-	(5 non-crits + 3 crits death prob.: 97.5784%)
+	(6 crits death prob.: 3.7544%)
+	(1 non-crit + 5 crits death prob.: 0.0000%)
+	(2 non-crits + 5 crits death prob.: 76.2306%)
+	(3 non-crits + 4 crits death prob.: 1.3391%)
+	(4 non-crits + 3 crits death prob.: 0.0000%)
+	(4 non-crits + 4 crits death prob.: 99.9844%)
+	(5 non-crits + 3 crits death prob.: 68.4046%)
 Focus Energy	
 Ice Beam	33-39 32.67-38.61%	(crit: 62-73 61.39-72.28%)
 	(3 shot prob.: 98.5435%)
@@ -54,13 +55,13 @@ Leer
 LVL: 34 EXP NEEDED: 2319/3351
 ROCKET (0x3A319: L33 Arbok, ) Prize 990
 L34 Nidoking vs L33 Arbok          >>> EXP GIVEN: 1039
-Nidoking (99/79/69/69/56) 
+Nidoking (99/75/69/63/56) 
 Focus Energy	
 Ice Beam	27-32 31.03-36.78%	(crit: 51-60 58.62-68.97%)
 	(3 shot prob.: 60.7697%)
 	(1 non-crit + 1 crit death prob.: 24.3918%)
 Horn Drill	
-Earthquake	114-134 131.03-154.02%	(crit: 194-228 222.99-262.07%)
+Earthquake	107-126 122.99-144.83%	(crit: 183-216 210.34-248.28%)
 
 Arbok (87/67/55/63/53): 
 Leer	
@@ -72,10 +73,12 @@ Bite	16-19 16.16-19.19%	(crit: 32-38 32.32-38.38%)
 	(4 non-crits + 1 crit death prob.: 97.0841%)
 Glare	
 
+(Speed DV required to outspeed: 2, to speedtie: 1)
+
 LVL: 34 EXP NEEDED: 1280/3351
 RIVAL2 (0x3A44F: L37 Pidgeot, L38 Gyarados, L35 Growlithe, L35 Alakazam, L40 Venusaur, ) Prize 2600
 L34 Nidoking vs L37 Pidgeot          >>> EXP GIVEN: 1363
-Nidoking (99/79/69/69/56) 
+Nidoking (99/75/69/63/56) 
 Focus Energy	
 Ice Beam	45-54 39.47-47.37%	(crit: 86-102 75.44-89.47%)
 Horn Drill	
@@ -93,21 +96,19 @@ Wing Attack	16-19 16.16-19.19%	(crit: 33-39 33.33-39.39%)
 	(2 non-crits + 2 crits death prob.: 99.7759%)
 	(4 non-crits + 1 crit death prob.: 99.1267%)
 
-(Speed DV required to outspeed: 15, to speedtie: 14)
-
 L35 Nidoking
 Stat ranges WITHOUT badge boosts:
 IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
 ------------------------------------------------------------------------------------
 HP  | 102| 103| 104| 104| 105| 106| 106| 107| 108| 109| 109| 110| 111| 111| 112| 113
-ATK |  73|  74|  75|  76|  76|  77|  78|  78|  79|  80|  80|  81|  82|  83|  83|  84
+ATK |  70|  71|  72|  72|  73|  74|  75|  75|  76|  77|  77|  78|  79|  79|  80|  81
 DEF |  59|  60|  61|  62|  62|  63|  64|  64|  65|  66|  66|  67|  68|  69|  69|  70
-SPD |  70|  71|  72|  72|  73|  74|  75|  75|  76|  77|  77|  78|  79|  79|  80|  81
+SPD |  65|  66|  66|  67|  68|  69|  69|  70|  71|  71|  72|  73|  73|  74|  75|  76
 SPC |  58|  59|  59|  60|  61|  62|  62|  63|  64|  64|  65|  66|  66|  67|  68|  69
 
 LVL: 35 EXP NEEDED: 3489/3572
 L35 Nidoking vs L38 Gyarados          >>> EXP GIVEN: 1741
-Nidoking (103/82/73/71/58) 
+Nidoking (103/78/73/66/58) 
 Focus Energy	
 Ice Beam	18-22 14.29-17.46%	(crit: 34-40 26.98-31.75%)
 	(6 shot prob.: 0.3461%)
@@ -124,15 +125,15 @@ Dragon Rage
 Leer	
 Hydro Pump	159-188 154.37-182.52%	(crit: 297-350 288.35-339.81%)
 
-(Speed DV required to outspeed: 4, to speedtie: 2)
+(Speed DV required to outspeed: 11, to speedtie: 10)
 
 LVL: 35 EXP NEEDED: 1748/3572
 L35 Nidoking vs L35 Growlithe          >>> EXP GIVEN: 682
-Nidoking (103/82/73/71/58) 
+Nidoking (103/78/73/66/58) 
 Focus Energy	
 Ice Beam	34-41 38.20-46.07%	(crit: 63-75 70.79-84.27%)
 Horn Drill	
-Earthquake	163-192 183.15-215.73%	(crit: 270-318 303.37-357.30%)
+Earthquake	154-182 173.03-204.49%	(crit: 260-306 292.13-343.82%)
 
 Growlithe (89/60/42/52/45): 
 Roar	
@@ -149,7 +150,7 @@ Take Down	21-25 20.39-24.27%	(crit: 43-51 41.75-49.51%)
 
 LVL: 35 EXP NEEDED: 1066/3572
 L35 Nidoking vs L35 Alakazam          >>> EXP GIVEN: 1395
-Nidoking (103/82/73/71/58) 
+Nidoking (103/78/73/66/58) 
 Focus Energy	
 Ice Beam	15-18 16.85-20.22%	(crit: 28-33 31.46-37.08%)
 	(5 shot prob.: 0.0001%)
@@ -157,8 +158,8 @@ Ice Beam	15-18 16.85-20.22%	(crit: 28-33 31.46-37.08%)
 	(2 non-crits + 2 crits death prob.: 95.0271%)
 	(4 non-crits + 1 crit death prob.: 99.9113%)
 Horn Drill	
-Earthquake	81-96 91.01-107.87%	(crit: 135-159 151.69-178.65%)
-	(One shot prob.: 48.72%)
+Earthquake	77-91 86.52-102.25%	(crit: 130-153 146.07-171.91%)
+	(One shot prob.: 15.38%)
 
 Alakazam (89/46/42/94/105): 
 Confusion	76-90 73.79-87.38%	(crit: 142-168 137.86-163.11%)
@@ -172,20 +173,21 @@ Stat ranges WITHOUT badge boosts:
 IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
 ------------------------------------------------------------------------------------
 HP  | 106| 106| 107| 108| 109| 109| 110| 111| 111| 112| 113| 114| 114| 115| 116| 116
-ATK |  76|  77|  77|  78|  79|  79|  80|  81|  82|  82|  83|  84|  84|  85|  86|  87
+ATK |  73|  73|  74|  75|  75|  76|  77|  78|  78|  79|  80|  80|  81|  82|  83|  83
 DEF |  62|  62|  63|  64|  65|  65|  66|  67|  68|  68|  69|  70|  70|  71|  72|  73
-SPD |  72|  73|  74|  74|  75|  76|  77|  77|  78|  79|  79|  80|  81|  82|  82|  83
+SPD |  68|  68|  69|  70|  70|  71|  72|  73|  73|  74|  75|  75|  76|  77|  78|  78
 SPC |  60|  61|  62|  62|  63|  64|  65|  65|  66|  67|  68|  68|  69|  70|  70|  71
 
 LVL: 36 EXP NEEDED: 3472/3801
 L36 Nidoking vs L40 Venusaur          >>> EXP GIVEN: 1782
-Nidoking (106/85/76/73/60) 
+Nidoking (106/82/76/68/60) 
 Focus Energy	
 Ice Beam	37-44 30.83-36.67%	(crit: 66-78 55.00-65.00%)
 	(3 shot prob.: 62.1656%)
 	(1 non-crit + 1 crit death prob.: 2.1696%)
 Horn Drill	
-Earthquake	45-54 37.50-45.00%	(crit: 76-90 63.33-75.00%)
+Earthquake	45-54 37.50-45.00%	(crit: 73-86 60.83-71.67%)
+	(1 non-crit + 1 crit death prob.: 98.8166%)
 
 Venusaur (120/77/77/75/91): 
 Leech Seed	
@@ -196,16 +198,16 @@ Vine Whip	26-31 24.53-29.25%	(crit: 48-57 45.28-53.77%)
 PoisonPowder	
 Razor Leaf	40-48 37.74-45.28%	(crit: 74-87 69.81-82.08%)
 
-(Speed DV required to outspeed: 5, to speedtie: 4)
+(Speed DV required to outspeed: 12, to speedtie: 10)
 
 LVL: 36 EXP NEEDED: 1690/3801
 ROCKET (0x3A355: L32 Cubone, L32 Drowzee, L32 Marowak, ) Prize 960
 L36 Nidoking vs L32 Cubone          >>> EXP GIVEN: 595
-Nidoking (106/85/76/73/60) 
+Nidoking (106/82/76/68/60) 
 Focus Energy	
 Ice Beam	91-108 115.19-136.71%	(crit: 168-198 212.66-250.63%)
 Horn Drill	
-Earthquake	51-60 64.56-75.95%	(crit: 85-100 107.59-126.58%)
+Earthquake	49-58 62.03-73.42%	(crit: 81-96 102.53-121.52%)
 
 Cubone (79/42/70/32/35): 
 Bone Club	30-36 28.30-33.96%	(crit: 57-68 53.77-64.15%)
@@ -216,12 +218,12 @@ Focus Energy
 
 LVL: 36 EXP NEEDED: 1095/3801
 L36 Nidoking vs L32 Drowzee          >>> EXP GIVEN: 699
-Nidoking (106/85/76/73/60) 
+Nidoking (106/82/76/68/60) 
 Focus Energy	
 Ice Beam	24-29 28.24-34.12%	(crit: 45-53 52.94-62.35%)
 	(3 shot prob.: 0.4113%)
 Horn Drill	
-Earthquake	92-109 108.24-128.24%	(crit: 155-183 182.35-215.29%)
+Earthquake	90-106 105.88-124.71%	(crit: 148-175 174.12-205.88%)
 
 Drowzee (85/41/38/37/67): 
 Confusion	42-50 39.62-47.17%	(crit: 81-96 76.42-90.57%)
@@ -239,13 +241,12 @@ Psychic	76-90 71.70-84.91%	(crit: 142-168 133.96-158.49%)
 
 LVL: 36 EXP NEEDED: 396/3801
 L36 Nidoking vs L32 Marowak          >>> EXP GIVEN: 849
-Nidoking (106/85/76/73/60) 
+Nidoking (106/82/76/68/60) 
 Focus Energy	
 Ice Beam	76-90 89.41-105.88%	(crit: 141-166 165.88-195.29%)
 	(One shot prob.: 38.46%)
 Horn Drill	
-Earthquake	45-54 52.94-63.53%	(crit: 74-88 87.06-103.53%)
-	(Crit one shot prob.: 23.08%)
+Earthquake	43-51 50.59-60.00%	(crit: 71-84 83.53-98.82%)
 
 Marowak (85/61/80/38/42): 
 Bone Club	40-48 37.74-45.28%	(crit: 83-98 78.30-92.45%)
@@ -258,20 +259,20 @@ Stat ranges WITHOUT badge boosts:
 IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
 ------------------------------------------------------------------------------------
 HP  | 109| 109| 110| 111| 112| 112| 113| 114| 115| 115| 116| 117| 118| 118| 119| 120
-ATK |  78|  79|  79|  80|  81|  81|  82|  83|  84|  84|  85|  86|  87|  87|  88|  89
+ATK |  75|  76|  77|  77|  78|  79|  80|  80|  81|  82|  83|  83|  84|  85|  86|  86
 DEF |  64|  64|  65|  66|  67|  67|  68|  69|  70|  70|  71|  72|  73|  73|  74|  75
-SPD |  74|  75|  76|  77|  77|  78|  79|  80|  80|  81|  82|  83|  83|  84|  85|  86
+SPD |  70|  70|  71|  72|  73|  73|  74|  75|  76|  76|  77|  78|  79|  79|  80|  81
 SPC |  63|  63|  64|  65|  66|  66|  67|  68|  69|  69|  70|  71|  71|  72|  73|  74
 
 LVL: 37 EXP NEEDED: 3585/4038
 GIOVANNI (0x3A286: L37 Nidorino, L35 Kangaskhan, L37 Rhyhorn, L41 Nidoqueen, ) Prize 4059
 L37 Nidoking vs L37 Nidorino          >>> EXP GIVEN: 934
-Nidoking (109/87/78/75/63) 
+Nidoking (109/84/78/70/63) 
 Focus Energy	
 Ice Beam	33-39 33.67-39.80%	(crit: 62-74 63.27-75.51%)
 	(1 non-crit + 1 crit death prob.: 95.2005%)
 Horn Drill	
-Earthquake	137-162 139.80-165.31%	(crit: 236-278 240.82-283.67%)
+Earthquake	132-156 134.69-159.18%	(crit: 226-266 230.61-271.43%)
 
 Nidorino (98/64/53/59/51): 
 Horn Attack	16-19 14.68-17.43%	(crit: 32-38 29.36-34.86%)
@@ -285,12 +286,12 @@ Fury Attack	4-5 3.67-4.59%	(crit: 8-10 7.34-9.17%)
 
 LVL: 37 EXP NEEDED: 2651/4038
 L37 Nidoking vs L35 Kangaskhan          >>> EXP GIVEN: 1312
-Nidoking (109/87/78/75/63) 
+Nidoking (109/84/78/70/63) 
 Focus Energy	
 Ice Beam	44-52 35.48-41.94%	(crit: 84-99 67.74-79.84%)
 Horn Drill	
-Earthquake	56-66 45.16-53.23%	(crit: 95-112 76.61-90.32%)
-	(2 shot prob.: 29.8488%)
+Earthquake	53-63 42.74-50.81%	(crit: 91-108 73.39-87.10%)
+	(2 shot prob.: 2.1696%)
 
 Kangaskhan (124/77/66/73/38): 
 Comet Punch	8-10 7.34-9.17%	(crit: 16-19 14.68-17.43%)
@@ -314,14 +315,16 @@ Bite	25-30 22.94-27.52%	(crit: 51-61 46.79-55.96%)
 	(2 non-crits + 1 crit death prob.: 71.0733%)
 Tail Whip	
 
+(Speed DV required to outspeed: 6, to speedtie: 4)
+
 LVL: 37 EXP NEEDED: 1339/4038
 L37 Nidoking vs L37 Rhyhorn          >>> EXP GIVEN: 1069
-Nidoking (109/87/78/75/63) 
+Nidoking (109/84/78/70/63) 
 Focus Energy	
 Ice Beam	102-120 91.07-107.14%	(crit: 194-228 173.21-203.57%)
 	(One shot prob.: 46.15%)
 Horn Drill	
-Earthquake	91-108 81.25-96.43%	(crit: 154-182 137.50-162.50%)
+Earthquake	88-104 78.57-92.86%	(crit: 149-176 133.04-157.14%)
 
 Rhyhorn (112/74/81/29/33): 
 Horn Attack	17-21 15.60-19.27%	(crit: 37-44 33.94-40.37%)
@@ -338,11 +341,11 @@ Tail Whip
 
 LVL: 37 EXP NEEDED: 270/4038
 L37 Nidoking vs L41 Nidoqueen          >>> EXP GIVEN: 1704
-Nidoking (109/87/78/75/63) 
+Nidoking (109/84/78/70/63) 
 Focus Energy	
 Ice Beam	47-56 35.88-42.75%	(crit: 88-104 67.18-79.39%)
 Horn Drill	
-Earthquake	88-104 67.18-79.39%	(crit: 153-180 116.79-137.40%)
+Earthquake	86-102 65.65-77.86%	(crit: 148-174 112.98-132.82%)
 
 Nidoqueen (131/79/82/73/73): 
 Scratch	13-16 11.93-14.68%	(crit: 27-32 24.77-29.36%)
@@ -359,15 +362,17 @@ Body Slam	27-32 24.77-29.36%	(crit: 57-67 52.29-61.47%)
 	(4 shot prob.: 99.8962%)
 Poison Sting	1-2 0.92-1.83%	(crit: 3-4 2.75-3.67%)
 
+(Speed DV required to outspeed: 6, to speedtie: 4)
+
 LVL: 38 EXP NEEDED: 2847/4281
 JUGGLER (0x3A13A: L31 Drowzee, L31 Drowzee, L31 Kadabra, L31 Drowzee, ) Prize 1085
 L38 Nidoking vs L31 Drowzee          >>> EXP GIVEN: 676
-Nidoking (113/90/81/77/64) 
+Nidoking (113/86/81/73/64) 
 Focus Energy	
 Ice Beam	28-33 33.73-39.76%	(crit: 51-61 61.45-73.49%)
 	(1 non-crit + 1 crit death prob.: 85.8646%)
 Horn Drill	
-Earthquake	107-126 128.92-151.81%	(crit: 178-210 214.46-253.01%)
+Earthquake	102-121 122.89-145.78%	(crit: 171-202 206.02-243.37%)
 
 Drowzee (83/40/37/36/65): 
 Disable	
@@ -384,12 +389,12 @@ Poison Gas
 
 LVL: 38 EXP NEEDED: 2171/4281
 L38 Nidoking vs L31 Drowzee          >>> EXP GIVEN: 676
-Nidoking (113/90/81/77/64) 
+Nidoking (113/86/81/73/64) 
 Focus Energy	
 Ice Beam	28-33 33.73-39.76%	(crit: 51-61 61.45-73.49%)
 	(1 non-crit + 1 crit death prob.: 85.8646%)
 Horn Drill	
-Earthquake	107-126 128.92-151.81%	(crit: 178-210 214.46-253.01%)
+Earthquake	102-121 122.89-145.78%	(crit: 171-202 206.02-243.37%)
 
 Drowzee (83/40/37/36/65): 
 Disable	
@@ -406,13 +411,13 @@ Poison Gas
 
 LVL: 38 EXP NEEDED: 1495/4281
 L38 Nidoking vs L31 Kadabra          >>> EXP GIVEN: 963
-Nidoking (113/90/81/77/64) 
+Nidoking (113/86/81/73/64) 
 Focus Energy	
 Ice Beam	22-26 31.43-37.14%	(crit: 40-48 57.14-68.57%)
 	(3 shot prob.: 71.5504%)
 	(1 non-crit + 1 crit death prob.: 22.6824%)
 Horn Drill	
-Earthquake	141-166 201.43-237.14%	(crit: 234-276 334.29-394.29%)
+Earthquake	135-159 192.86-227.14%	(crit: 227-267 324.29-381.43%)
 
 Kadabra (70/32/28/75/84): 
 Confusion	51-60 45.13-53.10%	(crit: 91-108 80.53-95.58%)
@@ -421,14 +426,16 @@ Disable
 Psybeam	62-74 54.87-65.49%	(crit: 117-138 103.54-122.12%)
 Recover	
 
+(Speed DV required to outspeed: 5, to speedtie: 4)
+
 LVL: 38 EXP NEEDED: 532/4281
 L38 Nidoking vs L31 Drowzee          >>> EXP GIVEN: 676
-Nidoking (113/90/81/77/64) 
+Nidoking (113/86/81/73/64) 
 Focus Energy	
 Ice Beam	28-33 33.73-39.76%	(crit: 51-61 61.45-73.49%)
 	(1 non-crit + 1 crit death prob.: 85.8646%)
 Horn Drill	
-Earthquake	107-126 128.92-151.81%	(crit: 178-210 214.46-253.01%)
+Earthquake	102-121 122.89-145.78%	(crit: 171-202 206.02-243.37%)
 
 Drowzee (83/40/37/36/65): 
 Disable	
@@ -445,254 +452,241 @@ Poison Gas
 
 LVL: 39 EXP NEEDED: 4389/4533
 JUGGLER (0x3A140: L34 Drowzee, L34 Hypno, ) Prize 1190
-L39 Nidoking vs L34 Drowzee          >>> EXP GIVEN: 742
-Nidoking (116/92/83/79/67) 
+L40 Nidoking vs L34 Drowzee          >>> EXP GIVEN: 742
+Nidoking (119/92/85/77/68) 
 Focus Energy	
-Ice Beam	27-32 30.00-35.56%	(crit: 51-61 56.67-67.78%)
-	(3 shot prob.: 18.7646%)
-	(1 non-crit + 1 crit death prob.: 8.1525%)
+Ice Beam	28-34 31.11-37.78%	(crit: 53-63 58.89-70.00%)
+	(3 shot prob.: 90.4837%)
+	(1 non-crit + 1 crit death prob.: 43.5897%)
 Horn Drill	
-Earthquake	99-117 110.00-130.00%	(crit: 171-201 190.00-223.33%)
+Earthquake	104-123 115.56-136.67%	(crit: 176-207 195.56-230.00%)
 
 Drowzee (90/43/41/39/71): 
-Confusion	42-50 36.21-43.10%	(crit: 81-96 69.83-82.76%)
-Headbutt	10-12 8.62-10.34%	(crit: 21-25 18.10-21.55%)
+Confusion	42-50 35.29-42.02%	(crit: 81-96 68.07-80.67%)
+Headbutt	10-12 8.40-10.08%	(crit: 20-24 16.81-20.17%)
 	(10 shot prob.: 0.0000%)
-	(5 crits death prob.: 18.8373%)
-	(1 non-crit + 5 crits death prob.: 99.9842%)
-	(2 non-crits + 4 crits death prob.: 5.9490%)
-	(3 non-crits + 4 crits death prob.: 99.8577%)
-	(4 non-crits + 3 crits death prob.: 0.8233%)
-	(5 non-crits + 3 crits death prob.: 99.2111%)
+	(5 crits death prob.: 0.0001%)
+	(1 non-crit + 5 crits death prob.: 58.5404%)
+	(2 non-crits + 4 crits death prob.: 0.0000%)
+	(3 non-crits + 4 crits death prob.: 50.7404%)
+	(4 non-crits + 3 crits death prob.: 0.0000%)
+	(5 non-crits + 3 crits death prob.: 41.9773%)
 Poison Gas	
-Psychic	76-90 65.52-77.59%	(crit: 144-170 124.14-146.55%)
+Psychic	76-90 63.87-75.63%	(crit: 142-168 119.33-141.18%)
 
-LVL: 39 EXP NEEDED: 3647/4533
-L39 Nidoking vs L34 Hypno          >>> EXP GIVEN: 1201
-Nidoking (116/92/83/79/67) 
+LVL: 40 EXP NEEDED: 4048/4790
+L40 Nidoking vs L34 Hypno          >>> EXP GIVEN: 1201
+Nidoking (119/92/85/77/68) 
 Focus Energy	
-Ice Beam	22-26 20.56-24.30%	(crit: 41-49 38.32-45.79%)
-	(1 non-crit + 2 crits death prob.: 98.4811%)
+Ice Beam	23-28 21.50-26.17%	(crit: 43-51 40.19-47.66%)
+	(4 shot prob.: 2.8952%)
+	(2 non-crits + 1 crit death prob.: 0.0017%)
 Horn Drill	
-Earthquake	69-82 64.49-76.64%	(crit: 120-142 112.15-132.71%)
+Earthquake	74-88 69.16-82.24%	(crit: 125-147 116.82-137.38%)
 
 Hypno (107/60/58/56/88): 
 Disable	
-Confusion	52-62 44.83-53.45%	(crit: 102-120 87.93-103.45%)
-	(Crit one shot prob.: 23.08%)
-	(2 shot prob.: 33.7278%)
-Headbutt	14-17 12.07-14.66%	(crit: 28-34 24.14-29.31%)
-	(7 shot prob.: 0.0001%)
-	(8 shot prob.: 99.7817%)
-	(4 crits death prob.: 99.8951%)
-	(1 non-crit + 3 crits death prob.: 0.1783%)
-	(2 non-crits + 3 crits death prob.: 99.8735%)
-	(3 non-crits + 2 crits death prob.: 0.0215%)
-	(4 non-crits + 2 crits death prob.: 99.8482%)
-	(5 non-crits + 1 crit death prob.: 0.0017%)
+Confusion	52-62 43.70-52.10%	(crit: 98-116 82.35-97.48%)
+	(2 shot prob.: 13.2150%)
+Headbutt	13-16 10.92-13.45%	(crit: 28-34 23.53-28.57%)
+	(8 shot prob.: 1.8182%)
+	(9 shot prob.: 99.9996%)
+	(4 crits death prob.: 96.6020%)
+	(2 non-crits + 3 crits death prob.: 85.0353%)
+	(4 non-crits + 2 crits death prob.: 57.7303%)
 Poison Gas	
 
-LVL: 39 EXP NEEDED: 2446/4533
+LVL: 40 EXP NEEDED: 2847/4790
 KOGA (0x3A3D1: L37 Koffing, L39 Muk, L37 Koffing, L43 Weezing, ) Prize 4257
-L39 Nidoking vs L37 Koffing          >>> EXP GIVEN: 903
-Nidoking (116/92/83/79/67) 
+L40 Nidoking vs L37 Koffing          >>> EXP GIVEN: 903
+Nidoking (119/92/85/77/68) 
 Focus Energy	
-Ice Beam	34-41 41.46-50.00%	(crit: 66-78 80.49-95.12%)
-	(2 shot prob.: 0.0657%)
+Ice Beam	37-44 45.12-53.66%	(crit: 68-81 82.93-98.78%)
+	(2 shot prob.: 35.5030%)
 Horn Drill	
-Earthquake	102-120 124.39-146.34%	(crit: 173-204 210.98-248.78%)
+Earthquake	107-126 130.49-153.66%	(crit: 178-210 217.07-256.10%)
 
 Koffing (82/59/81/36/55): 
-Tackle	7-9 6.03-7.76%	(crit: 16-19 13.79-16.38%)
-	(7 crits death prob.: 96.4702%)
-	(3 non-crits + 5 crits death prob.: 0.0257%)
-	(4 non-crits + 5 crits death prob.: 67.1161%)
-	(5 non-crits + 4 crits death prob.: 0.0003%)
-	(5 non-crits + 5 crits death prob.: 99.9997%)
-Smog	1-2 0.86-1.72%	(crit: 3-4 2.59-3.45%)
-Sludge	5-6 4.31-5.17%	(crit: 10-12 8.62-10.34%)
+Tackle	7-9 5.88-7.56%	(crit: 15-18 12.61-15.13%)
+	(7 crits death prob.: 0.5339%)
+	(4 non-crits + 5 crits death prob.: 0.0303%)
+	(5 non-crits + 5 crits death prob.: 69.8860%)
+Smog	1-2 0.84-1.68%	(crit: 3-4 2.52-3.36%)
+Sludge	5-6 4.20-5.04%	(crit: 10-12 8.40-10.08%)
 	(10 crits death prob.: 0.0000%)
 SmokeScreen	
 
-LVL: 39 EXP NEEDED: 1543/4533
-L39 Nidoking vs L39 Muk          >>> EXP GIVEN: 1311
-Nidoking (116/92/83/79/67) 
+LVL: 40 EXP NEEDED: 1944/4790
+L40 Nidoking vs L39 Muk          >>> EXP GIVEN: 1311
+Nidoking (119/92/85/77/68) 
 Focus Energy	
-Ice Beam	31-37 22.63-27.01%	(crit: 59-70 43.07-51.09%)
-	(4 shot prob.: 31.6777%)
-	(2 crits death prob.: 3.5503%)
-	(2 non-crits + 1 crit death prob.: 11.9608%)
+Ice Beam	34-40 24.82-29.20%	(crit: 62-74 45.26-54.01%)
+	(4 shot prob.: 99.8962%)
+	(2 crits death prob.: 45.7594%)
+	(2 non-crits + 1 crit death prob.: 85.3571%)
 Horn Drill	
-Earthquake	119-140 86.86-102.19%	(crit: 204-240 148.91-175.18%)
-	(One shot prob.: 15.38%)
+Earthquake	127-150 92.70-109.49%	(crit: 209-246 152.55-179.56%)
+	(One shot prob.: 58.97%)
 
 Muk (137/93/69/50/61): 
 Disable	
 Poison Gas	
 Minimize	
-Sludge	7-9 6.03-7.76%	(crit: 17-20 14.66-17.24%)
-	(6 crits death prob.: 0.0134%)
-	(2 non-crits + 5 crits death prob.: 0.0000%)
-	(3 non-crits + 5 crits death prob.: 16.3797%)
-	(4 non-crits + 4 crits death prob.: 0.0000%)
-	(4 non-crits + 5 crits death prob.: 99.7594%)
-	(5 non-crits + 4 crits death prob.: 1.1115%)
+Sludge	7-9 5.88-7.56%	(crit: 17-20 14.29-16.81%)
+	(6 crits death prob.: 0.0000%)
+	(3 non-crits + 5 crits death prob.: 0.7103%)
+	(4 non-crits + 5 crits death prob.: 89.6216%)
+	(5 non-crits + 4 crits death prob.: 0.0033%)
 
-LVL: 39 EXP NEEDED: 232/4533
-L39 Nidoking vs L37 Koffing          >>> EXP GIVEN: 903
-Nidoking (116/92/83/79/67) 
+LVL: 40 EXP NEEDED: 633/4790
+L40 Nidoking vs L37 Koffing          >>> EXP GIVEN: 903
+Nidoking (119/92/85/77/68) 
 Focus Energy	
-Ice Beam	34-41 41.46-50.00%	(crit: 66-78 80.49-95.12%)
-	(2 shot prob.: 0.0657%)
+Ice Beam	37-44 45.12-53.66%	(crit: 68-81 82.93-98.78%)
+	(2 shot prob.: 35.5030%)
 Horn Drill	
-Earthquake	102-120 124.39-146.34%	(crit: 173-204 210.98-248.78%)
+Earthquake	107-126 130.49-153.66%	(crit: 178-210 217.07-256.10%)
 
 Koffing (82/59/81/36/55): 
-Tackle	7-9 6.03-7.76%	(crit: 16-19 13.79-16.38%)
-	(7 crits death prob.: 96.4702%)
-	(3 non-crits + 5 crits death prob.: 0.0257%)
-	(4 non-crits + 5 crits death prob.: 67.1161%)
-	(5 non-crits + 4 crits death prob.: 0.0003%)
-	(5 non-crits + 5 crits death prob.: 99.9997%)
-Smog	1-2 0.86-1.72%	(crit: 3-4 2.59-3.45%)
-Sludge	5-6 4.31-5.17%	(crit: 10-12 8.62-10.34%)
+Tackle	7-9 5.88-7.56%	(crit: 15-18 12.61-15.13%)
+	(7 crits death prob.: 0.5339%)
+	(4 non-crits + 5 crits death prob.: 0.0303%)
+	(5 non-crits + 5 crits death prob.: 69.8860%)
+Smog	1-2 0.84-1.68%	(crit: 3-4 2.52-3.36%)
+Sludge	5-6 4.20-5.04%	(crit: 10-12 8.40-10.08%)
 	(10 crits death prob.: 0.0000%)
 SmokeScreen	
 
-L40 Nidoking
+L41 Nidoking
 Stat ranges WITH badge boosts:
 IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
 ------------------------------------------------------------------------------------
-HP  | 118| 119| 120| 121| 122| 122| 123| 124| 125| 126| 126| 127| 128| 129| 130| 130
-ATK |  95|  95|  96|  97|  99| 100| 100| 101| 102| 103| 104| 104| 105| 106| 108| 109
-DEF |  78|  79|  81|  82|  82|  83|  84|  85|  86|  86|  87|  88|  90|  91|  91|  92
-SPD |  91|  91|  92|  93|  94|  95|  95|  96|  97|  99| 100| 100| 101| 102| 103| 104
-SPC |  77|  77|  78|  79|  81|  82|  82|  83|  84|  85|  86|  86|  87|  88|  90|  91
+HP  | 121| 122| 123| 123| 124| 125| 126| 127| 128| 128| 129| 130| 131| 132| 133| 133
+ATK |  94|  95|  96|  97|  97|  99| 100| 101| 102| 102| 103| 104| 105| 106| 108| 108
+DEF |  81|  82|  82|  83|  84|  85|  86|  86|  87|  88|  90|  91|  92|  92|  93|  94
+SPD |  87|  88|  90|  90|  91|  92|  93|  94|  94|  95|  96|  97|  99| 100| 100| 101
+SPC |  78|  79|  81|  82|  82|  83|  84|  85|  86|  86|  87|  88|  90|  91|  92|  92
 
-LVL: 40 EXP NEEDED: 4119/4790
-L40 Nidoking vs L43 Weezing          >>> EXP GIVEN: 1593
-Nidoking (119/95/86/81/69) 
+LVL: 41 EXP NEEDED: 4785/5055
+L41 Nidoking vs L43 Weezing          >>> EXP GIVEN: 1593
+Nidoking (122/94/87/79/70) 
 Focus Energy	
 Ice Beam	25-30 21.74-26.09%	(crit: 46-55 40.00-47.83%)
 	(4 shot prob.: 2.1522%)
 	(2 non-crits + 1 crit death prob.: 0.0017%)
 Horn Drill	
-Earthquake	78-92 67.83-80.00%	(crit: 132-156 114.78-135.65%)
+Earthquake	78-92 67.83-80.00%	(crit: 129-152 112.17-132.17%)
 
 Weezing (115/90/115/63/84): 
-Smog	2-3 1.68-2.52%	(crit: 5-6 4.20-5.04%)
-Sludge	8-10 6.72-8.40%	(crit: 17-21 14.29-17.65%)
-	(6 crits death prob.: 1.7896%)
-	(2 non-crits + 5 crits death prob.: 0.1338%)
-	(3 non-crits + 5 crits death prob.: 84.0134%)
-	(4 non-crits + 4 crits death prob.: 0.0024%)
-	(4 non-crits + 5 crits death prob.: 100.0000%)
-	(5 non-crits + 4 crits death prob.: 63.3501%)
+Smog	2-3 1.64-2.46%	(crit: 5-6 4.10-4.92%)
+Sludge	8-10 6.56-8.20%	(crit: 17-21 13.93-17.21%)
+	(6 crits death prob.: 0.0131%)
+	(7 crits death prob.: 99.9999%)
+	(2 non-crits + 5 crits death prob.: 0.0001%)
+	(3 non-crits + 5 crits death prob.: 38.8062%)
+	(4 non-crits + 4 crits death prob.: 0.0000%)
+	(4 non-crits + 5 crits death prob.: 99.9766%)
+	(5 non-crits + 4 crits death prob.: 15.8726%)
 Toxic	
-Selfdestruct	89-105 74.79-88.24%	(crit: 187-220 157.14-184.87%)
+Selfdestruct	88-104 72.13-85.25%	(crit: 185-218 151.64-178.69%)
 
-LVL: 40 EXP NEEDED: 2526/4790
+LVL: 41 EXP NEEDED: 3192/5055
 BLAINE (0x3A3DB: L42 Growlithe, L40 Ponyta, L42 Rapidash, L47 Arcanine, ) Prize 4653
-L44 Nidoking vs L42 Growlithe          >>> EXP GIVEN: 819
-Nidoking (130/104/94/100/75) +[0/0/1/1] +<2/2/1/0> -> (130/131/118/167/112) 
-Ice Beam	66-78 63.46-75.00%	(crit: 85-101 81.73-97.12%)
+L45 Nidoking vs L42 Growlithe          >>> EXP GIVEN: 819
+Nidoking (133/103/96/96/77) +[0/0/1/1] +<2/2/1/0> -> (133/129/121/163/115) 
+Ice Beam	71-84 68.27-80.77%	(crit: 90-106 86.54-101.92%)
+	(Crit one shot prob.: 12.82%)
 Horn Drill	
-Earthquake	262-308 251.92-296.15%	(crit: 362-426 348.08-409.62%)
-Surf	132-156 126.92-150.00%	(crit: 171-202 164.42-194.23%)
+Earthquake	272-320 261.54-307.69%	(crit: 367-432 352.88-415.38%)
+Surf	142-168 136.54-161.54%	(crit: 180-212 173.08-203.85%)
 
 Growlithe (104/71/49/62/53): 
-Ember	10-12 7.69-9.23%	(crit: 26-31 20.00-23.85%)
-	(1 non-crit + 4 crits death prob.: 1.4435%)
-	(2 non-crits + 4 crits death prob.: 93.0336%)
-	(4 non-crits + 3 crits death prob.: 17.2643%)
-	(5 non-crits + 3 crits death prob.: 99.9360%)
+Ember	10-12 7.52-9.02%	(crit: 26-31 19.55-23.31%)
+	(5 crits death prob.: 99.7232%)
+	(1 non-crit + 4 crits death prob.: 0.0147%)
+	(2 non-crits + 4 crits death prob.: 67.7297%)
+	(4 non-crits + 3 crits death prob.: 1.6700%)
+	(5 non-crits + 3 crits death prob.: 96.6130%)
 Leer	
-Take Down	17-21 13.08-16.15%	(crit: 46-55 35.38-42.31%)
-	(7 shot prob.: 89.1240%)
-	(1 non-crit + 2 crits death prob.: 0.0354%)
-	(2 non-crits + 2 crits death prob.: 99.7808%)
-	(4 non-crits + 1 crit death prob.: 15.6109%)
+Take Down	17-21 12.78-15.79%	(crit: 45-54 33.83-40.60%)
+	(7 shot prob.: 52.3768%)
+	(2 non-crits + 2 crits death prob.: 87.5295%)
+	(4 non-crits + 1 crit death prob.: 0.4969%)
+	(5 non-crits + 1 crit death prob.: 99.9995%)
 Agility	
 
-LVL: 44 EXP NEEDED: 5076/5895
-L44 Nidoking vs L40 Ponyta          >>> EXP GIVEN: 1302
-Nidoking (130/104/94/100/75) +[0/0/1/1] +<2/2/1/0> -> (130/131/118/167/112) 
-Ice Beam	56-66 58.33-68.75%	(crit: 72-85 75.00-88.54%)
+LVL: 45 EXP NEEDED: 5369/6188
+L45 Nidoking vs L40 Ponyta          >>> EXP GIVEN: 1302
+Nidoking (133/103/96/96/77) +[0/0/1/1] +<2/2/1/0> -> (133/129/121/163/115) 
+Ice Beam	60-71 62.50-73.96%	(crit: 76-90 79.17-93.75%)
 Horn Drill	
-Earthquake	234-276 243.75-287.50%	(crit: 323-380 336.46-395.83%)
-Surf	112-132 116.67-137.50%	(crit: 144-170 150.00-177.08%)
+Earthquake	241-284 251.04-295.83%	(crit: 328-386 341.67-402.08%)
+Surf	120-142 125.00-147.92%	(crit: 153-180 159.38-187.50%)
 
 Ponyta (96/80/55/83/63): 
 Tail Whip	
-Stomp	14-17 10.77-13.08%	(crit: 37-44 28.46-33.85%)
-	(8 shot prob.: 0.0116%)
-	(9 shot prob.: 99.9377%)
-	(3 crits death prob.: 0.1838%)
-	(1 non-crit + 3 crits death prob.: 96.3971%)
-	(3 non-crits + 2 crits death prob.: 14.6978%)
+Stomp	14-17 10.53-12.78%	(crit: 36-43 27.07-32.33%)
+	(8 shot prob.: 0.0000%)
+	(9 shot prob.: 97.1672%)
+	(1 non-crit + 3 crits death prob.: 55.4836%)
+	(3 non-crits + 2 crits death prob.: 0.1152%)
+	(4 non-crits + 2 crits death prob.: 98.8886%)
 Growl	
-Fire Spin	5-7 3.85-5.38%	(crit: 12-15 9.23-11.54%)
-	(9 crits death prob.: 0.0001%)
-	(10 crits death prob.: 97.3734%)
+Fire Spin	5-6 3.76-4.51%	(crit: 12-15 9.02-11.28%)
+	(9 crits death prob.: 0.0000%)
+	(10 crits death prob.: 73.1216%)
 
-LVL: 44 EXP NEEDED: 3774/5895
-L44 Nidoking vs L42 Rapidash          >>> EXP GIVEN: 1728
-Nidoking (130/104/94/100/75) +[0/0/1/1] +<2/2/1/0> -> (130/131/118/167/112) 
-Ice Beam	45-53 39.82-46.90%	(crit: 58-69 51.33-61.06%)
-	(1 non-crit + 1 crit death prob.: 44.5102%)
+LVL: 45 EXP NEEDED: 4067/6188
+L45 Nidoking vs L42 Rapidash          >>> EXP GIVEN: 1728
+Nidoking (133/103/96/96/77) +[0/0/1/1] +<2/2/1/0> -> (133/129/121/163/115) 
+Ice Beam	49-58 43.36-51.33%	(crit: 62-73 54.87-64.60%)
+	(2 shot prob.: 4.9310%)
+	(1 non-crit + 1 crit death prob.: 97.3044%)
 Horn Drill	
-Earthquake	185-218 163.72-192.92%	(crit: 255-300 225.66-265.49%)
-Surf	90-106 79.65-93.81%	(crit: 117-138 103.54-122.12%)
+Earthquake	190-224 168.14-198.23%	(crit: 256-302 226.55-267.26%)
+Surf	98-116 86.73-102.65%	(crit: 124-146 109.73-129.20%)
+	(One shot prob.: 17.95%)
 
 Rapidash (113/96/70/99/78): 
 Tail Whip	
-Stomp	17-21 13.08-16.15%	(crit: 45-54 34.62-41.54%)
-	(7 shot prob.: 89.1240%)
-	(2 non-crits + 2 crits death prob.: 98.2265%)
-	(4 non-crits + 1 crit death prob.: 8.8800%)
+Stomp	17-20 12.78-15.04%	(crit: 44-52 33.08-39.10%)
+	(7 shot prob.: 0.2503%)
+	(3 crits death prob.: 99.8921%)
+	(2 non-crits + 2 crits death prob.: 36.6780%)
+	(5 non-crits + 1 crit death prob.: 96.4554%)
 Growl	
-Fire Spin	5-7 3.85-5.38%	(crit: 15-18 11.54-13.85%)
-	(8 crits death prob.: 45.5904%)
+Fire Spin	5-7 3.76-5.26%	(crit: 15-18 11.28-13.53%)
+	(8 crits death prob.: 8.1999%)
 
-LVL: 44 EXP NEEDED: 2046/5895
-L44 Nidoking vs L47 Arcanine          >>> EXP GIVEN: 2145
-Nidoking (130/104/94/100/75) +[0/0/1/1] +<2/2/1/0> -> (130/131/118/167/112) 
-Ice Beam	40-48 26.85-32.21%	(crit: 52-62 34.90-41.61%)
-	(1 non-crit + 2 crits death prob.: 98.3327%)
-	(2 non-crits + 1 crit death prob.: 19.1389%)
+LVL: 45 EXP NEEDED: 2339/6188
+L45 Nidoking vs L47 Arcanine          >>> EXP GIVEN: 2145
+Nidoking (133/103/96/96/77) +[0/0/1/1] +<2/2/1/0> -> (133/129/121/163/115) 
+Ice Beam	44-52 29.53-34.90%	(crit: 55-65 36.91-43.62%)
+	(3 shot prob.: 8.1340%)
+	(2 non-crits + 1 crit death prob.: 92.7207%)
 Horn Drill	
-Earthquake	149-176 100.00-118.12%	(crit: 205-242 137.58-162.42%)
-Surf	81-96 54.36-64.43%	(crit: 105-124 70.47-83.22%)
+Earthquake	154-182 103.36-122.15%	(crit: 209-246 140.27-165.10%)
+Surf	88-104 59.06-69.80%	(crit: 110-130 73.83-87.25%)
 
 Arcanine (149/116/87/101/87): 
 Roar	
-Ember	17-21 13.08-16.15%	(crit: 48-57 36.92-43.85%)
-	(7 shot prob.: 89.1240%)
-	(1 non-crit + 2 crits death prob.: 5.3996%)
-	(4 non-crits + 1 crit death prob.: 33.6771%)
-Take Down	31-37 23.85-28.46%	(crit: 83-98 63.85-75.38%)
-	(4 shot prob.: 94.6882%)
-	(1 non-crit + 1 crit death prob.: 13.5437%)
-Fire Blast	49-58 37.69-44.62%	(crit: 140-165 107.69-126.92%)
+Ember	17-21 12.78-15.79%	(crit: 46-55 34.59-41.35%)
+	(7 shot prob.: 52.3768%)
+	(2 non-crits + 2 crits death prob.: 95.3328%)
+	(4 non-crits + 1 crit death prob.: 1.6330%)
+	(5 non-crits + 1 crit death prob.: 100.0000%)
+Take Down	30-36 22.56-27.07%	(crit: 81-96 60.90-72.18%)
+	(4 shot prob.: 37.1694%)
+Fire Blast	48-57 36.09-42.86%	(crit: 136-160 102.26-120.30%)
 
-L45 Nidoking
-Stat ranges WITH badge boosts:
-IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
-------------------------------------------------------------------------------------
-HP  | 132| 133| 134| 135| 136| 137| 138| 139| 140| 140| 141| 142| 143| 144| 145| 146
-ATK | 106| 108| 109| 110| 111| 111| 112| 113| 114| 115| 117| 118| 119| 120| 121| 121
-DEF |  88|  90|  91|  91|  92|  93|  94|  95|  96|  97|  99| 100| 101| 101| 102| 103
-SPD | 101| 102| 103| 104| 105| 106| 108| 109| 110| 111| 111| 112| 113| 114| 115| 117
-SPC |  86|  87|  88|  90|  91|  91|  92|  93|  94|  95|  96|  97|  99| 100| 101| 101
-
-LVL: 45 EXP NEEDED: 6089/6188
+LVL: 45 EXP NEEDED: 194/6188
 SABRINA (0x3A3E5: L38 Kadabra, L37 MrMime, L38 Venomoth, L43 Alakazam, ) Prize 4257
 L45 Nidoking vs L38 Kadabra          >>> EXP GIVEN: 1180
-Nidoking (133/106/96/102/86) 
+Nidoking (133/103/96/96/86) 
 Ice Beam	28-34 33.33-40.48%	(crit: 47-56 55.95-66.67%)
 	(1 non-crit + 1 crit death prob.: 36.4892%)
 Horn Drill	
-Earthquake	165-195 196.43-232.14%	(crit: 280-330 333.33-392.86%)
+Earthquake	160-189 190.48-225.00%	(crit: 271-319 322.62-379.76%)
 Surf	28-34 33.33-40.48%	(crit: 47-56 55.95-66.67%)
 	(1 non-crit + 1 crit death prob.: 36.4892%)
 
@@ -702,529 +696,538 @@ Psybeam	71-84 53.38-63.16%	(crit: 144-170 108.27-127.82%)
 Recover	
 Psychic	97-114 72.93-85.71%	(crit: 199-234 149.62-175.94%)
 
-LVL: 45 EXP NEEDED: 4909/6188
-L45 Nidoking vs L37 MrMime          >>> EXP GIVEN: 1077
-Nidoking (133/106/96/102/86) 
-Ice Beam	34-40 41.46-48.78%	(crit: 57-68 69.51-82.93%)
+L46 Nidoking
+Stat ranges WITH badge boosts:
+IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
+------------------------------------------------------------------------------------
+HP  | 135| 136| 137| 138| 139| 140| 141| 142| 142| 143| 144| 145| 146| 147| 148| 149
+ATK | 105| 106| 108| 109| 110| 111| 112| 113| 114| 114| 115| 117| 118| 119| 120| 121
+DEF |  90|  91|  92|  93|  94|  95|  96|  97|  99| 100| 101| 102| 102| 103| 104| 105
+SPD |  99| 100| 101| 102| 102| 103| 104| 105| 106| 108| 109| 110| 111| 112| 113| 114
+SPC |  88|  90|  91|  92|  93|  94|  95|  95|  96|  97|  99| 100| 101| 102| 103| 104
+
+LVL: 46 EXP NEEDED: 5503/6489
+L46 Nidoking vs L37 MrMime          >>> EXP GIVEN: 1077
+Nidoking (136/105/99/100/88) 
+Ice Beam	34-41 41.46-50.00%	(crit: 58-69 70.73-84.15%)
+	(2 shot prob.: 0.0657%)
 Horn Drill	
-Earthquake	92-109 112.20-132.93%	(crit: 158-186 192.68-226.83%)
-Surf	34-40 41.46-48.78%	(crit: 57-68 69.51-82.93%)
+Earthquake	92-109 112.20-132.93%	(crit: 156-184 190.24-224.39%)
+Surf	34-41 41.46-50.00%	(crit: 58-69 70.73-84.15%)
+	(2 shot prob.: 0.0657%)
 
 MrMime (82/44/59/77/84): 
-Confusion	42-50 31.58-37.59%	(crit: 88-104 66.17-78.20%)
-	(3 shot prob.: 88.6849%)
-	(1 non-crit + 1 crit death prob.: 96.6469%)
+Confusion	42-50 30.88-36.76%	(crit: 86-102 63.24-75.00%)
+	(3 shot prob.: 67.5669%)
+	(1 non-crit + 1 crit death prob.: 77.3833%)
 Barrier	
 Light Screen	
-DoubleSlap	3-4 2.26-3.01%	(crit: 5-6 3.76-4.51%)
+DoubleSlap	3-4 2.21-2.94%	(crit: 5-6 3.68-4.41%)
 
-LVL: 45 EXP NEEDED: 3832/6188
-L45 Nidoking vs L38 Venomoth          >>> EXP GIVEN: 1123
-Nidoking (133/106/96/102/86) 
-Ice Beam	36-43 33.64-40.19%	(crit: 61-72 57.01-67.29%)
-	(1 non-crit + 1 crit death prob.: 40.1052%)
+LVL: 46 EXP NEEDED: 4426/6489
+L46 Nidoking vs L38 Venomoth          >>> EXP GIVEN: 1123
+Nidoking (136/105/99/100/88) 
+Ice Beam	37-44 34.58-41.12%	(crit: 62-74 57.94-69.16%)
+	(1 non-crit + 1 crit death prob.: 65.2202%)
 Horn Drill	
-Earthquake	97-114 90.65-106.54%	(crit: 165-194 154.21-181.31%)
+Earthquake	97-114 90.65-106.54%	(crit: 163-192 152.34-179.44%)
 	(One shot prob.: 41.03%)
-Surf	36-43 33.64-40.19%	(crit: 61-72 57.01-67.29%)
-	(1 non-crit + 1 crit death prob.: 40.1052%)
+Surf	37-44 34.58-41.12%	(crit: 62-74 57.94-69.16%)
+	(1 non-crit + 1 crit death prob.: 65.2202%)
 
 Venomoth (107/61/56/79/79): 
 PoisonPowder	
-Leech Life	15-18 11.28-13.53%	(crit: 27-32 20.30-24.06%)
-	(8 shot prob.: 8.1999%)
-	(1 non-crit + 4 crits death prob.: 49.3030%)
-	(3 non-crits + 3 crits death prob.: 86.2938%)
-	(4 non-crits + 2 crits death prob.: 0.0010%)
-	(5 non-crits + 2 crits death prob.: 99.2343%)
+Leech Life	15-18 11.03-13.24%	(crit: 25-30 18.38-22.06%)
+	(8 shot prob.: 0.2839%)
+	(9 shot prob.: 99.9995%)
+	(5 crits death prob.: 61.6112%)
+	(1 non-crit + 4 crits death prob.: 0.0010%)
+	(2 non-crits + 4 crits death prob.: 97.8744%)
+	(3 non-crits + 3 crits death prob.: 2.7968%)
+	(4 non-crits + 3 crits death prob.: 99.9995%)
+	(5 non-crits + 2 crits death prob.: 47.6597%)
 Stun Spore	
-Psybeam	37-44 27.82-33.08%	(crit: 74-88 55.64-66.17%)
+Psybeam	35-42 25.74-30.88%	(crit: 73-86 53.68-63.24%)
 
-LVL: 45 EXP NEEDED: 2709/6188
-L45 Nidoking vs L43 Alakazam          >>> EXP GIVEN: 1713
-Nidoking (133/106/96/102/86) 
-Ice Beam	22-27 20.56-25.23%	(crit: 38-45 35.51-42.06%)
-	(4 shot prob.: 0.0016%)
-	(1 non-crit + 2 crits death prob.: 54.1799%)
-	(3 non-crits + 1 crit death prob.: 99.9404%)
+LVL: 46 EXP NEEDED: 3303/6489
+L46 Nidoking vs L43 Alakazam          >>> EXP GIVEN: 1713
+Nidoking (136/105/99/100/88) 
+Ice Beam	23-28 21.50-26.17%	(crit: 39-46 36.45-42.99%)
+	(4 shot prob.: 2.8952%)
+	(1 non-crit + 2 crits death prob.: 82.9296%)
 Horn Drill	
-Earthquake	109-129 101.87-120.56%	(crit: 186-219 173.83-204.67%)
-Surf	22-27 20.56-25.23%	(crit: 38-45 35.51-42.06%)
-	(4 shot prob.: 0.0016%)
-	(1 non-crit + 2 crits death prob.: 54.1799%)
-	(3 non-crits + 1 crit death prob.: 99.9404%)
+Earthquake	109-129 101.87-120.56%	(crit: 183-216 171.03-201.87%)
+Surf	23-28 21.50-26.17%	(crit: 39-46 36.45-42.99%)
+	(4 shot prob.: 2.8952%)
+	(1 non-crit + 2 crits death prob.: 82.9296%)
 
 Alakazam (107/55/50/115/127): 
-Psybeam	97-114 72.93-85.71%	(crit: 200-236 150.38-177.44%)
+Psybeam	93-110 68.38-80.88%	(crit: 195-230 143.38-169.12%)
 Recover	
 Psywave	
 Reflect	
 
-(Speed DV required to outspeed: 15, to speedtie: 14)
-
-LVL: 45 EXP NEEDED: 996/6188
+LVL: 46 EXP NEEDED: 1590/6489
 BEAUTY (0x3A0DB: L26 Exeggcute, ) Prize 1820
-L45 Nidoking vs L26 Exeggcute          >>> EXP GIVEN: 546
-Nidoking (133/106/96/102/86) 
-Ice Beam	141-166 198.59-233.80%	(crit: 238-280 335.21-394.37%)
+L46 Nidoking vs L26 Exeggcute          >>> EXP GIVEN: 546
+Nidoking (136/105/99/100/88) 
+Ice Beam	144-170 202.82-239.44%	(crit: 245-288 345.07-405.63%)
 Horn Drill	
-Earthquake	54-64 76.06-90.14%	(crit: 92-109 129.58-153.52%)
-Surf	34-41 47.89-57.75%	(crit: 59-70 83.10-98.59%)
-	(2 shot prob.: 95.8580%)
+Earthquake	54-64 76.06-90.14%	(crit: 91-108 128.17-152.11%)
+Surf	35-42 49.30-59.15%	(crit: 61-72 85.92-101.41%)
+	(Crit one shot prob.: 10.26%)
+	(2 shot prob.: 99.7370%)
 
 Exeggcute (71/30/50/29/40): 
-Barrage	2-3 1.50-2.26%	(crit: 3-4 2.26-3.01%)
+Barrage	2-3 1.47-2.21%	(crit: 3-4 2.21-2.94%)
 Hypnosis	
 Reflect	
 
-LVL: 45 EXP NEEDED: 450/6188
+LVL: 46 EXP NEEDED: 1044/6489
 ERIKA (0x3A3C9: L29 Victreebel, L24 Tangela, L29 Vileplume, ) Prize 2871
-L45 Nidoking vs L29 Victreebel          >>> EXP GIVEN: 1186
-Nidoking (133/106/96/102/86) 
-Ice Beam	85-100 94.44-111.11%	(crit: 142-168 157.78-186.67%)
-	(One shot prob.: 66.67%)
+L46 Nidoking vs L29 Victreebel          >>> EXP GIVEN: 1186
+Nidoking (136/105/99/100/88) 
+Ice Beam	86-102 95.56-113.33%	(crit: 148-174 164.44-193.33%)
+	(One shot prob.: 79.49%)
 Horn Drill	
-Earthquake	117-138 130.00-153.33%	(crit: 197-232 218.89-257.78%)
-Surf	21-25 23.33-27.78%	(crit: 35-42 38.89-46.67%)
+Earthquake	115-136 127.78-151.11%	(crit: 195-230 216.67-255.56%)
+Surf	21-25 23.33-27.78%	(crit: 36-43 40.00-47.78%)
 	(4 shot prob.: 67.4743%)
-	(2 non-crits + 1 crit death prob.: 0.4602%)
+	(2 non-crits + 1 crit death prob.: 2.0196%)
 
 Victreebel (90/71/47/50/67): 
-Wrap	3-4 2.26-3.01%	(crit: 6-8 4.51-6.02%)
+Wrap	3-4 2.21-2.94%	(crit: 6-8 4.41-5.88%)
 PoisonPowder	
 Sleep Powder	
-Razor Leaf	16-19 12.03-14.29%	(crit: 31-37 23.31-27.82%)
-	(7 shot prob.: 0.0000%)
-	(8 shot prob.: 95.6880%)
-	(4 crits death prob.: 75.6113%)
-	(2 non-crits + 3 crits death prob.: 80.9815%)
-	(4 non-crits + 2 crits death prob.: 86.3185%)
+Razor Leaf	15-18 11.03-13.24%	(crit: 31-37 22.79-27.21%)
+	(8 shot prob.: 0.2839%)
+	(9 shot prob.: 99.9995%)
+	(4 crits death prob.: 42.6791%)
+	(2 non-crits + 3 crits death prob.: 26.1813%)
+	(4 non-crits + 2 crits death prob.: 11.9375%)
 
-LVL: 46 EXP NEEDED: 5753/6489
-L46 Nidoking vs L24 Tangela          >>> EXP GIVEN: 853
-Nidoking (136/109/99/104/88) 
-Ice Beam	103-122 149.28-176.81%	(crit: 175-206 253.62-298.55%)
+LVL: 47 EXP NEEDED: 6656/6798
+L47 Nidoking vs L24 Tangela          >>> EXP GIVEN: 853
+Nidoking (139/109/101/102/91) 
+Ice Beam	107-126 155.07-182.61%	(crit: 185-218 268.12-315.94%)
 Horn Drill	
-Earthquake	44-52 63.77-75.36%	(crit: 74-87 107.25-126.09%)
-Surf	25-30 36.23-43.48%	(crit: 43-51 62.32-73.91%)
-	(1 non-crit + 1 crit death prob.: 99.2110%)
+Earthquake	44-52 63.77-75.36%	(crit: 76-90 110.14-130.43%)
+Surf	26-31 37.68-44.93%	(crit: 45-54 65.22-78.26%)
 
 Tangela (69/35/64/37/56): 
-Constrict	1-2 0.74-1.47%	(crit: 2-3 1.47-2.21%)
-Bind	2-3 1.47-2.21%	(crit: 3-4 2.21-2.94%)
+Constrict	1-2 0.72-1.44%	(crit: 2-3 1.44-2.16%)
+Bind	2-3 1.44-2.16%	(crit: 3-4 2.16-2.88%)
 
-LVL: 46 EXP NEEDED: 4900/6489
-L46 Nidoking vs L29 Vileplume          >>> EXP GIVEN: 1143
-Nidoking (136/109/99/104/88) 
-Ice Beam	86-102 98.85-117.24%	(crit: 148-174 170.11-200.00%)
-	(One shot prob.: 97.44%)
+LVL: 47 EXP NEEDED: 5803/6798
+L47 Nidoking vs L29 Vileplume          >>> EXP GIVEN: 1143
+Nidoking (139/109/101/102/91) 
+Ice Beam	90-106 103.45-121.84%	(crit: 154-182 177.01-209.20%)
 Horn Drill	
-Earthquake	97-114 111.49-131.03%	(crit: 163-192 187.36-220.69%)
-Surf	21-25 24.14-28.74%	(crit: 36-43 41.38-49.43%)
-	(4 shot prob.: 96.3926%)
-	(2 non-crits + 1 crit death prob.: 23.0752%)
+Earthquake	97-114 111.49-131.03%	(crit: 168-198 193.10-227.59%)
+Surf	22-26 25.29-29.89%	(crit: 38-45 43.68-51.72%)
+	(2 crits death prob.: 7.8895%)
+	(2 non-crits + 1 crit death prob.: 74.2764%)
 
 Vileplume (87/56/58/38/67): 
 PoisonPowder	
-Mega Drain	11-13 8.09-9.56%	(crit: 22-27 16.18-19.85%)
-	(6 crits death prob.: 99.9995%)
-	(1 non-crit + 5 crits death prob.: 29.3863%)
-	(2 non-crits + 5 crits death prob.: 99.9969%)
-	(3 non-crits + 4 crits death prob.: 13.2947%)
-	(4 non-crits + 4 crits death prob.: 99.9828%)
-	(5 non-crits + 3 crits death prob.: 3.6778%)
+Mega Drain	11-13 7.91-9.35%	(crit: 22-27 15.83-19.42%)
+	(6 crits death prob.: 99.8621%)
+	(1 non-crit + 5 crits death prob.: 5.1509%)
+	(2 non-crits + 5 crits death prob.: 99.5148%)
+	(3 non-crits + 4 crits death prob.: 1.0119%)
+	(4 non-crits + 4 crits death prob.: 98.4494%)
+	(5 non-crits + 3 crits death prob.: 0.0705%)
 Sleep Powder	
-Petal Dance	18-22 13.24-16.18%	(crit: 39-46 28.68-33.82%)
-	(7 shot prob.: 89.4981%)
-	(3 crits death prob.: 0.1838%)
-	(1 non-crit + 3 crits death prob.: 99.9784%)
-	(2 non-crits + 2 crits death prob.: 0.0000%)
-	(3 non-crits + 2 crits death prob.: 99.5489%)
-	(5 non-crits + 1 crit death prob.: 97.3123%)
+Petal Dance	18-22 12.95-15.83%	(crit: 38-45 27.34-32.37%)
+	(7 shot prob.: 56.4256%)
+	(1 non-crit + 3 crits death prob.: 90.8754%)
+	(3 non-crits + 2 crits death prob.: 83.8944%)
+	(5 non-crits + 1 crit death prob.: 72.8683%)
 
-LVL: 46 EXP NEEDED: 3757/6489
+LVL: 47 EXP NEEDED: 4660/6798
 COOLTRAINERM (0x3A382: L43 Rhyhorn, ) Prize 1505
-L46 Nidoking vs L43 Rhyhorn          >>> EXP GIVEN: 1243
-Nidoking (136/109/99/104/88) 
-Ice Beam	156-184 121.88-143.75%	(crit: 265-312 207.03-243.75%)
+L47 Nidoking vs L43 Rhyhorn          >>> EXP GIVEN: 1243
+Nidoking (139/109/101/102/91) 
+Ice Beam	161-190 125.78-148.44%	(crit: 279-328 217.97-256.25%)
 Horn Drill	
-Earthquake	122-144 95.31-112.50%	(crit: 205-242 160.16-189.06%)
+Earthquake	122-144 95.31-112.50%	(crit: 211-248 164.84-193.75%)
 	(One shot prob.: 74.36%)
-Surf	313-368 244.53-287.50%	(crit: 531-624 414.84-487.50%)
+Surf	323-380 252.34-296.88%	(crit: 558-656 435.94-512.50%)
 
 Rhyhorn (128/85/93/33/37): 
-Horn Attack	19-23 13.97-16.91%	(crit: 39-47 28.68-34.56%)
-	(6 shot prob.: 0.0001%)
-	(7 shot prob.: 99.9924%)
-	(3 crits death prob.: 3.7374%)
-	(2 non-crits + 2 crits death prob.: 0.5375%)
-	(3 non-crits + 2 crits death prob.: 99.9999%)
-	(4 non-crits + 1 crit death prob.: 0.0132%)
-	(5 non-crits + 1 crit death prob.: 99.9985%)
-Stomp	19-23 13.97-16.91%	(crit: 39-47 28.68-34.56%)
-	(6 shot prob.: 0.0001%)
-	(7 shot prob.: 99.9924%)
-	(3 crits death prob.: 3.7374%)
-	(2 non-crits + 2 crits death prob.: 0.5375%)
-	(3 non-crits + 2 crits death prob.: 99.9999%)
-	(4 non-crits + 1 crit death prob.: 0.0132%)
-	(5 non-crits + 1 crit death prob.: 99.9985%)
+Horn Attack	18-22 12.95-15.83%	(crit: 39-46 28.06-33.09%)
+	(7 shot prob.: 56.4256%)
+	(1 non-crit + 3 crits death prob.: 98.4054%)
+	(3 non-crits + 2 crits death prob.: 93.7666%)
+	(5 non-crits + 1 crit death prob.: 81.5166%)
+Stomp	18-22 12.95-15.83%	(crit: 39-46 28.06-33.09%)
+	(7 shot prob.: 56.4256%)
+	(1 non-crit + 3 crits death prob.: 98.4054%)
+	(3 non-crits + 2 crits death prob.: 93.7666%)
+	(5 non-crits + 1 crit death prob.: 81.5166%)
 Tail Whip	
-Fury Attack	5-6 3.68-4.41%	(crit: 10-12 7.35-8.82%)
+Fury Attack	5-6 3.60-4.32%	(crit: 10-12 7.19-8.63%)
 
-LVL: 46 EXP NEEDED: 2514/6489
+LVL: 47 EXP NEEDED: 3417/6798
 BLACKBELT (0x3A1DA: L38 Machoke, L38 Machop, L38 Machoke, ) Prize 950
-L46 Nidoking vs L38 Machoke          >>> EXP GIVEN: 1188
-Nidoking (136/109/99/104/88) +[0/0/0/1] +<1/1/1/0> -> (136/122/111/117/132) 
-Ice Beam	88-104 77.19-91.23%	(crit: 100-118 87.72-103.51%)
-	(Crit one shot prob.: 23.08%)
+L47 Nidoking vs L38 Machoke          >>> EXP GIVEN: 1188
+Nidoking (139/109/101/102/91) +[0/0/0/1] +<1/1/1/0> -> (139/122/113/114/136) 
+Ice Beam	91-107 79.82-93.86%	(crit: 105-124 92.11-108.77%)
+	(Crit one shot prob.: 53.85%)
 Horn Drill	
-Earthquake	99-117 86.84-102.63%	(crit: 148-175 129.82-153.51%)
+Earthquake	99-117 86.84-102.63%	(crit: 153-180 134.21-157.89%)
 	(One shot prob.: 17.95%)
-Surf	88-104 77.19-91.23%	(crit: 100-118 87.72-103.51%)
-	(Crit one shot prob.: 23.08%)
+Surf	91-107 79.82-93.86%	(crit: 105-124 92.11-108.77%)
+	(Crit one shot prob.: 53.85%)
 
 Machoke (114/87/64/45/49): 
-Karate Chop	12-15 8.82-11.03%	(crit: 28-33 20.59-24.26%)
-	(10 shot prob.: 22.9410%)
-	(1 non-crit + 4 crits death prob.: 26.7813%)
-	(3 non-crits + 3 crits death prob.: 3.1528%)
-	(4 non-crits + 3 crits death prob.: 99.8903%)
-	(5 non-crits + 2 crits death prob.: 0.0123%)
-Low Kick	9-11 6.62-8.09%	(crit: 20-24 14.71-17.65%)
-	(6 crits death prob.: 2.2862%)
-	(2 non-crits + 5 crits death prob.: 0.0651%)
-	(3 non-crits + 5 crits death prob.: 75.9015%)
-	(4 non-crits + 4 crits death prob.: 0.0001%)
-	(5 non-crits + 4 crits death prob.: 42.0090%)
+Karate Chop	12-15 8.63-10.79%	(crit: 27-32 19.42-23.02%)
+	(10 shot prob.: 1.4793%)
+	(5 crits death prob.: 98.6541%)
+	(1 non-crit + 4 crits death prob.: 0.0644%)
+	(2 non-crits + 4 crits death prob.: 93.3679%)
+	(3 non-crits + 3 crits death prob.: 0.0001%)
+	(4 non-crits + 3 crits death prob.: 78.1504%)
+	(5 non-crits + 2 crits death prob.: 0.0000%)
+Low Kick	9-11 6.47-7.91%	(crit: 20-24 14.39-17.27%)
+	(6 crits death prob.: 0.0467%)
+	(2 non-crits + 5 crits death prob.: 0.0001%)
+	(3 non-crits + 5 crits death prob.: 34.0394%)
+	(4 non-crits + 4 crits death prob.: 0.0000%)
+	(4 non-crits + 5 crits death prob.: 99.9589%)
+	(5 non-crits + 4 crits death prob.: 8.0723%)
 Leer	
 Focus Energy	
 
-LVL: 46 EXP NEEDED: 1326/6489
-L46 Nidoking vs L38 Machop          >>> EXP GIVEN: 715
-Nidoking (136/109/99/104/88) +[0/0/0/1] +<1/1/1/0> -> (136/122/111/117/132) 
-Ice Beam	116-137 108.41-128.04%	(crit: 132-156 123.36-145.79%)
+LVL: 47 EXP NEEDED: 2229/6798
+L47 Nidoking vs L38 Machop          >>> EXP GIVEN: 715
+Nidoking (139/109/101/102/91) +[0/0/0/1] +<1/1/1/0> -> (139/122/113/114/136) 
+Ice Beam	119-141 111.21-131.78%	(crit: 139-164 129.91-153.27%)
 Horn Drill	
-Earthquake	128-151 119.63-141.12%	(crit: 194-228 181.31-213.08%)
-Surf	116-137 108.41-128.04%	(crit: 132-156 123.36-145.79%)
+Earthquake	128-151 119.63-141.12%	(crit: 199-234 185.98-218.69%)
+Surf	119-141 111.21-131.78%	(crit: 139-164 129.91-153.27%)
 
 Machop (107/72/49/37/37): 
-Karate Chop	11-13 8.09-9.56%	(crit: 23-28 16.91-20.59%)
-	(5 crits death prob.: 0.0743%)
-	(1 non-crit + 5 crits death prob.: 86.3254%)
-	(2 non-crits + 4 crits death prob.: 0.0001%)
-	(3 non-crits + 4 crits death prob.: 62.1940%)
-	(4 non-crits + 3 crits death prob.: 0.0000%)
-	(5 non-crits + 3 crits death prob.: 28.0289%)
-Low Kick	7-9 5.15-6.62%	(crit: 17-21 12.50-15.44%)
-	(7 crits death prob.: 13.0480%)
-	(4 non-crits + 5 crits death prob.: 0.0001%)
-	(5 non-crits + 5 crits death prob.: 21.4755%)
+Karate Chop	10-12 7.19-8.63%	(crit: 22-27 15.83-19.42%)
+	(6 crits death prob.: 99.8621%)
+	(1 non-crit + 5 crits death prob.: 2.3079%)
+	(2 non-crits + 5 crits death prob.: 96.6417%)
+	(3 non-crits + 4 crits death prob.: 0.0108%)
+	(4 non-crits + 4 crits death prob.: 74.7552%)
+	(5 non-crits + 3 crits death prob.: 0.0000%)
+	(5 non-crits + 4 crits death prob.: 100.0000%)
+Low Kick	7-9 5.04-6.47%	(crit: 17-20 12.23-14.39%)
+	(7 crits death prob.: 0.0000%)
+	(8 crits death prob.: 99.3235%)
+	(5 non-crits + 5 crits death prob.: 0.0002%)
 Leer	
 Focus Energy	
 
-LVL: 46 EXP NEEDED: 611/6489
-L46 Nidoking vs L38 Machoke          >>> EXP GIVEN: 1188
-Nidoking (136/109/99/104/88) +[0/0/0/1] +<1/1/1/0> -> (136/122/111/117/132) 
-Ice Beam	88-104 77.19-91.23%	(crit: 100-118 87.72-103.51%)
-	(Crit one shot prob.: 23.08%)
+LVL: 47 EXP NEEDED: 1514/6798
+L47 Nidoking vs L38 Machoke          >>> EXP GIVEN: 1188
+Nidoking (139/109/101/102/91) +[0/0/0/1] +<1/1/1/0> -> (139/122/113/114/136) 
+Ice Beam	91-107 79.82-93.86%	(crit: 105-124 92.11-108.77%)
+	(Crit one shot prob.: 53.85%)
 Horn Drill	
-Earthquake	99-117 86.84-102.63%	(crit: 148-175 129.82-153.51%)
+Earthquake	99-117 86.84-102.63%	(crit: 153-180 134.21-157.89%)
 	(One shot prob.: 17.95%)
-Surf	88-104 77.19-91.23%	(crit: 100-118 87.72-103.51%)
-	(Crit one shot prob.: 23.08%)
+Surf	91-107 79.82-93.86%	(crit: 105-124 92.11-108.77%)
+	(Crit one shot prob.: 53.85%)
 
 Machoke (114/87/64/45/49): 
-Karate Chop	12-15 8.82-11.03%	(crit: 28-33 20.59-24.26%)
-	(10 shot prob.: 22.9410%)
-	(1 non-crit + 4 crits death prob.: 26.7813%)
-	(3 non-crits + 3 crits death prob.: 3.1528%)
-	(4 non-crits + 3 crits death prob.: 99.8903%)
-	(5 non-crits + 2 crits death prob.: 0.0123%)
-Low Kick	9-11 6.62-8.09%	(crit: 20-24 14.71-17.65%)
-	(6 crits death prob.: 2.2862%)
-	(2 non-crits + 5 crits death prob.: 0.0651%)
-	(3 non-crits + 5 crits death prob.: 75.9015%)
-	(4 non-crits + 4 crits death prob.: 0.0001%)
-	(5 non-crits + 4 crits death prob.: 42.0090%)
+Karate Chop	12-15 8.63-10.79%	(crit: 27-32 19.42-23.02%)
+	(10 shot prob.: 1.4793%)
+	(5 crits death prob.: 98.6541%)
+	(1 non-crit + 4 crits death prob.: 0.0644%)
+	(2 non-crits + 4 crits death prob.: 93.3679%)
+	(3 non-crits + 3 crits death prob.: 0.0001%)
+	(4 non-crits + 3 crits death prob.: 78.1504%)
+	(5 non-crits + 2 crits death prob.: 0.0000%)
+Low Kick	9-11 6.47-7.91%	(crit: 20-24 14.39-17.27%)
+	(6 crits death prob.: 0.0467%)
+	(2 non-crits + 5 crits death prob.: 0.0001%)
+	(3 non-crits + 5 crits death prob.: 34.0394%)
+	(4 non-crits + 4 crits death prob.: 0.0000%)
+	(4 non-crits + 5 crits death prob.: 99.9589%)
+	(5 non-crits + 4 crits death prob.: 8.0723%)
 Leer	
 Focus Energy	
 
-L47 Nidoking
+LVL: 47 EXP NEEDED: 326/6798
+GIOVANNI (0x3A290: L45 Rhyhorn, L42 Dugtrio, L44 Nidoqueen, L45 Nidoking, L50 Rhydon, ) Prize 4950
+L47 Nidoking vs L45 Rhyhorn          >>> EXP GIVEN: 1300
+Nidoking (139/109/101/102/91) 
+Ice Beam	153-180 114.18-134.33%	(crit: 263-310 196.27-231.34%)
+Horn Drill	
+Earthquake	117-138 87.31-102.99%	(crit: 204-240 152.24-179.10%)
+	(One shot prob.: 20.51%)
+Surf	306-360 228.36-268.66%	(crit: 527-620 393.28-462.69%)
+
+Rhyhorn (134/89/97/34/39): 
+Stomp	20-24 14.39-17.27%	(crit: 42-50 30.22-35.97%)
+	(6 shot prob.: 0.0467%)
+	(3 crits death prob.: 39.4646%)
+	(2 non-crits + 2 crits death prob.: 17.1756%)
+	(4 non-crits + 1 crit death prob.: 2.7898%)
+Tail Whip	
+Fury Attack	5-7 3.60-5.04%	(crit: 11-13 7.91-9.35%)
+Horn Attack	20-24 14.39-17.27%	(crit: 42-50 30.22-35.97%)
+	(6 shot prob.: 0.0467%)
+	(3 crits death prob.: 39.4646%)
+	(2 non-crits + 2 crits death prob.: 17.1756%)
+	(4 non-crits + 1 crit death prob.: 2.7898%)
+
+L48 Nidoking
 Stat ranges WITH badge boosts:
 IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
 ------------------------------------------------------------------------------------
-HP  | 139| 140| 141| 142| 143| 143| 144| 145| 146| 147| 148| 149| 150| 151| 152| 153
-ATK | 111| 112| 113| 114| 115| 117| 118| 119| 120| 121| 122| 123| 124| 126| 127| 128
-DEF |  93|  94|  95|  96|  97|  99| 100| 101| 102| 102| 103| 104| 105| 106| 108| 109
-SPD | 106| 108| 109| 110| 111| 111| 112| 113| 114| 115| 117| 118| 119| 120| 121| 122
-SPC |  92|  93|  93|  94|  95|  96|  97|  99| 100| 101| 102| 103| 104| 105| 106| 108
+HP  | 142| 142| 143| 144| 145| 146| 147| 148| 149| 150| 151| 152| 153| 154| 155| 156
+ATK | 111| 112| 113| 114| 115| 117| 118| 119| 120| 121| 122| 123| 124| 126| 127| 127
+DEF |  95|  96|  97|  99| 100| 100| 101| 102| 103| 104| 105| 106| 108| 109| 110| 111
+SPD | 103| 104| 105| 106| 108| 109| 110| 111| 112| 113| 114| 115| 117| 118| 119| 120
+SPC |  93|  94|  95|  96|  97|  99| 100| 101| 102| 103| 104| 105| 106| 108| 109| 110
 
-LVL: 47 EXP NEEDED: 6221/6798
-GIOVANNI (0x3A290: L45 Rhyhorn, L42 Dugtrio, L44 Nidoqueen, L45 Nidoking, L50 Rhydon, ) Prize 4950
-L49 Nidoking vs L45 Rhyhorn          >>> EXP GIVEN: 1300
-Nidoking (145/115/105/112/95) 
-Ice Beam	168-198 125.37-147.76%	(crit: 291-342 217.16-255.22%)
+LVL: 48 EXP NEEDED: 6139/7113
+L48 Nidoking vs L42 Dugtrio          >>> EXP GIVEN: 1377
+Nidoking (142/111/103/104/93) 
+Ice Beam	93-110 105.68-125.00%	(crit: 156-184 177.27-209.09%)
 Horn Drill	
-Earthquake	129-152 96.27-113.43%	(crit: 226-266 168.66-198.51%)
-	(One shot prob.: 79.49%)
-Surf	336-396 250.75-295.52%	(crit: 582-684 434.33-510.45%)
-
-Rhyhorn (134/89/97/34/39): 
-Stomp	20-24 13.79-16.55%	(crit: 40-48 27.59-33.10%)
-	(7 shot prob.: 99.4645%)
-	(1 non-crit + 3 crits death prob.: 99.2719%)
-	(3 non-crits + 2 crits death prob.: 99.3474%)
-	(5 non-crits + 1 crit death prob.: 99.4100%)
-Tail Whip	
-Fury Attack	5-7 3.45-4.83%	(crit: 10-12 6.90-8.28%)
-Horn Attack	20-24 13.79-16.55%	(crit: 40-48 27.59-33.10%)
-	(7 shot prob.: 99.4645%)
-	(1 non-crit + 3 crits death prob.: 99.2719%)
-	(3 non-crits + 2 crits death prob.: 99.3474%)
-	(5 non-crits + 1 crit death prob.: 99.4100%)
-
-LVL: 49 EXP NEEDED: 6137/7437
-L49 Nidoking vs L42 Dugtrio          >>> EXP GIVEN: 1377
-Nidoking (145/115/105/112/95) 
-Ice Beam	95-112 107.95-127.27%	(crit: 163-192 185.23-218.18%)
-Horn Drill	
-Earthquake	118-139 134.09-157.95%	(crit: 205-241 232.95-273.86%)
-Surf	95-112 107.95-127.27%	(crit: 163-192 185.23-218.18%)
+Earthquake	113-133 128.41-151.14%	(crit: 192-226 218.18-256.82%)
+Surf	93-110 105.68-125.00%	(crit: 156-184 177.27-209.09%)
 
 Dugtrio (88/79/53/112/70): 
 Growl	
-Dig	73-86 50.34-59.31%	(crit: 153-180 105.52-124.14%)
+Dig	73-86 51.41-60.56%	(crit: 158-186 111.27-130.99%)
 Sand-Attack	
-Slash	17-20 11.72-13.79%	(crit: 36-43 24.83-29.66%)
-	(8 shot prob.: 44.8135%)
-	(4 crits death prob.: 99.9965%)
-	(1 non-crit + 3 crits death prob.: 0.3457%)
-	(2 non-crits + 3 crits death prob.: 99.7884%)
-	(3 non-crits + 2 crits death prob.: 0.0001%)
-	(4 non-crits + 2 crits death prob.: 97.3553%)
+Slash	17-21 11.97-14.79%	(crit: 37-44 26.06-30.99%)
+	(7 shot prob.: 0.0069%)
+	(8 shot prob.: 99.9951%)
+	(1 non-crit + 3 crits death prob.: 30.1315%)
+	(3 non-crits + 2 crits death prob.: 10.0808%)
+	(5 non-crits + 1 crit death prob.: 0.9297%)
 
-(Speed DV required to outspeed: 2, to speedtie: 1)
+(Speed DV required to outspeed: 9, to speedtie: 8)
 
-LVL: 49 EXP NEEDED: 4760/7437
-L49 Nidoking vs L44 Nidoqueen          >>> EXP GIVEN: 1828
-Nidoking (145/115/105/112/95) 
-Ice Beam	85-100 60.71-71.43%	(crit: 146-172 104.29-122.86%)
+LVL: 48 EXP NEEDED: 4762/7113
+L48 Nidoking vs L44 Nidoqueen          >>> EXP GIVEN: 1828
+Nidoking (142/111/103/104/93) 
+Ice Beam	83-98 59.29-70.00%	(crit: 139-164 99.29-117.14%)
+	(Crit one shot prob.: 97.44%)
 Horn Drill	
-Earthquake	142-168 101.43-120.00%	(crit: 246-290 175.71-207.14%)
-Surf	85-100 60.71-71.43%	(crit: 146-172 104.29-122.86%)
+Earthquake	137-162 97.86-115.71%	(crit: 234-276 167.14-197.14%)
+	(One shot prob.: 89.74%)
+Surf	83-98 59.29-70.00%	(crit: 139-164 99.29-117.14%)
+	(Crit one shot prob.: 97.44%)
 
 Nidoqueen (140/85/88/78/78): 
-Scratch	11-14 7.59-9.66%	(crit: 23-28 15.86-19.31%)
-	(6 crits death prob.: 99.6225%)
-	(1 non-crit + 5 crits death prob.: 4.7195%)
-	(2 non-crits + 5 crits death prob.: 99.5458%)
-	(3 non-crits + 4 crits death prob.: 2.4485%)
-	(4 non-crits + 4 crits death prob.: 99.4548%)
-	(5 non-crits + 3 crits death prob.: 1.0152%)
+Scratch	11-14 7.75-9.86%	(crit: 24-29 16.90-20.42%)
+	(5 crits death prob.: 0.0081%)
+	(1 non-crit + 5 crits death prob.: 80.7152%)
+	(2 non-crits + 4 crits death prob.: 0.0001%)
+	(3 non-crits + 4 crits death prob.: 66.4008%)
+	(4 non-crits + 3 crits death prob.: 0.0000%)
+	(4 non-crits + 4 crits death prob.: 100.0000%)
+	(5 non-crits + 3 crits death prob.: 47.2801%)
 Tail Whip	
-Body Slam	23-28 15.86-19.31%	(crit: 49-58 33.79-40.00%)
-	(6 shot prob.: 99.6225%)
-	(2 non-crits + 2 crits death prob.: 99.9984%)
-	(4 non-crits + 1 crit death prob.: 99.9428%)
-Poison Sting	1-2 0.69-1.38%	(crit: 3-4 2.07-2.76%)
+Body Slam	23-28 16.20-19.72%	(crit: 51-60 35.92-42.25%)
+	(6 shot prob.: 99.9949%)
+	(1 non-crit + 2 crits death prob.: 7.3450%)
+	(3 non-crits + 1 crit death prob.: 0.0179%)
+Poison Sting	1-2 0.70-1.41%	(crit: 3-4 2.11-2.82%)
 
-LVL: 49 EXP NEEDED: 2932/7437
-L49 Nidoking vs L45 Nidoking          >>> EXP GIVEN: 1879
-Nidoking (145/115/105/112/95) 
-Ice Beam	83-98 61.48-72.59%	(crit: 144-170 106.67-125.93%)
+LVL: 48 EXP NEEDED: 2934/7113
+L48 Nidoking vs L45 Nidoking          >>> EXP GIVEN: 1879
+Nidoking (142/111/103/104/93) 
+Ice Beam	81-96 60.00-71.11%	(crit: 137-162 101.48-120.00%)
 Horn Drill	
-Earthquake	154-182 114.07-134.81%	(crit: 270-318 200.00-235.56%)
-Surf	83-98 61.48-72.59%	(crit: 144-170 106.67-125.93%)
+Earthquake	149-176 110.37-130.37%	(crit: 251-296 185.93-219.26%)
+Surf	81-96 60.00-71.11%	(crit: 137-162 101.48-120.00%)
 
 Nidoking (135/95/81/88/79): 
-Tackle	11-14 7.59-9.66%	(crit: 23-28 15.86-19.31%)
-	(6 crits death prob.: 99.6225%)
-	(1 non-crit + 5 crits death prob.: 4.7195%)
-	(2 non-crits + 5 crits death prob.: 99.5458%)
-	(3 non-crits + 4 crits death prob.: 2.4485%)
-	(4 non-crits + 4 crits death prob.: 99.4548%)
-	(5 non-crits + 3 crits death prob.: 1.0152%)
-Horn Attack	21-25 14.48-17.24%	(crit: 43-51 29.66-35.17%)
-	(6 shot prob.: 0.0445%)
-	(3 crits death prob.: 15.5347%)
-	(2 non-crits + 2 crits death prob.: 6.0746%)
-	(4 non-crits + 1 crit death prob.: 0.9938%)
-Poison Sting	1-2 0.69-1.38%	(crit: 3-4 2.07-2.76%)
-Thrash	28-34 19.31-23.45%	(crit: 60-71 41.38-48.97%)
-	(5 shot prob.: 99.9661%)
-	(3 non-crits + 1 crit death prob.: 99.9999%)
+Tackle	11-14 7.75-9.86%	(crit: 24-29 16.90-20.42%)
+	(5 crits death prob.: 0.0081%)
+	(1 non-crit + 5 crits death prob.: 80.7152%)
+	(2 non-crits + 4 crits death prob.: 0.0001%)
+	(3 non-crits + 4 crits death prob.: 66.4008%)
+	(4 non-crits + 3 crits death prob.: 0.0000%)
+	(4 non-crits + 4 crits death prob.: 100.0000%)
+	(5 non-crits + 3 crits death prob.: 47.2801%)
+Horn Attack	21-25 14.79-17.61%	(crit: 45-53 31.69-37.32%)
+	(6 shot prob.: 2.0249%)
+	(3 crits death prob.: 84.1214%)
+	(2 non-crits + 2 crits death prob.: 59.2476%)
+	(4 non-crits + 1 crit death prob.: 24.5095%)
+Poison Sting	1-2 0.70-1.41%	(crit: 3-4 2.11-2.82%)
+Thrash	29-35 20.42-24.65%	(crit: 61-72 42.96-50.70%)
+	(2 crits death prob.: 1.5779%)
+	(2 non-crits + 1 crit death prob.: 0.0017%)
 
-LVL: 49 EXP NEEDED: 1053/7437
-L49 Nidoking vs L50 Rhydon          >>> EXP GIVEN: 2185
-Nidoking (145/115/105/112/95) 
-Ice Beam	114-134 65.90-77.46%	(crit: 197-232 113.87-134.10%)
+LVL: 48 EXP NEEDED: 1055/7113
+L48 Nidoking vs L50 Rhydon          >>> EXP GIVEN: 2185
+Nidoking (142/111/103/104/93) 
+Ice Beam	110-130 63.58-75.14%	(crit: 187-220 108.09-127.17%)
 Horn Drill	
-Earthquake	97-114 56.07-65.90%	(crit: 165-194 95.38-112.14%)
-	(Crit one shot prob.: 71.79%)
-Surf	228-268 131.79-154.91%	(crit: 394-464 227.75-268.21%)
+Earthquake	93-110 53.76-63.58%	(crit: 154-182 89.02-105.20%)
+	(Crit one shot prob.: 33.33%)
+Surf	221-260 127.75-150.29%	(crit: 374-440 216.18-254.34%)
 
 Rhydon (173/144/133/53/58): 
-Stomp	34-41 23.45-28.28%	(crit: 72-85 49.66-58.62%)
-	(4 shot prob.: 92.6179%)
-	(2 crits death prob.: 99.7370%)
-	(2 non-crits + 1 crit death prob.: 97.8219%)
+Stomp	34-41 23.94-28.87%	(crit: 74-87 52.11-61.27%)
+	(4 shot prob.: 99.1416%)
 Tail Whip	
 Fissure	
 Horn Drill	
 
-L50 Nidoking
+L49 Nidoking
 Stat ranges WITH badge boosts:
 IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
 ------------------------------------------------------------------------------------
-HP  | 148| 149| 150| 151| 152| 153| 154| 155| 156| 157| 158| 159| 160| 161| 162| 163
-ATK | 119| 120| 121| 122| 123| 124| 126| 127| 128| 129| 130| 131| 132| 133| 135| 136
-DEF | 100| 101| 102| 103| 104| 105| 106| 108| 109| 110| 111| 112| 113| 114| 115| 117
-SPD | 113| 114| 115| 117| 118| 119| 120| 121| 122| 123| 124| 126| 127| 128| 129| 130
-SPC |  97|  99| 100| 101| 102| 103| 104| 105| 106| 108| 109| 110| 111| 112| 113| 114
+HP  | 145| 146| 147| 148| 149| 150| 151| 152| 153| 154| 155| 156| 157| 157| 158| 159
+ATK | 114| 115| 115| 117| 118| 119| 120| 121| 122| 123| 124| 126| 127| 128| 129| 130
+DEF |  97|  99| 100| 101| 102| 103| 104| 105| 106| 108| 109| 110| 111| 112| 113| 114
+SPD | 105| 106| 108| 109| 110| 111| 112| 113| 114| 115| 117| 118| 119| 120| 121| 122
+SPC |  95|  96|  97|  99| 100| 101| 102| 103| 104| 105| 106| 108| 109| 110| 111| 112
 
-LVL: 50 EXP NEEDED: 6634/7766
+LVL: 49 EXP NEEDED: 6307/7437
 RIVAL2 (0x3A475: L47 Pidgeot, L45 Rhyhorn, L45 Gyarados, L47 Growlithe, L50 Alakazam, L53 Venusaur, ) Prize 3445
-L50 Nidoking vs L47 Pidgeot          >>> EXP GIVEN: 1731
-Nidoking (149/119/109/114/97) +<1/1/0/1> -> (149/133/122/114/109) 
-Ice Beam	102-120 71.83-84.51%	(crit: 154-182 108.45-128.17%)
+L49 Nidoking vs L47 Pidgeot          >>> EXP GIVEN: 1731
+Nidoking (146/114/106/106/95) +<1/1/0/1> -> (146/128/119/106/106) 
+Ice Beam	95-112 66.90-78.87%	(crit: 146-172 102.82-121.13%)
 Horn Drill	
 Earthquake	
-Surf	51-60 35.92-42.25%	(crit: 77-91 54.23-64.08%)
-	(1 non-crit + 1 crit death prob.: 30.7692%)
+Surf	47-56 33.10-39.44%	(crit: 73-86 51.41-60.56%)
+	(3 shot prob.: 99.9865%)
+	(1 non-crit + 1 crit death prob.: 0.0657%)
 
 Pidgeot (142/88/83/98/78): 
-Quick Attack	16-19 10.74-12.75%	(crit: 38-45 25.50-30.20%)
-	(8 shot prob.: 0.0000%)
-	(9 shot prob.: 98.0286%)
-	(1 non-crit + 3 crits death prob.: 1.0758%)
-	(2 non-crits + 3 crits death prob.: 99.6731%)
-	(4 non-crits + 2 crits death prob.: 73.5910%)
+Quick Attack	16-19 10.96-13.01%	(crit: 38-45 26.03-30.82%)
+	(8 shot prob.: 0.0054%)
+	(9 shot prob.: 99.9734%)
+	(1 non-crit + 3 crits death prob.: 8.9066%)
+	(3 non-crits + 2 crits death prob.: 0.0001%)
+	(4 non-crits + 2 crits death prob.: 94.0295%)
 Whirlwind	
-Wing Attack	15-18 10.07-12.08%	(crit: 33-39 22.15-26.17%)
-	(9 shot prob.: 10.6207%)
-	(4 crits death prob.: 4.1946%)
-	(1 non-crit + 4 crits death prob.: 99.9081%)
-	(2 non-crits + 3 crits death prob.: 0.0676%)
-	(3 non-crits + 3 crits death prob.: 98.1039%)
-	(4 non-crits + 2 crits death prob.: 0.0000%)
-	(5 non-crits + 2 crits death prob.: 86.6639%)
+Wing Attack	15-18 10.27-12.33%	(crit: 34-40 23.29-27.40%)
+	(9 shot prob.: 48.2617%)
+	(4 crits death prob.: 56.8712%)
+	(2 non-crits + 3 crits death prob.: 14.4717%)
+	(4 non-crits + 2 crits death prob.: 0.2846%)
+	(5 non-crits + 2 crits death prob.: 99.8187%)
 Agility	
 
-LVL: 50 EXP NEEDED: 4903/7766
-L50 Nidoking vs L45 Rhyhorn          >>> EXP GIVEN: 1300
-Nidoking (149/119/109/114/97) +<1/1/0/1> -> (149/133/122/114/109) 
-Ice Beam	200-236 149.25-176.12%	(crit: 306-360 228.36-268.66%)
+LVL: 49 EXP NEEDED: 4576/7437
+L49 Nidoking vs L45 Rhyhorn          >>> EXP GIVEN: 1300
+Nidoking (146/114/106/106/95) +<1/1/0/1> -> (146/128/119/106/106) 
+Ice Beam	187-220 139.55-164.18%	(crit: 291-342 217.16-255.22%)
 Horn Drill	
-Earthquake	158-186 117.91-138.81%	(crit: 236-278 176.12-207.46%)
-Surf	401-472 299.25-352.24%	(crit: 612-720 456.72-537.31%)
+Earthquake	144-170 107.46-126.87%	(crit: 224-264 167.16-197.01%)
+Surf	374-440 279.10-328.36%	(crit: 582-684 434.33-510.45%)
 
 Rhyhorn (134/89/97/34/39): 
-Fury Attack	5-6 3.36-4.03%	(crit: 10-12 6.71-8.05%)
-Stomp	17-20 11.41-13.42%	(crit: 39-47 26.17-31.54%)
-	(8 shot prob.: 3.9894%)
-	(1 non-crit + 3 crits death prob.: 35.3125%)
-	(3 non-crits + 2 crits death prob.: 0.3028%)
-	(4 non-crits + 2 crits death prob.: 99.9191%)
-Horn Attack	17-20 11.41-13.42%	(crit: 39-47 26.17-31.54%)
-	(8 shot prob.: 3.9894%)
-	(1 non-crit + 3 crits death prob.: 35.3125%)
-	(3 non-crits + 2 crits death prob.: 0.3028%)
-	(4 non-crits + 2 crits death prob.: 99.9191%)
+Fury Attack	5-6 3.42-4.11%	(crit: 10-12 6.85-8.22%)
+Stomp	17-21 11.64-14.38%	(crit: 40-48 27.40-32.88%)
+	(7 shot prob.: 0.0000%)
+	(8 shot prob.: 98.8154%)
+	(1 non-crit + 3 crits death prob.: 90.9217%)
+	(3 non-crits + 2 crits death prob.: 41.0653%)
+	(5 non-crits + 1 crit death prob.: 0.8974%)
+Horn Attack	17-21 11.64-14.38%	(crit: 40-48 27.40-32.88%)
+	(7 shot prob.: 0.0000%)
+	(8 shot prob.: 98.8154%)
+	(1 non-crit + 3 crits death prob.: 90.9217%)
+	(3 non-crits + 2 crits death prob.: 41.0653%)
+	(5 non-crits + 1 crit death prob.: 0.8974%)
 Tail Whip	
 
-LVL: 50 EXP NEEDED: 3603/7766
-L50 Nidoking vs L45 Gyarados          >>> EXP GIVEN: 2062
-Nidoking (149/119/109/114/97) +<1/1/0/1> -> (149/133/122/114/109) 
-Ice Beam	39-46 26.53-31.29%	(crit: 59-70 40.14-47.62%)
-	(2 non-crits + 1 crit death prob.: 66.8723%)
+LVL: 49 EXP NEEDED: 3276/7437
+L49 Nidoking vs L45 Gyarados          >>> EXP GIVEN: 2062
+Nidoking (146/114/106/106/95) +<1/1/0/1> -> (146/128/119/106/106) 
+Ice Beam	35-42 23.81-28.57%	(crit: 56-66 38.10-44.90%)
+	(4 shot prob.: 97.0551%)
+	(2 non-crits + 1 crit death prob.: 0.6473%)
 Horn Drill	
 Earthquake	
-Surf	19-23 12.93-15.65%	(crit: 29-35 19.73-23.81%)
-	(7 shot prob.: 37.3698%)
-	(5 crits death prob.: 99.9993%)
-	(1 non-crit + 4 crits death prob.: 70.9299%)
-	(2 non-crits + 3 crits death prob.: 0.0602%)
-	(3 non-crits + 3 crits death prob.: 99.9955%)
-	(4 non-crits + 2 crits death prob.: 56.0293%)
-	(5 non-crits + 1 crit death prob.: 0.0008%)
+Surf	17-21 11.56-14.29%	(crit: 28-33 19.05-22.45%)
+	(7 shot prob.: 0.0000%)
+	(8 shot prob.: 96.9968%)
+	(5 crits death prob.: 87.0831%)
+	(1 non-crit + 4 crits death prob.: 0.7045%)
+	(2 non-crits + 4 crits death prob.: 99.9995%)
+	(3 non-crits + 3 crits death prob.: 56.3089%)
+	(4 non-crits + 2 crits death prob.: 0.0008%)
+	(5 non-crits + 2 crits death prob.: 99.8416%)
 
 Gyarados (147/125/83/85/102): 
-Bite	22-26 14.77-17.45%	(crit: 51-60 34.23-40.27%)
-	(6 shot prob.: 0.4946%)
-	(2 non-crits + 2 crits death prob.: 98.9750%)
-	(4 non-crits + 1 crit death prob.: 58.4547%)
+Bite	22-27 15.07-18.49%	(crit: 52-62 35.62-42.47%)
+	(6 shot prob.: 68.0184%)
+	(1 non-crit + 2 crits death prob.: 4.0982%)
+	(4 non-crits + 1 crit death prob.: 99.7712%)
 Dragon Rage	
 Leer	
-Hydro Pump	117-138 78.52-92.62%	(crit: 275-324 184.56-217.45%)
+Hydro Pump	122-144 83.56-98.63%	(crit: 282-332 193.15-227.40%)
 
-LVL: 50 EXP NEEDED: 1541/7766
-L50 Nidoking vs L47 Growlithe          >>> EXP GIVEN: 916
-Nidoking (149/119/109/114/97) +<1/1/0/1> -> (149/133/122/114/109) 
-Ice Beam	67-79 57.76-68.10%	(crit: 101-119 87.07-102.59%)
-	(Crit one shot prob.: 17.95%)
+LVL: 49 EXP NEEDED: 1214/7437
+L49 Nidoking vs L47 Growlithe          >>> EXP GIVEN: 916
+Nidoking (146/114/106/106/95) +<1/1/0/1> -> (146/128/119/106/106) 
+Ice Beam	62-73 53.45-62.93%	(crit: 97-114 83.62-98.28%)
 Horn Drill	
-Earthquake	280-330 241.38-284.48%	(crit: 423-498 364.66-429.31%)
-Surf	134-158 115.52-136.21%	(crit: 202-238 174.14-205.17%)
+Earthquake	256-302 220.69-260.34%	(crit: 398-468 343.10-403.45%)
+Surf	124-146 106.90-125.86%	(crit: 194-228 167.24-196.55%)
 
 Growlithe (116/79/54/68/59): 
-Ember	12-15 8.05-10.07%	(crit: 28-34 18.79-22.82%)
+Ember	12-15 8.22-10.27%	(crit: 28-34 19.18-23.29%)
 	(10 shot prob.: 0.0000%)
-	(5 crits death prob.: 97.3478%)
-	(1 non-crit + 4 crits death prob.: 0.0010%)
-	(2 non-crits + 4 crits death prob.: 75.6704%)
-	(3 non-crits + 4 crits death prob.: 100.0000%)
-	(4 non-crits + 3 crits death prob.: 26.0361%)
-	(5 non-crits + 3 crits death prob.: 99.9983%)
+	(5 crits death prob.: 99.8578%)
+	(1 non-crit + 4 crits death prob.: 0.2817%)
+	(2 non-crits + 4 crits death prob.: 95.0480%)
+	(3 non-crits + 3 crits death prob.: 0.0000%)
+	(4 non-crits + 3 crits death prob.: 63.3584%)
+	(5 non-crits + 3 crits death prob.: 100.0000%)
 Leer	
-Take Down	21-25 14.09-16.78%	(crit: 50-59 33.56-39.60%)
-	(6 shot prob.: 0.0000%)
-	(7 shot prob.: 99.9851%)
-	(2 non-crits + 2 crits death prob.: 88.3185%)
-	(4 non-crits + 1 crit death prob.: 14.4920%)
+Take Down	21-25 14.38-17.12%	(crit: 51-60 34.93-41.10%)
+	(6 shot prob.: 0.0068%)
+	(2 non-crits + 2 crits death prob.: 99.7344%)
+	(4 non-crits + 1 crit death prob.: 51.3046%)
 Agility	
 
-LVL: 50 EXP NEEDED: 625/7766
-L50 Nidoking vs L50 Alakazam          >>> EXP GIVEN: 1992
-Nidoking (149/119/109/114/97) +<1/1/0/1> -> (149/133/122/114/109) 
-Ice Beam	27-32 21.95-26.02%	(crit: 40-48 32.52-39.02%)
-	(4 shot prob.: 1.4328%)
-	(3 crits death prob.: 99.7606%)
-	(1 non-crit + 2 crits death prob.: 5.0153%)
-	(3 non-crits + 1 crit death prob.: 99.8454%)
+LVL: 49 EXP NEEDED: 298/7437
+L49 Nidoking vs L50 Alakazam          >>> EXP GIVEN: 1992
+Nidoking (146/114/106/106/95) +<1/1/0/1> -> (146/128/119/106/106) 
+Ice Beam	25-30 20.33-24.39%	(crit: 39-46 31.71-37.40%)
+	(3 crits death prob.: 85.2088%)
+	(3 non-crits + 1 crit death prob.: 67.1749%)
 Horn Drill	
-Earthquake	130-153 105.69-124.39%	(crit: 197-232 160.16-188.62%)
-Surf	27-32 21.95-26.02%	(crit: 40-48 32.52-39.02%)
-	(4 shot prob.: 1.4328%)
-	(3 crits death prob.: 99.7606%)
-	(1 non-crit + 2 crits death prob.: 5.0153%)
-	(3 non-crits + 1 crit death prob.: 99.8454%)
+Earthquake	119-141 96.75-114.63%	(crit: 186-219 151.22-178.05%)
+	(One shot prob.: 84.62%)
+Surf	25-30 20.33-24.39%	(crit: 39-46 31.71-37.40%)
+	(3 crits death prob.: 85.2088%)
+	(3 non-crits + 1 crit death prob.: 67.1749%)
 
 Alakazam (123/64/58/133/148): 
-Psybeam	102-120 68.46-80.54%	(crit: 239-282 160.40-189.26%)
+Psybeam	103-122 70.55-83.56%	(crit: 246-290 168.49-198.63%)
 Recover	
-Psychic	139-164 93.29-110.07%	(crit: 331-390 222.15-261.74%)
-	(One shot prob.: 61.54%)
+Psychic	144-170 98.63-116.44%	(crit: 338-398 231.51-272.60%)
+	(One shot prob.: 94.87%)
 Reflect	
 
-L51 Nidoking
+L50 Nidoking
 Stat ranges WITHOUT badge boosts:
 IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
 ------------------------------------------------------------------------------------
-HP  | 150| 151| 152| 153| 154| 155| 156| 157| 158| 159| 160| 161| 163| 164| 165| 166
-ATK | 109| 110| 111| 112| 113| 114| 115| 116| 117| 118| 119| 120| 121| 122| 123| 124
-DEF |  91|  92|  93|  94|  95|  96|  97|  98|  99| 100| 101| 102| 103| 104| 105| 106
-SPD | 103| 104| 105| 106| 107| 108| 109| 110| 111| 112| 113| 114| 115| 116| 117| 118
-SPC |  89|  90|  91|  92|  93|  94|  95|  96|  97|  98|  99| 100| 101| 102| 103| 104
+HP  | 148| 149| 150| 151| 152| 153| 154| 155| 156| 157| 158| 159| 160| 161| 162| 163
+ATK | 104| 105| 106| 107| 108| 109| 110| 111| 112| 113| 114| 115| 116| 117| 118| 119
+DEF |  89|  90|  91|  92|  93|  94|  95|  96|  97|  98|  99| 100| 101| 102| 103| 104
+SPD |  97|  98|  99| 100| 101| 102| 103| 104| 105| 106| 107| 108| 109| 110| 111| 112
+SPC |  87|  88|  89|  90|  91|  92|  93|  94|  95|  96|  97|  98|  99| 100| 101| 102
 
-LVL: 51 EXP NEEDED: 6736/8103
-L51 Nidoking vs L53 Venusaur          >>> EXP GIVEN: 2361
-Nidoking (151/122/111/117/100) +<1/1/0/1> -> (151/137/124/117/112) 
-Ice Beam	69-82 44.23-52.56%	(crit: 103-122 66.03-78.21%)
-	(2 shot prob.: 19.7896%)
+LVL: 50 EXP NEEDED: 6072/7766
+L50 Nidoking vs L53 Venusaur          >>> EXP GIVEN: 2361
+Nidoking (149/117/109/110/97) +<1/1/0/1> -> (149/131/122/110/109) 
+Ice Beam	68-80 43.59-51.28%	(crit: 102-120 65.38-76.92%)
+	(2 shot prob.: 5.1940%)
 Horn Drill	
-Earthquake	76-90 48.72-57.69%	(crit: 117-138 75.00-88.46%)
-	(2 shot prob.: 96.5812%)
+Earthquake	74-88 47.44-56.41%	(crit: 112-132 71.79-84.62%)
+	(2 shot prob.: 86.0618%)
 Surf	17-20 10.90-12.82%	(crit: 25-30 16.03-19.23%)
 	(8 shot prob.: 0.0000%)
 	(9 shot prob.: 99.7241%)
@@ -1236,76 +1239,81 @@ Surf	17-20 10.90-12.82%	(crit: 25-30 16.03-19.23%)
 	(5 non-crits + 2 crits death prob.: 0.0005%)
 
 Venusaur (156/101/101/98/119): 
-Vine Whip	23-28 15.23-18.54%	(crit: 54-64 35.76-42.38%)
-	(6 shot prob.: 74.7977%)
-	(1 non-crit + 2 crits death prob.: 3.1845%)
-	(4 non-crits + 1 crit death prob.: 99.7897%)
+Vine Whip	23-28 15.44-18.79%	(crit: 56-66 37.58-44.30%)
+	(6 shot prob.: 90.4351%)
+	(1 non-crit + 2 crits death prob.: 33.9284%)
+	(3 non-crits + 1 crit death prob.: 0.0013%)
+	(4 non-crits + 1 crit death prob.: 99.9999%)
 PoisonPowder	
-Razor Leaf	35-42 23.18-27.81%	(crit: 84-99 55.63-65.56%)
-	(4 shot prob.: 78.9218%)
+Razor Leaf	36-43 24.16-28.86%	(crit: 86-102 57.72-68.46%)
+	(4 shot prob.: 98.8761%)
 Growth	
 
-LVL: 51 EXP NEEDED: 4375/8103
+LVL: 50 EXP NEEDED: 3711/7766
 LORELEI (0x3A4BB: L54 Dewgong, L53 Cloyster, L54 Slowbro, L56 Jynx, L56 Lapras, ) Prize 5544
-L51 Nidoking vs L54 Dewgong          >>> EXP GIVEN: 2035
-Nidoking (151/122/111/117/100) 
+L50 Nidoking vs L54 Dewgong          >>> EXP GIVEN: 2035
+Nidoking (149/117/109/110/97) 
 Ice Beam	7-9 4.14-5.33%	(crit: 12-15 7.10-8.88%)
 Horn Drill	
-Earthquake	69-82 40.83-48.52%	(crit: 118-139 69.82-82.25%)
-Surf	16-19 9.47-11.24%	(crit: 26-31 15.38-18.34%)
-	(9 shot prob.: 0.0000%)
-	(10 shot prob.: 79.6380%)
-	(6 crits death prob.: 56.4199%)
-	(1 non-crit + 5 crits death prob.: 0.0250%)
-	(2 non-crits + 5 crits death prob.: 97.3475%)
-	(3 non-crits + 4 crits death prob.: 8.0022%)
-	(4 non-crits + 3 crits death prob.: 0.0000%)
-	(4 non-crits + 4 crits death prob.: 99.9995%)
-	(5 non-crits + 3 crits death prob.: 67.1790%)
+Earthquake	67-79 39.64-46.75%	(crit: 113-133 66.86-78.70%)
+Surf	15-18 8.88-10.65%	(crit: 25-30 14.79-17.75%)
+	(10 shot prob.: 0.3238%)
+	(6 crits death prob.: 7.4489%)
+	(2 non-crits + 5 crits death prob.: 52.7017%)
+	(3 non-crits + 4 crits death prob.: 0.0036%)
+	(4 non-crits + 4 crits death prob.: 95.0096%)
+	(5 non-crits + 3 crits death prob.: 2.3211%)
 
 Dewgong (169/90/100/89/116): 
 Growl	
-Aurora Beam	91-108 60.26-71.52%	(crit: 199-234 131.79-154.97%)
+Aurora Beam	93-110 62.42-73.83%	(crit: 204-240 136.91-161.07%)
 Rest	
-Take Down	29-35 19.21-23.18%	(crit: 63-75 41.72-49.67%)
-	(5 shot prob.: 99.6101%)
-	(3 non-crits + 1 crit death prob.: 99.9997%)
+Take Down	30-36 20.13-24.16%	(crit: 65-77 43.62-51.68%)
+	(2 crits death prob.: 8.4813%)
+	(2 non-crits + 1 crit death prob.: 0.0017%)
 
-LVL: 51 EXP NEEDED: 2340/8103
-L51 Nidoking vs L53 Cloyster          >>> EXP GIVEN: 2305
-Nidoking (151/122/111/117/100) 
+LVL: 50 EXP NEEDED: 1676/7766
+L50 Nidoking vs L53 Cloyster          >>> EXP GIVEN: 2305
+Nidoking (149/117/109/110/97) 
 Ice Beam	8-10 6.45-8.06%	(crit: 14-17 11.29-13.71%)
 	(8 crits death prob.: 23.4508%)
 	(4 non-crits + 5 crits death prob.: 0.0000%)
 	(5 non-crits + 5 crits death prob.: 3.0274%)
 Horn Drill	
-Earthquake	35-42 28.23-33.87%	(crit: 58-69 46.77-55.65%)
-	(3 shot prob.: 0.2444%)
-	(2 crits death prob.: 75.6082%)
-Surf	17-21 13.71-16.94%	(crit: 29-35 23.39-28.23%)
-	(6 shot prob.: 0.0001%)
-	(7 shot prob.: 99.9925%)
-	(4 crits death prob.: 89.9474%)
-	(1 non-crit + 3 crits death prob.: 0.0201%)
-	(2 non-crits + 3 crits death prob.: 99.9913%)
-	(3 non-crits + 2 crits death prob.: 15.6989%)
-	(5 non-crits + 1 crit death prob.: 87.8468%)
+Earthquake	34-40 27.42-32.26%	(crit: 56-66 45.16-53.23%)
+	(2 crits death prob.: 29.8488%)
+Surf	17-20 13.71-16.13%	(crit: 28-34 22.58-27.42%)
+	(7 shot prob.: 87.9828%)
+	(4 crits death prob.: 56.3538%)
+	(2 non-crits + 3 crits death prob.: 97.4239%)
+	(3 non-crits + 2 crits death prob.: 0.1032%)
+	(5 non-crits + 1 crit death prob.: 17.0779%)
 
 Cloyster (124/115/204/87/103): 
 Supersonic	
-Clamp	45-54 29.80-35.76%	(crit: 93-110 61.59-72.85%)
-	(3 shot prob.: 32.0134%)
-	(1 non-crit + 1 crit death prob.: 51.6108%)
-Aurora Beam	81-96 53.64-63.58%	(crit: 173-204 114.57-135.10%)
-Spike Cannon	9-11 5.96-7.28%	(crit: 18-22 11.92-14.57%)
-	(7 crits death prob.: 0.0000%)
-	(8 crits death prob.: 99.8050%)
-	(4 non-crits + 5 crits death prob.: 0.0000%)
-	(5 non-crits + 5 crits death prob.: 11.7585%)
+Clamp	47-56 31.54-37.58%	(crit: 97-114 65.10-76.51%)
+	(3 shot prob.: 89.0524%)
+	(1 non-crit + 1 crit death prob.: 91.1900%)
+Aurora Beam	83-98 55.70-65.77%	(crit: 175-206 117.45-138.26%)
+Spike Cannon	9-11 6.04-7.38%	(crit: 18-22 12.08-14.77%)
+	(7 crits death prob.: 0.0049%)
+	(8 crits death prob.: 99.9873%)
+	(4 non-crits + 5 crits death prob.: 0.0001%)
+	(5 non-crits + 5 crits death prob.: 34.3646%)
 
-LVL: 51 EXP NEEDED: 35/8103
+L51 Nidoking
+Stat ranges WITH badge boosts:
+IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
+------------------------------------------------------------------------------------
+HP  | 151| 152| 153| 154| 155| 156| 157| 158| 159| 160| 161| 162| 163| 164| 165| 166
+ATK | 120| 121| 122| 123| 124| 126| 127| 128| 129| 130| 131| 132| 133| 135| 136| 137
+DEF | 102| 103| 104| 105| 106| 108| 109| 110| 111| 112| 113| 114| 115| 117| 118| 119
+SPD | 111| 112| 113| 114| 115| 117| 118| 119| 120| 121| 122| 123| 124| 126| 127| 128
+SPC | 100| 101| 102| 103| 104| 105| 106| 108| 109| 110| 111| 112| 113| 114| 115| 117
+
+LVL: 51 EXP NEEDED: 7474/8103
 L51 Nidoking vs L54 Slowbro          >>> EXP GIVEN: 1897
-Nidoking (151/122/111/117/100) 
+Nidoking (152/120/111/112/100) 
 Ice Beam	17-21 9.71-12.00%	(crit: 30-36 17.14-20.57%)
 	(9 shot prob.: 8.3671%)
 	(10 shot prob.: 100.0000%)
@@ -1316,7 +1324,7 @@ Ice Beam	17-21 9.71-12.00%	(crit: 30-36 17.14-20.57%)
 	(4 non-crits + 3 crits death prob.: 48.2173%)
 	(5 non-crits + 2 crits death prob.: 0.0000%)
 Horn Drill	
-Earthquake	53-63 30.29-36.00%	(crit: 90-106 51.43-60.57%)
+Earthquake	53-63 30.29-36.00%	(crit: 89-105 50.86-60.00%)
 	(3 shot prob.: 43.2694%)
 Surf	17-21 9.71-12.00%	(crit: 30-36 17.14-20.57%)
 	(9 shot prob.: 8.3671%)
@@ -1330,231 +1338,216 @@ Surf	17-21 9.71-12.00%	(crit: 30-36 17.14-20.57%)
 
 Slowbro (175/95/132/46/100): 
 Growl	
-Water Gun	51-60 33.77-39.74%	(crit: 107-126 70.86-83.44%)
+Water Gun	51-60 33.55-39.47%	(crit: 107-126 70.39-82.89%)
 Withdraw	
 Amnesia	
+
+LVL: 51 EXP NEEDED: 5577/8103
+L51 Nidoking vs L56 Jynx          >>> EXP GIVEN: 1644
+Nidoking (152/120/111/112/100) 
+Ice Beam	15-18 10.20-12.24%	(crit: 25-30 17.01-20.41%)
+	(9 shot prob.: 32.9580%)
+	(5 crits death prob.: 0.0081%)
+	(1 non-crit + 5 crits death prob.: 97.3856%)
+	(2 non-crits + 4 crits death prob.: 4.2408%)
+	(3 non-crits + 4 crits death prob.: 99.9974%)
+	(4 non-crits + 3 crits death prob.: 49.5679%)
+	(5 non-crits + 2 crits death prob.: 0.0001%)
+Horn Drill	
+Earthquake	128-151 87.07-102.72%	(crit: 217-256 147.62-174.15%)
+	(One shot prob.: 17.95%)
+Surf	30-36 20.41-24.49%	(crit: 51-61 34.69-41.50%)
+	(1 non-crit + 2 crits death prob.: 34.8607%)
+	(3 non-crits + 1 crit death prob.: 98.2006%)
+
+Jynx (147/71/53/120/120): 
+DoubleSlap	5-6 3.29-3.95%	(crit: 9-11 5.92-7.24%)
+Ice Punch	114-134 75.00-88.16%	(crit: 241-284 158.55-186.84%)
+Body Slam	23-28 15.13-18.42%	(crit: 49-58 32.24-38.16%)
+	(6 shot prob.: 63.8014%)
+	(3 crits death prob.: 96.4312%)
+	(2 non-crits + 2 crits death prob.: 91.5806%)
+	(4 non-crits + 1 crit death prob.: 81.7642%)
+Thrash	24-29 15.79-19.08%	(crit: 51-61 33.55-40.13%)
+	(6 shot prob.: 97.9967%)
+	(2 non-crits + 2 crits death prob.: 99.9942%)
+	(4 non-crits + 1 crit death prob.: 99.7768%)
+
+(Speed DV required to outspeed: 9, to speedtie: 8)
+
+LVL: 51 EXP NEEDED: 3933/8103
+L51 Nidoking vs L56 Lapras          >>> EXP GIVEN: 2628
+Nidoking (152/120/111/112/100) 
+Ice Beam	7-9 3.18-4.09%	(crit: 12-15 5.45-6.82%)
+Horn Drill	
+Earthquake	67-79 30.45-35.91%	(crit: 113-133 51.36-60.45%)
+	(3 shot prob.: 40.1591%)
+Surf	15-18 6.82-8.18%	(crit: 25-30 11.36-13.64%)
+	(8 crits death prob.: 37.5280%)
+	(4 non-crits + 5 crits death prob.: 0.0000%)
+	(5 non-crits + 5 crits death prob.: 26.0006%)
+
+Lapras (220/110/103/81/120): 
+Body Slam	35-42 23.03-27.63%	(crit: 74-88 48.68-57.89%)
+	(4 shot prob.: 70.7677%)
+	(2 crits death prob.: 96.9757%)
+	(2 non-crits + 1 crit death prob.: 89.7166%)
+Confuse Ray	
+Hydro Pump	180-212 118.42-139.47%	(crit: 382-450 251.32-296.05%)
+Blizzard	180-212 118.42-139.47%	(crit: 382-450 251.32-296.05%)
+
+LVL: 51 EXP NEEDED: 1305/8103
+BRUNO (0x3A3A9: L53 Onix, L55 Hitmonchan, L55 Hitmonlee, L56 Onix, L58 Machamp, ) Prize 5742
+L51 Nidoking vs L53 Onix          >>> EXP GIVEN: 1225
+Nidoking (152/120/111/112/100) 
+Ice Beam	159-188 147.22-174.07%	(crit: 270-318 250.00-294.44%)
+Horn Drill	
+Earthquake	76-90 70.37-83.33%	(crit: 129-152 119.44-140.74%)
+Surf	319-376 295.37-348.15%	(crit: 541-636 500.93-588.89%)
+
+Onix (108/62/183/87/45): 
+Rock Throw	8-10 5.26-6.58%	(crit: 17-21 11.18-13.82%)
+	(8 crits death prob.: 51.4797%)
+	(5 non-crits + 5 crits death prob.: 0.0000%)
+Rage	5-7 3.29-4.61%	(crit: 11-13 7.24-8.55%)
+Slam	18-22 11.84-14.47%	(crit: 39-46 25.66-30.26%)
+	(7 shot prob.: 0.0000%)
+	(8 shot prob.: 99.4123%)
+	(1 non-crit + 3 crits death prob.: 7.6884%)
+	(3 non-crits + 2 crits death prob.: 0.8181%)
+	(4 non-crits + 2 crits death prob.: 99.9974%)
+	(5 non-crits + 1 crit death prob.: 0.0066%)
+Harden	
+
+LVL: 51 EXP NEEDED: 80/8103
+L51 Nidoking vs L55 Hitmonchan          >>> EXP GIVEN: 1650
+Nidoking (152/120/111/112/100) 
+Ice Beam	69-82 53.91-64.06%	(crit: 117-138 91.41-107.81%)
+	(Crit one shot prob.: 48.72%)
+Horn Drill	
+Earthquake	68-81 53.13-63.28%	(crit: 115-136 89.84-106.25%)
+	(Crit one shot prob.: 41.03%)
+Surf	69-82 53.91-64.06%	(crit: 117-138 91.41-107.81%)
+	(Crit one shot prob.: 48.72%)
+
+Hitmonchan (128/130/100/97/52): 
+Ice Punch	34-40 22.37-26.32%	(crit: 71-84 46.71-55.26%)
+	(4 shot prob.: 6.8787%)
+	(2 crits death prob.: 71.3346%)
+	(2 non-crits + 1 crit death prob.: 41.6174%)
+ThunderPunch	
+Mega Punch	39-46 25.66-30.26%	(crit: 83-98 54.61-64.47%)
+Counter	
 
 L52 Nidoking
 Stat ranges WITH badge boosts:
 IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
 ------------------------------------------------------------------------------------
-HP  | 154| 155| 156| 157| 158| 159| 160| 161| 162| 163| 164| 165| 166| 167| 168| 169
-ATK | 124| 126| 127| 128| 129| 130| 131| 132| 133| 135| 136| 137| 138| 139| 140| 141
+HP  | 154| 155| 156| 157| 158| 159| 160| 161| 162| 163| 164| 166| 167| 168| 169| 170
+ATK | 122| 123| 124| 126| 127| 128| 129| 130| 131| 132| 133| 135| 136| 137| 138| 139
 DEF | 104| 105| 106| 108| 109| 110| 111| 112| 113| 114| 115| 117| 118| 119| 120| 122
-SPD | 118| 119| 120| 121| 122| 123| 124| 126| 127| 128| 129| 130| 131| 132| 133| 135
+SPD | 113| 114| 115| 117| 118| 119| 120| 121| 122| 123| 124| 126| 127| 128| 129| 130
 SPC | 102| 103| 104| 105| 106| 108| 109| 110| 111| 112| 113| 114| 115| 117| 118| 119
 
-LVL: 52 EXP NEEDED: 6586/8448
-L52 Nidoking vs L56 Jynx          >>> EXP GIVEN: 1644
-Nidoking (155/124/113/119/102) 
-Ice Beam	15-18 10.20-12.24%	(crit: 26-31 17.69-21.09%)
-	(9 shot prob.: 32.9580%)
-	(5 crits death prob.: 3.9028%)
-	(1 non-crit + 5 crits death prob.: 99.9800%)
-	(2 non-crits + 4 crits death prob.: 32.0720%)
-	(3 non-crits + 3 crits death prob.: 0.0000%)
-	(4 non-crits + 3 crits death prob.: 80.9235%)
-	(5 non-crits + 2 crits death prob.: 0.0071%)
-Horn Drill	
-Earthquake	132-156 89.80-106.12%	(crit: 232-273 157.82-185.71%)
-	(One shot prob.: 38.46%)
-Surf	31-37 21.09-25.17%	(crit: 53-63 36.05-42.86%)
-	(4 shot prob.: 0.0011%)
-	(1 non-crit + 2 crits death prob.: 74.2207%)
-	(3 non-crits + 1 crit death prob.: 99.9945%)
-
-Jynx (147/71/53/120/120): 
-DoubleSlap	5-6 3.23-3.87%	(crit: 9-11 5.81-7.10%)
-Ice Punch	112-132 72.26-85.16%	(crit: 234-276 150.97-178.06%)
-Body Slam	22-27 14.19-17.42%	(crit: 47-56 30.32-36.13%)
-	(6 shot prob.: 0.4404%)
-	(7 shot prob.: 100.0000%)
-	(3 crits death prob.: 45.6852%)
-	(2 non-crits + 2 crits death prob.: 24.4718%)
-	(4 non-crits + 1 crit death prob.: 6.9729%)
-Thrash	24-29 15.48-18.71%	(crit: 51-60 32.90-38.71%)
-	(6 shot prob.: 86.0592%)
-	(3 crits death prob.: 99.4875%)
-	(2 non-crits + 2 crits death prob.: 98.0784%)
-	(4 non-crits + 1 crit death prob.: 94.4361%)
-
-(Speed DV required to outspeed: 3, to speedtie: 2)
-
-LVL: 52 EXP NEEDED: 4942/8448
-L52 Nidoking vs L56 Lapras          >>> EXP GIVEN: 2628
-Nidoking (155/124/113/119/102) 
-Ice Beam	7-9 3.18-4.09%	(crit: 12-15 5.45-6.82%)
-Horn Drill	
-Earthquake	68-81 30.91-36.82%	(crit: 119-141 54.09-64.09%)
-	(3 shot prob.: 72.6580%)
-	(1 non-crit + 1 crit death prob.: 0.8547%)
-Surf	15-18 6.82-8.18%	(crit: 26-31 11.82-14.09%)
-	(8 crits death prob.: 92.8304%)
-	(4 non-crits + 5 crits death prob.: 0.0008%)
-	(5 non-crits + 5 crits death prob.: 71.8404%)
-
-Lapras (220/110/103/81/120): 
-Body Slam	34-41 21.94-26.45%	(crit: 74-87 47.74-56.13%)
-	(4 shot prob.: 10.6692%)
-	(2 crits death prob.: 83.4320%)
-	(2 non-crits + 1 crit death prob.: 53.2511%)
-Confuse Ray	
-Hydro Pump	175-206 112.90-132.90%	(crit: 374-440 241.29-283.87%)
-Blizzard	175-206 112.90-132.90%	(crit: 374-440 241.29-283.87%)
-
-LVL: 52 EXP NEEDED: 2314/8448
-BRUNO (0x3A3A9: L53 Onix, L55 Hitmonchan, L55 Hitmonlee, L56 Onix, L58 Machamp, ) Prize 5742
-L52 Nidoking vs L53 Onix          >>> EXP GIVEN: 1225
-Nidoking (155/124/113/119/102) 
-Ice Beam	163-192 150.93-177.78%	(crit: 284-334 262.96-309.26%)
-Horn Drill	
-Earthquake	78-92 72.22-85.19%	(crit: 137-162 126.85-150.00%)
-Surf	326-384 301.85-355.56%	(crit: 568-668 525.93-618.52%)
-
-Onix (108/62/183/87/45): 
-Rock Throw	8-10 5.16-6.45%	(crit: 17-21 10.97-13.55%)
-	(8 crits death prob.: 14.2372%)
-	(9 crits death prob.: 100.0000%)
-	(5 non-crits + 5 crits death prob.: 0.0000%)
-Rage	5-7 3.23-4.52%	(crit: 10-12 6.45-7.74%)
-Slam	18-22 11.61-14.19%	(crit: 38-45 24.52-29.03%)
-	(8 shot prob.: 92.8366%)
-	(4 crits death prob.: 99.7068%)
-	(1 non-crit + 3 crits death prob.: 0.0128%)
-	(2 non-crits + 3 crits death prob.: 99.2641%)
-	(3 non-crits + 2 crits death prob.: 0.0000%)
-	(4 non-crits + 2 crits death prob.: 98.3220%)
-	(5 non-crits + 1 crit death prob.: 0.0000%)
-Harden	
-
-LVL: 52 EXP NEEDED: 1089/8448
-L52 Nidoking vs L55 Hitmonchan          >>> EXP GIVEN: 1650
-Nidoking (155/124/113/119/102) 
+LVL: 52 EXP NEEDED: 6878/8448
+L52 Nidoking vs L55 Hitmonlee          >>> EXP GIVEN: 1638
+Nidoking (155/122/113/114/102) 
 Ice Beam	70-83 54.69-64.84%	(crit: 122-144 95.31-112.50%)
 	(Crit one shot prob.: 74.36%)
 Horn Drill	
-Earthquake	71-84 55.47-65.63%	(crit: 123-145 96.09-113.28%)
-	(Crit one shot prob.: 76.92%)
+Earthquake	97-114 75.78-89.06%	(crit: 168-198 131.25-154.69%)
 Surf	70-83 54.69-64.84%	(crit: 122-144 95.31-112.50%)
 	(Crit one shot prob.: 74.36%)
 
-Hitmonchan (128/130/100/97/52): 
-Ice Punch	34-40 21.94-25.81%	(crit: 69-82 44.52-52.90%)
-	(4 shot prob.: 0.7772%)
-	(2 crits death prob.: 24.9178%)
-	(2 non-crits + 1 crit death prob.: 9.6091%)
-ThunderPunch	
-Mega Punch	39-46 25.16-29.68%	(crit: 81-96 52.26-61.94%)
-Counter	
-
-L53 Nidoking
-Stat ranges WITH badge boosts:
-IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
-------------------------------------------------------------------------------------
-HP  | 157| 158| 159| 160| 161| 162| 163| 164| 165| 166| 167| 169| 170| 171| 172| 173
-ATK | 127| 128| 129| 130| 131| 132| 135| 136| 137| 138| 139| 140| 141| 142| 144| 145
-DEF | 106| 108| 109| 110| 111| 112| 113| 114| 115| 117| 118| 119| 120| 121| 122| 124
-SPD | 120| 121| 122| 123| 124| 126| 127| 128| 129| 130| 131| 132| 135| 136| 137| 138
-SPC | 103| 105| 106| 108| 109| 110| 111| 112| 113| 114| 115| 117| 118| 119| 120| 121
-
-LVL: 53 EXP NEEDED: 8238/8799
-L53 Nidoking vs L55 Hitmonlee          >>> EXP GIVEN: 1638
-Nidoking (158/127/115/121/103) 
-Ice Beam	74-88 57.81-68.75%	(crit: 126-149 98.44-116.41%)
-	(Crit one shot prob.: 92.31%)
-Horn Drill	
-Earthquake	105-124 82.03-96.88%	(crit: 178-210 139.06-164.06%)
-Surf	74-88 57.81-68.75%	(crit: 126-149 98.44-116.41%)
-	(Crit one shot prob.: 92.31%)
-
 Hitmonlee (128/146/72/109/52): 
-Jump Kick	28-33 17.72-20.89%	(crit: 58-69 36.71-43.67%)
-	(5 shot prob.: 1.2302%)
-	(1 non-crit + 2 crits death prob.: 44.0179%)
-	(3 non-crits + 1 crit death prob.: 17.1988%)
+Jump Kick	28-33 18.06-21.29%	(crit: 60-71 38.71-45.81%)
+	(5 shot prob.: 10.0547%)
+	(1 non-crit + 2 crits death prob.: 88.7271%)
+	(3 non-crits + 1 crit death prob.: 57.5552%)
 Focus Energy	
-Hi Jump Kick	33-39 20.89-24.68%	(crit: 71-84 44.94-53.16%)
-	(2 crits death prob.: 30.6377%)
-	(2 non-crits + 1 crit death prob.: 1.6892%)
-Mega Kick	63-75 39.87-47.47%	(crit: 134-158 84.81-100.00%)
-	(Crit one shot prob.: 2.56%)
+Hi Jump Kick	34-40 21.94-25.81%	(crit: 73-86 47.10-55.48%)
+	(4 shot prob.: 0.7772%)
+	(2 crits death prob.: 73.3728%)
+	(2 non-crits + 1 crit death prob.: 31.7504%)
+Mega Kick	64-76 41.29-49.03%	(crit: 137-161 88.39-103.87%)
+	(Crit one shot prob.: 25.64%)
 
-LVL: 53 EXP NEEDED: 6600/8799
-L53 Nidoking vs L56 Onix          >>> EXP GIVEN: 1296
-Nidoking (158/127/115/121/103) 
-Ice Beam	165-194 144.74-170.18%	(crit: 280-330 245.61-289.47%)
+LVL: 52 EXP NEEDED: 5240/8448
+L52 Nidoking vs L56 Onix          >>> EXP GIVEN: 1296
+Nidoking (155/122/113/114/102) 
+Ice Beam	156-184 136.84-161.40%	(crit: 272-320 238.60-280.70%)
 Horn Drill	
-Earthquake	81-96 71.05-84.21%	(crit: 134-158 117.54-138.60%)
-Surf	330-388 289.47-340.35%	(crit: 561-660 492.11-578.95%)
+Earthquake	73-86 64.04-75.44%	(crit: 127-150 111.40-131.58%)
+Surf	313-368 274.56-322.81%	(crit: 544-640 477.19-561.40%)
 
 Onix (114/65/193/92/47): 
-Rock Throw	9-11 5.70-6.96%	(crit: 19-23 12.03-14.56%)
-	(7 crits death prob.: 0.0000%)
-	(8 crits death prob.: 99.8671%)
+Rock Throw	9-11 5.81-7.10%	(crit: 19-23 12.26-14.84%)
+	(7 crits death prob.: 0.0301%)
+	(8 crits death prob.: 99.9987%)
 	(4 non-crits + 5 crits death prob.: 0.0000%)
-	(5 non-crits + 5 crits death prob.: 2.0531%)
-Rage	5-7 3.16-4.43%	(crit: 11-13 6.96-8.23%)
-Slam	19-23 12.03-14.56%	(crit: 40-48 25.32-30.38%)
-	(7 shot prob.: 0.0000%)
-	(8 shot prob.: 99.8671%)
-	(1 non-crit + 3 crits death prob.: 10.6046%)
-	(3 non-crits + 2 crits death prob.: 1.8191%)
-	(4 non-crits + 2 crits death prob.: 99.9996%)
-	(5 non-crits + 1 crit death prob.: 0.0407%)
+	(5 non-crits + 5 crits death prob.: 19.3916%)
+Rage	5-7 3.23-4.52%	(crit: 11-13 7.10-8.39%)
+Slam	20-24 12.90-15.48%	(crit: 41-49 26.45-31.61%)
+	(7 shot prob.: 18.6126%)
+	(1 non-crit + 3 crits death prob.: 66.9169%)
+	(3 non-crits + 2 crits death prob.: 53.3239%)
+	(5 non-crits + 1 crit death prob.: 36.7624%)
 Harden	
 
-LVL: 53 EXP NEEDED: 5304/8799
-L53 Nidoking vs L58 Machamp          >>> EXP GIVEN: 2398
-Nidoking (158/127/115/121/103) 
-Ice Beam	44-52 24.31-28.73%	(crit: 74-88 40.88-48.62%)
-	(4 shot prob.: 98.7723%)
-	(2 non-crits + 1 crit death prob.: 21.0725%)
+LVL: 52 EXP NEEDED: 3944/8448
+L52 Nidoking vs L58 Machamp          >>> EXP GIVEN: 2398
+Nidoking (155/122/113/114/102) 
+Ice Beam	41-49 22.65-27.07%	(crit: 72-85 39.78-46.96%)
+	(4 shot prob.: 41.1120%)
+	(2 non-crits + 1 crit death prob.: 0.1382%)
 Horn Drill	
-Earthquake	71-84 39.23-46.41%	(crit: 119-141 65.75-77.90%)
-Surf	44-52 24.31-28.73%	(crit: 74-88 40.88-48.62%)
-	(4 shot prob.: 98.7723%)
-	(2 non-crits + 1 crit death prob.: 21.0725%)
+Earthquake	66-78 36.46-43.09%	(crit: 113-133 62.43-73.48%)
+	(1 non-crit + 1 crit death prob.: 98.8166%)
+Surf	41-49 22.65-27.07%	(crit: 72-85 39.78-46.96%)
+	(4 shot prob.: 41.1120%)
+	(2 non-crits + 1 crit death prob.: 0.1382%)
 
 Machamp (181/166/107/78/89): 
 Leer	
 Focus Energy	
 Fissure	
-Submission	37-44 23.42-27.85%	(crit: 79-93 50.00-58.86%)
-	(4 shot prob.: 79.1911%)
-	(2 non-crits + 1 crit death prob.: 95.8816%)
+Submission	38-45 24.52-29.03%	(crit: 81-96 52.26-61.94%)
+	(4 shot prob.: 99.7068%)
 
-LVL: 53 EXP NEEDED: 2906/8799
-L53 Nidoking
+LVL: 52 EXP NEEDED: 1546/8448
+L52 Nidoking
 Stat ranges WITH badge boosts:
 IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
 ------------------------------------------------------------------------------------
-HP  | 157| 158| 159| 160| 161| 162| 163| 164| 165| 166| 167| 169| 170| 171| 172| 173
-ATK | 127| 128| 129| 130| 131| 132| 135| 136| 137| 138| 139| 140| 141| 142| 144| 145
-DEF | 106| 108| 109| 110| 111| 112| 113| 114| 115| 117| 118| 119| 120| 121| 122| 124
-SPD | 120| 121| 122| 123| 124| 126| 127| 128| 129| 130| 131| 132| 135| 136| 137| 138
-SPC | 103| 105| 106| 108| 109| 110| 111| 112| 113| 114| 115| 117| 118| 119| 120| 121
+HP  | 154| 155| 156| 157| 158| 159| 160| 161| 162| 163| 164| 166| 167| 168| 169| 170
+ATK | 122| 123| 124| 126| 127| 128| 129| 130| 131| 132| 133| 135| 136| 137| 138| 139
+DEF | 104| 105| 106| 108| 109| 110| 111| 112| 113| 114| 115| 117| 118| 119| 120| 122
+SPD | 113| 114| 115| 117| 118| 119| 120| 121| 122| 123| 124| 126| 127| 128| 129| 130
+SPC | 102| 103| 104| 105| 106| 108| 109| 110| 111| 112| 113| 114| 115| 117| 118| 119
 
-LVL: 53 EXP NEEDED: 2906/8799
+LVL: 52 EXP NEEDED: 1546/8448
 AGATHA (0x3A516: L56 Gengar, L56 Golbat, L55 Haunter, L58 Arbok, L60 Gengar, ) Prize 5940
-L53 Nidoking vs L56 Gengar          >>> EXP GIVEN: 2280
-Nidoking (158/127/115/121/103) 
-Ice Beam	25-30 17.61-21.13%	(crit: 42-50 29.58-35.21%)
-	(5 shot prob.: 4.5889%)
-	(3 crits death prob.: 15.5347%)
-	(2 non-crits + 2 crits death prob.: 88.7329%)
+L52 Nidoking vs L56 Gengar          >>> EXP GIVEN: 2280
+Nidoking (155/122/113/114/102) 
+Ice Beam	23-28 16.20-19.72%	(crit: 40-48 28.17-33.80%)
+	(6 shot prob.: 99.9949%)
+	(3 crits death prob.: 0.1787%)
+	(2 non-crits + 2 crits death prob.: 22.3692%)
+	(4 non-crits + 1 crit death prob.: 89.0534%)
 Horn Drill	
-Earthquake	188-222 132.39-156.34%	(crit: 316-372 222.54-261.97%)
-Surf	25-30 17.61-21.13%	(crit: 42-50 29.58-35.21%)
-	(5 shot prob.: 4.5889%)
-	(3 crits death prob.: 15.5347%)
-	(2 non-crits + 2 crits death prob.: 88.7329%)
+Earthquake	173-204 121.83-143.66%	(crit: 297-350 209.15-246.48%)
+Surf	23-28 16.20-19.72%	(crit: 40-48 28.17-33.80%)
+	(6 shot prob.: 99.9949%)
+	(3 crits death prob.: 0.1787%)
+	(2 non-crits + 2 crits death prob.: 22.3692%)
+	(4 non-crits + 1 crit death prob.: 89.0534%)
 
 Ice Beam
           NON-CRITS
-             25:  10.26%      26:  23.08%      27:  20.51%      28:  23.08%      29:  20.51%      30:   2.56%     
+             23:   5.13%      24:  23.08%      25:  23.08%      26:  23.08%      27:  23.08%      28:   2.56%     
 
           CRITS
-             42:   7.69%      43:  12.82%      44:  12.82%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%      49:  12.82%      50:   2.56%     
+             40:   2.56%      41:  15.38%      42:  12.82%      43:  12.82%      44:  15.38%      45:  12.82%      46:  12.82%      47:  12.82%      48:   2.56%     
 
 Earthquake
           NON-CRITS
@@ -1565,16 +1558,16 @@ Earthquake
 
 Surf
           NON-CRITS
-             25:  10.26%      26:  23.08%      27:  20.51%      28:  23.08%      29:  20.51%      30:   2.56%     
+             23:   5.13%      24:  23.08%      25:  23.08%      26:  23.08%      27:  23.08%      28:   2.56%     
 
           CRITS
-             42:   7.69%      43:  12.82%      44:  12.82%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%      49:  12.82%      50:   2.56%     
+             40:   2.56%      41:  15.38%      42:  12.82%      43:  12.82%      44:  15.38%      45:  12.82%      46:  12.82%      47:  12.82%      48:   2.56%     
 
 Gengar (142/87/81/137/159): 
 Confuse Ray	
 Night Shade	
 Hypnosis	
-Dream Eater	129-152 81.65-96.20%	(crit: 274-322 173.42-203.80%)
+Dream Eater	129-152 83.23-98.06%	(crit: 275-324 177.42-209.03%)
 
 Dream Eater
           NON-CRITS
@@ -1583,21 +1576,29 @@ Dream Eater
             149:   5.13%     150:   5.13%     151:   2.56%     152:   2.56%     
 
           CRITS
-            158: 100.00%     
+            155: 100.00%     
 
 
-(Speed DV required to outspeed: 15, to speedtie: 14)
+L53 Nidoking
+Stat ranges WITHOUT badge boosts:
+IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
+------------------------------------------------------------------------------------
+HP  | 157| 158| 159| 160| 161| 162| 163| 164| 165| 166| 167| 169| 170| 171| 172| 173
+ATK | 111| 112| 113| 114| 115| 116| 117| 118| 120| 121| 122| 123| 124| 125| 126| 127
+DEF |  95|  96|  97|  98|  99| 100| 101| 103| 104| 105| 106| 107| 108| 109| 110| 111
+SPD | 103| 104| 105| 106| 107| 108| 109| 111| 112| 113| 114| 115| 116| 117| 118| 119
+SPC |  93|  94|  95|  96|  97|  98|  99| 100| 101| 103| 104| 105| 106| 107| 108| 109
 
-LVL: 53 EXP NEEDED: 626/8799
+LVL: 53 EXP NEEDED: 8065/8799
 L53 Nidoking vs L56 Golbat          >>> EXP GIVEN: 2052
-Nidoking (158/127/115/121/103) 
-Ice Beam	81-96 51.27-60.76%	(crit: 137-162 86.71-102.53%)
-	(Crit one shot prob.: 17.95%)
+Nidoking (158/124/117/117/104) 
+Ice Beam	81-96 51.27-60.76%	(crit: 139-164 87.97-103.80%)
+	(Crit one shot prob.: 25.64%)
 Horn Drill	
 Earthquake	
-Surf	40-48 25.32-30.38%	(crit: 68-81 43.04-51.27%)
-	(2 crits death prob.: 5.1940%)
-	(2 non-crits + 1 crit death prob.: 83.4100%)
+Surf	40-48 25.32-30.38%	(crit: 69-82 43.67-51.90%)
+	(2 crits death prob.: 11.3083%)
+	(2 non-crits + 1 crit death prob.: 87.8201%)
 
 Ice Beam
           NON-CRITS
@@ -1605,66 +1606,55 @@ Ice Beam
              91:   7.69%      92:   7.69%      93:   5.13%      94:   7.69%      95:   5.13%      96:   2.56%     
 
           CRITS
-            137:   2.56%     138:   2.56%     139:   5.13%     140:   2.56%     141:   5.13%     142:   5.13%     143:   2.56%     144:   5.13%     145:   2.56%     146:   5.13%     
-            147:   2.56%     148:   5.13%     149:   5.13%     150:   2.56%     151:   5.13%     152:   2.56%     153:   5.13%     154:   2.56%     155:   5.13%     156:   5.13%     
-            157:   2.56%     
+            139:   2.56%     140:   5.13%     141:   2.56%     142:   5.13%     143:   2.56%     144:   5.13%     145:   5.13%     146:   2.56%     147:   5.13%     148:   2.56%     
+            149:   5.13%     150:   2.56%     151:   5.13%     152:   2.56%     153:   5.13%     154:   5.13%     155:   2.56%     156:   5.13%     157:   2.56%     
 
-            158:  17.95%     
+            158:  25.64%     
 
 Surf
           NON-CRITS
              40:   2.56%      41:  15.38%      42:  12.82%      43:  12.82%      44:  15.38%      45:  12.82%      46:  12.82%      47:  12.82%      48:   2.56%     
 
           CRITS
-             68:   2.56%      69:   7.69%      70:   7.69%      71:   7.69%      72:   7.69%      73:   7.69%      74:  10.26%      75:   7.69%      76:   7.69%      77:   7.69%     
-             78:   7.69%      79:   7.69%      80:   7.69%      81:   2.56%     
+             69:   2.56%      70:   7.69%      71:   7.69%      72:  10.26%      73:   7.69%      74:   7.69%      75:   7.69%      76:   7.69%      77:   7.69%      78:   7.69%     
+             79:   7.69%      80:   7.69%      81:   7.69%      82:   2.56%     
 
 Golbat (158/104/92/114/97): 
 Supersonic	
 Confuse Ray	
-Wing Attack	21-25 13.29-15.82%	(crit: 43-51 27.22-32.28%)
-	(7 shot prob.: 62.5838%)
-	(1 non-crit + 3 crits death prob.: 90.7014%)
-	(3 non-crits + 2 crits death prob.: 84.8971%)
-	(5 non-crits + 1 crit death prob.: 75.9693%)
+Wing Attack	20-24 12.66-15.19%	(crit: 43-51 27.22-32.28%)
+	(7 shot prob.: 2.5685%)
+	(1 non-crit + 3 crits death prob.: 86.2075%)
+	(3 non-crits + 2 crits death prob.: 61.7780%)
+	(5 non-crits + 1 crit death prob.: 26.1368%)
 Haze	
 
 Wing Attack
           NON-CRITS
-             21:  20.51%      22:  25.64%      23:  25.64%      24:  25.64%      25:   2.56%     
+             20:  17.95%      21:  25.64%      22:  28.21%      23:  25.64%      24:   2.56%     
 
           CRITS
              43:   7.69%      44:  12.82%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%      49:  12.82%      50:  12.82%      51:   2.56%     
 
 
-L54 Nidoking
-Stat ranges WITHOUT badge boosts:
-IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
-------------------------------------------------------------------------------------
-HP  | 160| 161| 162| 163| 164| 165| 166| 167| 168| 169| 170| 172| 173| 174| 175| 176
-ATK | 115| 116| 117| 118| 120| 121| 122| 123| 124| 125| 126| 127| 128| 129| 130| 131
-DEF |  97|  98|  99| 100| 101| 102| 103| 104| 105| 107| 108| 109| 110| 111| 112| 113
-SPD | 109| 110| 111| 113| 114| 115| 116| 117| 118| 119| 120| 121| 122| 123| 124| 125
-SPC |  95|  96|  97|  98|  99| 100| 101| 102| 103| 104| 105| 107| 108| 109| 110| 111
-
-LVL: 54 EXP NEEDED: 7733/9159
-L54 Nidoking vs L55 Haunter          >>> EXP GIVEN: 1485
-Nidoking (161/129/118/123/106) 
-Ice Beam	29-35 23.58-28.46%	(crit: 51-60 41.46-48.78%)
-	(4 shot prob.: 94.6277%)
-	(2 non-crits + 1 crit death prob.: 15.9881%)
+LVL: 53 EXP NEEDED: 6013/8799
+L53 Nidoking vs L55 Haunter          >>> EXP GIVEN: 1485
+Nidoking (158/124/117/117/104) 
+Ice Beam	28-34 22.76-27.64%	(crit: 48-57 39.02-46.34%)
+	(4 shot prob.: 68.4424%)
+	(2 non-crits + 1 crit death prob.: 0.2428%)
 Horn Drill	
-Earthquake	245-288 199.19-234.15%	(crit: 423-498 343.90-404.88%)
-Surf	29-35 23.58-28.46%	(crit: 51-60 41.46-48.78%)
-	(4 shot prob.: 94.6277%)
-	(2 non-crits + 1 crit death prob.: 15.9881%)
+Earthquake	234-276 190.24-224.39%	(crit: 399-470 324.39-382.11%)
+Surf	28-34 22.76-27.64%	(crit: 48-57 39.02-46.34%)
+	(4 shot prob.: 68.4424%)
+	(2 non-crits + 1 crit death prob.: 0.2428%)
 
 Ice Beam
           NON-CRITS
-             29:   5.13%      30:  17.95%      31:  20.51%      32:  17.95%      33:  17.95%      34:  17.95%      35:   2.56%     
+             28:   2.56%      29:  17.95%      30:  20.51%      31:  17.95%      32:  20.51%      33:  17.95%      34:   2.56%     
 
           CRITS
-             51:  10.26%      52:  12.82%      53:  10.26%      54:  10.26%      55:  10.26%      56:  12.82%      57:  10.26%      58:  10.26%      59:  10.26%      60:   2.56%     
+             48:   7.69%      49:  10.26%      50:  12.82%      51:  10.26%      52:  12.82%      53:  10.26%      54:  12.82%      55:  10.26%      56:  10.26%      57:   2.56%     
 
 Earthquake
           NON-CRITS
@@ -1675,46 +1665,46 @@ Earthquake
 
 Surf
           NON-CRITS
-             29:   5.13%      30:  17.95%      31:  20.51%      32:  17.95%      33:  17.95%      34:  17.95%      35:   2.56%     
+             28:   2.56%      29:  17.95%      30:  20.51%      31:  17.95%      32:  20.51%      33:  17.95%      34:   2.56%     
 
           CRITS
-             51:  10.26%      52:  12.82%      53:  10.26%      54:  10.26%      55:  10.26%      56:  12.82%      57:  10.26%      58:  10.26%      59:  10.26%      60:   2.56%     
+             48:   7.69%      49:  10.26%      50:  12.82%      51:  10.26%      52:  12.82%      53:  10.26%      54:  12.82%      55:  10.26%      56:  10.26%      57:   2.56%     
 
 Haunter (123/69/63/118/140): 
 Confuse Ray	
 Night Shade	
 Hypnosis	
-Dream Eater	110-130 68.32-80.75%	(crit: 233-274 144.72-170.19%)
+Dream Eater	112-132 70.89-83.54%	(crit: 238-280 150.63-177.22%)
 
 Dream Eater
           NON-CRITS
-            110:   2.56%     111:   5.13%     112:   5.13%     113:   5.13%     114:   5.13%     115:   5.13%     116:   5.13%     117:   5.13%     118:   5.13%     119:   5.13%     
-            120:   5.13%     121:   5.13%     122:   5.13%     123:   5.13%     124:   5.13%     125:   5.13%     126:   5.13%     127:   5.13%     128:   5.13%     129:   2.56%     
-            130:   2.56%     
+            112:   5.13%     113:   5.13%     114:   5.13%     115:   5.13%     116:   5.13%     117:   2.56%     118:   5.13%     119:   5.13%     120:   5.13%     121:   5.13%     
+            122:   5.13%     123:   5.13%     124:   5.13%     125:   5.13%     126:   5.13%     127:   5.13%     128:   5.13%     129:   5.13%     130:   5.13%     131:   2.56%     
+            132:   2.56%     
 
           CRITS
-            161: 100.00%     
+            158: 100.00%     
 
 
-LVL: 54 EXP NEEDED: 6248/9159
-L54 Nidoking vs L58 Arbok          >>> EXP GIVEN: 1827
-Nidoking (161/129/118/123/106) 
-Ice Beam	45-54 30.82-36.99%	(crit: 79-93 54.11-63.70%)
-	(3 shot prob.: 75.2693%)
-	(1 non-crit + 1 crit death prob.: 0.4602%)
+(Speed DV required to outspeed: 3, to speedtie: 2)
+
+LVL: 53 EXP NEEDED: 4528/8799
+L53 Nidoking vs L58 Arbok          >>> EXP GIVEN: 1827
+Nidoking (158/124/117/117/104) 
+Ice Beam	45-53 30.82-36.30%	(crit: 75-89 51.37-60.96%)
+	(3 shot prob.: 51.7709%)
 Horn Drill	
-Earthquake	165-194 113.01-132.88%	(crit: 285-336 195.21-230.14%)
-Surf	45-54 30.82-36.99%	(crit: 79-93 54.11-63.70%)
-	(3 shot prob.: 75.2693%)
-	(1 non-crit + 1 crit death prob.: 0.4602%)
+Earthquake	158-186 108.22-127.40%	(crit: 267-314 182.88-215.07%)
+Surf	45-53 30.82-36.30%	(crit: 75-89 51.37-60.96%)
+	(3 shot prob.: 51.7709%)
 
 Ice Beam
           NON-CRITS
-             45:   2.56%      46:  10.26%      47:  12.82%      48:  12.82%      49:  12.82%      50:  10.26%      51:  12.82%      52:  12.82%      53:  10.26%      54:   2.56%     
+             45:  12.82%      46:  12.82%      47:  10.26%      48:  12.82%      49:  12.82%      50:  12.82%      51:  12.82%      52:  10.26%      53:   2.56%     
 
           CRITS
-             79:   7.69%      80:   7.69%      81:   5.13%      82:   7.69%      83:   7.69%      84:   7.69%      85:   5.13%      86:   7.69%      87:   7.69%      88:   7.69%     
-             89:   5.13%      90:   7.69%      91:   7.69%      92:   5.13%      93:   2.56%     
+             75:   2.56%      76:   7.69%      77:   7.69%      78:   7.69%      79:   7.69%      80:   7.69%      81:   5.13%      82:   7.69%      83:   7.69%      84:   7.69%     
+             85:   7.69%      86:   7.69%      87:   7.69%      88:   5.13%      89:   2.56%     
 
 Earthquake
           NON-CRITS
@@ -1725,28 +1715,29 @@ Earthquake
 
 Surf
           NON-CRITS
-             45:   2.56%      46:  10.26%      47:  12.82%      48:  12.82%      49:  12.82%      50:  10.26%      51:  12.82%      52:  12.82%      53:  10.26%      54:   2.56%     
+             45:  12.82%      46:  12.82%      47:  10.26%      48:  12.82%      49:  12.82%      50:  12.82%      51:  12.82%      52:  10.26%      53:   2.56%     
 
           CRITS
-             79:   7.69%      80:   7.69%      81:   5.13%      82:   7.69%      83:   7.69%      84:   7.69%      85:   5.13%      86:   7.69%      87:   7.69%      88:   7.69%     
-             89:   5.13%      90:   7.69%      91:   7.69%      92:   5.13%      93:   2.56%     
+             75:   2.56%      76:   7.69%      77:   7.69%      78:   7.69%      79:   7.69%      80:   7.69%      81:   5.13%      82:   7.69%      83:   7.69%      84:   7.69%     
+             85:   7.69%      86:   7.69%      87:   7.69%      88:   5.13%      89:   2.56%     
 
 Arbok (146/114/94/107/89): 
-Bite	25-30 15.53-18.63%	(crit: 54-64 33.54-39.75%)
-	(6 shot prob.: 82.8504%)
-	(2 non-crits + 2 crits death prob.: 99.7904%)
-	(4 non-crits + 1 crit death prob.: 97.0319%)
+Bite	26-31 16.46-19.62%	(crit: 55-65 34.81-41.14%)
+	(6 shot prob.: 99.9881%)
+	(1 non-crit + 2 crits death prob.: 0.5260%)
+	(3 non-crits + 1 crit death prob.: 0.0000%)
 Glare	
 Screech	
-Acid	5-7 3.11-4.35%	(crit: 13-16 8.07-9.94%)
+Acid	5-7 3.16-4.43%	(crit: 13-16 8.23-10.13%)
+	(10 crits death prob.: 0.0000%)
 
 Bite
           NON-CRITS
-             25:  10.26%      26:  23.08%      27:  20.51%      28:  23.08%      29:  20.51%      30:   2.56%     
+             26:  15.38%      27:  20.51%      28:  20.51%      29:  20.51%      30:  20.51%      31:   2.56%     
 
           CRITS
-             54:   7.69%      55:  10.26%      56:  10.26%      57:  10.26%      58:  10.26%      59:  10.26%      60:  10.26%      61:  10.26%      62:  10.26%      63:   7.69%     
-             64:   2.56%     
+             55:   7.69%      56:  10.26%      57:  10.26%      58:  10.26%      59:  10.26%      60:  10.26%      61:  10.26%      62:  10.26%      63:  10.26%      64:   7.69%     
+             65:   2.56%     
 
 Acid
           NON-CRITS
@@ -1756,28 +1747,28 @@ Acid
              13:  17.95%      14:  41.03%      15:  38.46%      16:   2.56%     
 
 
-LVL: 54 EXP NEEDED: 4421/9159
-L54 Nidoking vs L60 Gengar          >>> EXP GIVEN: 2442
-Nidoking (161/129/118/123/106) 
-Ice Beam	24-29 15.89-19.21%	(crit: 41-49 27.15-32.45%)
-	(6 shot prob.: 99.1688%)
-	(1 non-crit + 3 crits death prob.: 99.7618%)
-	(2 non-crits + 2 crits death prob.: 0.9721%)
-	(4 non-crits + 1 crit death prob.: 46.6533%)
+LVL: 53 EXP NEEDED: 2701/8799
+L53 Nidoking vs L60 Gengar          >>> EXP GIVEN: 2442
+Nidoking (158/124/117/117/104) 
+Ice Beam	23-28 15.23-18.54%	(crit: 39-47 25.83-31.13%)
+	(6 shot prob.: 74.7977%)
+	(1 non-crit + 3 crits death prob.: 83.9303%)
+	(3 non-crits + 2 crits death prob.: 99.9843%)
+	(4 non-crits + 1 crit death prob.: 3.9908%)
 Horn Drill	
-Earthquake	180-212 119.21-140.40%	(crit: 311-366 205.96-242.38%)
-Surf	24-29 15.89-19.21%	(crit: 41-49 27.15-32.45%)
-	(6 shot prob.: 99.1688%)
-	(1 non-crit + 3 crits death prob.: 99.7618%)
-	(2 non-crits + 2 crits death prob.: 0.9721%)
-	(4 non-crits + 1 crit death prob.: 46.6533%)
+Earthquake	173-204 114.57-135.10%	(crit: 292-344 193.38-227.81%)
+Surf	23-28 15.23-18.54%	(crit: 39-47 25.83-31.13%)
+	(6 shot prob.: 74.7977%)
+	(1 non-crit + 3 crits death prob.: 83.9303%)
+	(3 non-crits + 2 crits death prob.: 99.9843%)
+	(4 non-crits + 1 crit death prob.: 3.9908%)
 
 Ice Beam
           NON-CRITS
-             24:   7.69%      25:  23.08%      26:  23.08%      27:  23.08%      28:  20.51%      29:   2.56%     
+             23:   5.13%      24:  23.08%      25:  23.08%      26:  23.08%      27:  23.08%      28:   2.56%     
 
           CRITS
-             41:   5.13%      42:  12.82%      43:  12.82%      44:  15.38%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%      49:   2.56%     
+             39:   2.56%      40:  12.82%      41:  12.82%      42:  15.38%      43:  12.82%      44:  15.38%      45:  12.82%      46:  12.82%      47:   2.56%     
 
 Earthquake
           NON-CRITS
@@ -1788,48 +1779,46 @@ Earthquake
 
 Surf
           NON-CRITS
-             24:   7.69%      25:  23.08%      26:  23.08%      27:  23.08%      28:  20.51%      29:   2.56%     
+             23:   5.13%      24:  23.08%      25:  23.08%      26:  23.08%      27:  23.08%      28:   2.56%     
 
           CRITS
-             41:   5.13%      42:  12.82%      43:  12.82%      44:  15.38%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%      49:   2.56%     
+             39:   2.56%      40:  12.82%      41:  12.82%      42:  15.38%      43:  12.82%      44:  15.38%      45:  12.82%      46:  12.82%      47:   2.56%     
 
 Gengar (151/93/86/146/170): 
 Confuse Ray	
 Night Shade	
 Toxic	
-Dream Eater	144-170 89.44-105.59%	(crit: 306-360 190.06-223.60%)
-	(One shot prob.: 35.90%)
+Dream Eater	148-174 93.67-110.13%	(crit: 313-368 198.10-232.91%)
+	(One shot prob.: 61.54%)
 
 Dream Eater
           NON-CRITS
-            144:   2.56%     145:   2.56%     146:   5.13%     147:   2.56%     148:   5.13%     149:   2.56%     150:   5.13%     151:   2.56%     152:   5.13%     153:   2.56%     
-            154:   5.13%     155:   2.56%     156:   5.13%     157:   2.56%     158:   5.13%     159:   2.56%     160:   5.13%     
+            148:   5.13%     149:   2.56%     150:   5.13%     151:   2.56%     152:   5.13%     153:   2.56%     154:   5.13%     155:   2.56%     156:   5.13%     157:   2.56%     
 
-            161:  35.90%     
+            158:  61.54%     
 
           CRITS
-            161: 100.00%     
+            158: 100.00%     
 
 
-LVL: 54 EXP NEEDED: 1979/9159
+LVL: 53 EXP NEEDED: 259/8799
 LANCE (0x3A522: L58 Gyarados, L56 Dragonair, L56 Dragonair, L60 Aerodactyl, L62 Dragonite, ) Prize 6138
-L54 Nidoking vs L58 Gyarados          >>> EXP GIVEN: 2659
-Nidoking (161/129/118/123/106) +[0/0/0/2] +<2/2/2/0> -> (161/163/148/155/213) 
-Ice Beam	61-72 32.62-38.50%	(crit: 54-64 28.88-34.22%)
+L53 Nidoking vs L58 Gyarados          >>> EXP GIVEN: 2659
+Nidoking (158/124/117/117/104) +[0/0/0/2] +<2/2/2/0> -> (158/156/147/147/209) 
+Ice Beam	61-72 32.62-38.50%	(crit: 51-60 27.27-32.09%)
 	(3 shot prob.: 98.7390%)
-	(3 crits death prob.: 1.4026%)
-	(1 non-crit + 2 crits death prob.: 28.5271%)
-	(2 non-crits + 1 crit death prob.: 78.6460%)
+	(1 non-crit + 2 crits death prob.: 1.7431%)
+	(2 non-crits + 1 crit death prob.: 56.1877%)
 Horn Drill	
 Earthquake	
-Surf	30-36 16.04-19.25%	(crit: 27-32 14.44-17.11%)
+Surf	30-36 16.04-19.25%	(crit: 25-30 13.37-16.04%)
 	(6 shot prob.: 99.6747%)
-	(6 crits death prob.: 0.0111%)
-	(1 non-crit + 5 crits death prob.: 0.9937%)
-	(2 non-crits + 4 crits death prob.: 11.4166%)
-	(3 non-crits + 3 crits death prob.: 42.4729%)
-	(4 non-crits + 2 crits death prob.: 78.0512%)
-	(5 non-crits + 1 crit death prob.: 95.8034%)
+	(7 crits death prob.: 89.1870%)
+	(2 non-crits + 4 crits death prob.: 0.0153%)
+	(2 non-crits + 5 crits death prob.: 99.9999%)
+	(3 non-crits + 3 crits death prob.: 4.8122%)
+	(4 non-crits + 2 crits death prob.: 44.4411%)
+	(5 non-crits + 1 crit death prob.: 89.7739%)
 
 Ice Beam
           NON-CRITS
@@ -1837,35 +1826,288 @@ Ice Beam
              71:   7.69%      72:   2.56%     
 
           CRITS
-             54:   7.69%      55:  10.26%      56:  10.26%      57:  10.26%      58:  10.26%      59:  10.26%      60:  10.26%      61:  10.26%      62:  10.26%      63:   7.69%     
-             64:   2.56%     
+             51:  10.26%      52:  12.82%      53:  10.26%      54:  10.26%      55:  10.26%      56:  12.82%      57:  10.26%      58:  10.26%      59:  10.26%      60:   2.56%     
 
 Surf
           NON-CRITS
              30:   7.69%      31:  17.95%      32:  17.95%      33:  17.95%      34:  17.95%      35:  17.95%      36:   2.56%     
 
           CRITS
-             27:  17.95%      28:  20.51%      29:  20.51%      30:  20.51%      31:  17.95%      32:   2.56%     
+             25:  10.26%      26:  23.08%      27:  20.51%      28:  23.08%      29:  20.51%      30:   2.56%     
 
 Gyarados (187/160/105/108/130): 
 Dragon Rage	
 Leer	
-Hydro Pump	97-114 60.25-70.81%	(crit: 405-476 251.55-295.65%)
-Hyper Beam	70-83 43.48-51.55%	(crit: 188-221 116.77-137.27%)
-	(2 shot prob.: 7.9553%)
+Hydro Pump	98-116 62.03-73.42%	(crit: 415-488 262.66-308.86%)
+Hyper Beam	70-83 44.30-52.53%	(crit: 189-223 119.62-141.14%)
+	(2 shot prob.: 19.7896%)
 
 Hydro Pump
           NON-CRITS
-             97:   7.69%      98:   5.13%      99:   5.13%     100:   5.13%     101:   7.69%     102:   5.13%     103:   5.13%     104:   5.13%     105:   7.69%     106:   5.13%     
-            107:   5.13%     108:   5.13%     109:   7.69%     110:   5.13%     111:   5.13%     112:   5.13%     113:   5.13%     114:   2.56%     
+             98:   2.56%      99:   5.13%     100:   7.69%     101:   5.13%     102:   5.13%     103:   5.13%     104:   5.13%     105:   7.69%     106:   5.13%     107:   5.13%     
+            108:   5.13%     109:   5.13%     110:   7.69%     111:   5.13%     112:   5.13%     113:   5.13%     114:   5.13%     115:   5.13%     116:   2.56%     
 
           CRITS
-            161: 100.00%     
+            158: 100.00%     
 
 Hyper Beam
           NON-CRITS
              70:   5.13%      71:   7.69%      72:   7.69%      73:   7.69%      74:   7.69%      75:   7.69%      76:   7.69%      77:   7.69%      78:   7.69%      79:   7.69%     
              80:   7.69%      81:   7.69%      82:   7.69%      83:   2.56%     
+
+          CRITS
+            158: 100.00%     
+
+
+L54 Nidoking
+Stat ranges WITHOUT badge boosts:
+IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
+------------------------------------------------------------------------------------
+HP  | 160| 161| 162| 163| 164| 166| 167| 168| 169| 170| 171| 172| 173| 174| 175| 176
+ATK | 114| 115| 116| 117| 118| 119| 120| 121| 122| 123| 124| 125| 127| 128| 129| 130
+DEF |  97|  98|  99| 100| 101| 102| 103| 104| 105| 107| 108| 109| 110| 111| 112| 113
+SPD | 105| 107| 108| 109| 110| 111| 112| 113| 114| 115| 116| 117| 118| 120| 121| 122
+SPC |  95|  96|  97|  98| 100| 101| 102| 103| 104| 105| 106| 107| 108| 109| 110| 111
+
+LVL: 54 EXP NEEDED: 6759/9159
+L54 Nidoking vs L56 Dragonair          >>> EXP GIVEN: 1728
+Nidoking (161/128/118/120/106) +[0/0/0/2] +<2/2/2/0> -> (161/162/148/151/213) 
+Ice Beam	175-206 122.38-144.06%	(crit: 153-180 106.99-125.87%)
+Horn Drill	
+Earthquake	112-132 78.32-92.31%	(crit: 154-181 107.69-126.57%)
+Surf	43-51 30.07-35.66%	(crit: 38-45 26.57-31.47%)
+	(3 shot prob.: 30.4624%)
+	(2 non-crits + 1 crit death prob.: 1.8004%)
+
+Ice Beam
+          NON-CRITS
+            143: 100.00%     
+
+          CRITS
+            143: 100.00%     
+
+Earthquake
+          NON-CRITS
+            112:   5.13%     113:   5.13%     114:   5.13%     115:   5.13%     116:   5.13%     117:   2.56%     118:   5.13%     119:   5.13%     120:   5.13%     121:   5.13%     
+            122:   5.13%     123:   5.13%     124:   5.13%     125:   5.13%     126:   5.13%     127:   5.13%     128:   5.13%     129:   5.13%     130:   5.13%     131:   2.56%     
+            132:   2.56%     
+
+          CRITS
+            143: 100.00%     
+
+Surf
+          NON-CRITS
+             43:   7.69%      44:  12.82%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%      49:  12.82%      50:  12.82%      51:   2.56%     
+
+          CRITS
+             38:  10.26%      39:  15.38%      40:  15.38%      41:  12.82%      42:  15.38%      43:  15.38%      44:  12.82%      45:   2.56%     
+
+Dragonair (143/109/86/92/92): 
+Agility	
+Slam	25-30 15.53-18.63%	(crit: 66-78 40.99-48.45%)
+	(6 shot prob.: 82.8504%)
+	(1 non-crit + 2 crits death prob.: 98.0731%)
+	(3 non-crits + 1 crit death prob.: 4.6686%)
+Dragon Rage	
+Hyper Beam	46-55 28.57-34.16%	(crit: 123-145 76.40-90.06%)
+	(3 shot prob.: 1.1767%)
+
+Slam
+          NON-CRITS
+             25:  10.26%      26:  23.08%      27:  20.51%      28:  23.08%      29:  20.51%      30:   2.56%     
+
+          CRITS
+             66:   7.69%      67:   7.69%      68:   7.69%      69:   7.69%      70:  10.26%      71:   7.69%      72:   7.69%      73:   7.69%      74:  10.26%      75:   7.69%     
+             76:   7.69%      77:   7.69%      78:   2.56%     
+
+Hyper Beam
+          NON-CRITS
+             46:   2.56%      47:  12.82%      48:  12.82%      49:  10.26%      50:  12.82%      51:  12.82%      52:  10.26%      53:  12.82%      54:  10.26%      55:   2.56%     
+
+          CRITS
+            123:   5.13%     124:   2.56%     125:   5.13%     126:   5.13%     127:   5.13%     128:   2.56%     129:   5.13%     130:   5.13%     131:   5.13%     132:   2.56%     
+            133:   5.13%     134:   5.13%     135:   5.13%     136:   2.56%     137:   5.13%     138:   5.13%     139:   5.13%     140:   2.56%     141:   5.13%     142:   5.13%     
+            143:   5.13%     144:   2.56%     145:   2.56%     
+
+
+LVL: 54 EXP NEEDED: 5031/9159
+L54 Nidoking vs L56 Dragonair          >>> EXP GIVEN: 1728
+Nidoking (161/128/118/120/106) +[0/0/0/2] +<2/2/2/0> -> (161/162/148/151/213) 
+Ice Beam	175-206 122.38-144.06%	(crit: 153-180 106.99-125.87%)
+Horn Drill	
+Earthquake	112-132 78.32-92.31%	(crit: 154-181 107.69-126.57%)
+Surf	43-51 30.07-35.66%	(crit: 38-45 26.57-31.47%)
+	(3 shot prob.: 30.4624%)
+	(2 non-crits + 1 crit death prob.: 1.8004%)
+
+Ice Beam
+          NON-CRITS
+            143: 100.00%     
+
+          CRITS
+            143: 100.00%     
+
+Earthquake
+          NON-CRITS
+            112:   5.13%     113:   5.13%     114:   5.13%     115:   5.13%     116:   5.13%     117:   2.56%     118:   5.13%     119:   5.13%     120:   5.13%     121:   5.13%     
+            122:   5.13%     123:   5.13%     124:   5.13%     125:   5.13%     126:   5.13%     127:   5.13%     128:   5.13%     129:   5.13%     130:   5.13%     131:   2.56%     
+            132:   2.56%     
+
+          CRITS
+            143: 100.00%     
+
+Surf
+          NON-CRITS
+             43:   7.69%      44:  12.82%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%      49:  12.82%      50:  12.82%      51:   2.56%     
+
+          CRITS
+             38:  10.26%      39:  15.38%      40:  15.38%      41:  12.82%      42:  15.38%      43:  15.38%      44:  12.82%      45:   2.56%     
+
+Dragonair (143/109/86/92/92): 
+Agility	
+Slam	25-30 15.53-18.63%	(crit: 66-78 40.99-48.45%)
+	(6 shot prob.: 82.8504%)
+	(1 non-crit + 2 crits death prob.: 98.0731%)
+	(3 non-crits + 1 crit death prob.: 4.6686%)
+Dragon Rage	
+Hyper Beam	46-55 28.57-34.16%	(crit: 123-145 76.40-90.06%)
+	(3 shot prob.: 1.1767%)
+
+Slam
+          NON-CRITS
+             25:  10.26%      26:  23.08%      27:  20.51%      28:  23.08%      29:  20.51%      30:   2.56%     
+
+          CRITS
+             66:   7.69%      67:   7.69%      68:   7.69%      69:   7.69%      70:  10.26%      71:   7.69%      72:   7.69%      73:   7.69%      74:  10.26%      75:   7.69%     
+             76:   7.69%      77:   7.69%      78:   2.56%     
+
+Hyper Beam
+          NON-CRITS
+             46:   2.56%      47:  12.82%      48:  12.82%      49:  10.26%      50:  12.82%      51:  12.82%      52:  10.26%      53:  12.82%      54:  10.26%      55:   2.56%     
+
+          CRITS
+            123:   5.13%     124:   2.56%     125:   5.13%     126:   5.13%     127:   5.13%     128:   2.56%     129:   5.13%     130:   5.13%     131:   5.13%     132:   2.56%     
+            133:   5.13%     134:   5.13%     135:   5.13%     136:   2.56%     137:   5.13%     138:   5.13%     139:   5.13%     140:   2.56%     141:   5.13%     142:   5.13%     
+            143:   5.13%     144:   2.56%     145:   2.56%     
+
+
+LVL: 54 EXP NEEDED: 3303/9159
+L54 Nidoking vs L60 Aerodactyl          >>> EXP GIVEN: 2596
+Nidoking (161/128/118/120/106) +[0/0/0/2] +<2/2/2/0> -> (161/162/148/151/213) 
+Ice Beam	187-220 106.86-125.71%	(crit: 163-192 93.14-109.71%)
+	(Crit one shot prob.: 58.97%)
+Horn Drill	
+Earthquake	
+Surf	187-220 106.86-125.71%	(crit: 163-192 93.14-109.71%)
+	(Crit one shot prob.: 58.97%)
+
+Ice Beam
+          NON-CRITS
+            175: 100.00%     
+
+          CRITS
+            163:   2.56%     164:   5.13%     165:   2.56%     166:   2.56%     167:   5.13%     168:   2.56%     169:   2.56%     170:   5.13%     171:   2.56%     172:   2.56%     
+            173:   5.13%     174:   2.56%     
+
+            175:  58.97%     
+
+Surf
+          NON-CRITS
+            175: 100.00%     
+
+          CRITS
+            163:   2.56%     164:   5.13%     165:   2.56%     166:   2.56%     167:   5.13%     168:   2.56%     169:   2.56%     170:   5.13%     171:   2.56%     172:   2.56%     
+            173:   5.13%     174:   2.56%     
+
+            175:  58.97%     
+
+Aerodactyl (175/141/92/170/86): 
+Supersonic	
+Bite	26-31 16.15-19.25%	(crit: 69-82 42.86-50.93%)
+	(6 shot prob.: 99.4298%)
+	(2 crits death prob.: 3.0243%)
+	(3 non-crits + 1 crit death prob.: 45.3266%)
+Take Down	39-46 24.22-28.57%	(crit: 103-122 63.98-75.78%)
+	(4 shot prob.: 97.5365%)
+	(1 non-crit + 1 crit death prob.: 18.4747%)
+Hyper Beam	64-76 39.75-47.20%	(crit: 172-203 106.83-126.09%)
+
+Bite
+          NON-CRITS
+             26:  15.38%      27:  20.51%      28:  20.51%      29:  20.51%      30:  20.51%      31:   2.56%     
+
+          CRITS
+             69:   2.56%      70:   7.69%      71:   7.69%      72:  10.26%      73:   7.69%      74:   7.69%      75:   7.69%      76:   7.69%      77:   7.69%      78:   7.69%     
+             79:   7.69%      80:   7.69%      81:   7.69%      82:   2.56%     
+
+Take Down
+          NON-CRITS
+             39:  12.82%      40:  15.38%      41:  12.82%      42:  15.38%      43:  12.82%      44:  15.38%      45:  12.82%      46:   2.56%     
+
+          CRITS
+            103:   2.56%     104:   5.13%     105:   5.13%     106:   5.13%     107:   5.13%     108:   5.13%     109:   5.13%     110:   7.69%     111:   5.13%     112:   5.13%     
+            113:   5.13%     114:   5.13%     115:   5.13%     116:   5.13%     117:   5.13%     118:   5.13%     119:   5.13%     120:   5.13%     121:   5.13%     122:   2.56%     
+
+Hyper Beam
+          NON-CRITS
+             64:   5.13%      65:   7.69%      66:   7.69%      67:  10.26%      68:   7.69%      69:   7.69%      70:  10.26%      71:   7.69%      72:   7.69%      73:  10.26%     
+             74:   7.69%      75:   7.69%      76:   2.56%     
+
+          CRITS
+            161: 100.00%     
+
+
+(Speed DV required to outspeed: 14)
+
+LVL: 54 EXP NEEDED: 707/9159
+L54 Nidoking vs L62 Dragonite          >>> EXP GIVEN: 2895
+Nidoking (161/128/118/120/106) +[0/0/0/2] +<2/2/2/0> -> (161/162/148/151/213) 
+Ice Beam	234-276 120.62-142.27%	(crit: 204-240 105.15-123.71%)
+Horn Drill	
+Earthquake	
+Surf	28-34 14.43-17.53%	(crit: 25-30 12.89-15.46%)
+	(6 shot prob.: 2.0644%)
+	(7 crits death prob.: 24.4168%)
+	(2 non-crits + 5 crits death prob.: 90.5249%)
+	(3 non-crits + 4 crits death prob.: 98.9899%)
+	(4 non-crits + 2 crits death prob.: 0.0000%)
+	(4 non-crits + 3 crits death prob.: 99.9692%)
+	(5 non-crits + 1 crit death prob.: 0.0499%)
+	(5 non-crits + 2 crits death prob.: 99.9999%)
+
+Ice Beam
+          NON-CRITS
+            194: 100.00%     
+
+          CRITS
+            194: 100.00%     
+
+Surf
+          NON-CRITS
+             28:   2.56%      29:  17.95%      30:  20.51%      31:  17.95%      32:  20.51%      33:  17.95%      34:   2.56%     
+
+          CRITS
+             25:  10.26%      26:  23.08%      27:  20.51%      28:  23.08%      29:  20.51%      30:   2.56%     
+
+Dragonite (194/182/132/114/138): 
+Agility	
+Slam	45-53 27.95-32.92%	(crit: 121-143 75.16-88.82%)
+Barrier	
+Hyper Beam	82-97 50.93-60.25%	(crit: 227-267 140.99-165.84%)
+
+Slam
+          NON-CRITS
+             45:  12.82%      46:  12.82%      47:  10.26%      48:  12.82%      49:  12.82%      50:  12.82%      51:  12.82%      52:  10.26%      53:   2.56%     
+
+          CRITS
+            121:   2.56%     122:   5.13%     123:   5.13%     124:   2.56%     125:   5.13%     126:   5.13%     127:   5.13%     128:   5.13%     129:   2.56%     130:   5.13%     
+            131:   5.13%     132:   5.13%     133:   2.56%     134:   5.13%     135:   5.13%     136:   5.13%     137:   5.13%     138:   2.56%     139:   5.13%     140:   5.13%     
+            141:   5.13%     142:   2.56%     143:   2.56%     
+
+Hyper Beam
+          NON-CRITS
+             82:   5.13%      83:   5.13%      84:   7.69%      85:   7.69%      86:   5.13%      87:   7.69%      88:   5.13%      89:   7.69%      90:   7.69%      91:   5.13%     
+             92:   7.69%      93:   7.69%      94:   5.13%      95:   7.69%      96:   5.13%      97:   2.56%     
 
           CRITS
             161: 100.00%     
@@ -1876,301 +2118,50 @@ Stat ranges WITHOUT badge boosts:
 IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
 ------------------------------------------------------------------------------------
 HP  | 163| 164| 165| 166| 167| 168| 170| 171| 172| 173| 174| 175| 176| 177| 178| 179
-ATK | 118| 119| 120| 121| 122| 123| 124| 126| 127| 128| 129| 130| 131| 132| 133| 134
-DEF |  99| 100| 101| 102| 103| 104| 105| 106| 107| 108| 110| 111| 112| 113| 114| 115
-SPD | 111| 112| 113| 115| 116| 117| 118| 119| 120| 121| 122| 123| 124| 126| 127| 128
+ATK | 116| 117| 118| 119| 120| 121| 122| 123| 124| 126| 127| 128| 129| 130| 131| 132
+DEF |  99| 100| 101| 102| 104| 105| 106| 107| 108| 109| 110| 111| 112| 113| 115| 116
+SPD | 107| 108| 110| 111| 112| 113| 114| 115| 116| 117| 118| 119| 121| 122| 123| 124
 SPC |  97|  98|  99| 100| 101| 102| 104| 105| 106| 107| 108| 109| 110| 111| 112| 113
 
-LVL: 55 EXP NEEDED: 8844/9524
-L55 Nidoking vs L56 Dragonair          >>> EXP GIVEN: 1728
-Nidoking (164/132/120/126/109) +[0/0/0/2] +<2/2/2/0> -> (164/166/151/158/218) 
-Ice Beam	187-220 130.77-153.85%	(crit: 159-188 111.19-131.47%)
-Horn Drill	
-Earthquake	119-141 83.22-98.60%	(crit: 163-192 113.99-134.27%)
-Surf	46-55 32.17-38.46%	(crit: 39-47 27.27-32.87%)
-	(3 shot prob.: 98.3513%)
-	(1 non-crit + 2 crits death prob.: 5.9290%)
-	(2 non-crits + 1 crit death prob.: 62.0611%)
-
-Ice Beam
-          NON-CRITS
-            143: 100.00%     
-
-          CRITS
-            143: 100.00%     
-
-Earthquake
-          NON-CRITS
-            119:   2.56%     120:   2.56%     121:   5.13%     122:   5.13%     123:   5.13%     124:   5.13%     125:   2.56%     126:   5.13%     127:   5.13%     128:   5.13%     
-            129:   5.13%     130:   2.56%     131:   5.13%     132:   5.13%     133:   5.13%     134:   5.13%     135:   2.56%     136:   5.13%     137:   5.13%     138:   5.13%     
-            139:   5.13%     140:   2.56%     141:   2.56%     
-
-          CRITS
-            143: 100.00%     
-
-Surf
-          NON-CRITS
-             46:   2.56%      47:  12.82%      48:  12.82%      49:  10.26%      50:  12.82%      51:  12.82%      52:  10.26%      53:  12.82%      54:  10.26%      55:   2.56%     
-
-          CRITS
-             39:   2.56%      40:  12.82%      41:  12.82%      42:  15.38%      43:  12.82%      44:  15.38%      45:  12.82%      46:  12.82%      47:   2.56%     
-
-Dragonair (143/109/86/92/92): 
-Agility	
-Slam	24-29 14.63-17.68%	(crit: 64-76 39.02-46.34%)
-	(6 shot prob.: 4.2169%)
-	(1 non-crit + 2 crits death prob.: 68.4924%)
-	(4 non-crits + 1 crit death prob.: 99.9197%)
-Dragon Rage	
-Hyper Beam	45-53 27.44-32.32%	(crit: 120-142 73.17-86.59%)
-
-Slam
-          NON-CRITS
-             24:   7.69%      25:  23.08%      26:  23.08%      27:  23.08%      28:  20.51%      29:   2.56%     
-
-          CRITS
-             64:   5.13%      65:   7.69%      66:   7.69%      67:  10.26%      68:   7.69%      69:   7.69%      70:  10.26%      71:   7.69%      72:   7.69%      73:  10.26%     
-             74:   7.69%      75:   7.69%      76:   2.56%     
-
-Hyper Beam
-          NON-CRITS
-             45:  12.82%      46:  12.82%      47:  10.26%      48:  12.82%      49:  12.82%      50:  12.82%      51:  12.82%      52:  10.26%      53:   2.56%     
-
-          CRITS
-            120:   2.56%     121:   5.13%     122:   2.56%     123:   5.13%     124:   5.13%     125:   5.13%     126:   5.13%     127:   2.56%     128:   5.13%     129:   5.13%     
-            130:   5.13%     131:   5.13%     132:   2.56%     133:   5.13%     134:   5.13%     135:   5.13%     136:   5.13%     137:   2.56%     138:   5.13%     139:   5.13%     
-            140:   5.13%     141:   2.56%     142:   2.56%     
-
-
-LVL: 55 EXP NEEDED: 7116/9524
-L55 Nidoking vs L56 Dragonair          >>> EXP GIVEN: 1728
-Nidoking (164/132/120/126/109) +[0/0/0/2] +<2/2/2/0> -> (164/166/151/158/218) 
-Ice Beam	187-220 130.77-153.85%	(crit: 159-188 111.19-131.47%)
-Horn Drill	
-Earthquake	119-141 83.22-98.60%	(crit: 163-192 113.99-134.27%)
-Surf	46-55 32.17-38.46%	(crit: 39-47 27.27-32.87%)
-	(3 shot prob.: 98.3513%)
-	(1 non-crit + 2 crits death prob.: 5.9290%)
-	(2 non-crits + 1 crit death prob.: 62.0611%)
-
-Ice Beam
-          NON-CRITS
-            143: 100.00%     
-
-          CRITS
-            143: 100.00%     
-
-Earthquake
-          NON-CRITS
-            119:   2.56%     120:   2.56%     121:   5.13%     122:   5.13%     123:   5.13%     124:   5.13%     125:   2.56%     126:   5.13%     127:   5.13%     128:   5.13%     
-            129:   5.13%     130:   2.56%     131:   5.13%     132:   5.13%     133:   5.13%     134:   5.13%     135:   2.56%     136:   5.13%     137:   5.13%     138:   5.13%     
-            139:   5.13%     140:   2.56%     141:   2.56%     
-
-          CRITS
-            143: 100.00%     
-
-Surf
-          NON-CRITS
-             46:   2.56%      47:  12.82%      48:  12.82%      49:  10.26%      50:  12.82%      51:  12.82%      52:  10.26%      53:  12.82%      54:  10.26%      55:   2.56%     
-
-          CRITS
-             39:   2.56%      40:  12.82%      41:  12.82%      42:  15.38%      43:  12.82%      44:  15.38%      45:  12.82%      46:  12.82%      47:   2.56%     
-
-Dragonair (143/109/86/92/92): 
-Agility	
-Slam	24-29 14.63-17.68%	(crit: 64-76 39.02-46.34%)
-	(6 shot prob.: 4.2169%)
-	(1 non-crit + 2 crits death prob.: 68.4924%)
-	(4 non-crits + 1 crit death prob.: 99.9197%)
-Dragon Rage	
-Hyper Beam	45-53 27.44-32.32%	(crit: 120-142 73.17-86.59%)
-
-Slam
-          NON-CRITS
-             24:   7.69%      25:  23.08%      26:  23.08%      27:  23.08%      28:  20.51%      29:   2.56%     
-
-          CRITS
-             64:   5.13%      65:   7.69%      66:   7.69%      67:  10.26%      68:   7.69%      69:   7.69%      70:  10.26%      71:   7.69%      72:   7.69%      73:  10.26%     
-             74:   7.69%      75:   7.69%      76:   2.56%     
-
-Hyper Beam
-          NON-CRITS
-             45:  12.82%      46:  12.82%      47:  10.26%      48:  12.82%      49:  12.82%      50:  12.82%      51:  12.82%      52:  10.26%      53:   2.56%     
-
-          CRITS
-            120:   2.56%     121:   5.13%     122:   2.56%     123:   5.13%     124:   5.13%     125:   5.13%     126:   5.13%     127:   2.56%     128:   5.13%     129:   5.13%     
-            130:   5.13%     131:   5.13%     132:   2.56%     133:   5.13%     134:   5.13%     135:   5.13%     136:   5.13%     137:   2.56%     138:   5.13%     139:   5.13%     
-            140:   5.13%     141:   2.56%     142:   2.56%     
-
-
-LVL: 55 EXP NEEDED: 5388/9524
-L55 Nidoking vs L60 Aerodactyl          >>> EXP GIVEN: 2596
-Nidoking (164/132/120/126/109) +[0/0/0/2] +<2/2/2/0> -> (164/166/151/158/218) 
-Ice Beam	199-234 113.71-133.71%	(crit: 170-200 97.14-114.29%)
-	(Crit one shot prob.: 82.05%)
-Horn Drill	
-Earthquake	
-Surf	199-234 113.71-133.71%	(crit: 170-200 97.14-114.29%)
-	(Crit one shot prob.: 82.05%)
-
-Ice Beam
-          NON-CRITS
-            175: 100.00%     
-
-          CRITS
-            170:   5.13%     171:   2.56%     172:   2.56%     173:   2.56%     174:   5.13%     
-
-            175:  82.05%     
-
-Surf
-          NON-CRITS
-            175: 100.00%     
-
-          CRITS
-            170:   5.13%     171:   2.56%     172:   2.56%     173:   2.56%     174:   5.13%     
-
-            175:  82.05%     
-
-Aerodactyl (175/141/92/170/86): 
-Supersonic	
-Bite	26-31 15.85-18.90%	(crit: 68-81 41.46-49.39%)
-	(6 shot prob.: 94.4156%)
-	(1 non-crit + 2 crits death prob.: 99.9157%)
-	(3 non-crits + 1 crit death prob.: 16.9889%)
-Take Down	38-45 23.17-27.44%	(crit: 102-120 62.20-73.17%)
-	(4 shot prob.: 61.5437%)
-	(1 non-crit + 1 crit death prob.: 0.5260%)
-Hyper Beam	62-74 37.80-45.12%	(crit: 169-199 103.05-121.34%)
-
-Bite
-          NON-CRITS
-             26:  15.38%      27:  20.51%      28:  20.51%      29:  20.51%      30:  20.51%      31:   2.56%     
-
-          CRITS
-             68:   2.56%      69:   7.69%      70:   7.69%      71:   7.69%      72:   7.69%      73:   7.69%      74:  10.26%      75:   7.69%      76:   7.69%      77:   7.69%     
-             78:   7.69%      79:   7.69%      80:   7.69%      81:   2.56%     
-
-Take Down
-          NON-CRITS
-             38:  10.26%      39:  15.38%      40:  15.38%      41:  12.82%      42:  15.38%      43:  15.38%      44:  12.82%      45:   2.56%     
-
-          CRITS
-            102:   5.13%     103:   5.13%     104:   7.69%     105:   5.13%     106:   5.13%     107:   5.13%     108:   5.13%     109:   5.13%     110:   5.13%     111:   5.13%     
-            112:   7.69%     113:   5.13%     114:   5.13%     115:   5.13%     116:   5.13%     117:   5.13%     118:   5.13%     119:   5.13%     120:   2.56%     
-
-Hyper Beam
-          NON-CRITS
-             62:   2.56%      63:   7.69%      64:   7.69%      65:  10.26%      66:   7.69%      67:  10.26%      68:   7.69%      69:  10.26%      70:   7.69%      71:  10.26%     
-             72:   7.69%      73:   7.69%      74:   2.56%     
-
-          CRITS
-            164: 100.00%     
-
-
-(Speed DV required to outspeed: 9)
-
-LVL: 55 EXP NEEDED: 2792/9524
-L55 Nidoking vs L62 Dragonite          >>> EXP GIVEN: 2895
-Nidoking (164/132/120/126/109) +[0/0/0/2] +<2/2/2/0> -> (164/166/151/158/218) 
-Ice Beam	251-296 129.38-152.58%	(crit: 214-252 110.31-129.90%)
-Horn Drill	
-Earthquake	
-Surf	31-37 15.98-19.07%	(crit: 26-31 13.40-15.98%)
-	(6 shot prob.: 98.6250%)
-	(7 crits death prob.: 83.6855%)
-	(2 non-crits + 4 crits death prob.: 0.0023%)
-	(2 non-crits + 5 crits death prob.: 99.9990%)
-	(3 non-crits + 3 crits death prob.: 1.8678%)
-	(4 non-crits + 2 crits death prob.: 28.3397%)
-	(5 non-crits + 1 crit death prob.: 79.0220%)
-
-Ice Beam
-          NON-CRITS
-            194: 100.00%     
-
-          CRITS
-            194: 100.00%     
-
-Surf
-          NON-CRITS
-             31:  10.26%      32:  17.95%      33:  17.95%      34:  17.95%      35:  17.95%      36:  15.38%      37:   2.56%     
-
-          CRITS
-             26:  15.38%      27:  20.51%      28:  20.51%      29:  20.51%      30:  20.51%      31:   2.56%     
-
-Dragonite (194/182/132/114/138): 
-Agility	
-Slam	44-52 26.83-31.71%	(crit: 119-140 72.56-85.37%)
-	(1 non-crit + 1 crit death prob.: 99.4740%)
-Barrier	
-Hyper Beam	81-96 49.39-58.54%	(crit: 222-262 135.37-159.76%)
-	(2 shot prob.: 99.5398%)
-
-Slam
-          NON-CRITS
-             44:  10.26%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%      49:  12.82%      50:  12.82%      51:  10.26%      52:   2.56%     
-
-          CRITS
-            119:   5.13%     120:   5.13%     121:   5.13%     122:   5.13%     123:   2.56%     124:   5.13%     125:   5.13%     126:   5.13%     127:   5.13%     128:   2.56%     
-            129:   5.13%     130:   5.13%     131:   5.13%     132:   5.13%     133:   5.13%     134:   2.56%     135:   5.13%     136:   5.13%     137:   5.13%     138:   5.13%     
-            139:   2.56%     140:   2.56%     
-
-Hyper Beam
-          NON-CRITS
-             81:   2.56%      82:   7.69%      83:   7.69%      84:   5.13%      85:   7.69%      86:   7.69%      87:   5.13%      88:   7.69%      89:   7.69%      90:   5.13%     
-             91:   7.69%      92:   7.69%      93:   5.13%      94:   7.69%      95:   5.13%      96:   2.56%     
-
-          CRITS
-            164: 100.00%     
-
-
-L56 Nidoking
-Stat ranges WITHOUT badge boosts:
-IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
-------------------------------------------------------------------------------------
-HP  | 166| 167| 168| 169| 170| 171| 172| 174| 175| 176| 177| 178| 179| 180| 181| 183
-ATK | 120| 121| 122| 123| 124| 125| 127| 128| 129| 130| 131| 132| 133| 134| 136| 137
-DEF | 101| 102| 103| 104| 105| 106| 108| 109| 110| 111| 112| 113| 114| 115| 117| 118
-SPD | 114| 115| 116| 117| 118| 119| 120| 122| 123| 124| 125| 126| 127| 128| 129| 131
-SPC |  99| 100| 101| 102| 103| 104| 105| 106| 108| 109| 110| 111| 112| 113| 114| 115
-
-LVL: 56 EXP NEEDED: 9794/9897
+LVL: 55 EXP NEEDED: 7336/9524
 RIVAL3 (0x3A49F: L61 Pidgeot, L59 Alakazam, L61 Rhydon, L61 Gyarados, L63 Arcanine, L65 Venusaur, ) Prize 6435
-L56 Nidoking vs L61 Pidgeot          >>> EXP GIVEN: 2247
-Nidoking (167/135/123/129/111) +[0/0/0/1] -> (167/135/123/129/166) 
-Ice Beam	131-154 71.98-84.62%	(crit: 149-176 81.87-96.70%)
+L55 Nidoking vs L61 Pidgeot          >>> EXP GIVEN: 2247
+Nidoking (164/130/121/121/109) +[0/0/0/1] -> (164/130/121/121/163) 
+Ice Beam	129-152 70.88-83.52%	(crit: 146-172 80.22-94.51%)
 Horn Drill	
 Earthquake	
-Surf	65-77 35.71-42.31%	(crit: 74-88 40.66-48.35%)
+Surf	64-76 35.16-41.76%	(crit: 73-86 40.11-47.25%)
 
 Ice Beam
           NON-CRITS
-            131:   5.13%     132:   5.13%     133:   2.56%     134:   5.13%     135:   5.13%     136:   2.56%     137:   5.13%     138:   5.13%     139:   2.56%     140:   5.13%     
-            141:   5.13%     142:   2.56%     143:   5.13%     144:   5.13%     145:   2.56%     146:   5.13%     147:   5.13%     148:   2.56%     149:   5.13%     150:   5.13%     
-            151:   2.56%     152:   5.13%     153:   2.56%     154:   2.56%     
+            129:   5.13%     130:   2.56%     131:   5.13%     132:   5.13%     133:   2.56%     134:   5.13%     135:   5.13%     136:   2.56%     137:   5.13%     138:   5.13%     
+            139:   2.56%     140:   5.13%     141:   5.13%     142:   2.56%     143:   5.13%     144:   5.13%     145:   2.56%     146:   5.13%     147:   5.13%     148:   2.56%     
+            149:   5.13%     150:   5.13%     151:   2.56%     152:   2.56%     
 
           CRITS
-            149:   2.56%     150:   2.56%     151:   5.13%     152:   2.56%     153:   5.13%     154:   2.56%     155:   5.13%     156:   2.56%     157:   2.56%     158:   5.13%     
-            159:   2.56%     160:   5.13%     161:   2.56%     162:   5.13%     163:   2.56%     164:   5.13%     165:   2.56%     166:   2.56%     167:   5.13%     168:   2.56%     
-            169:   5.13%     170:   2.56%     171:   5.13%     172:   2.56%     173:   5.13%     174:   2.56%     175:   2.56%     176:   2.56%     
+            146:   2.56%     147:   5.13%     148:   2.56%     149:   5.13%     150:   2.56%     151:   5.13%     152:   2.56%     153:   5.13%     154:   2.56%     155:   5.13%     
+            156:   2.56%     157:   5.13%     158:   2.56%     159:   5.13%     160:   2.56%     161:   5.13%     162:   2.56%     163:   5.13%     164:   2.56%     165:   5.13%     
+            166:   2.56%     167:   5.13%     168:   2.56%     169:   5.13%     170:   2.56%     171:   2.56%     172:   2.56%     
 
 Surf
           NON-CRITS
-             65:   5.13%      66:   7.69%      67:  10.26%      68:   7.69%      69:   7.69%      70:  10.26%      71:   7.69%      72:   7.69%      73:  10.26%      74:   7.69%     
-             75:   7.69%      76:   7.69%      77:   2.56%     
+             64:   5.13%      65:   7.69%      66:   7.69%      67:  10.26%      68:   7.69%      69:   7.69%      70:  10.26%      71:   7.69%      72:   7.69%      73:  10.26%     
+             74:   7.69%      75:   7.69%      76:   2.56%     
 
           CRITS
-             74:   2.56%      75:   7.69%      76:   7.69%      77:   7.69%      78:   5.13%      79:   7.69%      80:   7.69%      81:   7.69%      82:   7.69%      83:   7.69%     
-             84:   7.69%      85:   7.69%      86:   7.69%      87:   5.13%      88:   2.56%     
+             73:   7.69%      74:   7.69%      75:   7.69%      76:   7.69%      77:   7.69%      78:   7.69%      79:   7.69%      80:   7.69%      81:   7.69%      82:   7.69%     
+             83:   7.69%      84:   7.69%      85:   5.13%      86:   2.56%     
 
 Pidgeot (182/113/106/125/100): 
-Wing Attack	22-27 13.17-16.17%	(crit: 46-55 27.54-32.93%)
-	(7 shot prob.: 93.6707%)
-	(1 non-crit + 3 crits death prob.: 98.4816%)
-	(3 non-crits + 2 crits death prob.: 97.5421%)
-	(5 non-crits + 1 crit death prob.: 96.0417%)
+Wing Attack	22-27 13.41-16.46%	(crit: 48-57 29.27-34.76%)
+	(7 shot prob.: 99.4361%)
+	(3 crits death prob.: 6.4684%)
+	(2 non-crits + 2 crits death prob.: 0.2884%)
+	(3 non-crits + 2 crits death prob.: 99.9997%)
+	(4 non-crits + 1 crit death prob.: 0.0000%)
+	(5 non-crits + 1 crit death prob.: 99.9627%)
 Mirror Move	
-Sky Attack	86-102 51.50-61.08%	(crit: 184-217 110.18-129.94%)
+Sky Attack	87-103 53.05-62.80%	(crit: 188-222 114.63-135.37%)
 Whirlwind	
 
 Wing Attack
@@ -2178,109 +2169,109 @@ Wing Attack
              22:   2.56%      23:  23.08%      24:  25.64%      25:  23.08%      26:  23.08%      27:   2.56%     
 
           CRITS
-             46:   2.56%      47:  12.82%      48:  12.82%      49:  10.26%      50:  12.82%      51:  12.82%      52:  10.26%      53:  12.82%      54:  10.26%      55:   2.56%     
+             48:   7.69%      49:  10.26%      50:  12.82%      51:  10.26%      52:  12.82%      53:  10.26%      54:  12.82%      55:  10.26%      56:  10.26%      57:   2.56%     
 
 Sky Attack
           NON-CRITS
-             86:   2.56%      87:   5.13%      88:   7.69%      89:   5.13%      90:   7.69%      91:   5.13%      92:   7.69%      93:   5.13%      94:   7.69%      95:   5.13%     
-             96:   7.69%      97:   5.13%      98:   7.69%      99:   5.13%     100:   7.69%     101:   5.13%     102:   2.56%     
+             87:   2.56%      88:   7.69%      89:   5.13%      90:   7.69%      91:   5.13%      92:   7.69%      93:   5.13%      94:   7.69%      95:   5.13%      96:   7.69%     
+             97:   5.13%      98:   7.69%      99:   5.13%     100:   7.69%     101:   5.13%     102:   5.13%     103:   2.56%     
 
           CRITS
-            167: 100.00%     
+            164: 100.00%     
 
 
-LVL: 56 EXP NEEDED: 7547/9897
-L56 Nidoking vs L59 Alakazam          >>> EXP GIVEN: 2350
-Nidoking (167/135/123/129/111) +[0/0/0/1] -> (167/135/123/129/166) 
-Ice Beam	38-45 26.57-31.47%	(crit: 44-52 30.77-36.36%)
-	(3 crits death prob.: 53.1364%)
-	(1 non-crit + 2 crits death prob.: 5.7149%)
+(Speed DV required to outspeed: 4)
+
+LVL: 55 EXP NEEDED: 5089/9524
+L55 Nidoking vs L59 Alakazam          >>> EXP GIVEN: 2350
+Nidoking (164/130/121/121/109) +[0/0/0/1] -> (164/130/121/121/163) 
+Ice Beam	37-44 25.87-30.77%	(crit: 43-51 30.07-35.66%)
+	(3 crits death prob.: 30.4624%)
+	(1 non-crit + 2 crits death prob.: 0.6878%)
 Horn Drill	
-Earthquake	125-147 87.41-102.80%	(crit: 211-249 147.55-174.13%)
-	(One shot prob.: 17.95%)
-Surf	38-45 26.57-31.47%	(crit: 44-52 30.77-36.36%)
-	(3 crits death prob.: 53.1364%)
-	(1 non-crit + 2 crits death prob.: 5.7149%)
+Earthquake	120-142 83.92-99.30%	(crit: 205-241 143.36-168.53%)
+Surf	37-44 25.87-30.77%	(crit: 43-51 30.07-35.66%)
+	(3 crits death prob.: 30.4624%)
+	(1 non-crit + 2 crits death prob.: 0.6878%)
 
 Ice Beam
           NON-CRITS
-             38:  10.26%      39:  15.38%      40:  15.38%      41:  12.82%      42:  15.38%      43:  15.38%      44:  12.82%      45:   2.56%     
+             37:  10.26%      38:  15.38%      39:  12.82%      40:  15.38%      41:  15.38%      42:  15.38%      43:  12.82%      44:   2.56%     
 
           CRITS
-             44:  10.26%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%      49:  12.82%      50:  12.82%      51:  10.26%      52:   2.56%     
+             43:   7.69%      44:  12.82%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%      49:  12.82%      50:  12.82%      51:   2.56%     
 
 Earthquake
           NON-CRITS
-            125:   5.13%     126:   5.13%     127:   5.13%     128:   2.56%     129:   5.13%     130:   5.13%     131:   2.56%     132:   5.13%     133:   5.13%     134:   5.13%     
-            135:   2.56%     136:   5.13%     137:   5.13%     138:   5.13%     139:   2.56%     140:   5.13%     141:   5.13%     142:   5.13%     
-
-            143:  17.95%     
+            120:   2.56%     121:   5.13%     122:   2.56%     123:   5.13%     124:   5.13%     125:   5.13%     126:   5.13%     127:   2.56%     128:   5.13%     129:   5.13%     
+            130:   5.13%     131:   5.13%     132:   2.56%     133:   5.13%     134:   5.13%     135:   5.13%     136:   5.13%     137:   2.56%     138:   5.13%     139:   5.13%     
+            140:   5.13%     141:   2.56%     142:   2.56%     
 
           CRITS
             143: 100.00%     
 
 Surf
           NON-CRITS
-             38:  10.26%      39:  15.38%      40:  15.38%      41:  12.82%      42:  15.38%      43:  15.38%      44:  12.82%      45:   2.56%     
+             37:  10.26%      38:  15.38%      39:  12.82%      40:  15.38%      41:  15.38%      42:  15.38%      43:  12.82%      44:   2.56%     
 
           CRITS
-             44:  10.26%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%      49:  12.82%      50:  12.82%      51:  10.26%      52:   2.56%     
+             43:   7.69%      44:  12.82%      45:  12.82%      46:  12.82%      47:  12.82%      48:  12.82%      49:  12.82%      50:  12.82%      51:   2.56%     
 
 Alakazam (143/74/67/156/173): 
-Psybeam	88-104 52.69-62.28%	(crit: 287-338 171.86-202.40%)
+Psybeam	91-108 55.49-65.85%	(crit: 292-344 178.05-209.76%)
 Recover	
-Psychic	122-144 73.05-86.23%	(crit: 398-468 238.32-280.24%)
+Psychic	124-146 75.61-89.02%	(crit: 405-476 246.95-290.24%)
 Reflect	
 
 Psybeam
           NON-CRITS
-             88:   5.13%      89:   5.13%      90:   7.69%      91:   5.13%      92:   7.69%      93:   5.13%      94:   5.13%      95:   7.69%      96:   5.13%      97:   7.69%     
-             98:   5.13%      99:   7.69%     100:   5.13%     101:   7.69%     102:   5.13%     103:   5.13%     104:   2.56%     
+             91:   2.56%      92:   5.13%      93:   5.13%      94:   7.69%      95:   5.13%      96:   7.69%      97:   5.13%      98:   5.13%      99:   7.69%     100:   5.13%     
+            101:   5.13%     102:   7.69%     103:   5.13%     104:   5.13%     105:   7.69%     106:   5.13%     107:   5.13%     108:   2.56%     
 
           CRITS
-            167: 100.00%     
+            164: 100.00%     
 
 Psychic
           NON-CRITS
-            122:   2.56%     123:   5.13%     124:   5.13%     125:   5.13%     126:   2.56%     127:   5.13%     128:   5.13%     129:   5.13%     130:   2.56%     131:   5.13%     
-            132:   5.13%     133:   5.13%     134:   5.13%     135:   2.56%     136:   5.13%     137:   5.13%     138:   5.13%     139:   2.56%     140:   5.13%     141:   5.13%     
-            142:   5.13%     143:   2.56%     144:   2.56%     
+            124:   5.13%     125:   5.13%     126:   2.56%     127:   5.13%     128:   5.13%     129:   5.13%     130:   2.56%     131:   5.13%     132:   5.13%     133:   5.13%     
+            134:   2.56%     135:   5.13%     136:   5.13%     137:   5.13%     138:   2.56%     139:   5.13%     140:   5.13%     141:   5.13%     142:   2.56%     143:   5.13%     
+            144:   5.13%     145:   2.56%     146:   2.56%     
 
           CRITS
-            167: 100.00%     
+            164: 100.00%     
 
 
-LVL: 56 EXP NEEDED: 5197/9897
-L56 Nidoking vs L61 Rhydon          >>> EXP GIVEN: 2665
-Nidoking (167/135/123/129/111) +[0/0/0/1] -> (167/135/123/129/166) 
-Ice Beam	188-222 90.38-106.73%	(crit: 216-254 103.85-122.12%)
-	(One shot prob.: 43.59%)
+LVL: 55 EXP NEEDED: 2739/9524
+L55 Nidoking vs L61 Rhydon          >>> EXP GIVEN: 2665
+Nidoking (164/130/121/121/109) +[0/0/0/1] -> (164/130/121/121/163) 
+Ice Beam	185-218 88.94-104.81%	(crit: 211-248 101.44-119.23%)
+	(One shot prob.: 30.77%)
 Horn Drill	
-Earthquake	107-126 51.44-60.58%	(crit: 178-210 85.58-100.96%)
-	(Crit one shot prob.: 7.69%)
-Surf	377-444 181.25-213.46%	(crit: 432-508 207.69-244.23%)
+Earthquake	102-120 49.04-57.69%	(crit: 173-204 83.17-98.08%)
+	(2 shot prob.: 96.8442%)
+Surf	371-436 178.37-209.62%	(crit: 422-496 202.88-238.46%)
 
 Ice Beam
           NON-CRITS
-            188:   2.56%     189:   2.56%     190:   2.56%     191:   2.56%     192:   2.56%     193:   2.56%     194:   2.56%     195:   5.13%     196:   2.56%     197:   2.56%     
-            198:   2.56%     199:   2.56%     200:   2.56%     201:   5.13%     202:   2.56%     203:   2.56%     204:   2.56%     205:   2.56%     206:   2.56%     207:   2.56%     
+            185:   2.56%     186:   2.56%     187:   2.56%     188:   5.13%     189:   2.56%     190:   2.56%     191:   2.56%     192:   2.56%     193:   2.56%     194:   5.13%     
+            195:   2.56%     196:   2.56%     197:   2.56%     198:   2.56%     199:   2.56%     200:   5.13%     201:   2.56%     202:   2.56%     203:   2.56%     204:   2.56%     
+            205:   2.56%     206:   5.13%     207:   2.56%     
 
-            208:  43.59%     
+            208:  30.77%     
 
           CRITS
             208: 100.00%     
 
 Earthquake
           NON-CRITS
-            107:   5.13%     108:   5.13%     109:   5.13%     110:   5.13%     111:   5.13%     112:   5.13%     113:   5.13%     114:   5.13%     115:   5.13%     116:   5.13%     
-            117:   5.13%     118:   5.13%     119:   5.13%     120:   5.13%     121:   5.13%     122:   5.13%     123:   5.13%     124:   5.13%     125:   5.13%     126:   2.56%     
+            102:   5.13%     103:   5.13%     104:   7.69%     105:   5.13%     106:   5.13%     107:   5.13%     108:   5.13%     109:   5.13%     110:   5.13%     111:   5.13%     
+            112:   7.69%     113:   5.13%     114:   5.13%     115:   5.13%     116:   5.13%     117:   5.13%     118:   5.13%     119:   5.13%     120:   2.56%     
 
           CRITS
-            178:   2.56%     179:   2.56%     180:   2.56%     181:   2.56%     182:   5.13%     183:   2.56%     184:   2.56%     185:   2.56%     186:   5.13%     187:   2.56%     
-            188:   2.56%     189:   2.56%     190:   2.56%     191:   5.13%     192:   2.56%     193:   2.56%     194:   2.56%     195:   2.56%     196:   5.13%     197:   2.56%     
-            198:   2.56%     199:   2.56%     200:   5.13%     201:   2.56%     202:   2.56%     203:   2.56%     204:   2.56%     205:   5.13%     206:   2.56%     207:   2.56%     
-
-            208:   7.69%     
+            173:   2.56%     174:   2.56%     175:   2.56%     176:   5.13%     177:   2.56%     178:   2.56%     179:   2.56%     180:   5.13%     181:   2.56%     182:   2.56%     
+            183:   2.56%     184:   5.13%     185:   2.56%     186:   2.56%     187:   2.56%     188:   5.13%     189:   2.56%     190:   2.56%     191:   2.56%     192:   5.13%     
+            193:   2.56%     194:   2.56%     195:   2.56%     196:   5.13%     197:   2.56%     198:   2.56%     199:   2.56%     200:   5.13%     201:   2.56%     202:   2.56%     
+            203:   2.56%     204:   2.56%     
 
 Surf
           NON-CRITS
@@ -2292,10 +2283,11 @@ Surf
 Rhydon (208/174/161/63/69): 
 Leer	
 Tail Whip	
-Fury Attack	11-13 6.59-7.78%	(crit: 21-25 12.57-14.97%)
-	(7 crits death prob.: 0.3024%)
-	(4 non-crits + 5 crits death prob.: 0.4069%)
-	(5 non-crits + 5 crits death prob.: 94.0148%)
+Fury Attack	11-13 6.71-7.93%	(crit: 22-26 13.41-15.85%)
+	(7 crits death prob.: 67.8802%)
+	(3 non-crits + 5 crits death prob.: 0.0005%)
+	(4 non-crits + 5 crits death prob.: 56.3630%)
+	(5 non-crits + 4 crits death prob.: 0.0000%)
 Horn Drill	
 
 Fury Attack
@@ -2303,12 +2295,12 @@ Fury Attack
              11:  48.72%      12:  48.72%      13:   2.56%     
 
           CRITS
-             21:  20.51%      22:  25.64%      23:  25.64%      24:  25.64%      25:   2.56%     
+             22:  23.08%      23:  25.64%      24:  25.64%      25:  23.08%      26:   2.56%     
 
 
-LVL: 56 EXP NEEDED: 2532/9897
-L56 Nidoking vs L61 Gyarados          >>> EXP GIVEN: 2796
-Nidoking (167/135/123/129/111) +[0/0/0/1] -> (167/135/123/129/166) 
+LVL: 55 EXP NEEDED: 74/9524
+L55 Nidoking vs L61 Gyarados          >>> EXP GIVEN: 2796
+Nidoking (164/130/121/121/109) +[0/0/0/1] -> (164/130/121/121/163) 
 Ice Beam	47-56 23.98-28.57%	(crit: 54-64 27.55-32.65%)
 	(4 shot prob.: 97.5729%)
 	(3 non-crits + 1 crit death prob.: 99.9990%)
@@ -2341,188 +2333,194 @@ Surf
 Gyarados (196/168/111/113/136): 
 Dragon Rage	
 Leer	
-Hydro Pump	134-158 80.24-94.61%	(crit: 423-498 253.29-298.20%)
-Hyper Beam	91-108 54.49-64.67%	(crit: 196-231 117.37-138.32%)
+Hydro Pump	137-162 83.54-98.78%	(crit: 434-510 264.63-310.98%)
+Hyper Beam	93-110 56.71-67.07%	(crit: 199-235 121.34-143.29%)
 
 Hydro Pump
           NON-CRITS
-            134:   2.56%     135:   5.13%     136:   5.13%     137:   2.56%     138:   5.13%     139:   2.56%     140:   5.13%     141:   5.13%     142:   2.56%     143:   5.13%     
-            144:   5.13%     145:   2.56%     146:   5.13%     147:   2.56%     148:   5.13%     149:   5.13%     150:   2.56%     151:   5.13%     152:   2.56%     153:   5.13%     
-            154:   5.13%     155:   2.56%     156:   5.13%     157:   2.56%     158:   2.56%     
+            137:   2.56%     138:   2.56%     139:   5.13%     140:   2.56%     141:   5.13%     142:   5.13%     143:   2.56%     144:   5.13%     145:   2.56%     146:   5.13%     
+            147:   2.56%     148:   5.13%     149:   5.13%     150:   2.56%     151:   5.13%     152:   2.56%     153:   5.13%     154:   2.56%     155:   5.13%     156:   5.13%     
+            157:   2.56%     158:   5.13%     159:   2.56%     160:   5.13%     161:   2.56%     162:   2.56%     
 
           CRITS
-            167: 100.00%     
+            164: 100.00%     
 
 Hyper Beam
           NON-CRITS
-             91:   2.56%      92:   5.13%      93:   5.13%      94:   7.69%      95:   5.13%      96:   7.69%      97:   5.13%      98:   5.13%      99:   7.69%     100:   5.13%     
-            101:   5.13%     102:   7.69%     103:   5.13%     104:   5.13%     105:   7.69%     106:   5.13%     107:   5.13%     108:   2.56%     
+             93:   2.56%      94:   7.69%      95:   5.13%      96:   5.13%      97:   7.69%      98:   5.13%      99:   5.13%     100:   7.69%     101:   5.13%     102:   5.13%     
+            103:   7.69%     104:   5.13%     105:   5.13%     106:   7.69%     107:   5.13%     108:   5.13%     109:   5.13%     110:   2.56%     
 
           CRITS
-            167: 100.00%     
+            164: 100.00%     
 
 
-L57 Nidoking
+L56 Nidoking
 Stat ranges WITHOUT badge boosts:
 IV  |0   |1   |2   |3   |4   |5   |6   |7   |8   |9   |10  |11  |12  |13  |14  |15  
 ------------------------------------------------------------------------------------
-HP  | 169| 170| 171| 173| 174| 175| 176| 177| 178| 179| 181| 182| 183| 184| 185| 186
-ATK | 122| 124| 125| 126| 127| 128| 129| 130| 132| 133| 134| 135| 136| 137| 138| 140
-DEF | 103| 104| 105| 107| 108| 109| 110| 111| 112| 113| 115| 116| 117| 118| 119| 120
-SPD | 116| 117| 118| 119| 120| 121| 122| 124| 125| 126| 127| 128| 129| 130| 132| 133
-SPC | 101| 102| 103| 104| 105| 107| 108| 109| 110| 111| 112| 113| 115| 116| 117| 118
+HP  | 166| 167| 169| 170| 171| 172| 173| 174| 175| 176| 178| 179| 180| 181| 182| 183
+ATK | 118| 119| 120| 122| 123| 124| 125| 126| 127| 128| 129| 131| 132| 133| 134| 135
+DEF | 101| 103| 104| 105| 106| 107| 108| 109| 110| 111| 113| 114| 115| 116| 117| 118
+SPD | 110| 111| 112| 113| 114| 115| 117| 118| 119| 120| 121| 122| 123| 124| 125| 127
+SPC |  99| 100| 101| 103| 104| 105| 106| 107| 108| 109| 110| 111| 113| 114| 115| 116
 
-LVL: 57 EXP NEEDED: 10014/10278
-L57 Nidoking vs L63 Arcanine          >>> EXP GIVEN: 2875
-Nidoking (170/137/126/131/113) +[0/0/0/1] -> (170/137/126/131/169) 
-Ice Beam	58-69 29.59-35.20%	(crit: 68-80 34.69-40.82%)
-	(3 shot prob.: 16.3708%)
-	(1 non-crit + 2 crits death prob.: 99.8432%)
-	(2 non-crits + 1 crit death prob.: 79.2360%)
+LVL: 56 EXP NEEDED: 7175/9897
+L56 Nidoking vs L63 Arcanine          >>> EXP GIVEN: 2875
+Nidoking (167/132/123/124/111) +[0/0/0/1] -> (167/132/123/124/166) 
+Ice Beam	57-67 29.08-34.18%	(crit: 65-77 33.16-39.29%)
+	(3 shot prob.: 1.4026%)
+	(3 crits death prob.: 99.9865%)
+	(1 non-crit + 2 crits death prob.: 90.4769%)
+	(2 non-crits + 1 crit death prob.: 38.5104%)
 Horn Drill	
-Earthquake	149-176 76.02-89.80%	(crit: 256-302 130.61-154.08%)
-Surf	117-138 59.69-70.41%	(crit: 136-160 69.39-81.63%)
+Earthquake	144-170 73.47-86.73%	(crit: 245-288 125.00-146.94%)
+Surf	114-134 58.16-68.37%	(crit: 131-154 66.84-78.57%)
 
 Ice Beam
           NON-CRITS
-             58:   5.13%      59:   7.69%      60:  10.26%      61:  10.26%      62:   7.69%      63:  10.26%      64:  10.26%      65:   7.69%      66:  10.26%      67:  10.26%     
-             68:   7.69%      69:   2.56%     
+             57:  10.26%      58:  10.26%      59:  10.26%      60:  10.26%      61:   7.69%      62:  10.26%      63:  10.26%      64:  10.26%      65:  10.26%      66:   7.69%     
+             67:   2.56%     
 
           CRITS
-             68:   7.69%      69:  10.26%      70:   7.69%      71:   7.69%      72:   7.69%      73:   7.69%      74:  10.26%      75:   7.69%      76:   7.69%      77:   7.69%     
-             78:   7.69%      79:   7.69%      80:   2.56%     
+             65:   5.13%      66:   7.69%      67:  10.26%      68:   7.69%      69:   7.69%      70:  10.26%      71:   7.69%      72:   7.69%      73:  10.26%      74:   7.69%     
+             75:   7.69%      76:   7.69%      77:   2.56%     
 
 Earthquake
           NON-CRITS
-            149:   2.56%     150:   2.56%     151:   5.13%     152:   2.56%     153:   5.13%     154:   2.56%     155:   5.13%     156:   2.56%     157:   2.56%     158:   5.13%     
-            159:   2.56%     160:   5.13%     161:   2.56%     162:   5.13%     163:   2.56%     164:   5.13%     165:   2.56%     166:   2.56%     167:   5.13%     168:   2.56%     
-            169:   5.13%     170:   2.56%     171:   5.13%     172:   2.56%     173:   5.13%     174:   2.56%     175:   2.56%     176:   2.56%     
+            144:   2.56%     145:   2.56%     146:   5.13%     147:   2.56%     148:   5.13%     149:   2.56%     150:   5.13%     151:   2.56%     152:   5.13%     153:   2.56%     
+            154:   5.13%     155:   2.56%     156:   5.13%     157:   2.56%     158:   5.13%     159:   2.56%     160:   5.13%     161:   2.56%     162:   5.13%     163:   2.56%     
+            164:   5.13%     165:   2.56%     166:   5.13%     167:   2.56%     168:   5.13%     169:   2.56%     170:   2.56%     
 
           CRITS
             196: 100.00%     
 
 Surf
           NON-CRITS
-            117:   5.13%     118:   2.56%     119:   5.13%     120:   5.13%     121:   5.13%     122:   5.13%     123:   5.13%     124:   2.56%     125:   5.13%     126:   5.13%     
-            127:   5.13%     128:   5.13%     129:   5.13%     130:   5.13%     131:   2.56%     132:   5.13%     133:   5.13%     134:   5.13%     135:   5.13%     136:   5.13%     
-            137:   2.56%     138:   2.56%     
+            114:   5.13%     115:   5.13%     116:   5.13%     117:   5.13%     118:   5.13%     119:   5.13%     120:   5.13%     121:   5.13%     122:   5.13%     123:   2.56%     
+            124:   5.13%     125:   5.13%     126:   5.13%     127:   5.13%     128:   5.13%     129:   5.13%     130:   5.13%     131:   5.13%     132:   5.13%     133:   2.56%     
+            134:   2.56%     
 
           CRITS
-            136:   5.13%     137:   2.56%     138:   5.13%     139:   5.13%     140:   2.56%     141:   5.13%     142:   2.56%     143:   5.13%     144:   5.13%     145:   2.56%     
-            146:   5.13%     147:   2.56%     148:   5.13%     149:   5.13%     150:   2.56%     151:   5.13%     152:   2.56%     153:   5.13%     154:   5.13%     155:   2.56%     
-            156:   5.13%     157:   2.56%     158:   5.13%     159:   2.56%     160:   2.56%     
+            131:   5.13%     132:   5.13%     133:   2.56%     134:   5.13%     135:   5.13%     136:   2.56%     137:   5.13%     138:   5.13%     139:   2.56%     140:   5.13%     
+            141:   5.13%     142:   2.56%     143:   5.13%     144:   5.13%     145:   2.56%     146:   5.13%     147:   5.13%     148:   2.56%     149:   5.13%     150:   5.13%     
+            151:   2.56%     152:   5.13%     153:   2.56%     154:   2.56%     
 
 Arcanine (196/154/115/134/115): 
 Roar	
-Ember	20-24 11.76-14.12%	(crit: 62-73 36.47-42.94%)
-	(8 shot prob.: 89.9071%)
-	(1 non-crit + 2 crits death prob.: 0.0017%)
-	(2 non-crits + 2 crits death prob.: 94.8324%)
-	(5 non-crits + 1 crit death prob.: 92.7685%)
+Ember	20-24 11.98-14.37%	(crit: 63-75 37.72-44.91%)
+	(7 shot prob.: 0.0000%)
+	(8 shot prob.: 98.8152%)
+	(1 non-crit + 2 crits death prob.: 8.4223%)
+	(2 non-crits + 2 crits death prob.: 99.9979%)
+	(4 non-crits + 1 crit death prob.: 0.0571%)
+	(5 non-crits + 1 crit death prob.: 99.8747%)
 Leer	
-Take Down	51-61 30.00-35.88%	(crit: 110-130 64.71-76.47%)
-	(3 shot prob.: 37.4686%)
-	(1 non-crit + 1 crit death prob.: 81.4596%)
+Take Down	52-62 31.14-37.13%	(crit: 113-133 67.66-79.64%)
+	(3 shot prob.: 79.7721%)
+	(1 non-crit + 1 crit death prob.: 99.0796%)
 
 Ember
           NON-CRITS
              20:  17.95%      21:  25.64%      22:  28.21%      23:  25.64%      24:   2.56%     
 
           CRITS
-             62:  10.26%      63:   7.69%      64:  10.26%      65:   7.69%      66:  10.26%      67:   7.69%      68:  10.26%      69:   7.69%      70:  10.26%      71:   7.69%     
-             72:   7.69%      73:   2.56%     
+             63:   2.56%      64:   7.69%      65:  10.26%      66:   7.69%      67:  10.26%      68:   7.69%      69:   7.69%      70:  10.26%      71:   7.69%      72:  10.26%     
+             73:   7.69%      74:   7.69%      75:   2.56%     
 
 Take Down
           NON-CRITS
-             51:   2.56%      52:  10.26%      53:  10.26%      54:  10.26%      55:  12.82%      56:  10.26%      57:  10.26%      58:  10.26%      59:  10.26%      60:  10.26%     
-             61:   2.56%     
+             52:   2.56%      53:  12.82%      54:  10.26%      55:  10.26%      56:  10.26%      57:  10.26%      58:  10.26%      59:  10.26%      60:  10.26%      61:  10.26%     
+             62:   2.56%     
 
           CRITS
-            110:   2.56%     111:   5.13%     112:   5.13%     113:   5.13%     114:   5.13%     115:   5.13%     116:   5.13%     117:   5.13%     118:   5.13%     119:   5.13%     
-            120:   5.13%     121:   5.13%     122:   5.13%     123:   5.13%     124:   5.13%     125:   5.13%     126:   5.13%     127:   5.13%     128:   5.13%     129:   2.56%     
-            130:   2.56%     
+            113:   5.13%     114:   5.13%     115:   5.13%     116:   5.13%     117:   5.13%     118:   5.13%     119:   5.13%     120:   2.56%     121:   5.13%     122:   5.13%     
+            123:   5.13%     124:   5.13%     125:   5.13%     126:   5.13%     127:   5.13%     128:   5.13%     129:   5.13%     130:   5.13%     131:   5.13%     132:   2.56%     
+            133:   2.56%     
 
 
-(Speed DV required to outspeed: 4)
+(Speed DV required to outspeed: 9)
 
-LVL: 57 EXP NEEDED: 7139/10278
-L57 Nidoking vs L65 Venusaur          >>> EXP GIVEN: 2896
-Nidoking (170/137/126/131/113) +[0/0/0/1] -> (170/137/126/131/169) 
-Ice Beam	93-110 49.21-58.20%	(crit: 108-128 57.14-67.72%)
-	(2 shot prob.: 98.6851%)
+LVL: 56 EXP NEEDED: 4300/9897
+L56 Nidoking vs L65 Venusaur          >>> EXP GIVEN: 2896
+Nidoking (167/132/123/124/111) +[0/0/0/1] -> (167/132/123/124/166) 
+Ice Beam	91-108 48.15-57.14%	(crit: 103-122 54.50-64.55%)
+	(2 shot prob.: 93.0309%)
 Horn Drill	
-Earthquake	69-82 36.51-43.39%	(crit: 120-142 63.49-75.13%)
-Surf	22-27 11.64-14.29%	(crit: 27-32 14.29-16.93%)
+Earthquake	66-78 34.92-41.27%	(crit: 114-134 60.32-70.90%)
+	(1 non-crit + 1 crit death prob.: 81.4596%)
+Surf	22-27 11.64-14.29%	(crit: 25-30 13.23-15.87%)
 	(7 shot prob.: 0.0000%)
 	(8 shot prob.: 98.5587%)
-	(6 crits death prob.: 0.0003%)
-	(2 non-crits + 5 crits death prob.: 94.6564%)
-	(3 non-crits + 4 crits death prob.: 63.5562%)
-	(4 non-crits + 3 crits death prob.: 17.2829%)
-	(5 non-crits + 2 crits death prob.: 0.9013%)
+	(7 crits death prob.: 75.1984%)
+	(2 non-crits + 5 crits death prob.: 18.8698%)
+	(3 non-crits + 4 crits death prob.: 4.2129%)
+	(4 non-crits + 3 crits death prob.: 0.3991%)
+	(4 non-crits + 4 crits death prob.: 100.0000%)
+	(5 non-crits + 2 crits death prob.: 0.0097%)
+	(5 non-crits + 3 crits death prob.: 100.0000%)
 
 Ice Beam
           NON-CRITS
-             93:   2.56%      94:   7.69%      95:   5.13%      96:   5.13%      97:   7.69%      98:   5.13%      99:   5.13%     100:   7.69%     101:   5.13%     102:   5.13%     
-            103:   7.69%     104:   5.13%     105:   5.13%     106:   7.69%     107:   5.13%     108:   5.13%     109:   5.13%     110:   2.56%     
+             91:   2.56%      92:   5.13%      93:   5.13%      94:   7.69%      95:   5.13%      96:   7.69%      97:   5.13%      98:   5.13%      99:   7.69%     100:   5.13%     
+            101:   5.13%     102:   7.69%     103:   5.13%     104:   5.13%     105:   7.69%     106:   5.13%     107:   5.13%     108:   2.56%     
 
           CRITS
-            108:   2.56%     109:   5.13%     110:   5.13%     111:   5.13%     112:   5.13%     113:   5.13%     114:   5.13%     115:   5.13%     116:   5.13%     117:   5.13%     
-            118:   5.13%     119:   5.13%     120:   5.13%     121:   5.13%     122:   5.13%     123:   5.13%     124:   5.13%     125:   5.13%     126:   5.13%     127:   2.56%     
-            128:   2.56%     
+            103:   2.56%     104:   5.13%     105:   5.13%     106:   5.13%     107:   5.13%     108:   5.13%     109:   5.13%     110:   7.69%     111:   5.13%     112:   5.13%     
+            113:   5.13%     114:   5.13%     115:   5.13%     116:   5.13%     117:   5.13%     118:   5.13%     119:   5.13%     120:   5.13%     121:   5.13%     122:   2.56%     
 
 Earthquake
           NON-CRITS
-             69:   2.56%      70:   7.69%      71:   7.69%      72:  10.26%      73:   7.69%      74:   7.69%      75:   7.69%      76:   7.69%      77:   7.69%      78:   7.69%     
-             79:   7.69%      80:   7.69%      81:   7.69%      82:   2.56%     
+             66:   7.69%      67:   7.69%      68:   7.69%      69:   7.69%      70:  10.26%      71:   7.69%      72:   7.69%      73:   7.69%      74:  10.26%      75:   7.69%     
+             76:   7.69%      77:   7.69%      78:   2.56%     
 
           CRITS
-            120:   2.56%     121:   5.13%     122:   2.56%     123:   5.13%     124:   5.13%     125:   5.13%     126:   5.13%     127:   2.56%     128:   5.13%     129:   5.13%     
-            130:   5.13%     131:   5.13%     132:   2.56%     133:   5.13%     134:   5.13%     135:   5.13%     136:   5.13%     137:   2.56%     138:   5.13%     139:   5.13%     
-            140:   5.13%     141:   2.56%     142:   2.56%     
+            114:   5.13%     115:   5.13%     116:   5.13%     117:   5.13%     118:   5.13%     119:   5.13%     120:   5.13%     121:   5.13%     122:   5.13%     123:   2.56%     
+            124:   5.13%     125:   5.13%     126:   5.13%     127:   5.13%     128:   5.13%     129:   5.13%     130:   5.13%     131:   5.13%     132:   5.13%     133:   2.56%     
+            134:   2.56%     
 
 Surf
           NON-CRITS
              22:   2.56%      23:  23.08%      24:  25.64%      25:  23.08%      26:  23.08%      27:   2.56%     
 
           CRITS
-             27:  17.95%      28:  20.51%      29:  20.51%      30:  20.51%      31:  17.95%      32:   2.56%     
+             25:  10.26%      26:  23.08%      27:  20.51%      28:  23.08%      29:  20.51%      30:   2.56%     
 
 Venusaur (189/123/123/119/145): 
 Growth	
-Mega Drain	26-31 15.29-18.24%	(crit: 81-96 47.65-56.47%)
-	(6 shot prob.: 45.3035%)
-	(2 crits death prob.: 86.9165%)
-	(3 non-crits + 1 crit death prob.: 72.5829%)
-Razor Leaf	35-42 20.59-24.71%	(crit: 110-130 64.71-76.47%)
-	(1 non-crit + 1 crit death prob.: 1.4464%)
-SolarBeam	74-88 43.53-51.76%	(crit: 239-282 140.59-165.88%)
-	(2 shot prob.: 9.2702%)
+Mega Drain	26-31 15.57-18.56%	(crit: 82-97 49.10-58.08%)
+	(6 shot prob.: 76.5303%)
+	(2 crits death prob.: 98.1591%)
+	(3 non-crits + 1 crit death prob.: 92.7599%)
+Razor Leaf	35-42 20.96-25.15%	(crit: 113-133 67.66-79.64%)
+	(4 shot prob.: 0.0011%)
+	(1 non-crit + 1 crit death prob.: 22.6167%)
+SolarBeam	76-90 45.51-53.89%	(crit: 243-286 145.51-171.26%)
+	(2 shot prob.: 44.0500%)
 
 Mega Drain
           NON-CRITS
              26:  15.38%      27:  20.51%      28:  20.51%      29:  20.51%      30:  20.51%      31:   2.56%     
 
           CRITS
-             81:   2.56%      82:   7.69%      83:   7.69%      84:   5.13%      85:   7.69%      86:   7.69%      87:   5.13%      88:   7.69%      89:   7.69%      90:   5.13%     
-             91:   7.69%      92:   7.69%      93:   5.13%      94:   7.69%      95:   5.13%      96:   2.56%     
+             82:   5.13%      83:   5.13%      84:   7.69%      85:   7.69%      86:   5.13%      87:   7.69%      88:   5.13%      89:   7.69%      90:   7.69%      91:   5.13%     
+             92:   7.69%      93:   7.69%      94:   5.13%      95:   7.69%      96:   5.13%      97:   2.56%     
 
 Razor Leaf
           NON-CRITS
              35:   5.13%      36:  15.38%      37:  15.38%      38:  15.38%      39:  15.38%      40:  15.38%      41:  15.38%      42:   2.56%     
 
           CRITS
-            110:   2.56%     111:   5.13%     112:   5.13%     113:   5.13%     114:   5.13%     115:   5.13%     116:   5.13%     117:   5.13%     118:   5.13%     119:   5.13%     
-            120:   5.13%     121:   5.13%     122:   5.13%     123:   5.13%     124:   5.13%     125:   5.13%     126:   5.13%     127:   5.13%     128:   5.13%     129:   2.56%     
-            130:   2.56%     
+            113:   5.13%     114:   5.13%     115:   5.13%     116:   5.13%     117:   5.13%     118:   5.13%     119:   5.13%     120:   2.56%     121:   5.13%     122:   5.13%     
+            123:   5.13%     124:   5.13%     125:   5.13%     126:   5.13%     127:   5.13%     128:   5.13%     129:   5.13%     130:   5.13%     131:   5.13%     132:   2.56%     
+            133:   2.56%     
 
 SolarBeam
           NON-CRITS
-             74:   2.56%      75:   7.69%      76:   7.69%      77:   7.69%      78:   5.13%      79:   7.69%      80:   7.69%      81:   7.69%      82:   7.69%      83:   7.69%     
-             84:   7.69%      85:   7.69%      86:   7.69%      87:   5.13%      88:   2.56%     
+             76:   5.13%      77:   5.13%      78:   7.69%      79:   7.69%      80:   7.69%      81:   7.69%      82:   7.69%      83:   5.13%      84:   7.69%      85:   7.69%     
+             86:   7.69%      87:   7.69%      88:   7.69%      89:   5.13%      90:   2.56%     
 
           CRITS
-            170: 100.00%     
+            167: 100.00%     
 
 
-LVL: 57 EXP NEEDED: 4243/10278
+LVL: 56 EXP NEEDED: 1404/9897

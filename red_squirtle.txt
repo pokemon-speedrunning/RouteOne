@@ -28,7 +28,7 @@ learnmove WATERGUN
 
 //stats 
 lm MEGAPUNCH
-L8 PARAS 9 8 8 8 -v EVERYTHING
+//L8 PARAS 9 8 8 8 -v EVERYTHING
 um TACKLE
 
 //L8 GEODUDE -v ALL
@@ -60,8 +60,8 @@ um TAILWHIP
 0x39E23 -v ALL   //4: lass
 0x39E80 -v ALL   //5: jrtrainerm
 0x3A2B0 -v ALL   //rocket
-//0x39F6D -v ALL   // onix hiker
-0x39F63 -v EVERYTHING // elixir hiker
+0x39F6D -v ALL   // onix hiker
+//0x39F63 -v EVERYTHING // elixir hiker
 0x39E2B -v ALL   //lass
 0x39E7C -v ALL   //jrtrainerm
 0x39E2F -lvranges -v ALL   //lass
@@ -86,7 +86,6 @@ um WATERGUN
 0x39E07 -v ALL //bug catcher
 
 //ROCK TUNNEL
-L15 ZUBAT 15 15 15 15 -v ALL
 0x39F22 -v EVERYTHING //maniac
 0x39F1A -v EVERYTHING //maniac
 0x39EC2 -lvranges -xatk -0 -v EVERYTHING //jrtrainerf
@@ -103,12 +102,3 @@ L15 ZUBAT 15 15 15 15 -v ALL
 0x3A2ED -lvranges -v ALL  //rockets
 0x3A2F2 -lvranges -v EVERYTHING //
 0x3A2F6 -v ALL //
-
-//0x3A319  -v EVERYTHING
-//0x3A355 -lvranges -v ALL //rocket
-rc
-ranges
-rc
-ranges
-rc
-ranges

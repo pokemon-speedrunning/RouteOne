@@ -14,9 +14,9 @@ rc
 ranges
 evolve NIDOKING
 ranges
-protein
-carbos
-carbos
+//protein
+//carbos
+//carbos
 //carbos
 
 //SILPH
@@ -34,7 +34,7 @@ um POISONSTING
 // KOGA GYM
 0x3A13A -v ALL //juggler 
 //rc
-//rc
+rc
 0x3A140 -v ALL //juggler 
 0x3A3D1 -lvrangesb -v ALL //KOGA
 
@@ -65,8 +65,8 @@ um FOCUSENERGY
 //GIOVANNI
 0x3A382 -v ALL //cooltrainer
 0x3A1DA -xspc 1 -bbs 1/1/1/0 -lvrangesb -v ALL //karate king
-rc
-rc
+//rc
+//rc
 0x3A290 -lvrangesb -v ALL //GIOVANNI
     
 //WEST OF VIRIDIAN
