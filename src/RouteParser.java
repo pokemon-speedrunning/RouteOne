@@ -70,7 +70,20 @@ public class RouteParser {
             }
             int lvl = Integer.parseInt(firstToken.substring(1));
             String species = tokens[1];
-            Pokemon b = new Pokemon(PokemonNames.getSpeciesFromName(species),lvl); //default to wild pokemon
+            IVs ivs = null;
+            try
+            {
+            	Integer atk = Integer.parseInt(tokens[2]);
+            	Integer def = Integer.parseInt(tokens[3]);
+            	Integer spd = Integer.parseInt(tokens[4]);
+            	Integer spc = Integer.parseInt(tokens[5]);
+            	ivs = new IVs(atk,def,spd,spc);
+            }
+            catch(Exception exc)
+            {
+            	ivs = new IVs(15,15,15,15);
+            }
+            Pokemon b = new Pokemon(PokemonNames.getSpeciesFromName(species),lvl,ivs,true); //default to wild pokemon
             if (b.getSpecies() == null) {
                 Main.appendln("ERROR ON LINE " + lineNum + ": bad pokemon name");
                 return null;
@@ -453,6 +466,8 @@ public class RouteParser {
                     options.setVerbose(BattleOptions.SOME);
                 } else if(s.equalsIgnoreCase("ALL")) {
                     options.setVerbose(BattleOptions.ALL);
+                } else if(s.equalsIgnoreCase("EVERYTHING")) {
+                    options.setVerbose(BattleOptions.EVERYTHING);
                 }
                 nf = NextFlag.ANY_FLAG;
                 continue;

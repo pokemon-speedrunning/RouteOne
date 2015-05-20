@@ -107,16 +107,19 @@ public class Battle extends GameAction {
     private void doBattle(Pokemon p) {
         //TODO: automatically determine whether or not to print
         if (opponent instanceof Pokemon) {
-            if(getVerbose() == BattleOptions.ALL) printBattle(p, (Pokemon) opponent);
+            if(getVerbose() == BattleOptions.ALL || getVerbose() == BattleOptions.EVERYTHING) printBattle(p, (Pokemon) opponent);
             else if (getVerbose() == BattleOptions.SOME) printShortBattle(p, (Pokemon) opponent);
             
             opponent.battle(p, options);
+            Main.appendln(String.format("LVL: %d EXP NEEDED: %d/%d", p.getLevel(),
+                    p.expToNextLevel(), p.expForLevel()));
+
         } else { //is a Trainer
             Trainer t = (Trainer) opponent;
-            if(getVerbose() == BattleOptions.ALL || getVerbose() == BattleOptions.SOME) Main.appendln(t.toString());
+            if(getVerbose() == BattleOptions.ALL || getVerbose() == BattleOptions.SOME || getVerbose() == BattleOptions.EVERYTHING) Main.appendln(t.toString());
             int lastLvl = p.getLevel();
             for(Pokemon opps : t) {
-                if(getVerbose() == BattleOptions.ALL) printBattle(p, (Pokemon) opps);
+                if(getVerbose() == BattleOptions.ALL || getVerbose() == BattleOptions.EVERYTHING) printBattle(p, (Pokemon) opps);
                 else if (getVerbose() == BattleOptions.SOME) printShortBattle(p, (Pokemon) opps);
                 if (getVerbose() != BattleOptions.NONE) {
 					if (options.getMod1().modSpdWithIV(p, 0) <= options.getMod2().modSpd(opps)
@@ -156,12 +159,11 @@ public class Battle extends GameAction {
                         Main.appendln(p.statRanges(true));
                     }
                 }
+                Main.appendln(String.format("LVL: %d EXP NEEDED: %d/%d", p.getLevel(),
+                        p.expToNextLevel(), p.expForLevel()));
             }
         }
-        if(getVerbose() == BattleOptions.ALL || getVerbose() == BattleOptions.SOME) {
-            Main.appendln(String.format("LVL: %d EXP NEEDED: %d/%d", p.getLevel(),
-                    p.expToNextLevel(), p.expForLevel()));
-        }
+
     }
     
     //does not actually do the battle, just prints summary

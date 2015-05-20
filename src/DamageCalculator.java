@@ -1,4 +1,6 @@
 //calculates damage (durr)
+import java.util.TreeMap;
+
 public class DamageCalculator {
     private static int MIN_RANGE = 217;
     private static int MAX_RANGE = 255;
@@ -94,7 +96,7 @@ public class DamageCalculator {
         StatModifier mod1 = options.getMod1();
         StatModifier mod2 = options.getMod2();
         
-        sb.append(p1.levelName() + " vs " + p2.levelName() + endl);
+		sb.append(p1.levelName() + " vs " + p2.levelName() + "          >>> EXP GIVEN: " + p2.expGiven(1) + endl);
         //sb.append(String.format("EXP to next level: %d EXP gained: %d", p1.expToNextLevel(), p2.expGiven()) + endl);
         sb.append(String.format("%s (%s) ", p1.pokeName(), p1.statsStr()));       
         if(mod1.hasMods() || mod1.hasBBs()) {
@@ -107,6 +109,70 @@ public class DamageCalculator {
         
         sb.append(endl);
         
+        if(options.getVerbose() == BattleOptions.EVERYTHING)
+        {
+	
+	       	for(Move move : p1.getMoveset())
+	    	{
+	       		int minDmg = Math.min(p2.getHP(), minDamage(move, p1, p2, mod1, mod2));
+	       		if(minDmg > 0)
+	       		{
+		       		int minCritDmg = Math.min(p2.getHP(), minCritDamage(move, p1, p2, mod1, mod2));
+		        	TreeMap<Integer,Double> dmgMap = detailedDamage(move, p1, p2, mod1, mod2, false);
+		        	TreeMap<Integer,Double> critMap = detailedDamage(move, p1, p2, mod1, mod2, true);
+		//        	sb.append(String.format("%s (%s) ", p1.pokeName(), p1.statsStr()));
+		        	sb.append(move.getName());
+		        	sb.append(endl);
+		        	sb.append("          NON-CRITS");
+		        	for(Integer i : dmgMap.keySet())
+		        	{
+		        		if((i - minDmg) % 10 == 0)
+		        		{
+		        			sb.append(endl);
+		        			if(i.intValue() == p2.getHP() && minDmg != p2.getHP())
+		        			{
+		        				sb.append(endl);
+		        			}
+		        			sb.append("            ");
+		        		}
+		        		else if(i.intValue() == p2.getHP() && minDmg != p2.getHP())
+		        		{
+		        			sb.append(endl);
+		        			sb.append(endl);
+		        			sb.append("            ");		        			
+		        		}
+		        		
+		        		sb.append(String.format("%3d: %6.02f%%     ", i, dmgMap.get(i)));
+		        	}
+		        	sb.append(endl);
+		        	sb.append(endl);
+		        	sb.append("          CRITS");
+		        	for(Integer i : critMap.keySet())
+		        	{
+		        		if((i - minCritDmg) % 10 == 0)
+		        		{
+		        			sb.append(endl);
+		        			if(i.intValue() == p2.getHP() && minCritDmg != p2.getHP())
+		        			{
+		        				sb.append(endl);
+		        			}
+		        			sb.append("            ");
+		        		}
+		        		else if(i.intValue() == p2.getHP() && minCritDmg != p2.getHP())
+		        		{
+		        			sb.append(endl);
+		        			sb.append(endl);
+		        			sb.append("            ");		        			
+		        		}
+
+		        		sb.append(String.format("%3d: %6.02f%%     ", i, critMap.get(i)));
+		        	}
+		        	sb.append(endl);  
+		        	sb.append(endl);
+	      		}
+	    	}
+        }
+
         if(mod2.hasMods()) {
         sb.append(String.format("%s (%s) %s -> (%s): ", p2.pokeName(), p2.statsStr(),
                 mod2.summary(), mod2.modStatsStr(p2)) + endl);
@@ -115,7 +181,91 @@ public class DamageCalculator {
         }
         sb.append(summary_help(p2,p1,mod2,mod1));
         
+        if(options.getVerbose() == BattleOptions.EVERYTHING)
+        {        	       	
+            sb.append(endl);
+	        for(Move move : p2.getMoveset())
+	    	{
+	       		int minDmg = Math.min(p1.getHP(), minDamage(move, p2, p1, mod2, mod1));
+	       		if(minDmg > 0)
+	       		{
+		       		int minCritDmg = Math.min(p1.getHP(), minCritDamage(move, p2, p1, mod2, mod1));
+		        	TreeMap<Integer,Double> dmgMap = detailedDamage(move, p2, p1, mod2, mod1, false);
+		        	TreeMap<Integer,Double> critMap = detailedDamage(move, p2, p1, mod2, mod1, true);
+		//        	sb.append(String.format("%s (%s) ", p1.pokeName(), p1.statsStr()));
+		        	sb.append(move.getName());
+		        	sb.append(endl);
+		        	sb.append("          NON-CRITS");
+		        	for(Integer i : dmgMap.keySet())
+		        	{
+		        		if((i - minDmg) % 10 == 0)
+		        		{
+		        			sb.append(endl);
+		        			if(i.intValue() == p1.getHP() && minDmg != p1.getHP())
+		        			{
+		        				sb.append(endl);
+		        			}
+		        			sb.append("            ");
+		        		}
+		        		else if(i.intValue() == p1.getHP() && minDmg != p1.getHP())
+		        		{
+		        			sb.append(endl);
+		        			sb.append(endl);
+		        			sb.append("            ");		        			
+		        		}
+		        		
+		        		sb.append(String.format("%3d: %6.02f%%     ", i, dmgMap.get(i)));
+		        	}
+		        	sb.append(endl);
+		        	sb.append(endl);
+		        	sb.append("          CRITS");
+		        	for(Integer i : critMap.keySet())
+		        	{
+		        		if((i - minCritDmg) % 10 == 0)
+		        		{
+		        			sb.append(endl);
+		        			if(i.intValue() == p1.getHP() && minCritDmg != p1.getHP())
+		        			{
+		        				sb.append(endl);
+		        			}
+		        			sb.append("            ");
+		        		}
+		        		else if(i.intValue() == p1.getHP() && minCritDmg != p1.getHP())
+		        		{
+		        			sb.append(endl);
+		        			sb.append(endl);
+		        			sb.append("            ");		        			
+		        		}
+
+		        		sb.append(String.format("%3d: %6.02f%%     ", i, critMap.get(i)));
+		        	}
+		        	sb.append(endl);  
+		        	sb.append(endl);
+	      		}
+
+	    	}
+        }         
+        
         return sb.toString();
+    }
+    
+    private static TreeMap<Integer,Double> detailedDamage(Move attack, Pokemon attacker, Pokemon defender,
+            StatModifier atkMod, StatModifier defMod, boolean crit)
+    {
+       	TreeMap<Integer,Double> dmgMap = new TreeMap<Integer,Double>();
+        for(int i=MIN_RANGE; i<=MAX_RANGE; i++)
+        {
+        	int dmg = Math.min(defender.getHP(), damage(attack, attacker, defender, atkMod, defMod, i, crit));
+        	if(dmgMap.containsKey(dmg))
+        	{
+        		dmgMap.put(dmg,100.0/((double)(MAX_RANGE-MIN_RANGE+1))+dmgMap.get(dmg));
+        	}
+        	else
+        	{
+        		dmgMap.put(dmg,100.0/((double)(MAX_RANGE-MIN_RANGE+1)));
+        	}
+        }
+     	return dmgMap;
     }
     
     //String summary of all of p1's moves used on p2
