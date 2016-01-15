@@ -177,6 +177,16 @@ public enum Type {
 		effectList.add(new TypeEffectiveness(Type.GRASS, Type.DRAGON, 5));
 		effectList.add(new TypeEffectiveness(Type.ICE, Type.DRAGON, 20));
 		effectList.add(new TypeEffectiveness(Type.DRAGON, Type.DRAGON, 20));
+		// uncomment this if you want to check inverse battles for whatever reason
+//		Collections.reverse(effectList);
+//		for(TypeEffectiveness te : effectList) {
+//			if(te.multiplier==20) {
+//				te.multiplier=5;
+//			}
+//			else {
+//				te.multiplier=20;
+//			}
+//		}
 	}
 
 	private static class TypeEffectiveness {

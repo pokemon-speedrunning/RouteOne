@@ -5,7 +5,7 @@ public class Constants {
     }
     
     static final String endl = System.getProperty("line.separator");
-    static final int numPokes = 151;
+    static final int numPokes = 152;
     
     //used to initialize all species
     static final String[] poke_names = {
@@ -161,6 +161,7 @@ public class Constants {
         "Dragonite", 
         "Mewtwo", 
         "Mew",
+        "Missingno",
     };
     static final int[] killexps = {
         0,
@@ -315,6 +316,7 @@ public class Constants {
         218, 
         220, 
         64,
+        143,
         };
     final static int[][] basestats = {
         {0, 0, 0, 0, 0}, 
@@ -469,6 +471,7 @@ public class Constants {
         {91, 134, 95, 80, 100},
         {106, 110, 90, 130, 154},
         {100, 100, 100, 100, 100},
+        {33, 136, 0, 29, 6},
     };
     static final ExpCurve[] exp_curves = {
         ExpCurve.NONE,
@@ -623,6 +626,7 @@ public class Constants {
         ExpCurve.SLOW,
         ExpCurve.SLOW,
         ExpCurve.MEDIUM_SLOW,
+        ExpCurve.FAST,
         };
     static final Type[][] poke_types = {
         {Type.NONE},
@@ -777,6 +781,7 @@ public class Constants {
         {Type.DRAGON, Type.FLYING},
         {Type.PSYCHIC},
         {Type.PSYCHIC},
+        {Type.NONE},
         };
     
     //used to initialize all moves
