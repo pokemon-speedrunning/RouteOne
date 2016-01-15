@@ -362,6 +362,12 @@ public class DamageCalculator {
 					}
 				}
 			}
+			
+			// guaranteed n-shot
+			if(Settings.showGuarantees) {
+				int guarantee = (int) Math.ceil(((double)oppHP)/realminDmg);
+				sb.append(String.format("\t(guaranteed %d-shot)", guarantee)+endl);
+			}
             
         }
         

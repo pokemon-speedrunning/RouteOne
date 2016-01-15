@@ -36,6 +36,8 @@ public class Main {
         else
             Settings.isRB = true;
         
+        Settings.showGuarantees = ini.get("util", "showguarantees", boolean.class);
+        
         Initialization.init();
         
         IVs ivs = new IVs(atkIV,defIV,spdIV,spcIV);
