@@ -273,7 +273,7 @@ public class RouteParser {
     enum NextFlag {
         ANY_FLAG, XITEMS, YITEMS, XATK, YATK,
         XDEF, YDEF, XSPD, YSPD, XSPC, YSPC,
-        XACC, VERBOSE, SXP, BBS,
+        XACC, VERBOSE, SXP, BBS, SPLITS,
     }
     
     private static GameAction addFlagsToBattleable(Battleable b, String[] flagTokens) throws Exception {
@@ -379,6 +379,9 @@ public class RouteParser {
                 else if(s.equalsIgnoreCase("-bbs")) {
                     nf = NextFlag.BBS;
                     continue;
+                }
+                else if(s.equalsIgnoreCase("-splits")) {
+                    nf = NextFlag.SPLITS;
                 }
             }
             //-x flag
@@ -490,6 +493,16 @@ public class RouteParser {
                 int spdBB = Integer.parseInt(nums[2]);
                 int spcBB = Integer.parseInt(nums[3]);
                 options.getMod1().setBadgeBoosts(atkBB, defBB, spdBB, spcBB);
+                nf = NextFlag.ANY_FLAG;
+                continue;
+            }
+            else if(nf == NextFlag.SPLITS){
+                String[] nums = s.split("/");
+                int[] numsI = new int[nums.length];
+                for(int i=0;i<nums.length;i++) {
+                    numsI[i] = Integer.parseInt(nums[i]);
+                }
+                options.setSplits(numsI);
                 nf = NextFlag.ANY_FLAG;
                 continue;
             }

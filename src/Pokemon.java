@@ -32,7 +32,7 @@ public class Pokemon implements Battleable {
         level = newLevel;
         ivs = new IVs();
         setZeroEVs();
-        moves = Moveset.defaultMoveset(species, level, Settings.isRB);
+        moves = Moveset.defaultMoveset(species, level, Settings.dataVersion);
         calculateStats();
         this.wild = wild;
         setExpForLevel();
@@ -49,7 +49,7 @@ public class Pokemon implements Battleable {
         level = newLevel;
         this.ivs = ivs;
         setZeroEVs();
-        moves = Moveset.defaultMoveset(species, level, Settings.isRB);
+        moves = Moveset.defaultMoveset(species, level, Settings.dataVersion);
         calculateStats();
         this.wild = wild;
         setExpForLevel();
@@ -263,12 +263,12 @@ public class Pokemon implements Battleable {
     }
     
     @Override
-    public void battle(Pokemon p, BattleOptions options) {
+    public void battle(Pokemon p, BattleOptions options, int pokemonIndex) {
         //p is the one that gets leveled up
         //this is the one that dies like noob
         //be sure to gain EVs before the exp
-        p.gainStatExp(this.getSpecies(), options.getParticipants());
-        p.gainExp(this.expGiven(options.getParticipants()));
+        p.gainStatExp(this.getSpecies(), options.getParticipants(pokemonIndex));
+        p.gainExp(this.expGiven(options.getParticipants(pokemonIndex)));
     }
 
     @Override

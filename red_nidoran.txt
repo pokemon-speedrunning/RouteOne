@@ -1,9 +1,9 @@
+ranges
 //to be used with L3 or 4 nidoran
 buy 7 POKEBALL
 get POTION
 get ANTIDOTE
-
-0x3A3B5 -sxp 2 //brock
+0x3A3B5 -sxp 2 -lvranges //brock
 lm HORNATTACK
 
 // shop
@@ -11,87 +11,93 @@ buy 9 POTION
 buy 1 ESCAPEROPE // can also pick up later
 
 //4 ppl at route 3
-0x39DDA -ydef -1 
-0x39D99 -ydef -1
+0x39DDA -ydef -1 -lvranges -v 2
+0x39D99 -ydef -1 -xdef -1 -lvranges -v 2
 0x39DDF 
-0x39DE5
+0x39DE5 -lvranges
 lm POISONSTING
 
 
 // mt.moon
-get TM12
-0x39F26 -ydef -1 // magnetorb nerd
+//get TM12
+0x39F26 -ydef -1 -lvranges // magnetorb nerd
 get RARECANDY
 // maybe: get ESCAPEROPE
-0x39E1C  // oddish girl
-evolve NIDORINO
+0x39E1C -v 2 // oddish girl
+//evolve NIDORINO
+//ranges
 
 // Water Gun goes over either Tackle or Leer (if no Paras yet)
 // some strats don't teach it at all
-use TM12
-lm WATERGUN
-um TACKLE
+//use TM12
+//lm WATERGUN
+//um TACKLE
 // Geodudes?
 //L9 GEODUDE
 //L9 GEODUDE
 // Hiker?
-//0x39F5E // hiker
+//0x39F5E -v 2// hiker
 get MOONSTONE
 // Forced trainers at end
 use MOONSTONE
 evolve NIDOKING
-0x3A29C //mt moon rocket
-0x39F2A //mt moon nerd
+ranges
+lm MEGAPUNCH
+0x3A29C -v 2 //mt moon rocket
+0x39F2A -v 2 //mt moon nerd
 get HELIXFOSSIL
 
 // Cerulean enter
 get RARECANDY
-0x3A209 //cerulean rival fight (if you are squirtle)
+0x3A209 -v 2 //cerulean rival fight (if you are squirtle)
 // Candies here if Hiker + Geodude(s)
 
-
 //NUGGET BRIDGE
-0x39DF2 //1: bug catcher
-0x39E27 //2: lass
-0x39DA5 //3: youngster
+0x39DF2 -v 2 //1: bug catcher
+0x39E27 -v 2 //2: lass
+0x39DA5 -v 2 //3: youngster
 // Candies+Thrash here if Hiker + no extra
 // Thrash here if Candied earlier (well, middle of the fight)
-0x39E23  //4: lass
+0x39E23 -v 2  //4: lass
 // Candies+Thrash here if no Hiker + Geodudes
-0x39E80 //5: jrtrainerm
+0x39E80 -v 2 //5: jrtrainerm
 // Candies+Thrash here if no Hiker + no Geodudes
 rarecandy
 rarecandy
-// Thrash can go over Leer, Tackle or Poison Sting
-// just depends on your route really
 lm THRASH
 um LEER
+// Thrash can go over Leer, Tackle or Poison Sting
+// just depends on your route really
 
-0x3A2B0 //nugget rocket
+0x3A2B0 -v 2 //nugget rocket
 get NUGGET
 
 // Fight if not going WaterGunless
-0x39F6D //onix hiker
+//0x39F6D -v 2 //onix hiker
 // Fight only if going WaterGunless
-// 0x39F63// machop&geodude hiker
+0x39F63 -v ALL -splits 1/2 // machop&geodude hiker
 // Compulsory Route 25 trainers
-0x39E2B  //lass
-0x39E7C //jrtrainerm
-0x39E2F //lass
+0x39E2B -v 2  //lass
+0x39E7C -v 2 // jrtrainerm
+//0x39F67 -v 2 //super scrub hiker
+0x39E2F -v 2 //lass
 get ETHER // occasionally you get max ether later
 get SSTICKET // from bill
 use ESCAPEROPE
 
 //MISTY
-0x39E9D //goldeen
-0x3A3BB //MISTY
+0x3A049 -v 2
+0x39E9D -v 2 //goldeen
+ranges
+0x3A3BB -v 2 -lvranges //MISTY
 
 //BETWEEN CERULEAN AND VERMILLION
-0x3A2AC //rocket
+0x3A2AC -v 2 //rocket
 get TM28
 get FULLRESTORE
-0x39EA4 //pidgey girl
-0x39E86 //jrtrainerm
+0x39DFB -v 2
+0x39EA4 -v 2 //pidgey girl
+0x39E86 -v 2 //jrtrainerm
 
 // shop vermillion
 toss ANTIDOTE // don't assume we get the money from this
@@ -105,13 +111,13 @@ buy 3 REPEL
 use TM11
 lm BUBBLEBEAM
 um WATERGUN
-0x3A40B//ss anne rival fight (for squirtle)
+0x3A40B -v 2//ss anne rival fight (for squirtle)
 get HM01
 
 //SURGE
 swap POKEBALL REPEL
 use TM28
-0x3A3C1 //SURGE fight
+0x3A3C1 -v 2 //SURGE fight
 get BIKEVOUCHER
 
 // Tbolt can replace anything but Thrash/Bubblebeam
@@ -124,12 +130,14 @@ um HORNATTACK
 
 //EAST OF CERULEAN (ROUTE 9)
 0x39EAC // 4 turn thrash girl
+0x39E8F -v 2
+0x39E03 -v 2
 0x39E07 // bug catcher
 
 //ROCK TUNNEL
 use REPEL
-0x39F22 //maniac (cubone for redbar)
-0x39F1A //maniac (L25 slowpoke)
+0x39F22 -v 2 //maniac (cubone for redbar)
+0x39F1A -v 2 //maniac (L25 slowpoke)
 0x39EC2 // jrtrainerf (oddish troll)
 use REPEL
 use REPEL
@@ -227,6 +235,7 @@ use ELIXER
 // some routes EQ koga instead of xacc
 0x3A3D2 -xacc //KOGA
 
+stats
 // mansion candies
 use GOLDTEETH
 get HM04
@@ -237,6 +246,9 @@ rarecandy
 use SUPERREPEL
 rarecandy
 rarecandy
+carbos
+carbos
+carbos
 get SECRETKEY
 // carboses also go here for convenience
 
@@ -249,7 +261,7 @@ get SECRETKEY
 
 //SABRINA
 // elixir here if bad special
-0x3A3E5 //SABRINA (very low speed X speeds)
+0x3A3E5 -v 2 //SABRINA (very low speed X speeds)
 
 //GIOVANNI
 0x3A382 // rhyhorn
@@ -266,13 +278,13 @@ use SUPERREPEL
 use 3 SUPERREPEL
 
 //E4
-0x3A4BB -xacc //LORELEI, very low speed X Speeds
-0x3A3A9 -xacc //BRUNO
-0x3A516 -xacc -xspd 1 //TROLL (AGATHA)
+0x3A4BB -xacc -v 2 //LORELEI, very low speed X Speeds
+0x3A3A9 -xacc -v 2 //BRUNO
+0x3A516 -xacc -xspd 1 -v 2 -bbs -1/-1/-1/-1 //TROLL (AGATHA)
 // very low special might use a second speed/special here to guarantee aerodactyl
 // badge boosts aren't present on gyarados
-0x3A522 -xspc 1 -xspd 1 -bbs 1/1/0/1 //LANCE
+0x3A522 -xspc 1 -xspd 1 -bbs 1/1/0/1 -v 2//LANCE
 // rival:
 // if 15 speed at level 8 + good special, xacc xspec drillx2 ib drillx3
 // if not, xacc xspeed drill eq drillx4
-0x3A49F -xspd 1 -xacc -bbs 1/1/0/1 //GARY  OAK
+0x3A49F -xspd 1 -xacc -bbs 1/1/0/1 -lvranges -v 2 //GARY  OAK

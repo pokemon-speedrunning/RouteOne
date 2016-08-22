@@ -1,6 +1,6 @@
 
 public class BattleOptions {
-    private int participants = 1;
+    private int[] splits;
     private boolean printSRsOnLvl = false;
     private boolean printSRsBoostOnLvl = false;
     private StatModifier mod1;
@@ -15,6 +15,7 @@ public class BattleOptions {
     public BattleOptions() {
         setMod1(new StatModifier());
         setMod2(new StatModifier());
+        splits = new int[] { 1, 1, 1, 1, 1, 1 };
     }
 
     public boolean isPrintSRsBoostOnLvl() {
@@ -25,12 +26,20 @@ public class BattleOptions {
         this.printSRsBoostOnLvl = printSRsBoostOnLvl;
     }
 
-    public int getParticipants() {
-        return participants;
-    }
-
     public void setParticipants(int participants) {
-        this.participants = participants;
+        for(int i=0;i<6;i++) {
+            splits[i] = participants;
+        }
+    }
+    
+    public void setSplits(int[] splits) {
+        for(int i=0;i<6 && i<splits.length;i++) {
+            this.splits[i] = splits[i];
+        }
+    }
+    
+    public int getParticipants(int pkmnIndex) {
+        return splits[pkmnIndex];
     }
 
     public boolean isPrintSRsOnLvl() {

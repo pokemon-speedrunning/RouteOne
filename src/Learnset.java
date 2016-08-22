@@ -1,16 +1,15 @@
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
 
 //represents a sequence of moves and levels which a species learns moves at
 public class Learnset{
     private LevelMove[] levelMoves;
     
-    private static final Learnset[] allLearnsetsRB;
-    private static final Learnset[] allLearnsetsY;
+    private static final Map<String, Learnset[]> allLearnsets;
     
     public Learnset(LevelMove[] new_levelMoves) {
         if (new_levelMoves == null) {
@@ -26,23 +25,19 @@ public class Learnset{
     }
     
     //get species #i's learnset, for RB if useRB = true, for Y if useRB = false
-    public static Learnset getLearnset(int i, boolean useRB) {
-        if(useRB) {
-            if(i < 0 || i >= allLearnsetsRB.length)
-                return null;
-            else
-                return allLearnsetsRB[i];
-        } else {
-            if(i < 0 || i >= allLearnsetsY.length)
-                return null;
-            else
-                return allLearnsetsY[i];
-        }
+    public static Learnset getLearnset(int i, String dataVersion) {
+        Learnset[] set = allLearnsets.get(dataVersion);
+        if(i < 0 || i >= set.length)
+            return null;
+        else
+            return set[i];
     }
     
     static {
-        allLearnsetsRB = getData("moveset_blue.txt");
-        allLearnsetsY = getData("moveset_yellow.txt");
+        allLearnsets = new HashMap<String, Learnset[]>();
+        allLearnsets.put("blue", getData("moveset_blue.txt"));
+        allLearnsets.put("brown", getData("moveset_brown.txt"));
+        allLearnsets.put("yellow", getData("moveset_yellow.txt"));
     }
     
     private static Learnset[] getData(String filename) {

@@ -32,9 +32,11 @@ public class Main {
         //set game
         String gameName = ini.get("game", "game");
         if(gameName.equalsIgnoreCase("yellow"))
-            Settings.isRB = false;
+            Settings.dataVersion = "yellow";
+        else if(gameName.equalsIgnoreCase("brown"))
+            Settings.dataVersion = "brown";
         else
-            Settings.isRB = true;
+            Settings.dataVersion = "blue";
         
         Settings.showGuarantees = ini.get("util", "showguarantees", boolean.class);
         
@@ -89,6 +91,7 @@ public class Main {
         	}
         	catch(Exception ex) {
         		System.out.println("exception parsing a game action ("+a+")");
+        		ex.printStackTrace();
         	}
         }        
         

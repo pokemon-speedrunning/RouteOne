@@ -56,7 +56,7 @@ public class Battle extends GameAction {
         inv.removeItem("XSpecial", xspc);
         
         //check for special gym leader badges
-        if(Settings.isRB) {
+        if(Settings.dataVersion.equals("blue")) {
             if (Trainer.getTrainer(0x3A3B5).equals(opponent)) { //brock boulder badge
                 p.setAtkBadge(true);
                 inv.addItem("TM34");
@@ -79,7 +79,7 @@ public class Battle extends GameAction {
             } else if (Trainer.getTrainer(0x3A290).equals(opponent)) {
                 inv.addItem("TM27");
             }
-        } else {
+        } else if(Settings.dataVersion.equals("yellow")) {
             if (Trainer.getTrainer(0x3A454).equals(opponent)) { //brock boulder badge
                 p.setAtkBadge(true);
                 inv.addItem("TM34");
@@ -110,7 +110,7 @@ public class Battle extends GameAction {
             if(getVerbose() == BattleOptions.ALL || getVerbose() == BattleOptions.EVERYTHING) printBattle(p, (Pokemon) opponent);
             else if (getVerbose() == BattleOptions.SOME) printShortBattle(p, (Pokemon) opponent);
             
-            opponent.battle(p, options);
+            opponent.battle(p, options, 0);
             Main.appendln(String.format("LVL: %d EXP NEEDED: %d/%d", p.getLevel(),
                     p.expToNextLevel(), p.expForLevel()));
 
@@ -118,6 +118,7 @@ public class Battle extends GameAction {
             Trainer t = (Trainer) opponent;
             if(getVerbose() == BattleOptions.ALL || getVerbose() == BattleOptions.SOME || getVerbose() == BattleOptions.EVERYTHING) Main.appendln(t.toString());
             int lastLvl = p.getLevel();
+            int idx = 0;
             for(Pokemon opps : t) {
                 if(getVerbose() == BattleOptions.ALL || getVerbose() == BattleOptions.EVERYTHING) printBattle(p, (Pokemon) opps);
                 else if (getVerbose() == BattleOptions.SOME) printShortBattle(p, (Pokemon) opps);
@@ -148,7 +149,7 @@ public class Battle extends GameAction {
 						Main.appendln("");
 					}
 				}
-                opps.battle(p, options);
+                opps.battle(p, options, idx++);
                 //test if you leveled up on this pokemon
                 if(p.getLevel() > lastLvl) {
                     lastLvl = p.getLevel();

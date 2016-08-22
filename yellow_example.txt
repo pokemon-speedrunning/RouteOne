@@ -1,23 +1,23 @@
 //to be used with L6 nidoranM
-
+ranges
 //forest
-0x39E67
+0x39E67 -v EVERYTHING 
 ranges
 lm HORNATTACK
-0x39EA5
-0x39E70
+0x39EA5 -v EVERYTHING 
+0x39E70 -v EVERYTHING 
 ranges
 
 //brock gym
-0x39F17
+0x39F17 -v EVERYTHING 
 lm DOUBLEKICK
-0x3A454 //BROCK
+0x3A454 -v EVERYTHING  //BROCK
 
 //route 3
-0x39E73
-0x39E2F
-0x39EAD //lass
-0x39E7E
+0x39E73 -v EVERYTHING 
+0x39E2F -v EVERYTHING 
+0x39EAD -v EVERYTHING  //lass
+0x39E7E -v EVERYTHING 
 
 evolve NIDORINO //lvl 16
 
@@ -26,8 +26,8 @@ L10 GEODUDE
 //L13 CLEFAIRY
 evolve NIDOKING
 //mt moon
-0x39FCF
-0x3A3D9
+0x39FCF -v EVERYTHING 
+0x3A3D9 -v EVERYTHING 
 
 //gary + nugget bridge
 //lvl 18
@@ -147,7 +147,7 @@ rarecandy
 rarecandy
 
 //blaine
-0x3A476 -xatk 1 -v 2 //BLAINE
+0x3A476 -v EVERYTHING //BLAINE
 
 stats
 
