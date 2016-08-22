@@ -39,6 +39,7 @@ public class Main {
             Settings.dataVersion = "blue";
         
         Settings.showGuarantees = ini.get("util", "showguarantees", boolean.class);
+        Settings.includeCrits = ini.get("util", "includecrits", boolean.class);
         
         Initialization.init();
         
