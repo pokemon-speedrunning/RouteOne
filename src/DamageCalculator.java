@@ -338,7 +338,12 @@ public class DamageCalculator {
             int realmaxDmg = Math.max(maxDmg, critMaxDmg);
 
             if (Settings.includeCrits) {
+
                 double critChance = (p1.getSpecies().getBaseSpd() / 2) / 256.0;
+                if (m.getName().equalsIgnoreCase("Crabhammer") || m.getName().equalsIgnoreCase("Karate Chop")
+                        || m.getName().equalsIgnoreCase("Razor Leaf") || m.getName().equalsIgnoreCase("Slash")) {
+                    critChance = Math.min((p1.getSpecies().getBaseSpd() / 2) * 8, 255) / 256.0;
+                }
 
                 for (int hits = 1; hits <= 5; hits++) {
                     if (realminDmg * hits < oppHP && realmaxDmg * hits >= oppHP) {

@@ -107,15 +107,15 @@ buy 3 REPEL
 
 // SS ANNE
 // Bubblebeam normally always goes over Water Gun
-use TM11
-lm BUBBLEBEAM
-um MEGAPUNCH
 0x3A40B -v 2//ss anne rival fight (for squirtle)
 get HM01
 
 //SURGE
 swap POKEBALL REPEL
 use TM28
+use TM11
+lm BUBBLEBEAM
+um POISONSTING
 0x3A3C1 -v 2 //SURGE fight
 get BIKEVOUCHER
 
@@ -135,7 +135,7 @@ um HORNATTACK
 use REPEL
 0x39F22 -v 2 //maniac (cubone for redbar)
 0x39F1A -v 2 //maniac (L25 slowpoke)
-0x39EC2 // jrtrainerf (oddish troll)
+0x39EC2 -v 2 // jrtrainerf (oddish troll)
 use REPEL
 use REPEL
 0x39F81  // hiker
@@ -176,7 +176,7 @@ use SUPERREPEL
 swap ETHER XACCURACY
 use TM48
 lm ROCKSLIDE
-um POISONSTING
+um MEGAPUNCH
 
 //LAVENDER TOWER
 0x3A42B -xacc -v 2 //rival fight (for squirtles)
