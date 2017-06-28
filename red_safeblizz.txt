@@ -1,0 +1,266 @@
+ranges
+addmoney 265 // 175 rival + 90 weedle guy
+//to be used with L3 or 4 nidoran
+buy 5 POKEBALL
+get POTION
+get ANTIDOTE
+0x3A3B5 -sxp 2 -lvranges //brock
+stats
+lm HORNATTACK
+
+// shop
+buy 7 POTION
+
+//4 ppl at route 3
+0x39DDA -ydef -1 -lvranges -v 2
+0x39D99 -ydef -1 -lvranges -v 2
+0x39DDF -ydef 0 -v 2
+0x39DE5 -lvranges -ydef 0 -v 2
+lm POISONSTING
+
+
+// mt.moon
+//get TM12
+0x39F26 -v 2 -lvranges // magnetorb nerd
+get RARECANDY
+get ESCAPEROPE
+0x39E1C -v 2 // oddish girl
+evolve NIDORINO
+get MOONSTONE
+use MOONSTONE
+evolve NIDOKING
+ranges
+0x3A29C -v 2 //mt moon rocket
+0x39F2A -v 2 //mt moon nerd
+get HELIXFOSSIL
+
+// Cerulean enter
+get RARECANDY
+0x3A209 -v 2 //cerulean rival fight (if you are squirtle)
+// Candies here if Hiker + Geodude(s)
+
+//NUGGET BRIDGE
+0x39DF2 -v 2 //1: bug catcher
+0x39E27 -v 2 //2: lass
+0x39DA5 -v 2 //3: youngster
+// Candies+Thrash here if Hiker + no extra
+// Thrash here if Candied earlier (well, middle of the fight)
+0x39E23 -v 2  //4: lass
+// Candies+Thrash here if no Hiker + Geodudes
+0x39E80 -v 2 //5: jrtrainerm
+// Candies+Thrash here if no Hiker + no Geodudes
+rarecandy
+rarecandy
+lm THRASH
+um TACKLE
+
+0x3A2B0 -v 2 //nugget rocket
+get NUGGET
+
+// Fight only if going WaterGunless
+0x39F63 -v 3 -splits 1/2 // machop&geodude hiker
+get ELIXER
+// Compulsory Route 25 trainers
+0x39E2B -v 2  //lass
+0x39E7C -v 2 // jrtrainerm
+0x39E2F -v 2 //lass
+
+get SSTICKET // from bill
+use ESCAPEROPE
+
+//MISTY
+0x39E9D -v 2 //goldeen
+ranges
+0x3A3BB -v 2 -lvranges //MISTY
+
+//BETWEEN CERULEAN AND VERMILLION
+0x3A2AC -v 2 //rocket
+get TM28
+get FULLRESTORE
+0x39EA4 -v 2 //pidgey girl
+0x39E86 -v 2 //jrtrainerm
+
+// shop vermillion
+toss ANTIDOTE // don't assume we get the money from this
+sell NUGGET
+buy 3 REPEL
+
+// SS ANNE
+// Bubblebeam normally always goes over Water Gun
+use TM11
+lm BUBBLEBEAM
+um POISONSTING
+0x3A40B -v 2//ss anne rival fight (for squirtle)
+get HM01
+
+//SURGE
+swap POKEBALL REPEL
+use TM28
+0x3A3C1 -v 2 //SURGE fight
+get BIKEVOUCHER
+
+// Tbolt can replace anything but Thrash/Bubblebeam
+use BIKEVOUCHER
+get BICYCLE
+swap POTION BICYCLE
+use TM24
+lm THUNDERBOLT
+um LEER
+
+//EAST OF CERULEAN (ROUTE 9)
+0x39EAC -v 2 // 4 turn thrash girl
+um MEGAPUNCH
+0x39E07 -v 2 // bug catcher
+
+//ROCK TUNNEL
+use REPEL
+0x39F22 -v 2 //maniac (cubone for redbar)
+0x39F1A -v 2 //maniac (L25 slowpoke)
+0x39EC2 -v 2 // jrtrainerf (oddish troll)
+use REPEL
+use REPEL
+0x39F81 -v 2  // hiker
+0x39EE8 -v 2 // jrtrainerf
+
+
+//WEST OF LAVENDER (ROUTE 8)
+0x3A0CD -v 2 //gambler
+
+// underground
+get ELIXER
+// race/bad stats; get NUGGET
+
+//shopping~
+// race/bad stats; sell NUGGET
+buy TM07
+buy 10 SUPERREPEL
+buy 3 SUPERPOTION
+buy POKEDOLL
+buy SODAPOP
+use SODAPOP
+get TM48
+buy FRESHWATER
+buy 11 XACCURACY
+buy 2 XSPECIAL
+buy 6 XSPEED
+inventory
+
+// Adjust moveset to be Thrash, Tbolt, Horn Drill, RockSlide
+get HM02
+swap TM34 SUPERREPEL
+use TM48
+lm ROCKSLIDE
+um HORNATTACK
+use SUPERREPEL
+swap HELIXFOSSIL XACCURACY
+
+//LAVENDER TOWER
+0x3A42B -v 2 //rival fight (for squirtles)
+0x3A4E3 -v 2 // L23 gastlies
+get ELIXER
+get ELIXER
+0x3A507 // L24 gastlies
+0x3A504 // ...
+get RARECANDY
+use TM07
+lm HORNDRILL
+um ROCKSLIDE
+use POKEDOLL
+0x3A2ED -v 2 //rockets
+0x3A2F2 -xacc -v 2 //
+0x3A2F6 -v 2 //
+get POKEFLUTE
+
+// silph co
+use FRESHWATER
+get ELIXER
+0x3A319 -v 2
+get CARDKEY
+inventory
+0x3A44F -xspd 1 -xacc -v 2 //rival silph co (for squirtle)
+use ELIXER
+0x3A355 -xacc -v 2//rocket
+0x3A286 -xacc -v 2 //giovanni
+get TM26
+get RARECANDY
+
+// trip to safari zone
+use SUPERREPEL
+swap SSTICKET XSPEED
+get RARECANDY
+get PPUP
+use TM26
+lm EARTHQUAKE
+um THRASH
+use PPUP
+inventory
+use SUPERREPEL
+get FULLRESTORE
+use SUPERREPEL
+get GOLDTEETH
+get HM03
+
+
+//KOGA
+0x3A13A -v 2//juggler 
+0x3A140 -v 2//juggler 
+// hack here for boom strats:
+// 3A3D2 is koga without Weezing's (stat) EXP at the end
+// 3A3D1 is the original koga
+0x3A3D1 -v 2 -splits 1/1/1/9999 //KOGA
+use ELIXER // actually during koga
+
+// outside
+use SUPERREPEL
+rarecandy
+rarecandy
+rarecandy
+use GOLDTEETH
+get HM04
+
+// inside mansion
+use SUPERREPEL
+get TM14
+use TM14
+lm BLIZZARD
+um BUBBLEBEAM
+get SECRETKEY
+// carboses also go here for convenience
+
+//ERIKA
+0x3A0DB -v 2 //eggs
+0x3A3C9 -v 2 //ERIKA
+
+//BLAINE
+0x3A3DB -v 2 -xacc //BLAINE (some routes xacc)
+
+//SABRINA
+0x3A3E5 -v 2 //SABRINA (very low speed X speeds)
+
+//GIOVANNI
+0x3A382 -v 2 // rhyhorn
+0x3A1DA -xacc -v 2 // blackbelt
+use ELIXER
+inventory
+0x3A290 -v 2 // GIOVANNI
+    
+//WEST OF VIRIDIAN
+use SUPERREPEL
+// very bad speed: Xacc xspeed
+// ok/good speed: Xacc xspec
+0x3A475 -xacc -xspd 1 -bbs 1/1/0/1 -v 2//rival fight (for squirtle)
+use 3 SUPERREPEL
+
+//E4
+0x3A4BB -xacc -v 2 //LORELEI
+use ELIXER
+0x3A3A9 -xacc -v 2 //BRUNO
+0x3A516 -xspd 1 -v 2 -bbs 1/1/0/1 //TROLL (AGATHA)
+use ELIXER
+0x3A522 -xspd 1 -bbs 1/1/0/1 -v 2//LANCE
+// rival:
+// if 15 speed at level 8 + good special, xacc xspec drillx2 ib drillx3
+// if not, xacc xspeed drill eq drillx4
+lm ICEBEAM
+lm BODYSLAM
+0x3A49F -xspd 1 -xspc 1 -xacc -v 2 -bbs 0/1/0/0 //GARY  OAK

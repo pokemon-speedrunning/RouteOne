@@ -135,8 +135,11 @@ public class Main {
         }
         //System.out.println("Total Battles: " + numBattles);
         
-        
-        FileWriter fw = new FileWriter(ini.get("files", "outputFile"));
+        File fh = new File(ini.get("files","routeFile"));
+        if(!(new File("outputs/")).exists()) {
+            (new File("outputs/")).mkdir();
+        }
+        FileWriter fw = new FileWriter("outputs/out_"+fh.getName());
         BufferedWriter bw = new BufferedWriter(fw);
         bw.write(output.toString());
         bw.close();

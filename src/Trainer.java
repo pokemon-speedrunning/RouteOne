@@ -115,7 +115,6 @@ public class Trainer implements Battleable, Iterable<Pokemon> {
                         String[] levelName = pokeStr.split(" ");
                         int level = Integer.parseInt(levelName[0].substring(1));
                         Species s = PokemonNames.getSpeciesFromName(levelName[1]);
-                        System.out.println(levelName[1]);
                         t.pokes.add(new Pokemon(s, level, false));
                     }
                     trainers.add(t);

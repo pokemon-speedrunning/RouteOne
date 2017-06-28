@@ -345,7 +345,7 @@ public class DamageCalculator {
                     critChance = Math.min((p1.getSpecies().getBaseSpd() / 2) * 8, 255) / 256.0;
                 }
 
-                for (int hits = 1; hits <= 5; hits++) {
+                for (int hits = 1; hits <= 8; hits++) {
                     if (realminDmg * hits < oppHP && realmaxDmg * hits >= oppHP) {
                         double totalKillPct = 0;
                         for (int crits = 0; crits <= hits; crits++) {
@@ -353,7 +353,7 @@ public class DamageCalculator {
                             totalKillPct += nShotPct * choose(hits, crits) * Math.pow(critChance, crits)
                                     * Math.pow(1 - critChance, hits - crits);
                         }
-                        if (totalKillPct >= 0.1 && totalKillPct <= 99.9) {
+                        if (totalKillPct >= 0.1 && totalKillPct <= 99.999) {
                             sb.append(String.format("\t(Overall %d-hit Kill%%: %.04f%%)", hits, totalKillPct) + endl);
                         }
                     }
