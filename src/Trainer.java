@@ -260,10 +260,10 @@ public class Trainer implements Battleable, Iterable<Pokemon> {
 
             p = koga.pokes.get(3); // VENOMOTH
             m = new Moveset();
-            m.addMove("TACKLE");
-            m.addMove("TOXIC");
-            m.addMove("SLEEP POWDER");
+            m.addMove("LEECH LIFE");
+            m.addMove("DOUBLE TEAM");
             m.addMove("PSYCHIC");
+            m.addMove("TOXIC");
             p.setMoveset(m);
         }
 
