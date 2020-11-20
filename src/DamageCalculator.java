@@ -9,6 +9,10 @@ public class DamageCalculator {
     // crit indicates if there is a crit or not
     private static int damage(Move attack, Pokemon attacker, Pokemon defender, StatModifier atkMod,
             StatModifier defMod, int rangeNum, boolean crit) {
+        if(attack.getName().equalsIgnoreCase("night shade")) {
+            return attacker.getLevel();
+        }
+        
         if (rangeNum < MIN_RANGE) {
             rangeNum = MIN_RANGE;
         }

@@ -135,795 +135,184 @@ public class Trainer implements Battleable, Iterable<Pokemon> {
 
     // manually fixes the movesets of special trainers
     private static void fixSpecialTrainers() {
-        Pokemon p;
-        Moveset m;
-        // BROCK
-        if (Settings.dataVersion.equals("blue")) {
-            Trainer brock = getTrainer(0x3A3B5);
-            p = brock.pokes.get(1); // ONIX
-            m = new Moveset();
-            m.addMove("TACKLE");
-            m.addMove("SCREECH");
-            m.addMove("BIDE");
-            p.setMoveset(m);
-        } else if (Settings.dataVersion.equals("yellow")) {
-            Trainer brock = getTrainer(0x3A454);
-            p = brock.pokes.get(1); // ONIX
-            m = new Moveset();
-            m.addMove("TACKLE");
-            m.addMove("SCREECH");
-            m.addMove("BIDE");
-            m.addMove("BIND");
-            p.setMoveset(m);
+        if(Settings.dataVersion.equals("yellow")) {
+            // ref https://github.com/pret/pokeyellow/blob/48dc6a8cf4da512273e79e49346b35dcc225f773/data/trainers/special_moves.asm#L1
+            
+            // BUG_CATCHER, 15
+            setMove(0x39EA5, 2, 2, "TACKLE");
+            setMove(0x39EA5, 2, 3, "STRING SHOT");
+            
+            // YOUNGSTER, 14
+            setMove(0x39E64, 1, 4, "FISSURE");
+            
+            // BROCK, 1
+            setMove(0x3A454, 2, 3, "BIND");
+            setMove(0x3A454, 2, 4, "BIDE");
+            
+            // MISTY, 1
+            setMove(0x3A45A, 2, 4, "BUBBLEBEAM");
+            
+            // LT_SURGE, 1
+            setMove(0x3A460, 1, 1, "THUNDERBOLT");
+            setMove(0x3A460, 1, 2, "MEGA PUNCH");
+            setMove(0x3A460, 1, 3, "MEGA KICK");
+            setMove(0x3A460, 1, 4, "GROWL");
+            
+            // ERIKA, 1
+            setMove(0x3A464, 1, 3, "MEGA DRAIN");
+            setMove(0x3A464, 2, 1, "RAZOR LEAF");
+            setMove(0x3A464, 3, 1, "PETAL DANCE");
+            
+            // KOGA, 1
+            setMove(0x3A46C, 1, 1, "TOXIC");
+            setMove(0x3A46C, 1, 2, "TACKLE");
+            setMove(0x3A46C, 2, 1, "TOXIC");
+            setMove(0x3A46C, 2, 3, "SUPERSONIC");
+            setMove(0x3A46C, 3, 1, "TOXIC");
+            setMove(0x3A46C, 3, 2, "DOUBLE-EDGE");
+            setMove(0x3A46C, 4, 1, "LEECH LIFE");
+            setMove(0x3A46C, 4, 2, "DOUBLE TEAM");
+            setMove(0x3A46C, 4, 3, "PSYCHIC");
+            setMove(0x3A46C, 4, 4, "TOXIC");
+            
+            // BLAINE, 1
+            setMove(0x3A476, 1, 1, "FLAMETHROWER");
+            setMove(0x3A476, 1, 4, "CONFUSE RAY");
+            setMove(0x3A476, 3, 1, "FLAMETHROWER");
+            setMove(0x3A476, 3, 2, "FIRE BLAST");
+            setMove(0x3A476, 3, 3, "REFLECT");
+            
+            // SABRINA, 1
+            setMove(0x3A47E, 1, 1, "FLASH");
+            setMove(0x3A47E, 2, 1, "KINESIS");
+            setMove(0x3A47E, 2, 4, "PSYWAVE");
+            setMove(0x3A47E, 3, 1, "PSYWAVE");
+            
+            // GIOVANNI, 3
+            setMove(0x3A30F, 1, 3, "FISSURE");
+            setMove(0x3A30F, 2, 2, "DOUBLE TEAM");
+            setMove(0x3A30F, 3, 1, "EARTHQUAKE");
+            setMove(0x3A30F, 3, 3, "THUNDER");
+            setMove(0x3A30F, 4, 1, "EARTHQUAKE");
+            setMove(0x3A30F, 4, 2, "LEER");
+            setMove(0x3A30F, 4, 3, "THUNDER");
+            setMove(0x3A30F, 5, 1, "ROCK SLIDE");
+            setMove(0x3A30F, 5, 4, "EARTHQUAKE");
+            
+            // LORELEI, 1
+            setMove(0x3A53F, 1, 1, "BUBBLEBEAM");
+            setMove(0x3A53F, 2, 3, "ICE BEAM");
+            setMove(0x3A53F, 3, 1, "PSYCHIC");
+            setMove(0x3A53F, 3, 2, "SURF");
+            setMove(0x3A53F, 4, 3, "LOVELY KISS");
+            setMove(0x3A53F, 5, 3, "BLIZZARD");
+            
+            // BRUNO, 1
+            setMove(0x3A448, 1, 1, "ROCK SLIDE");
+            setMove(0x3A448, 1, 2, "SCREECH");
+            setMove(0x3A448, 1, 4, "DIG");
+            setMove(0x3A448, 2, 3, "FIRE PUNCH");
+            setMove(0x3A448, 2, 4, "DOUBLE TEAM");
+            setMove(0x3A448, 3, 1, "DOUBLE KICK");
+            setMove(0x3A448, 3, 2, "MEGA KICK");
+            setMove(0x3A448, 3, 4, "DOUBLE TEAM");
+            setMove(0x3A448, 4, 1, "ROCK SLIDE");
+            setMove(0x3A448, 4, 2, "SCREECH");
+            setMove(0x3A448, 4, 4, "EARTHQUAKE");
+            setMove(0x3A448, 5, 2, "KARATE CHOP");
+            setMove(0x3A448, 5, 3, "STRENGTH");
+            
+            // AGATHA, 1
+            setMove(0x3A59A, 1, 2, "SUBSTITUTE");
+            setMove(0x3A59A, 1, 3, "LICK");
+            setMove(0x3A59A, 1, 4, "MEGA DRAIN");
+            setMove(0x3A59A, 2, 2, "TOXIC");
+            setMove(0x3A59A, 2, 4, "LEECH LIFE");
+            setMove(0x3A59A, 3, 2, "LICK");
+            setMove(0x3A59A, 4, 1, "WRAP");
+            setMove(0x3A59A, 5, 2, "PSYCHIC");
+            
+            // LANCE, 1
+            setMove(0x3A5A6, 1, 1, "DRAGON RAGE");
+            setMove(0x3A5A6, 2, 1, "THUNDER WAVE");
+            setMove(0x3A5A6, 2, 3, "THUNDERBOLT");
+            setMove(0x3A5A6, 3, 1, "BUBBLEBEAM");
+            setMove(0x3A5A6, 3, 2, "WRAP");
+            setMove(0x3A5A6, 3, 3, "ICE BEAM");
+            setMove(0x3A5A6, 4, 1, "WING ATTACK");
+            setMove(0x3A5A6, 4, 2, "SWIFT");
+            setMove(0x3A5A6, 4, 3, "FLY");
+            setMove(0x3A5A6, 5, 1, "BLIZZARD");
+            setMove(0x3A5A6, 5, 2, "FIRE BLAST");
+            setMove(0x3A5A6, 5, 3, "THUNDER");
+            
+            // RIVAL3, 1 (JOLTEON)
+            setMove(0x3A515, 1, 3, "EARTHQUAKE");
+            setMove(0x3A515, 2, 4, "KINESIS");
+            setMove(0x3A515, 3, 4, "LEECH SEED");
+            setMove(0x3A515, 4, 1, "ICE BEAM");
+            setMove(0x3A515, 5, 1, "CONFUSE RAY");
+            setMove(0x3A515, 5, 4, "FIRE SPIN");
+            setMove(0x3A515, 6, 3, "QUICK ATTACK");
+            
+            // RIVAL3, 2 (FLAREON)
+            setMove(0x3A523, 1, 3, "EARTHQUAKE");
+            setMove(0x3A523, 2, 4, "KINESIS");
+            setMove(0x3A523, 3, 4, "LEECH SEED");
+            setMove(0x3A523, 4, 1, "THUNDERBOLT");
+            setMove(0x3A523, 5, 1, "ICE BEAM");
+            setMove(0x3A523, 6, 2, "REFLECT");
+            setMove(0x3A523, 6, 3, "QUICK ATTACK");
+            
+            // RIVAL3, 3 (VAPOREON)
+            setMove(0x3A531, 1, 3, "EARTHQUAKE");
+            setMove(0x3A531, 2, 4, "KINESIS");
+            setMove(0x3A531, 3, 4, "LEECH SEED");
+            setMove(0x3A531, 4, 1, "CONFUSE RAY");
+            setMove(0x3A531, 4, 4, "FIRE SPIN");
+            setMove(0x3A531, 5, 1, "THUNDERBOLT");
+            setMove(0x3A531, 6, 1, "AURORA BEAM");
+            setMove(0x3A531, 6, 3, "QUICK ATTACK");
         }
-
-        // MISTY
-        if (Settings.dataVersion.equals("blue")) {
-            Trainer misty = getTrainer(0x3A3BB);
-            p = misty.pokes.get(1); // STARMIE
-            p.getMoveset().addMove("BUBBLEBEAM");
-        } else if (Settings.dataVersion.equals("yellow")) {
-            Trainer misty = getTrainer(0x3A45A);
-            p = misty.pokes.get(1); // STARMIE
-            p.getMoveset().addMove("BUBBLEBEAM");
+        else {
+            // lonemoves (gym leaders)
+            setLoneMove(0x3A3B5, 1, "BIDE");
+            setLoneMove(0x3A3BB, 1, "BUBBLEBEAM");
+            setLoneMove(0x3A3C1, 2, "THUNDERBOLT");
+            setLoneMove(0x3A3C9, 2, "MEGA DRAIN");
+            setLoneMove(0x3A3D1, 3, "TOXIC");
+            setLoneMove(0x3A3E5, 3, "PSYWAVE");
+            setLoneMove(0x3A3DB, 3, "FIRE BLAST");
+            setLoneMove(0x3A290, 4, "FISSURE");
+            
+            // teammoves (e4)
+            // in theory this is a different system, in practice we can use the same one
+            setLoneMove(0x3A4BB, 4, "BLIZZARD");
+            setLoneMove(0x3A3A9, 4, "FISSURE");
+            setLoneMove(0x3A516, 4, "TOXIC");
+            setLoneMove(0x3A522, 4, "BARRIER");
+            
+            // champion rival
+            // two moves per roster: pidgeot sky attack, starter elemental move
+            // ref https://github.com/pret/pokered/blob/47cd734276eade428671f720e8d01a45c4fd2bc2/engine/battle/read_trainer_party.asm#L126
+            setLoneMove(0x3A491, 0, "SKY ATTACK");
+            setLoneMove(0x3A49F, 0, "SKY ATTACK");
+            setLoneMove(0x3A4AD, 0, "SKY ATTACK");
+            
+            setLoneMove(0x3A491, 5, "BLIZZARD");
+            setLoneMove(0x3A49F, 5, "MEGA DRAIN");
+            setLoneMove(0x3A4AD, 5, "FIRE BLAST");
         }
-
-        // SURGE
-        if (Settings.dataVersion.equals("blue")) {
-            Trainer surge = getTrainer(0x3A3C1);
-            p = surge.pokes.get(2); // RAICHU
-            p.getMoveset().addMove("THUNDERBOLT");
-        } else if (Settings.dataVersion.equals("yellow")) {
-            Trainer surge = getTrainer(0x3A460);
-            p = surge.pokes.get(0); // RAICHU
-            m = new Moveset();
-            m.addMove("THUNDERBOLT");
-            m.addMove("GROWL");
-            m.addMove("MEGA PUNCH");
-            m.addMove("MEGA KICK");
-            p.setMoveset(m);
-        }
-
-        // ERIKA
-        if (Settings.dataVersion.equals("blue")) {
-            Trainer erika = getTrainer(0x3A3C9);
-            p = erika.pokes.get(0); // VICTREEBEL
-            m = new Moveset();
-            m.addMove("WRAP");
-            m.addMove("POISONPOWDER");
-            m.addMove("SLEEP POWDER");
-            m.addMove("RAZOR LEAF");
-            p.setMoveset(m);
-
-            p = erika.pokes.get(2); // VILEPLUME
-            m = new Moveset();
-            m.addMove("POISONPOWDER");
-            m.addMove("MEGA DRAIN");
-            m.addMove("SLEEP POWDER");
-            m.addMove("PETAL DANCE");
-            p.setMoveset(m);
-
-        } else if (Settings.dataVersion.equals("yellow")) {
-            Trainer erika = getTrainer(0x3A464);
-            p = erika.pokes.get(0); // TANGELA
-            m = new Moveset();
-            m.addMove("BIND");
-            m.addMove("MEGA DRAIN");
-            m.addMove("VINE WHIP");
-            m.addMove("CONSTRICT");
-            p.setMoveset(m);
-
-            p = erika.pokes.get(2); // GLOOM
-            m = new Moveset();
-            m.addMove("ACID");
-            m.addMove("PETAL DANCE");
-            m.addMove("STUN SPORE");
-            m.addMove("SLEEP POWDER");
-            p.setMoveset(m);
-        }
-
-        // KOGA
-        if (Settings.dataVersion.equals("blue")) {
-            Trainer koga = getTrainer(0x3A3D1);
-            p = koga.pokes.get(3); // WEEZING
-            m = new Moveset();
-            m.addMove("SMOG");
-            m.addMove("SLUDGE");
-            m.addMove("TOXIC");
-            m.addMove("SELFDESTRUCT");
-            p.setMoveset(m);
-        } else if (Settings.dataVersion.equals("yellow")) {
-            Trainer koga = getTrainer(0x3A46C);
-            p = koga.pokes.get(0); // VENONAT
-            m = new Moveset();
-            m.addMove("TACKLE");
-            m.addMove("TOXIC");
-            m.addMove("SLEEP POWDER");
-            m.addMove("PSYCHIC");
-            p.setMoveset(m);
-
-            p = koga.pokes.get(1); // VENONAT
-            m = new Moveset();
-            m.addMove("TOXIC");
-            m.addMove("PSYBEAM");
-            m.addMove("SUPERSONIC");
-            m.addMove("PSYCHIC");
-            p.setMoveset(m);
-
-            p = koga.pokes.get(2); // VENONAT
-            m = new Moveset();
-            m.addMove("TOXIC");
-            m.addMove("PSYCHIC");
-            m.addMove("SLEEP POWDER");
-            m.addMove("DOUBLE-EDGE");
-            p.setMoveset(m);
-
-            p = koga.pokes.get(3); // VENOMOTH
-            m = new Moveset();
-            m.addMove("TACKLE");
-            m.addMove("TOXIC");
-            m.addMove("SLEEP POWDER");
-            m.addMove("PSYCHIC");
-            p.setMoveset(m);
-        }
-
-        // SABRINA
-        if (Settings.dataVersion.equals("blue")) {
-            Trainer sabrina = getTrainer(0x3A3E5);
-            p = sabrina.pokes.get(3); // ALAKAZAM
-            m = new Moveset();
-            m.addMove("PSYBEAM");
-            m.addMove("RECOVER");
-            m.addMove("PSYWAVE");
-            m.addMove("REFLECT");
-            p.setMoveset(m);
-        } else if (Settings.dataVersion.equals("yellow")) {
-            Trainer sabrina = getTrainer(0x3A47E);
-            p = sabrina.pokes.get(0); // ABRA
-            m = new Moveset();
-            m.addMove("TELEPORT");
-            m.addMove("FLASH");
-            p.setMoveset(m);
-
-            p = sabrina.pokes.get(1); // KADABRA
-            m = new Moveset();
-            m.addMove("PSYCHIC");
-            m.addMove("RECOVER");
-            m.addMove("KINESIS");
-            m.addMove("PSYWAVE");
-            p.setMoveset(m);
-
-            p = sabrina.pokes.get(2); // ALAKAZAM
-            m = new Moveset();
-            m.addMove("PSYCHIC");
-            m.addMove("PSYWAVE");
-            m.addMove("REFLECT");
-            m.addMove("RECOVER");
-            p.setMoveset(m);
-        }
-
-        // BLAINE
-        if (Settings.dataVersion.equals("blue")) {
-            Trainer blaine = getTrainer(0x3A3DB);
-            p = blaine.pokes.get(3); // ARCANINE
-            m = new Moveset();
-            m.addMove("ROAR");
-            m.addMove("EMBER");
-            m.addMove("TAKE DOWN");
-            m.addMove("FIRE BLAST");
-            p.setMoveset(m);
-        } else if (Settings.dataVersion.equals("yellow")) {
-            Trainer blaine = getTrainer(0x3A476);
-            p = blaine.pokes.get(0); // NINETALES
-            m = new Moveset();
-            m.addMove("CONFUSE RAY");
-            m.addMove("QUICK ATTACK");
-            m.addMove("TAIL WHIP");
-            m.addMove("FLAMETHROWER");
-            p.setMoveset(m);
-
-            p = blaine.pokes.get(1); // RAPIDASH
-            m = new Moveset();
-            m.addMove("TAKE DOWN");
-            m.addMove("STOMP");
-            m.addMove("GROWL");
-            m.addMove("FIRE SPIN");
-            p.setMoveset(m);
-
-            p = blaine.pokes.get(2); // ARCANINE
-            m = new Moveset();
-            m.addMove("REFLECT");
-            m.addMove("TAKE DOWN");
-            m.addMove("FIRE BLAST");
-            m.addMove("FLAMETHROWER");
-            p.setMoveset(m);
-        }
-
-        // GIOVANNI (all)
-        // rocket hideout fight
-        if (Settings.dataVersion.equals("blue")) {
-        } else if (Settings.dataVersion.equals("yellow")) {
-            Trainer giovanni1 = getTrainer(0x3A2FD); // hideout, not in main
-                                                     // route
-            p = giovanni1.pokes.get(2); // PERSIAN
-            m = new Moveset();
-            m.addMove("PAY DAY");
-            m.addMove("SCRATCH");
-            m.addMove("BITE");
-            m.addMove("GROWL");
-            p.setMoveset(m);
-        }
-        // silph co fight
-        if (Settings.dataVersion.equals("blue")) {
-        } else if (Settings.dataVersion.equals("yellow")) {
-            Trainer giovanni2 = getTrainer(0x3A305); // silph co
-            // TODO check this offset
-            p = giovanni2.pokes.get(1); // PERSIAN
-            m = new Moveset();
-            m.addMove("PAY DAY");
-            m.addMove("SCRATCH");
-            m.addMove("BITE");
-            m.addMove("GROWL");
-            p.setMoveset(m);
-
-            p = giovanni2.pokes.get(3); // NIDOQUEEN
-            m = new Moveset();
-            m.addMove("DOUBLE KICK");
-            m.addMove("TAIL WHIP");
-            m.addMove("POISON STING");
-            m.addMove("BODY SLAM");
-            p.setMoveset(m);
-        }
-        // gym fight
-        if (Settings.dataVersion.equals("blue")) {
-            Trainer giovanni3 = getTrainer(0x3A290); // gym
-            p = giovanni3.pokes.get(0); // RHYHORN
-            m = new Moveset();
-            m.addMove("STOMP");
-            m.addMove("TAIL WHIP");
-            m.addMove("FURY ATTACK");
-            m.addMove("HORN ATTACK");
-            p.setMoveset(m);
-
-            p = giovanni3.pokes.get(4); // RHYDON
-            m = new Moveset();
-            m.addMove("STOMP");
-            m.addMove("TAIL WHIP");
-            m.addMove("FISSURE");
-            m.addMove("HORN DRILL");
-            p.setMoveset(m);
-        } else if (Settings.dataVersion.equals("yellow")) {
-            Trainer giovanni3 = getTrainer(0x3A30F); // gym
-            p = giovanni3.pokes.get(0); // RHYHORN
-            m = new Moveset();
-            m.addMove("SAND-ATTACK");
-            m.addMove("DIG");
-            m.addMove("FISSURE");
-            m.addMove("EARTHQUAKE");
-            p.setMoveset(m);
-
-            p = giovanni3.pokes.get(1); // PERSIAN
-            m = new Moveset();
-            m.addMove("SCREECH");
-            m.addMove("SLASH");
-            m.addMove("FURY SWIPES");
-            m.addMove("DOUBLE TEAM");
-            p.setMoveset(m);
-
-            p = giovanni3.pokes.get(2); // NIDOQUEEN
-            m = new Moveset();
-            m.addMove("TAIL WHIP");
-            m.addMove("EARTHQUAKE");
-            m.addMove("DOUBLE KICK");
-            m.addMove("THUNDER");
-            p.setMoveset(m);
-
-            p = giovanni3.pokes.get(3); // NIDOKING
-            m = new Moveset();
-            m.addMove("THUNDER");
-            m.addMove("LEER");
-            m.addMove("EARTHQUAKE");
-            m.addMove("THRASH");
-            p.setMoveset(m);
-
-            p = giovanni3.pokes.get(4); // RHYDON
-            m = new Moveset();
-            m.addMove("ROCK SLIDE");
-            m.addMove("FURY ATTACK");
-            m.addMove("EARTHQUAKE");
-            m.addMove("HORN DRILL");
-            p.setMoveset(m);
-        }
-        // E4
-        // LORELEI
-        if (Settings.dataVersion.equals("blue")) {
-            Trainer lorelei = getTrainer(0x3A4BB);
-            p = lorelei.pokes.get(4); // LAPRAS
-            m = new Moveset();
-            m.addMove("BODY SLAM");
-            m.addMove("CONFUSE RAY");
-            m.addMove("HYDRO PUMP");
-            m.addMove("BLIZZARD");
-            p.setMoveset(m);
-        } else if (Settings.dataVersion.equals("yellow")) {
-            Trainer lorelei = getTrainer(0x3A53F);
-            p = lorelei.pokes.get(0); // DEWGONG
-            m = new Moveset();
-            m.addMove("BUBBLEBEAM");
-            m.addMove("AURORA BEAM");
-            m.addMove("REST");
-            m.addMove("TAKE DOWN");
-            p.setMoveset(m);
-
-            p = lorelei.pokes.get(1); // CLOYSTER
-            m = new Moveset();
-            m.addMove("BODY SLAM");
-            m.addMove("CONFUSE RAY");
-            m.addMove("HYDRO PUMP");
-            m.addMove("BLIZZARD");
-            p.setMoveset(m);
-
-            p = lorelei.pokes.get(2); // SLOWBRO
-            m = new Moveset();
-            m.addMove("SURF");
-            m.addMove("PSYCHIC");
-            m.addMove("WITHDRAW");
-            m.addMove("AMNESIA");
-            p.setMoveset(m);
-
-            p = lorelei.pokes.get(3); // JYNX
-            m = new Moveset();
-            m.addMove("DOUBLESLAP");
-            m.addMove("ICE PUNCH");
-            m.addMove("LOVELY KISS");
-            m.addMove("THRASH");
-            p.setMoveset(m);
-
-            p = lorelei.pokes.get(4); // LAPRAS
-            m = new Moveset();
-            m.addMove("BODY SLAM");
-            m.addMove("CONFUSE RAY");
-            m.addMove("HYDRO PUMP");
-            m.addMove("BLIZZARD");
-            p.setMoveset(m);
-        }
-
-        // BRUNO
-        if (Settings.dataVersion.equals("blue")) {
-            Trainer bruno = getTrainer(0x3A3A9);
-            p = bruno.pokes.get(4); // MACHAMP
-            m = new Moveset();
-            m.addMove("LEER");
-            m.addMove("FOCUS ENERGY");
-            m.addMove("FISSURE");
-            m.addMove("SUBMISSION");
-            p.setMoveset(m);
-        } else if (Settings.dataVersion.equals("yellow")) {
-            Trainer bruno = getTrainer(0x3A448);
-            p = bruno.pokes.get(0); // ONIX
-            m = new Moveset();
-            m.addMove("ROCK SLIDE");
-            m.addMove("DIG");
-            m.addMove("SCREECH");
-            m.addMove("SLAM");
-            p.setMoveset(m);
-
-            p = bruno.pokes.get(1); // HITMONCHAN
-            m = new Moveset();
-            m.addMove("ICE PUNCH");
-            m.addMove("FIRE PUNCH");
-            m.addMove("THUNDERPUNCH");
-            m.addMove("DOUBLE TEAM");
-            p.setMoveset(m);
-
-            p = bruno.pokes.get(2); // HITMONLEE
-            m = new Moveset();
-            m.addMove("DOUBLE KICK");
-            m.addMove("DOUBLE TEAM");
-            m.addMove("HI JUMP KICK");
-            m.addMove("MEGA KICK");
-            p.setMoveset(m);
-
-            p = bruno.pokes.get(3); // ONIX
-            m = new Moveset();
-            m.addMove("ROCK SLIDE");
-            m.addMove("SCREECH");
-            m.addMove("EARTHQUAKE");
-            m.addMove("SLAM");
-            p.setMoveset(m);
-
-            p = bruno.pokes.get(4); // MACHAMP
-            m = new Moveset();
-            m.addMove("LEER");
-            m.addMove("STRENGTH");
-            m.addMove("KARATE CHOP");
-            m.addMove("SUBMISSION");
-            p.setMoveset(m);
-        }
-
-        // AGATHA
-        if (Settings.dataVersion.equals("blue")) {
-            Trainer agatha = getTrainer(0x3A516);
-            p = agatha.pokes.get(1); // GOLBAT
-            m = new Moveset();
-            m.addMove("SUPERSONIC");
-            m.addMove("CONFUSE RAY");
-            m.addMove("WING ATTACK");
-            m.addMove("HAZE");
-            p.setMoveset(m);
-
-            p = agatha.pokes.get(4); // GENGAR
-            m = new Moveset();
-            m.addMove("CONFUSE RAY");
-            m.addMove("NIGHT SHADE");
-            m.addMove("TOXIC");
-            m.addMove("DREAM EATER");
-            p.setMoveset(m);
-        } else if (Settings.dataVersion.equals("yellow")) {
-            Trainer agatha = getTrainer(0x3A59A);
-            p = agatha.pokes.get(0); // GENGAR
-            m = new Moveset();
-            m.addMove("CONFUSE RAY");
-            m.addMove("LICK");
-            m.addMove("SUBSTITUTE");
-            m.addMove("MEGA DRAIN");
-            p.setMoveset(m);
-
-            p = agatha.pokes.get(1); // GOLBAT
-            m = new Moveset();
-            m.addMove("SUPERSONIC");
-            m.addMove("LEECH LIFE");
-            m.addMove("WING ATTACK");
-            m.addMove("TOXIC");
-            p.setMoveset(m);
-
-            p = agatha.pokes.get(2); // HAUNTER
-            m = new Moveset();
-            m.addMove("CONFUSE RAY");
-            m.addMove("LICK");
-            m.addMove("HYPNOSIS");
-            m.addMove("DREAM EATER");
-            p.setMoveset(m);
-
-            p = agatha.pokes.get(3); // ARBOK
-            m = new Moveset();
-            m.addMove("WRAP");
-            m.addMove("GLARE");
-            m.addMove("SCREECH");
-            m.addMove("ACID");
-            p.setMoveset(m);
-
-            p = agatha.pokes.get(4); // GENGAR
-            m = new Moveset();
-            m.addMove("CONFUSE RAY");
-            m.addMove("PSYCHIC");
-            m.addMove("HYPNOSIS");
-            m.addMove("DREAM EATER");
-            p.setMoveset(m);
-        }
-
-        // LANCE
-        if (Settings.dataVersion.equals("blue")) {
-            Trainer lance = getTrainer(0x3A522);
-            p = lance.pokes.get(4); // DRAGONITE
-            m = new Moveset();
-            m.addMove("AGILITY");
-            m.addMove("SLAM");
-            m.addMove("BARRIER");
-            m.addMove("HYPER BEAM");
-            p.setMoveset(m);
-        } else if (Settings.dataVersion.equals("yellow")) {
-            Trainer lance = getTrainer(0x3A5A6);
-            p = lance.pokes.get(1); // DRAGONAIR
-            m = new Moveset();
-            m.addMove("THUNDERBOLT");
-            m.addMove("SLAM");
-            m.addMove("THUNDER WAVE");
-            m.addMove("HYPER BEAM");
-            p.setMoveset(m);
-
-            p = lance.pokes.get(2); // DRAGONAIR
-            m = new Moveset();
-            m.addMove("WRAP");
-            m.addMove("BUBBLEBEAM");
-            m.addMove("ICE BEAM");
-            m.addMove("HYPER BEAM");
-            p.setMoveset(m);
-
-            p = lance.pokes.get(3); // AERODACTYL
-            m = new Moveset();
-            m.addMove("WING ATTACK");
-            m.addMove("FLY");
-            m.addMove("SWIFT");
-            m.addMove("HYPER BEAM");
-            p.setMoveset(m);
-
-            p = lance.pokes.get(4); // DRAGONITE
-            m = new Moveset();
-            m.addMove("BLIZZARD");
-            m.addMove("FIRE BLAST");
-            m.addMove("THUNDER");
-            m.addMove("HYPER BEAM");
-            p.setMoveset(m);
-        }
-
-        // GARY MOTHERFUCKING OAK
-        if (Settings.dataVersion.equals("blue")) {
-            // c,s,b means your starter was
-            // charmander, squirtle, bublasaur
-            Trainer rival_anne_C = getTrainer(0x3A401);
-            Trainer rival_anne_S = getTrainer(0x3A40B);
-            Trainer rival_anne_B = getTrainer(0x3A415);
-
-            m = new Moveset();
-            m.addMove("TELEPORT");
-            m.addMove("CONFUSION");
-            p = rival_anne_C.pokes.get(2); // KADABRA;
-            p.setMoveset(m);
-            p = rival_anne_S.pokes.get(2); // KADABRA;
-            p.setMoveset(m);
-            p = rival_anne_B.pokes.get(2); // KADABRA;
-            p.setMoveset(m);
-
-            Trainer rival_tower_C = getTrainer(0x3A41F);
-            Trainer rival_tower_S = getTrainer(0x3A42B);
-            Trainer rival_tower_B = getTrainer(0x3A437);
-            m = new Moveset();
-            m.addMove("BITE");
-            m.addMove("ROAR");
-            m.addMove("EMBER");
-            p = rival_tower_C.pokes.get(1); // GROWLITHE
-            p.setMoveset(m);
-            p = rival_tower_S.pokes.get(2); // GROWLITHE
-            p.setMoveset(m);
-
-            Trainer rival_silph_C = getTrainer(0x3A443);
-            Trainer rival_silph_S = getTrainer(0x3A44F);
-            Trainer rival_silph_B = getTrainer(0x3A45B);
-            m = new Moveset();
-            m.addMove("HYPNOSIS");
-            m.addMove("REFLECT");
-            m.addMove("LEECH SEED");
-            m.addMove("STUN SPORE");
-            p = rival_silph_C.pokes.get(2); // EXEGGCUTE
-            p.setMoveset(m);
-            p = rival_silph_B.pokes.get(1); // EXEGGCUTE
-            p.setMoveset(m);
-
-            Trainer rival_viridian_C = getTrainer(0x3A467);
-            Trainer rival_viridian_S = getTrainer(0x3A475);
-            Trainer rival_viridian_B = getTrainer(0x3A483);
-            m = new Moveset();
-            m.addMove("FURY ATTACK");
-            m.addMove("STOMP");
-            m.addMove("HORN ATTACK");
-            m.addMove("TAIL WHIP");
-            p = rival_viridian_C.pokes.get(1); // RHYHORN
-            p.setMoveset(m);
-            p = rival_viridian_S.pokes.get(1); // RHYHORN
-            p.setMoveset(m);
-            p = rival_viridian_B.pokes.get(1); // RHYHORN
-            p.setMoveset(m);
-
-            m = new Moveset();
-            m.addMove("LEECH SEED");
-            m.addMove("POISONPOWDER");
-            m.addMove("SOLARBEAM");
-            m.addMove("GROWTH");
-            p = rival_viridian_B.pokes.get(2); // EXEGGCUTE
-            p.setMoveset(m);
-            p = rival_viridian_C.pokes.get(3); // EXEGGCUTE
-            p.setMoveset(m);
-
-            Trainer rival_e4_C = getTrainer(0x3A491);
-            Trainer rival_e4_S = getTrainer(0x3A49F);
-            Trainer rival_e4_B = getTrainer(0x3A4AD);
-            m = new Moveset();
-            m.addMove("WING ATTACK");
-            m.addMove("MIRROR MOVE");
-            m.addMove("SKY ATTACK");
-            m.addMove("WHIRLWIND");
-            p = rival_e4_C.pokes.get(0); // PIDGEOT
-            p.setMoveset(m);
-            p = rival_e4_S.pokes.get(0); // PIDGEOT
-            p.setMoveset(m);
-            p = rival_e4_B.pokes.get(0); // PIDGEOT
-            p.setMoveset(m);
-
-            m = new Moveset();
-            m.addMove("LEER");
-            m.addMove("TAIL WHIP");
-            m.addMove("FURY ATTACK");
-            m.addMove("HORN DRILL");
-            p = rival_e4_C.pokes.get(2); // RHYDON
-            p.setMoveset(m);
-            p = rival_e4_S.pokes.get(2); // RHYDON
-            p.setMoveset(m);
-            p = rival_e4_B.pokes.get(2); // RHYDON
-            p.setMoveset(m);
-
-            m = new Moveset();
-            m.addMove("HYDRO PUMP");
-            m.addMove("BLIZZARD");
-            m.addMove("BITE");
-            m.addMove("WITHDRAW");
-            p = rival_e4_C.pokes.get(5); // BLASTOISE
-            p.setMoveset(m);
-
-            m = new Moveset();
-            m.addMove("GROWTH");
-            m.addMove("MEGA DRAIN");
-            m.addMove("RAZOR LEAF");
-            m.addMove("SOLARBEAM");
-            p = rival_e4_S.pokes.get(5); // VENUSAUR
-            p.setMoveset(m);
-
-            m = new Moveset();
-            m.addMove("FIRE BLAST");
-            m.addMove("RAGE");
-            m.addMove("SLASH");
-            m.addMove("FIRE SPIN");
-            p = rival_e4_B.pokes.get(5); // CHARIZARD
-            p.setMoveset(m);
-        } else if (Settings.dataVersion.equals("yellow")) {
-            // TODO: all of gary motherfucking oak
-            // eevee in cerulean battle
-            Trainer rival_cerulean = getTrainer(0x3A292);
-            m = new Moveset();
-            m.addMove("TACKLE");
-            m.addMove("TAIL WHIP");
-            m.addMove("SAND-ATTACK");
-            p = rival_cerulean.pokes.get(3); // EEVEE
-            p.setMoveset(m);
-
-            // v,f,j
-            // vaporean flareon jolteon
-            // 0,1,2 wins
-
-            // tower fight, shellder
-            Trainer rival_tower_J = getTrainer(0x3A4A3);
-            Trainer rival_tower_F = getTrainer(0x3A4AF);
-            Trainer rival_tower_V = getTrainer(0x3A4BB);
-            m = new Moveset();
-            m.addMove("TACKLE");
-            m.addMove("WITHDRAW");
-            m.addMove("SUPERSONIC");
-            m.addMove("CLAMP");
-            p = rival_tower_J.pokes.get(1); // SHELLDER
-            p.setMoveset(m);
-            p = rival_tower_F.pokes.get(2); // SHELLDER
-            p.setMoveset(m);
-
-            // silph fight, sandslash
-            Trainer rival_silph_J = getTrainer(0x3A4C7);
-            Trainer rival_silph_F = getTrainer(0x3A4D3);
-            Trainer rival_silph_V = getTrainer(0x3A4DF);
-            m = new Moveset();
-            m.addMove("SLASH");
-            m.addMove("SAND-ATTACK");
-            m.addMove("POISON STING");
-            m.addMove("SWIFT");
-            p = rival_silph_J.pokes.get(0); // SANDSLASH
-            p.setMoveset(m);
-            p = rival_silph_F.pokes.get(0); // SANDSLASH
-            p.setMoveset(m);
-            p = rival_silph_V.pokes.get(0); // SANDSLASH
-            p.setMoveset(m);
-
-            // viridian fight, magneton, vaporeon,
-            Trainer rival_viridian_J = getTrainer(0x3A4EB);
-            Trainer rival_viridian_F = getTrainer(0x3A4F9);
-            Trainer rival_viridian_V = getTrainer(0x3A507);
-            m = new Moveset();
-            m.addMove("THUNDERSHOCK");
-            m.addMove("THUNDER WAVE");
-            m.addMove("SUPERSONIC");
-            m.addMove("SWIFT");
-            p = rival_viridian_F.pokes.get(3); // MAGNETON
-            p.setMoveset(m);
-            p = rival_viridian_V.pokes.get(2); // MAGNETON
-            p.setMoveset(m);
-            m = new Moveset();
-            m.addMove("HYDRO PUMP");
-            m.addMove("AURORA BEAM");
-            m.addMove("HAZE");
-            m.addMove("ACID ARMOR");
-            p = rival_viridian_V.pokes.get(5); // VAPOREON
-            p.setMoveset(m);
-
-            // e4, every fucking single one
-            Trainer rival_e4_J = getTrainer(0x3A515);
-            Trainer rival_e4_F = getTrainer(0x3A523);
-            Trainer rival_e4_V = getTrainer(0x3A531);
-            m = new Moveset();
-            m.addMove("THUNDERSHOCK");
-            m.addMove("THUNDER WAVE");
-            m.addMove("SCREECH");
-            m.addMove("SWIFT");
-            p = rival_e4_F.pokes.get(3); // MAGNETON
-            p.setMoveset(m);
-            p = rival_e4_V.pokes.get(4); // MAGNETON
-            p.setMoveset(m);
-
-            m = new Moveset();
-            m.addMove("ICE BEAM");
-            m.addMove("SPIKE CANNON");
-            m.addMove("AURORA BEAM");
-            m.addMove("CLAMP");
-            p = rival_e4_J.pokes.get(3); // CLOYSTER
-            p.setMoveset(m);
-            p = rival_e4_F.pokes.get(4); // CLOYSTER
-            p.setMoveset(m);
-
-            m = new Moveset();
-            m.addMove("FIRE SPIN");
-            m.addMove("TAIL WHIP");
-            m.addMove("QUICK ATTACK");
-            m.addMove("CONFUSE RAY");
-            p = rival_e4_J.pokes.get(4); // NINETALES
-            p.setMoveset(m);
-            p = rival_e4_V.pokes.get(3); // NINETALES
-            p.setMoveset(m);
-
-            m = new Moveset();
-            m.addMove("EARTHQUAKE");
-            m.addMove("SLASH");
-            m.addMove("POISON STING");
-            m.addMove("FURY SWIPES");
-            p = rival_e4_J.pokes.get(0); // SANDSLASH
-            p.setMoveset(m);
-            p = rival_e4_F.pokes.get(0); // SANDSLASH
-            p.setMoveset(m);
-            p = rival_e4_V.pokes.get(0); // SANDSLASH
-            p.setMoveset(m);
-
-            m = new Moveset();
-            m.addMove("PSYBEAM");
-            m.addMove("RECOVER");
-            m.addMove("PSYCHIC");
-            m.addMove("KINESIS");
-            p = rival_e4_J.pokes.get(1); // ALAKAZAM
-            p.setMoveset(m);
-            p = rival_e4_F.pokes.get(1); // ALAKAZAM
-            p.setMoveset(m);
-            p = rival_e4_V.pokes.get(1); // ALAKAZAM
-            p.setMoveset(m);
-
-            m = new Moveset();
-            m.addMove("BARRAGE");
-            m.addMove("HYPNOSIS");
-            m.addMove("STOMP");
-            m.addMove("LEECH SEED");
-            p = rival_e4_J.pokes.get(2); // EXEGGUTOR
-            p.setMoveset(m);
-            p = rival_e4_F.pokes.get(2); // EXEGGUTOR
-            p.setMoveset(m);
-            p = rival_e4_V.pokes.get(2); // EXEGGUTOR
-            p.setMoveset(m);
-
-            m = new Moveset();
-            m.addMove("THUNDER");
-            m.addMove("THUNDERBOLT");
-            m.addMove("QUICK ATTACK");
-            m.addMove("PIN MISSILE");
-            p = rival_e4_J.pokes.get(5); // JOLTEON
-            p.setMoveset(m);
-
-            m = new Moveset();
-            m.addMove("FLAMETHROWER");
-            m.addMove("QUICK ATTACK");
-            m.addMove("SMOG");
-            m.addMove("FIRE SPIN");
-            p = rival_e4_F.pokes.get(5); // FLAREON
-            p.setMoveset(m);
-
-            m = new Moveset();
-            m.addMove("HYDRO PUMP");
-            m.addMove("AURORA BEAM");
-            m.addMove("QUICK ATTACK");
-            m.addMove("MIST");
-            p = rival_e4_V.pokes.get(5); // VAPOREON
-            p.setMoveset(m);
-        }
+    }
+    
+    // uses 0-index for pokemon to match pokered
+    private static void setLoneMove(int offset, int pokemon, String move) {
+        setMove(offset, pokemon + 1, 3, move);
+    }
+
+    // uses 1-index for pokemon to match pokeyellow
+    private static void setMove(int offset, int pokemon, int slot, String move) {
+        Pokemon pk = getTrainer(offset).pokes.get(pokemon - 1);
+        pk.setMoveset(pk.getMoveset().gymLeaderClone(move, slot));
     }
 }

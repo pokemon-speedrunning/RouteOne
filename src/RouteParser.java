@@ -133,6 +133,9 @@ public class RouteParser {
         else if(firstToken.equalsIgnoreCase("rc") || firstToken.equalsIgnoreCase("rarecandy")) {
             return GameAction.eatRareCandy;
         }
+        else if(firstToken.equalsIgnoreCase("calcstats")) {
+            return GameAction.recalcStats;
+        }
         else if(firstToken.equalsIgnoreCase("hpup")) {
             return GameAction.eatHPUp;
         }

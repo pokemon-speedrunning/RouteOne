@@ -20,6 +20,9 @@ public abstract class GameAction {
     public static final GameAction eatCarbos = new GameAction() {
         void performAction(Pokemon p, Inventory inv) { p.eatCarbos(); inv.removeItem("Carbos"); }
     };
+    public static final GameAction recalcStats = new GameAction() {
+        void performAction(Pokemon p, Inventory inv) { p.calculateStats(); }
+    };
     
     //badges
     public static final GameAction getBoulderBadge = new GameAction() {

@@ -76,4 +76,19 @@ public class Moveset implements Iterable<Move>{
         delMove(Move.getMoveByName(s));
     }
     
+    public Moveset gymLeaderClone(String thirdMove) {
+        return gymLeaderClone(thirdMove, 3);
+    }
+    
+    public Moveset gymLeaderClone(String move, int moveSlot) {
+        Moveset newSet = new Moveset(this.moves);
+        if(newSet.moves.size() >= moveSlot) {
+            newSet.moves.set(moveSlot-1, Move.getMoveByName(move));
+        }
+        else {
+            newSet.addMove(move);
+        }
+        return newSet;
+    }
+    
 }
