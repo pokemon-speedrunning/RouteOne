@@ -27,7 +27,6 @@ public class RouteParser {
                 GameAction a = null;
                 try {
 	                line = lines[0];
-	                a = null;
                     a = parseLine(line);
                 } catch(Exception e) {
                     Main.appendln("Error in line " + lineNum);
