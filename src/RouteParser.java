@@ -23,9 +23,10 @@ public class RouteParser {
                 lineNum++;
                 String wholeLine = in.readLine();
                 String[] lines = wholeLine.split("//"); //remove comments
-                String line = lines[0];
+                String line = null;
                 GameAction a = null;
                 try {
+	                line = lines[0];
                     a = parseLine(line);
                 } catch(Exception e) {
                     Main.appendln("Error in line " + lineNum);
