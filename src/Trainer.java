@@ -81,7 +81,7 @@ public class Trainer implements Battleable, Iterable<Pokemon> {
         ArrayList<Trainer> trainers = new ArrayList<Trainer>();
         BufferedReader in;
         try {
-            in = new BufferedReader(new InputStreamReader(System.class.getResource("/resources/" + filename)
+            in = new BufferedReader(new InputStreamReader(Trainer.class.getResource("/resources/" + filename)
                     .openStream()));
 
             TrainerClass currentClass = null;
