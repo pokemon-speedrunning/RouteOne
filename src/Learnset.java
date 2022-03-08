@@ -43,7 +43,7 @@ public class Learnset{
     private static Learnset[] getData(String filename) {
         try {
             BufferedReader in = new BufferedReader(new InputStreamReader(
-                    System.class.getResource("/resources/" + filename).openStream()));
+                    Learnset.class.getResource("/resources/" + filename).openStream()));
             String text = in.readLine(); 
             int n = Integer.parseInt(text);
             Learnset[] output = new Learnset[n+1];
