@@ -39,10 +39,10 @@ public abstract class GameAction {
     };
     
     //exp boost control
-    public static final GameAction boostedExpOn = new GameAction() {
+    public static final GameAction setBoostedExp = new GameAction() {
         void performAction(Pokemon p, Inventory inv) { p.setBoostedExp(true); }
     };
-    public static final GameAction boostedExpOff = new GameAction() {
+    public static final GameAction unsetBoostedExp = new GameAction() {
         void performAction(Pokemon p, Inventory inv) { p.setBoostedExp(false); }
     };
     
