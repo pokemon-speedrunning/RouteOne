@@ -50,9 +50,7 @@ public class Main {
             p = new Pokemon(PokemonNames.getSpeciesFromName(species),level,ivs,false);
             if(ini.get("poke").containsKey("boostedExp")) {
                 boolean boostedExp = ini.get("poke", "boostedExp", boolean.class);
-                if(boostedExp) {
-                    p.setBoostedExp();
-                }
+                p.setBoostedExp(boostedExp);
             }
         } catch(NullPointerException e) {
             appendln("Error in your config file. Perhaps you have an incorrect pokemon species name?");

@@ -66,8 +66,11 @@ public class Pokemon implements Battleable {
         setExpForLevel();
     }
 
-    public void setBoostedExp() {
-        boostedExp = true;
+    public boolean isBoostedExp() {
+        return boostedExp;
+    }
+    public void setBoostedExp(boolean boostedExp) {
+        this.boostedExp = boostedExp;
     }
 
     //TODO constructor which accepts EVs
@@ -173,9 +176,9 @@ public class Pokemon implements Battleable {
     public int getTotalExp() {
         return totalExp;
     }
-    public int expGiven(int participants) {
+    public int expGiven(int participants, boolean boostedExp) {
         return (species.getKillExp() / participants) * level / 7 * 3
-                / (isWild() ? 3 : 2);
+                / (isWild() ? 3 : 2) * 3 / (boostedExp ? 2 : 3);
     }
 
 
@@ -243,7 +246,7 @@ public class Pokemon implements Battleable {
 
     //gain num exp
     private void gainExp(int num) {
-        totalExp += num * 3 / (boostedExp ? 2 : 3);
+        totalExp += num;
         //update lvl if necessary
         while(expToNextLevel() <= 0 && level < 100) {
             level++;
@@ -273,7 +276,7 @@ public class Pokemon implements Battleable {
         //this is the one that dies like noob
         //be sure to gain EVs before the exp
         p.gainStatExp(this.getSpecies(), options.getParticipants(pokemonIndex));
-        p.gainExp(this.expGiven(options.getParticipants(pokemonIndex)));
+        p.gainExp(this.expGiven(options.getParticipants(pokemonIndex), p.isBoostedExp()));
     }
 
     @Override

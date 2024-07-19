@@ -164,6 +164,12 @@ public class RouteParser {
         else if(firstToken.equalsIgnoreCase("volcanobadge")) {
             return GameAction.getVolcanoBadge;
         }
+        else if(firstToken.equalsIgnoreCase("boostedexpon")) {
+            return GameAction.boostedExpOn;
+        }
+        else if(firstToken.equalsIgnoreCase("boostedexpoff")) {
+            return GameAction.boostedExpOff;
+        }
         //inventory manipulation
         else if(firstToken.equalsIgnoreCase("get")) {
             if(n < 2) {
