@@ -38,6 +38,13 @@ public abstract class GameAction {
         void performAction(Pokemon p, Inventory inv) { p.setDefBadge(true); }
     };
     
+    //exp boost control
+    public static final GameAction setBoostedExp = new GameAction() {
+        void performAction(Pokemon p, Inventory inv) { p.setBoostedExp(true); }
+    };
+    public static final GameAction unsetBoostedExp = new GameAction() {
+        void performAction(Pokemon p, Inventory inv) { p.setBoostedExp(false); }
+    };
     
     //not really a game action, but it's a nice hack?
     public static final GameAction printAllStats = new GameAction() {

@@ -128,7 +128,7 @@ public class Battle extends GameAction {
         // TODO: automatically determine whether or not to print
         if (opponent instanceof Pokemon) {
             if (getVerbose() == BattleOptions.ALL || getVerbose() == BattleOptions.EVERYTHING)
-                printBattle(p, (Pokemon) opponent);
+                printBattle(p, (Pokemon) opponent, 0);
             else if (getVerbose() == BattleOptions.SOME)
                 printShortBattle(p, (Pokemon) opponent);
 
@@ -144,7 +144,7 @@ public class Battle extends GameAction {
             int idx = 0;
             for (Pokemon opps : t) {
                 if (getVerbose() == BattleOptions.ALL || getVerbose() == BattleOptions.EVERYTHING)
-                    printBattle(p, (Pokemon) opps);
+                    printBattle(p, (Pokemon) opps, idx);
                 else if (getVerbose() == BattleOptions.SOME)
                     printShortBattle(p, (Pokemon) opps);
                 if (getVerbose() != BattleOptions.NONE) {
@@ -200,8 +200,8 @@ public class Battle extends GameAction {
     }
 
     // does not actually do the battle, just prints summary
-    public void printBattle(Pokemon us, Pokemon them) {
-        Main.appendln(DamageCalculator.summary(us, them, options));
+    public void printBattle(Pokemon us, Pokemon them, int pokemonIndex) {
+        Main.appendln(DamageCalculator.summary(us, them, options, pokemonIndex));
     }
 
     // does not actually do the battle, just prints short summary

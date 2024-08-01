@@ -104,13 +104,15 @@ public class DamageCalculator {
 
     // printout of move damages between the two pokemon
     // assumes you are p1
-    public static String summary(Pokemon p1, Pokemon p2, BattleOptions options) {
+    public static String summary(Pokemon p1, Pokemon p2, BattleOptions options, int pokemonIndex) {
         StringBuilder sb = new StringBuilder();
         String endl = Constants.endl;
         StatModifier mod1 = options.getMod1();
         StatModifier mod2 = options.getMod2();
 
-        sb.append(p1.levelName() + " vs " + p2.levelName() + "          >>> EXP GIVEN: " + p2.expGiven(1) + endl);
+        int participants = options.getParticipants(pokemonIndex);
+        sb.append(p1.levelName() + " vs " + p2.levelName() + "          >>> EXP GIVEN: " + p2.expGiven(participants, p1.isBoostedExp())
+             + (participants > 1 ? String.format(" (was split in %d)", participants) : "") + (p1.isBoostedExp() ? " (TRADE)" : "") + endl);
         // sb.append(String.format("EXP to next level: %d EXP gained: %d",
         // p1.expToNextLevel(), p2.expGiven()) + endl);
         sb.append(String.format("%s (%s) ", p1.pokeName(), p1.statsStr()));
