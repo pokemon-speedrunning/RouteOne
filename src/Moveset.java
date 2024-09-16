@@ -20,28 +20,20 @@ public class Moveset implements Iterable<Move>{
     
     //returns the 4 most recently learned moves for a pokemon of this level
     public static Moveset defaultMoveset(Species species, int level, String dataVersion){
-        ArrayList<Move> distinctMoves = new ArrayList<Move>();
-        HashSet<Move> movesSet = new HashSet<Move>();
+        ArrayList<Move> moves = new ArrayList<Move>();
         Learnset l = Learnset.getLearnset(species.getPokedexNum(), dataVersion);
-        if (l == null) {
+        if (l == null)
             return new Moveset();
-        }
         LevelMove[] lms = l.getLevelMoves();
         for(int i =  0; i < lms.length; i++) {
             Move m = lms[i].getMove();
-            if (!movesSet.contains(m) && lms[i].getLevel() <= level) {
-                movesSet.add(m);
-                distinctMoves.add(m);
+            if (!moves.contains(m) && lms[i].getLevel() <= level) {
+                if (moves.size() == 4)
+                    moves.remove(0);
+                moves.add(m);
             }
         }
-        
-        if (distinctMoves.size() <= 4)
-            return new Moveset(distinctMoves);
-        else {
-            int n = distinctMoves.size();
-            return new Moveset(distinctMoves.subList(n-4, n));
-        }
-            
+        return new Moveset(moves);
     }
     
     public String toString() {
