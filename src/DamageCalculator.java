@@ -25,61 +25,54 @@ public class DamageCalculator {
             return 0;
         }
         // stat modifiers
-        int aa_orig = attacker.getTrueAtk();
-        int atk_atk = atkMod.modAtk(attacker);
-        int dd_orig = defender.getTrueDef();
-        int def_def = defMod.modDef(defender);
-        int as_orig = attacker.getTrueSpc();
-        int atk_spc = atkMod.modSpc(attacker);
-        int ds_orig = defender.getTrueSpc();
-        int def_spc = defMod.modSpc(defender);
-
+        int atk;
+        int def;
+        if (Type.isPhysicalType(attack.getType())) {
+            if (crit) {
+                atk = attacker.getTrueAtk();
+                def = defender.getTrueDef();
+            } else {
+                atk = atkMod.modAtk(attacker);
+                def = defMod.modDef(defender);
+            }
+        } else {
+            if (crit) {
+                atk = attacker.getTrueSpc();
+                def = defender.getTrueSpc();
+            } else {
+                atk = atkMod.modSpc(attacker);
+                def = defMod.modSpc(defender);
+            }
+        }
+        if (atk > 255 || def > 255)
+        {
+            atk = Math.max(atk >> 2, 1);
+            def >>= 2;
+        }
         if (attack.getName().equalsIgnoreCase("Selfdestruct") || attack.getName().equalsIgnoreCase("Explosion")) {
-            dd_orig = Math.max(dd_orig / 2, 1);
-            def_def = Math.max(def_def / 2, 1);
+            def = Math.max(def / 2, 1);
         }
 
         boolean STAB = attack.getType() == attacker.getSpecies().getType1()
                 || attack.getType() == attacker.getSpecies().getType2();
-        int lev = (attacker.getLevel() * (crit ? 2 : 1)) % 256;
-        if (Type.isPhysicalType(attack.getType())) {
-            int a = (lev * 2 / 5 + 2);
-            a *= crit ? aa_orig : atk_atk;
-            a *= attack.getPower();
-            a /= 50;
-            a /= crit ? dd_orig : def_def;
-            a += 2;
-            a = STAB ? a * 3 / 2 : a;
-            a = Type.applyTypeEffectiveness(a, attack.getType(), defender.getSpecies().getType1(), defender
-                    .getSpecies().getType2());
-            // if damage is 0 after type effectiveness, the move misses
-            // this covers immunities and the weird 4x NVE miss
-            if (a == 0) {
-                return 0;
-            }
-            a *= rangeNum;
-            a /= 255;
-            return Math.max(a, 1);
-        } else {
-            int a = (lev * 2 / 5 + 2);
-            a *= crit ? as_orig : atk_spc;
-            a *= attack.getPower();
-            a /= 50;
-            a /= crit ? ds_orig : def_spc;
-            a += 2;
-            a = STAB ? a * 3 / 2 : a;
-            a = Type.applyTypeEffectiveness(a, attack.getType(), defender.getSpecies().getType1(), defender
-                    .getSpecies().getType2());
-            // if damage is 0 after type effectiveness, the move misses
-            // this covers immunities and the weird 4x NVE miss
-            if (a == 0) {
-                return 0;
-            }
-            a *= rangeNum;
-            a /= 255;
-            return Math.max(a, 1);
+        int level = (attacker.getLevel() * (crit ? 2 : 1)) % 256;
+        int damage = (level * 2 / 5 + 2);
+        damage *= attack.getPower();
+        damage *= atk;
+        damage /= def;
+        damage /= 50;
+        damage += 2;
+        damage = STAB ? damage * 3 / 2 : damage;
+        damage = Type.applyTypeEffectiveness(damage, attack.getType(), defender.getSpecies().getType1(), defender
+                .getSpecies().getType2());
+        // if damage is 0 after type effectiveness, the move misses
+        // this covers immunities and the weird 4x NVE miss
+        if (damage == 0) {
+            return 0;
         }
-
+        damage *= rangeNum;
+        damage /= 255;
+        return Math.max(damage, 1);
     }
 
     public static int minDamage(Move attack, Pokemon attacker, Pokemon defender, StatModifier atkMod,
